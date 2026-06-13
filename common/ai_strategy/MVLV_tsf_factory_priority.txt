@@ -1,0 +1,15 @@
+# ============================================================
+# 戦術機保有国の工場建設優先度（軍5:民4:船1の比率を狙う）
+# 軍需 +400 / 民需 +150 / 造船所 +50
+# 適用条件: 基本戦術機フレームワーク研究済み
+# ============================================================
+
+MVLV_tsf_factory_arms_priority = {
+	allowed = { always = yes }
+	enable = { has_tech = MVLV_research_basic_tsf_framework }
+	abort = { always = no }
+
+	ai_strategy = { type = build_factory  id = "arms_factory"        value = 400 }
+	ai_strategy = { type = build_factory  id = "industrial_complex"  value = 150 }
+	ai_strategy = { type = build_factory  id = "dockyard"            value = 50 }
+}

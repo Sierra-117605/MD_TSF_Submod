@@ -1,0 +1,68 @@
+# ========================================================
+# 攻撃機化モジュール（A-6/A-10/A-12 を独立テクではなくモジュールで表現）
+# 軽量機/重装機に装着、攻撃機タイプに変換
+# ========================================================
+
+equipment_modules = {
+
+	# === 重火力攻撃機化（A-10 タンクキラー仕様） ===
+	tsf_attacker_heavy_firepower = {
+		category = MVLV_TSF_sp_custom_module_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 80
+			hard_attack = 120
+			ap_attack = 80
+			breakthrough = 50
+		}
+		multiply_stats = {
+			defense = -0.10
+			maximum_speed = -0.10
+			build_cost_ic = 0.20
+		}
+	}
+
+	# === 水中可変モジュール（A-6 強襲歩行攻撃機）===
+	tsf_attacker_amphibious = {
+		category = MVLV_TSF_sp_custom_module_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			armor_value = 30
+			defense = 50
+		}
+		multiply_stats = {
+			build_cost_ic = 0.15
+		}
+	}
+
+	# === ステルス攻撃機化（A-12 アヴェンジャー）===
+	tsf_attacker_stealth = {
+		category = MVLV_TSF_sp_custom_module_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 60
+			hard_attack = 100
+			breakthrough = 80
+			recon = 0.5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.30
+		}
+	}
+
+	# === 砲撃機化（重砲塔装着）===
+	tsf_attacker_bombardment = {
+		category = MVLV_TSF_sp_custom_module_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 100
+			hard_attack = 80
+			breakthrough = 30
+		}
+		multiply_stats = {
+			maximum_speed = -0.15
+			build_cost_ic = 0.20
+		}
+	}
+
+}

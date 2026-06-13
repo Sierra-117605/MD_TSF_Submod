@@ -1,0 +1,10 @@
+sub_unit_categories = {
+	category_MVLV_tsf_family
+	category_MVLV_tsf_except_family
+	category_MVLV_tsf_support_family
+	category_MVLV_tsf
+	category_MVLV_xg
+	category_MVLV_asa
+	category_MVLV_tsa
+	category_line_tsf_family
+}

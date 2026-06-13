@@ -1,0 +1,218 @@
+﻿l_japanese:
+ MVLV_TSF_chassis: "戦術機"
+ MVLV_TSF_chassis_desc: "対BETA戦略兵器"
+ MVLV_TSF_chassis_light: "軽戦術機"
+ MVLV_TSF_chassis_light_desc: "軽量・安価で即応性に優れた対BETA戦略兵器"
+ MVLV_TSF_chassis_heavy: "重戦術機"
+ MVLV_TSF_chassis_heavy_desc: "重装甲・大火力の対BETA戦略兵器"
+ MVLV_TSF_chassis_maneuver: "高機動戦術機"
+ MVLV_TSF_chassis_maneuver_desc: "高運動性・近接格闘に優れた対BETA戦略兵器"
+ MVLV_TSF_support_chassis: "支援戦術機"
+ MVLV_TSF_specialForces_chassis: "特務戦術機"
+ MVLV_TSF_support_chassis_desc: "支援を主任務とする対BETA戦略兵器"
+ MVLV_TSF_specialForces_chassis_desc: "特殊な任務をこなす対BETA戦略兵器"
+ tank_designer_MVLV_TSF_chassis: "戦術機"
+ tank_designer_MVLV_TSF_chassis_light: "軽戦術機"
+ tank_designer_MVLV_TSF_chassis_heavy: "重戦術機"
+ tank_designer_MVLV_TSF_chassis_maneuver: "高機動戦術機"
+ tank_designer_MVLV_TSF_support_chassis: "支援戦術機"
+ tank_designer_MVLV_TSF_specialForces_chassis: "特務戦術機"
+ 
+ MVLV_TSF_chassis_0: "NCAF-X"
+ MVLV_TSF_chassis_0_desc: "月面戦争で運用された大型の船外活動ユニット(MMU)を基にした地球での活動が可能な新概念兵器の開発計画であるNCAF-X計画によって生み出されたもの、あるいはそれに類する戦術機の自国生産能力を実証するためのプラットフォーム。戦術機として最低限の能力を備えているが、実際にBETAとの戦闘で投入することはほとんど不可能と言っても良い。実験的な存在であり、実戦に投入されるようなものとしては第一世代戦術機の完成を待つ必要がある。"
+ MVLV_TSF_chassis_1_light: "第一世代軽戦術機"
+ MVLV_TSF_chassis_1_light_desc: "分類における第一世代軽戦術機は、米国ノースロック社によって開発されたF-5フリーダムファイターと、それに類する諸派生型を指す。高い生産性を持つ戦術機として設計されたこのフレームと諸派生型は、BETA大戦初期における人類の戦術機配備に関して大きな貢献を果たした。特に欧州戦線ではその軽快さが高く評価され現地改修による長期的な運用が行われ、このフレーム系統は多くの低コスト戦術機を実現している。"
+ MVLV_TSF_chassis_1_light_mod: "第一世代改良型軽戦術機"
+ MVLV_TSF_chassis_1_light_mod_desc: "主に欧州連合で多用された第一世代軽戦術機の拡張改良型。"
+ MVLV_TSF_chassis_1_heavy: "第一世代重戦術機"
+ MVLV_TSF_chassis_1_heavy_desc: "分類における第一世代重戦術機は、米国陸・海・空・宇宙軍の共同によって開発された人類初の戦術機であるF-4と、それに類する諸派生型を指す。人類初の戦術機として開発されたF-4のフレームおよび機体構造は、その未成熟さをあらかじめ見越して設計されているために拡張・改修が容易となるようなデザインとなっている。アフリカでの派生型の運用や日本における運用実績が示すように、このフレーム系統は旧世代型でありながらも高い拡張性と低めのコストを実現している。"
+ MVLV_TSF_chassis_2_light: "第二世代軽戦術機"
+ MVLV_TSF_chassis_2_light_desc: "分類における第二世代軽戦術機は、第一世代戦術機における課題であった機動性を改善することを念頭に置いた第二世代機のうち、特にF-5とその派生型の後継機や、生産性に重きを置いたものを指す。F-15やF-14のような戦術機において指摘された量産性の低さを補うことを期待して設計されたF-16やMiG-29といった前線国家におけるベストセラー機体を筆頭に、軽量で優秀な機体設計の基となったこのフレーム系統はコストパフォーマンスで優れている。"
+ MVLV_TSF_chassis_2_heavy: "第二世代重戦術機"
+ MVLV_TSF_chassis_2_heavy_desc: "分類における第二世代重戦術機は、第一世代機における課題であった機動性を改善することを念頭に置いた第二世代機のうち、特にF-4とその派生型の後継機や、機体性能の向上・ペイロード拡大に重きを置いたものを指す。F-16やMiG-29のような小型軽量の戦術機では将来的な性能向上に限度があるが、F-4に続く後継機として設計されたF-15やその改修型として準第三世代相当へ強化されたF-15ACTVの存在のように、このフレーム系統は長期的な拡張性や機体全体の剛性といった面で優れている。"
+ MVLV_TSF_chassis_2_maneuver: "第二世代高機動戦術機"
+ MVLV_TSF_chassis_2_maneuver_desc: "分類における第二世代高機動戦術機は、第二世代機開発の中でも後期に設計・製造された、特に格闘戦性能へ重きを置いた、従来の米国製戦術機系統とは離れている日本の94式やソ連のSu-37に代表される諸戦術機を指す。拡張性を犠牲にしてでも設計されたこれら高機動戦術機は、密集格闘戦や近接格闘を想定して様々な改修と基礎性能向上が組み込まれ、一部は第三世代機と遜色ないほどに強化されている。このフレーム系統では機動性の他に大型種に対する突出した対処能力を誇る。"
+ MVLV_TSF_chassis_3_light: "第三世代軽戦術機"
+ MVLV_TSF_chassis_3_light_desc: "分類における第三世代軽戦術機は、第二世代での低コスト・軽量という特徴を継承してさらなる性能向上を目指した諸戦術機を指す。米国でのF-35開発やソ連でのMiG-35開発に代表されるように、高い基本スペックと複数任務対応力を成立させながらもコストダウンが図られている。拡張性の面での成長はさほど見られないが、それでもこのフレーム系統は十分なコストパフォーマンスを基に新時代戦術機としての高い性能を有している。"
+ MVLV_TSF_chassis_3_heavy: "第三世代重戦術機"
+ MVLV_TSF_chassis_3_heavy_desc: "分類における第三世代重戦術機は、第二世代での高い拡張性・高い耐久性という特徴を継承しつつさらなる性能向上を目指した諸戦術機を指す。米国でのATSF計画に伴って設計されたF-22を筆頭として、前世代型よりも高い性能を実現するためのさらなるパーツ追加を可能とするべく拡張性はさらに高められている。基礎スペックの強化自体はコストに対してさほど目立つものではないが、このフレーム系統は高性能化へと突き進む新時代戦術機の需要に応えることができる。"
+ MVLV_TSF_chassis_3_maneuver: "第三世代高機動戦術機"
+ MVLV_TSF_chassis_3_maneuver_desc: "分類における第三世代高機動戦術機は、第三世代機のうちでも特に近接格闘性能に振り切った諸戦術機を指す。第三世代機としてのスタンダードが確立される直前に設計・製造されたものに多く見られる高性能を追求した系譜を踏襲して、カーボンブレードを機体の細部に取り込んだ設計のSu-47に代表されるような高機動性・対大型種殲滅能力の強化が特徴。このフレーム系統は前世代機からさらに高められた機動性と大型種への対処能力を誇る。"
+ MVLV_TSF_chassis_4: "第四世代戦術機"
+ MVLV_TSF_chassis_4_desc: "第四世代戦術機は作戦行動領域を1G～0G環境にまで拡大され、専用開発の長刀や突撃砲も用意されているほか、0G空間での活動では携行化された荷電粒子砲を搭載した追加ブースターユニットを装着する。これまでの戦術機における基本を根底から塗り替える新時代の戦術機として相応しい性能を持つ。"
+ 
+ MVLV_TSF_support_chassis_0: "試作支援戦術機"
+ MVLV_TSF_support_chassis_1_light: "第一世代支援軽戦術機"
+ MVLV_TSF_support_chassis_1_light_mod: "第一世代改良型支援軽戦術機"
+ MVLV_TSF_support_chassis_1_heavy: "第一世代支援重戦術機"
+ MVLV_TSF_support_chassis_2_light: "第二世代支援軽戦術機"
+ MVLV_TSF_support_chassis_2_heavy: "第二世代支援重戦術機"
+ MVLV_TSF_support_chassis_2_maneuver: "第二世代支援高機動戦術機"
+ MVLV_TSF_support_chassis_3_light: "第三世代支援軽戦術機"
+ MVLV_TSF_support_chassis_3_heavy: "第三世代支援重戦術機"
+ MVLV_TSF_support_chassis_3_maneuver: "第三世代支援高機動戦術機"
+ MVLV_TSF_support_chassis_4: "第四世代支援戦術機"
+ 
+ MVLV_TSF_specialForces_chassis_0: "試作特務戦術機"
+ MVLV_TSF_specialForces_chassis_1_light: "第一世代特務軽戦術機"
+ MVLV_TSF_specialForces_chassis_1_light_mod: "第一世代改良型特務軽戦術機"
+ MVLV_TSF_specialForces_chassis_1_heavy: "第一世代特務重戦術機"
+ MVLV_TSF_specialForces_chassis_2_light: "第二世代特務軽戦術機"
+ MVLV_TSF_specialForces_chassis_2_heavy: "第二世代特務重戦術機"
+ MVLV_TSF_specialForces_chassis_2_maneuver: "第二世代特務高機動戦術機"
+ MVLV_TSF_specialForces_chassis_3_light: "第三世代特務軽戦術機"
+ MVLV_TSF_specialForces_chassis_3_heavy: "第三世代特務重戦術機"
+ MVLV_TSF_specialForces_chassis_3_maneuver: "第三世代特務高機動戦術機"
+ MVLV_TSF_specialForces_chassis_4: "第四世代特務戦術機"
+ 
+ MVLV_TSF_equipment_1_light: "第一世代軽戦術機"
+ MVLV_TSF_equipment_1_heavy: "第一世代重戦術機"
+ MVLV_TSF_equipment_2_light: "第二世代軽戦術機"
+ MVLV_TSF_equipment_2_heavy: "第二世代重戦術機"
+ MVLV_TSF_equipment_2_maneuver: "第二世代高機動戦術機"
+ MVLV_TSF_equipment_3_light: "第三世代軽戦術機"
+ MVLV_TSF_equipment_3_heavy: "第三世代重戦術機"
+ MVLV_TSF_equipment_3_maneuver: "第三世代高機動戦術機"
+ MVLV_TSF_equipment_4: "第四世代戦術機"
+ 
+ MVLV_Laser_Jagd_equipment: "戦術機（LJ）"
+ MVLV_Laser_Jagd_equipment_desc: "対光線級BETA用に航空運用される戦術機系統。"
+ MVLV_Laser_Jagd_L_equipment_1: "第一世代軽戦術機（LJ）"
+ MVLV_Laser_Jagd_H_equipment_1: "第一世代重戦術機（LJ）"
+ MVLV_Laser_Jagd_L_equipment_2: "第二世代軽戦術機（LJ）"
+ MVLV_Laser_Jagd_H_equipment_2: "第二世代重戦術機（LJ）"
+ MVLV_Laser_Jagd_M_equipment_2: "第二世代高機動戦術機（LJ）"
+ MVLV_Laser_Jagd_L_equipment_3: "第三世代軽戦術機（LJ）"
+ MVLV_Laser_Jagd_H_equipment_3: "第三世代重戦術機（LJ）"
+ MVLV_Laser_Jagd_M_equipment_3: "第三世代高機動戦術機（LJ）"
+ 
+
+ AFR_MVLV_TSF_chassis_1_light: "Kfir" #元F-5 -> Kfir
+ AFR_MVLV_TSF_chassis_1_heavy: "F-4"
+ AFR_MVLV_TSF_chassis_2_light: "Lavi" #元F-16 -> Lavi
+ AFR_MVLV_TSF_chassis_2_heavy: "F-14"
+ AFR_MVLV_TSF_chassis_2_maneuver: "Rafale" #存在しなかったので追加
+ AFR_MVLV_TSF_chassis_3_light: "F-35"
+ AFR_MVLV_TSF_chassis_3_heavy: "Starker Wind" #元F-22 -> Starker Wind
+ AFR_MVLV_TSF_chassis_3_maneuver: "Tempest" #元YF-23 -> Tempest
+ AFR_MVLV_TSF_chassis_4: "XF-2000" #元F-41 -> XF-2000
+
+ CAN_MVLV_TSF_chassis_1_light: "F-5"
+ CAN_MVLV_TSF_chassis_1_heavy: "F-4"
+ CAN_MVLV_TSF_chassis_2_light: "F-16"
+ CAN_MVLV_TSF_chassis_2_heavy: "F-18" #F-18の方が採用されてそうでは？
+ CAN_MVLV_TSF_chassis_2_maneuver: "Rafale" #存在しなかったので追加
+ CAN_MVLV_TSF_chassis_3_light: "F-35"
+ CAN_MVLV_TSF_chassis_3_heavy: "F-22"
+ CAN_MVLV_TSF_chassis_3_maneuver: "YF-23"
+ CAN_MVLV_TSF_chassis_4: "XF-2000" #元F-41 -> XF-2000
+ 
+ CEA_MVLV_TSF_chassis_1_light: "F-5"
+ CEA_MVLV_TSF_chassis_1_heavy: "F-4"
+ CEA_MVLV_TSF_chassis_2_light: "F-16"
+ CEA_MVLV_TSF_chassis_2_heavy: "F-15"
+ CEA_MVLV_TSF_chassis_2_maneuver: "Rafale" #存在しなかったので追加
+ CEA_MVLV_TSF_chassis_3_light: "F-35"
+ CEA_MVLV_TSF_chassis_3_heavy: "F-22"
+ CEA_MVLV_TSF_chassis_3_maneuver: "YF-23"
+ CEA_MVLV_TSF_chassis_4: "XF-2000" #元F-41 -> XF-2000
+ 
+ CHI_MVLV_TSF_chassis_1_light: "J-7" #MiG-21
+ CHI_MVLV_TSF_chassis_1_heavy: "J-8" #MiG-21 (M)
+ CHI_MVLV_TSF_chassis_2_light: "J-10" #F-16
+ CHI_MVLV_TSF_chassis_2_maneuver: "J-11" #元J-10X -> J-11
+ CHI_MVLV_TSF_chassis_2_heavy: "F-CK-1" #元J-11 -> F-CK-1
+ CHI_MVLV_TSF_chassis_3_light: "J-31" #見るからにF-35
+ CHI_MVLV_TSF_chassis_3_maneuver: "J-15" #元J-37 -> J-15/画像はないがフランカーの性能向上型なため
+ CHI_MVLV_TSF_chassis_3_heavy: "J-20" #見るからにF-22
+ CHI_MVLV_TSF_chassis_4: "Me 101P" #元J-41 -> Me 101P 
+ 
+ EEA_MVLV_TSF_chassis_1_light: "Su-11"
+ EEA_MVLV_TSF_chassis_1_heavy: "MiG-21" #MiG-23もここ
+ EEA_MVLV_TSF_chassis_2_light: "MiG-29"
+ EEA_MVLV_TSF_chassis_2_heavy: "Mig-25" #MiG-27, MiG-31もここ/ソ連ではMiG-27
+ EEA_MVLV_TSF_chassis_2_maneuver: "EF-2000" #元Su-27 -> EF-2000
+ EEA_MVLV_TSF_chassis_3_light: "MiG-35" #MiG-1.44と中身が同じだった
+ EEA_MVLV_TSF_chassis_3_maneuver: "Tempest" #元Su-47 -> Tempest
+ EEA_MVLV_TSF_chassis_3_heavy: "Starker Wind" #元Su-50 -> Starker Wind
+ EEA_MVLV_TSF_chassis_4: "Me 101P" #元Su-57 -> Me 101P 暫定処理(Suになるだろうという感じではある)
+
+ EUR_MVLV_TSF_chassis_1_light: "Mirage2000" #Tornade IDS/ADV, Mirage IIIもここ
+ EUR_MVLV_TSF_chassis_1_heavy: "F-4"
+ EUR_MVLV_TSF_chassis_2_light: "JAS-37" #JAS-39もここ
+ EUR_MVLV_TSF_chassis_2_heavy: "F-18" #元F-15 -> F-18
+ EUR_MVLV_TSF_chassis_2_maneuver: "Rafale" #EF-2000もここ(戦略研究会内に設計が存在)
+ EUR_MVLV_TSF_chassis_3_light: "F-35" #史実でも採用しているので
+ EUR_MVLV_TSF_chassis_3_heavy: "Starker Wind" #元F-22
+ EUR_MVLV_TSF_chassis_3_maneuver: "Tempest" 
+ EUR_MVLV_TSF_chassis_4: "XF-2000"
+ 
+ GEU_MVLV_TSF_chassis_1_light: "F-5"
+ GEU_MVLV_TSF_chassis_1_heavy: "F-4"
+ GEU_MVLV_TSF_chassis_2_light: "F-16"
+ GEU_MVLV_TSF_chassis_2_heavy: "F-18" #元F-15 -> F-18
+ GEU_MVLV_TSF_chassis_2_maneuver: "Type-94G" #存在しなかったので追加/日本からの輸出がありそう
+ GEU_MVLV_TSF_chassis_3_light: "F-35"
+ GEU_MVLV_TSF_chassis_3_heavy: "J-20"
+ GEU_MVLV_TSF_chassis_3_maneuver: "Type-10G" #元YF-23 -> Type-10G/同上
+ GEU_MVLV_TSF_chassis_4: "XF-2000" #元F-41 -> XF-2000
+ 
+ JAP_MVLV_TSF_chassis_1_light: "F-5" #元Type-78 皐月 -> F-5
+ JAP_MVLV_TSF_chassis_1_heavy: "77式 撃震"
+ JAP_MVLV_TSF_chassis_2_light: "F-16J 天津風" #元Type-84 烈風 -> F-16J 天津風/旧バージョン準拠
+ JAP_MVLV_TSF_chassis_2_heavy: "89式 陽炎" #元F-15 -> 89式 陽炎
+ JAP_MVLV_TSF_chassis_2_maneuver: "94式 不知火"
+ JAP_MVLV_TSF_chassis_3_light: "F-35" #元Type-01 隼 -> F-35
+ JAP_MVLV_TSF_chassis_3_heavy: "Starker Wind" #元Type-05 黎明 -> Starker Wind
+ JAP_MVLV_TSF_chassis_3_maneuver: "10式 極光"
+ JAP_MVLV_TSF_chassis_4: "XF-2000" #元月光 -> XF-2000
+ 
+ OSE_MVLV_TSF_chassis_1_light: "F-5"
+ OSE_MVLV_TSF_chassis_1_heavy: "F-4"
+ OSE_MVLV_TSF_chassis_2_light: "F-16"
+ OSE_MVLV_TSF_chassis_2_heavy: "F-18" #F-15 -> F-18/史実採用こっち
+ OSE_MVLV_TSF_chassis_2_maneuver: "EF-2000" #存在しなかったので追加/アメリカ怒りそう
+ OSE_MVLV_TSF_chassis_3_light: "F-35"
+ OSE_MVLV_TSF_chassis_3_heavy: "Starker Wind" #元F-22 -> Starker Wind/アメリカ怒りそう
+ OSE_MVLV_TSF_chassis_3_maneuver: "YF-23" #大東亜で極光が飛びラリアでブラックウィドウⅡが飛ぶ、激アツ
+ OSE_MVLV_TSF_chassis_4: "XF-2000" #元F-41 -> XF-2000
+ 
+ SOA_MVLV_TSF_chassis_1_light: "F-5"
+ SOA_MVLV_TSF_chassis_1_heavy: "F-4"
+ SOA_MVLV_TSF_chassis_2_light: "F-16"
+ SOA_MVLV_TSF_chassis_2_heavy: "F-15"
+ SOA_MVLV_TSF_chassis_2_maneuver: "Rafale" #存在しなかったので追加
+ SOA_MVLV_TSF_chassis_3_light: "F-35"
+ SOA_MVLV_TSF_chassis_3_heavy: "F-22"
+ SOA_MVLV_TSF_chassis_3_maneuver: "YF-23"
+ SOA_MVLV_TSF_chassis_4: "XF-2000" #元F-41 -> XF-2000
+ 
+ SOV_MVLV_TSF_chassis_1_light: "Su-11"
+ SOV_MVLV_TSF_chassis_1_heavy: "MiG-21" #MiG-23もここ
+ SOV_MVLV_TSF_chassis_2_light: "MiG-29"
+ SOV_MVLV_TSF_chassis_2_heavy: "Mig-27" #MiG-25, MiG-31もここ/東欧ではMiG-25
+ SOV_MVLV_TSF_chassis_2_maneuver: "Su-27" #Su-37もここ
+ SOV_MVLV_TSF_chassis_3_light: "MiG-35" #MiG-1.44とMiG-35は同じ中身だった
+ SOV_MVLV_TSF_chassis_3_maneuver: "Su-47"
+ SOV_MVLV_TSF_chassis_3_heavy: "Su-57" #元Su-50 -> Su-57
+ SOV_MVLV_TSF_chassis_4: "Me 101P" #元Su-57 -> Me101P 暫定処理(Suになるだろうという感じではある)
+ 
+ UNI_MVLV_TSF_chassis_1_light: "Mirage III" #元F-5 -> Mirage III/国連所属たくさんあるから
+ UNI_MVLV_TSF_chassis_1_heavy: "F-4"
+ UNI_MVLV_TSF_chassis_2_light: "F-16"
+ UNI_MVLV_TSF_chassis_2_heavy: "F-15"
+ UNI_MVLV_TSF_chassis_2_maneuver: "94式 不知火" #存在しなかったので追加
+ UNI_MVLV_TSF_chassis_3_light: "F-35"
+ UNI_MVLV_TSF_chassis_3_heavy: "Starker Wind" #元F-22 -> Starker Wind/SWを全世界に
+ UNI_MVLV_TSF_chassis_3_maneuver: "10式 極光"
+ UNI_MVLV_TSF_chassis_4: "XF-2000" #元F-41 -> XF-2000
+ 
+ USA_MVLV_TSF_chassis_1_light: "F-5"
+ USA_MVLV_TSF_chassis_1_heavy: "F-4"
+ USA_MVLV_TSF_chassis_2_light: "F-16"
+ USA_MVLV_TSF_chassis_2_heavy: "F-15"
+ USA_MVLV_TSF_chassis_2_maneuver: "XF-29" #存在しなかったので追加
+ USA_MVLV_TSF_chassis_3_light: "F-35"
+ USA_MVLV_TSF_chassis_3_heavy: "F-22"
+ USA_MVLV_TSF_chassis_3_maneuver: "YF-23"
+ USA_MVLV_TSF_chassis_4: "XF-2000" #元F-41 -> XF-2000

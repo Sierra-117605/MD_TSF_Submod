@@ -1,0 +1,751 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_armor_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_no_armor"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/empty_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_armor_heavy"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/heavy_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_armor_nomal"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/normal_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_armor_light"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/light_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_armor_composite"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/composite_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_normal_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_close_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_close_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_support_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_support_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_basic_OS"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_1_normal"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_2_normal"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_3_normal"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_4_normal"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_XM3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_1_close"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_close_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_2_close"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_close_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_3_close"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_close_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_XM3_close"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_close_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_1_support"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_support_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_2_support"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_support_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_3_support"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_support_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_OS_XM3_support"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_support_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_engine_normal_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_engine_maneuver_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_maneuver_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_engine_cruise_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_cruise_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_no_engine"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/none_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_basic_engine"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_engine_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_engine_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_engine_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_engine_4"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_engine_maneuver_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_maneuver_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_engine_maneuver_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_maneuver_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_engine_maneuver_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_maneuver_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_engine_cruise_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_cruise_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_engine_cruise_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_cruise_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_engine_cruise_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_cruise_pic.dds"
+		legacy_lazy_load = no
+	}
+
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_headUnit_nomal_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_headUnit_heavy_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_heavy_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_headUnit_aerial_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_aerial_pic.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_basic_head"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_head_normal_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_head_normal_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_head_normal_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_head_heavy_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_heavy_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_head_heavy_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_heavy_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_head_heavy_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_heavy_pic.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_head_aerial_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_aerial_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_head_aerial_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_aerial_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_head_aerial_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_aerial_pic.dds"
+		legacy_lazy_load = no
+	}
+
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_basic_assault_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/basic_assault_cannon_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_assault_cannon_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_1_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_assault_cannon_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_2_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_assault_cannon_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_3_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_support_assault_cannon_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_1_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_support_assault_cannon_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_2_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_support_assault_cannon_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_3_pic.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_support_gun"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/support_gun_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_railgun_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/railgun_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_railgun_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/railgun_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_railgun_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/railgun3_pic.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_wepon_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_2_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_basic_assault_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/basic_assault_cannon_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_assault_cannon_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_1_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_assault_cannon_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_2_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_assault_cannon_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_3_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_shield_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/shield_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_sword_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/sword_pic.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_shield"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/shield_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_reactive_shield"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/reactive_shield_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_long_sword"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/sword_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_heavy_sword"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/sword_pic.dds"
+		legacy_lazy_load = no
+	}
+
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_sensor_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/sensor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_armor_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/aerial_blade_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_basic_sensor_system"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/sensor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_sensor_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/sensor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_sensor_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/sensor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_sensor_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/sensor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_armored_sensor"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/armored_sensor_pic.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_armor"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_blade_armor"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/blade_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_aerial_blade_armor"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/aerial_blade_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+#
+#	spriteType = {
+#		name = "GFX_EMI_MVLV_TSF_add_special_blade_armor"
+#		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/special_blade_armor_pic.dds"
+#		legacy_lazy_load = no
+#	}
+
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_thruster_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/add_thruster_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_thruster_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/add_thruster_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_thruster_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/add_thruster_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_thruster_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/add_thruster_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_back_thruster_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/back_thruster_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_back_thruster"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/back_thruster_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_missile_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/small_missile_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_small_missile"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/small_missile_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_large_missile_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/large_missile_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_large_missile_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/large_missile_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_supplies_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/supplie_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_supplie_armor"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/supplie_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_back_supplies_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/supplie_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_drop_tank"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/supplie_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_sub_weapon_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/sub_sword_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_chain_sword"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/chain_sword_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_sub_sword"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/sub_sword_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_sp_structure_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/structure_type_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_reinforced_structure_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/reinforced_structure_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_reinforced_structure_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/reinforced_structure_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_reinforced_structure_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/reinforced_structure_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_special_structure_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/special_structure_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_special_structure_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/special_structure_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_special_structure_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/special_structure_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_special_structure_4"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/special_structure_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_sp_dataLink_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/dataLink_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_deta_link_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/dataLink_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_deta_link_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/dataLink_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_deta_link_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/dataLink_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_sp_fcs_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/fcs_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_fcs_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/fcs_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_fcs_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/fcs_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_fcs_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/fcs_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_sp_vibration_sensor_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/vibration_sensor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_vibration_sensor_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/vibration_sensor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_vibration_sensor_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/vibration_sensor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_vibration_sensor_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/vibration_sensor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_vibration_sensor_4"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/vibration_sensor_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_sp_shell_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/shell_type_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_explosive_shell"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/explosive_shell_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_piercing_shell"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/piercing_shell_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_sp_sight_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/Combat_sight_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_combat_sight"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/Combat_sight_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_sniper_sight"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/Sniper_sight_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_add_special_blade_armor"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/special_blade_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_sp_maintenance_team_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/maintenance_team_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_maintenance_team_1"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/maintenance_team_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_maintenance_team_2"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/maintenance_team_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_maintenance_team_3"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/maintenance_team_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_capture_team"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/maintenance_team_pic.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_sp_custom_module_type"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/super_cruise_custom.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_cruise_custom"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/cruise_custom.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_super_cruise_custom"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/super_cruise_custom.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_combat_custom"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/combat_custom.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_limit_custom"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/limit_custom.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_hight_limit_custom"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/hight_limit_custom.dds"
+		legacy_lazy_load = no
+	}
+
+
+    
+}

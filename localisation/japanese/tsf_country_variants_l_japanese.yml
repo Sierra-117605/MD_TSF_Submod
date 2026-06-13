@@ -1,0 +1,48 @@
+﻿l_japanese:
+ # === USA F-5 ===
+ tsf_USA_F_5: "F-5 フリーダムファイター開発"
+ tsf_USA_F_5_desc: "ノースロック社が開発した米国初の量産戦術機。軽量・高速で対 BETA 初期戦力として広く採用された。"
+ USA_TSF_F_5: "F-5 フリーダムファイター"
+ USA_TSF_F_5_desc: "米国の主力第一世代軽戦術機。"
+
+ # === USA F-22 ===
+ tsf_USA_F_22: "F-22 ラプター開発"
+ tsf_USA_F_22_desc: "米空軍の最新鋭ステルス戦術機。第三世代高機動戦術機の代表格。"
+ USA_TSF_F_22: "F-22 ラプター"
+ USA_TSF_F_22_desc: "米国の最新鋭ステルス特化型戦術機。XM3 OS と高機動推進系を搭載。"
+
+ # === JAP 77式 撃震 ===
+ tsf_JAP_77shiki: "77式 撃震開発"
+ tsf_JAP_77shiki_desc: "F-4 を基に日本が独自に発展させた重装甲戦術機。日本初の制式採用機。"
+ JAP_TSF_77shiki: "77式戦術歩行戦闘機 撃震"
+ JAP_TSF_77shiki_desc: "日本帝国軍の主力第一世代重戦術機。F-4 系統の発展型。"
+
+ # === JAP 94式 不知火 ===
+ tsf_JAP_shiranui: "94式 不知火開発"
+ tsf_JAP_shiranui_desc: "F-15 を基に日本独自の格闘戦能力を強化した第三世代重戦術機。"
+ JAP_TSF_shiranui: "94式戦術歩行戦闘機 不知火"
+ JAP_TSF_shiranui_desc: "日本帝国軍の主力第三世代重戦術機。優れた近接格闘性能を持つ。"
+
+ # === JAP 武御雷 ===
+ tsf_JAP_takemikazuchi: "TYPE-00 武御雷開発"
+ tsf_JAP_takemikazuchi_desc: "斯衛軍向けの特務戦術機。皇族・将軍家を護衛する精鋭部隊の専用機。"
+ JAP_TSF_takemikazuchi: "試製98式戦術歩行戦闘機 武御雷 TYPE-98X"
+ JAP_TSF_takemikazuchi_desc: "斯衛軍向けに試作された第2世代特務戦術機。武御雷シリーズの原型機。"
+
+ # === RUS MiG-21 ===
+ tsf_RUS_MiG_21: "MiG-21 バラライカ開発"
+ tsf_RUS_MiG_21_desc: "ソ連が開発した軽量戦術機。前線国家で広く採用された傑作機。"
+ RUS_TSF_MiG_21: "MiG-21 バラライカ"
+ RUS_TSF_MiG_21_desc: "ロシアの主力第一世代軽戦術機。高い生産性と運用性。"
+
+ # === RUS Su-37 ===
+ tsf_RUS_Su_37: "Su-37 ターミネーター開発"
+ tsf_RUS_Su_37_desc: "スホーイ設計局の高機動戦術機。ロシアの第二世代高機動戦術機の傑作。"
+ RUS_TSF_Su_37: "Su-37 ターミネーター"
+ RUS_TSF_Su_37_desc: "ロシアの主力第二世代高機動戦術機。卓越した格闘能力を誇る。"
+
+ # === CHI J-10 ===
+ tsf_CHI_J_10: "J-10 開発"
+ tsf_CHI_J_10_desc: "中華人民共和国独自の第二世代軽戦術機。"
+ CHI_TSF_J_10: "J-10 戦術機"
+ CHI_TSF_J_10_desc: "中国の主力第二世代軽戦術機。"

@@ -1,0 +1,175 @@
+equipment_modules = {
+#MVLV_TSF_armor_type
+#MVLV_TSF_add_armor_type
+#MVLV_TSF_add_blade_armor_type
+#####
+	MVLV_TSF_no_armor = {
+		category = MVLV_TSF_armor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = -0.15
+			experience_loss_factor = 0.0025
+			casualty_trickleback = -0.005
+			hardness = -0.10
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			breakthrough = 0.05
+			defense = 0.05
+
+		}
+	}
+	#MVLV_TSF_armor_heavy_alloy = {
+	MVLV_TSF_armor_heavy = {
+		category = MVLV_TSF_armor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = 8
+			reliability = -0.05
+			casualty_trickleback = 0.005
+			experience_loss_factor = -0.005	
+			armor_value = 45
+			hardness = 0.35
+			#build_cost_ic = 5
+		}
+		multiply_stats = {
+			maximum_speed = -0.10
+			defense = -0.2
+			breakthrough = -0.2
+			build_cost_ic = 0.10
+		}
+	}
+	#MVLV_TSF_armor_light_composite = {
+	MVLV_TSF_armor_nomal = {
+		category = MVLV_TSF_armor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = 5
+			reliability = 0.05
+			casualty_trickleback = 0.0025
+			experience_loss_factor = -0.005	
+			armor_value = 30
+			hardness = 0.2
+		}
+		multiply_stats = {
+			maximum_speed = -0.05
+			defense = -0.1
+			breakthrough = -0.1
+			build_cost_ic = 0.05
+		}
+	}
+	#MVLV_TSF_armor_light_self_repair = {
+	MVLV_TSF_armor_light = {
+		category = MVLV_TSF_armor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = 3.5
+			reliability = -0.05
+			casualty_trickleback = 0.0025
+			experience_loss_factor = -0.0025	
+			armor_value = 15
+			hardness = 0.1
+		}
+		multiply_stats = {
+			defense = -0.05
+			breakthrough = -0.05
+			build_cost_ic = 0.025
+		}
+	}
+
+	MVLV_TSF_armor_composite = {
+		category = MVLV_TSF_armor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = 6
+			reliability = 0.05
+			casualty_trickleback = 0.005
+			experience_loss_factor = -0.005
+			armor_value = 45
+			hardness = 0.30
+			build_cost_ic = 3
+		}
+		multiply_stats = {
+			maximum_speed = -0.05
+			defense = -0.10
+			breakthrough = -0.10
+			build_cost_ic = 0.07
+		}
+	}
+###########
+#MVLV_TSF_add_armor_type
+
+	MVLV_TSF_add_armor = {
+		category = MVLV_TSF_add_armor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = 0.5
+			casualty_trickleback = 0.0005
+			experience_loss_factor = -0.001
+			armor_value = 2
+			hardness = 0.02
+			build_cost_ic = 2
+		}
+
+	}
+###########
+	MVLV_TSF_add_blade_armor = {
+		category = MVLV_TSF_add_armor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = 0.1
+			soft_attack = 1
+			hard_attack = 1
+			
+			defense = 1
+			breakthrough = 1
+			armor_value = 1
+			build_cost_ic = 2.5
+		}
+		multiply_stats = {
+			defense = 0.01
+			breakthrough = 0.01
+		}
+	}
+	MVLV_TSF_add_aerial_blade_armor = {
+		category = MVLV_TSF_add_armor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = 0.1
+			soft_attack = 0.5
+			hard_attack = 0.5
+			
+			defense = 1
+			breakthrough = 2
+			armor_value = 1
+			build_cost_ic = 2.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.01
+			defense = 0.01
+			breakthrough = 0.02
+		}
+	}
+	MVLV_TSF_add_special_blade_armor = {
+		category = MVLV_TSF_add_armor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = 1
+			soft_attack = 5
+			hard_attack = 5
+			
+			defense = 5
+			breakthrough = 5
+			armor_value = 5
+			ap_attack = 5
+			build_cost_ic = 15
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			defense = 0.05
+			breakthrough = 0.10
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+	}
+}

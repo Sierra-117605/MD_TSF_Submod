@@ -1,0 +1,414 @@
+###############################
+##########一代战术机############
+###############################
+
+##########F4模板##########
+#单持F4
+entity = {
+	name = "Gun_Tsf_F4_entity"
+	pdxmesh = "USA_Tsf_F4"
+		
+	state = { name = "idle"  animation = "idle"   animation_blend_time = 0.1  animation_speed = 0.5 }
+	state = { name = "move"  animation = "move"   animation_blend_time = 0.1  animation_speed = 0.5 looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "retreat"  animation = "move"   animation_blend_time = 0.1  animation_speed = 0.5  looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 0.5	}
+
+	state = { name = "attack"  animation = "GunAttack2"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 1
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "attack"  animation = "GunAttack3"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 4
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	state = { name = "defend"  animation = "GunAttack2"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  chance = 1
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "defend"  animation = "GunAttack3"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  chance = 4
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	state = { name = "support_attack"   animation = "GunAttack2"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  chance = 1
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "support_attack"   animation = "GunAttack3"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  chance = 4
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	scale = 0.5
+}
+#双持F4
+entity = {
+	name = "Guns_Tsf_F4_entity"
+	pdxmesh = "USA_Tsf_F4"
+		
+	state = { name = "idle"  animation = "idle"   animation_blend_time = 0.1  animation_speed = 0.5 }
+	state = { name = "move"  animation = "move"   animation_blend_time = 0.1  animation_speed = 0.5 looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "retreat"  animation = "move"   animation_blend_time = 0.1  animation_speed = 0.5  looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 0.5
+	}
+
+	state = { name = "attack"  animation = "GunAttack1"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 1
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "attack"  animation = "GunAttack3"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 4
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	state = { name = "defend"  animation = "GunAttack1"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  chance = 1
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "defend"  animation = "GunAttack2"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  chance = 4
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	state = { name = "support_attack"   animation = "GunAttack1"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  chance = 1
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "support_attack"   animation = "GunAttack3"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  chance = 4
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	scale = 0.5
+}
+#近战F4
+entity = {
+	name = "Blade_Tsf_F4_entity"
+	pdxmesh = "USA_Tsf_F4"
+		
+	state = { name = "idle"  animation = "BladeIdle"   animation_blend_time = 0.1  animation_speed = 0.5 }
+	state = { name = "move"  animation = "move"   animation_blend_time = 0.1  animation_speed = 0.5 looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "retreat"  animation = "move"   animation_blend_time = 0.1  animation_speed = 0.5  looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 0.5
+	}
+
+	state = { name = "attack"  animation = "BladeAttack"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	state = { name = "defend"  animation = "BladeAttack"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	state = { name = "support_attack"   animation = "BladeAttack"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	scale = 0.5
+}
+#国联F4
+entity = {
+	clone = "Guns_Tsf_F4_entity"
+	name = "UNI_Tsf_F4_entity"
+	pdxmesh = "UNI_Tsf_F4"
+	attach = { 	name = "MountRack_R"	Rack_JT_BaseRotate_R =  "MountRack_UNI_entity"}
+	attach = { 	name = "MountRack_L"	Rack_JT_BaseRotate_L =  "MountRack_UNI_entity"}
+	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "GunType82_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType82_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "GunType82_Hand_entity"}
+	attach = { 	name = "LeftHand_Weapon"	Wrist_L =  "GunType82_Hand_entity"}
+}
+entity = {
+	clone = "UNI_Tsf_F4_entity"
+	name = "UNI_MVLV_tsf_battalion_1_entity"
+}
+entity = {
+	clone = "UNI_Tsf_F4_entity"
+	name = "UNI_MVLV_tsf_battalion_2_entity"
+}
+#其他国家一代都用国联F4
+entity = {
+	clone = "UNI_Tsf_F4_entity"
+	name = "MVLV_tsf_battalion_1_entity"
+}
+entity = {
+	clone = "UNI_Tsf_F4_entity"
+	name = "MVLV_tsf_battalion_2_entity"
+}
+
+#美国F4
+entity = {
+	clone = "Guns_Tsf_F4_entity"
+	name = "USA_Tsf_F4_entity"
+	pdxmesh = "USA_Tsf_F4"
+	attach = { 	name = "MountRack_R"	Rack_JT_BaseRotate_R =  "MountRack_USA_entity"}
+	attach = { 	name = "MountRack_L"	Rack_JT_BaseRotate_L =  "MountRack_USA_entity"}
+	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "GunType82_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType82_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "GunType82_Hand_entity"}
+	attach = { 	name = "LeftHand_Weapon"	Wrist_L =  "GunType82_Hand_entity"}
+}
+entity = {
+	clone = "USA_Tsf_F4_entity"
+	name = "USA_MVLV_tsf_battalion_1_entity"
+}
+entity = {
+	clone = "USA_Tsf_F4_entity"
+	name = "USA_MVLV_tsf_battalion_2_entity"
+}
+
+#东亚F4
+entity = {
+	clone = "Blade_Tsf_F4_entity"
+	name = "GEU_Tsf_F4_entity"
+	pdxmesh = "GEU_Tsf_F4"
+	attach = { 	name = "MountRack_R"	Rack_JT_BaseRotate_R =  "MountRack_GEU_entity"}
+	attach = { 	name = "MountRack_L"	Rack_JT_BaseRotate_L =  "MountRack_GEU_entity"}
+#	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "GunType82_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType82_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "BladeType77_Hand_entity"}
+}
+entity = {
+	clone = "GEU_Tsf_F4_entity"
+	name = "GEU_MVLV_tsf_battalion_1_entity"
+}
+entity = {
+	clone = "GEU_Tsf_F4_entity"
+	name = "GEU_MVLV_tsf_battalion_2_entity"
+}
+
+#非洲F4
+entity = {
+	clone = "Gun_Tsf_F4_entity"
+	name = "AFR_Tsf_F4_entity"
+	pdxmesh = "AFR_Tsf_F4"
+	attach = { 	name = "MountRack_R"	Rack_JT_BaseRotate_R =  "MountRack_AFR_entity"}
+	attach = { 	name = "MountRack_L"	Rack_JT_BaseRotate_L =  "MountRack_AFR_entity"}
+	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "BladeType77_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType82_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "GunType82_Hand_entity"}
+	attach = { 	name = "LeftHand_Shield"	Wrist_L =  "Shield_AFR_entity"}
+}
+entity = {
+	clone = "AFR_Tsf_F4_entity"
+	name = "AFR_MVLV_tsf_battalion_1_entity"
+}
+entity = {
+	clone = "AFR_Tsf_F4_entity"
+	name = "AFR_MVLV_tsf_battalion_2_entity"
+}
+
+#日本F4
+entity = {
+	clone = "Blade_Tsf_F4_entity"
+	name = "JAP_Tsf_F4_entity"
+	pdxmesh = "JAP_Tsf_F4"
+	attach = { 	name = "MountRack_R"	Rack_JT_BaseRotate_R =  "MountRack_JAP_entity"}
+	attach = { 	name = "MountRack_L"	Rack_JT_BaseRotate_L =  "MountRack_JAP_entity"}
+	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "BladeType74_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType87_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "BladeType74_Hand_entity"}
+}
+entity = {
+	clone = "JAP_Tsf_F4_entity"
+	name = "JAP_MVLV_tsf_battalion_1_entity"
+}
+entity = {
+	clone = "JAP_Tsf_F4_entity"
+	name = "JAP_MVLV_tsf_battalion_2_entity"
+}
+
+#欧盟F4
+entity = {
+	clone = "Gun_Tsf_F4_entity"
+	name = "EUR_Tsf_F4_entity"
+	pdxmesh = "EUR_Tsf_F4"
+	attach = { 	name = "MountRack_R"	Rack_JT_BaseRotate_R =  "MountRack_EUR_entity"}
+	attach = { 	name = "MountRack_L"	Rack_JT_BaseRotate_L =  "MountRack_EUR_entity"}
+	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "BladeType77_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType82_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "GunType82_Hand_entity"}
+	attach = { 	name = "LeftHand_Shield"	Wrist_L =  "Shield_EUR_entity"}
+}
+entity = {
+	clone = "EUR_Tsf_F4_entity"
+	name = "EUR_MVLV_tsf_battalion_1_entity"
+}
+entity = {
+	clone = "EUR_Tsf_F4_entity"
+	name = "EUR_MVLV_tsf_battalion_2_entity"
+}
+
+#############################
+##########MiG21模板##########
+#############################
+#单持MiG21
+entity = {
+	name = "Gun_Tsf_MiG21_entity"
+	pdxmesh = "SOV_Tsf_MiG21"
+		
+	state = { name = "idle"  animation = "idle"   animation_blend_time = 0.1  animation_speed = 0.5 }
+	state = { name = "move"  animation = "move"   animation_blend_time = 0.1  animation_speed = 0.5 looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "retreat"  animation = "move"   animation_blend_time = 0.1  animation_speed = 0.5  looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 0.5
+	}
+
+	state = { name = "attack"  animation = "GunAttack2"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 1
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "attack"  animation = "GunAttack3"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 4
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	state = { name = "defend"  animation = "GunAttack2"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  chance = 1
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "defend"  animation = "GunAttack3"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  chance = 4
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	state = { name = "support_attack"   animation = "GunAttack2"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  chance = 1
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "support_attack"   animation = "GunAttack3"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  chance = 4
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	scale = 0.5
+}
+#双持MiG21
+entity = {
+	name = "Guns_Tsf_MiG21_entity"
+	pdxmesh = "SOV_Tsf_MiG21"
+		
+	state = { name = "idle"  animation = "idle"   animation_blend_time = 0.1  animation_speed = 0.5 }
+	state = { name = "move"  animation = "move"   animation_blend_time = 0.1  animation_speed = 0.5 looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "retreat"  animation = "move"   animation_blend_time = 0.1  animation_speed = 0.5  looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 0.5
+	}
+
+	state = { name = "attack"  animation = "GunAttack1"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 1
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "attack"  animation = "GunAttack3"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  chance = 4
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	state = { name = "defend"  animation = "GunAttack1"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  chance = 1
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "defend"  animation = "GunAttack2"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  chance = 4
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	state = { name = "support_attack"   animation = "GunAttack1"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  chance = 1
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "support_attack"   animation = "GunAttack3"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  chance = 4
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	scale = 0.5
+}
+#近战MiG21
+entity = {
+	name = "Blade_Tsf_MiG21_entity"
+	pdxmesh = "SOV_Tsf_MiG21"
+		
+	state = { name = "idle"  animation = "BladeIdle"   animation_blend_time = 0.1  animation_speed = 0.5 }
+	state = { name = "move"  animation = "move"   animation_blend_time = 0.1  animation_speed = 0.5 looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "retreat"  animation = "move"   animation_blend_time = 0.1  animation_speed = 0.5  looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 0.5
+	}
+
+	state = { name = "attack"  animation = "BladeAttack"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack"  
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	state = { name = "defend"  animation = "BladeAttack"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	state = { name = "support_attack"   animation = "BladeAttack"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack"  
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	scale = 0.5
+}
+
+#苏联MiG21
+entity = {
+	clone = "Guns_Tsf_MiG21_entity"
+	name = "SOV_Tsf_MiG21_entity"
+	pdxmesh = "SOV_Tsf_MiG21"
+	attach = { 	name = "MountRack_R"	Rack_JT_BaseRotate_R =  "MountRack_SOV_entity"}
+	attach = { 	name = "MountRack_L"	Rack_JT_BaseRotate_L =  "MountRack_SOV_entity"}
+	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "GunType82_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType82_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "GunType82_Hand_entity"}
+	attach = { 	name = "LeftHand_Weapon"	Wrist_L =  "GunType82_Hand_entity"}
+}
+entity = {
+	clone = "SOV_Tsf_MiG21_entity"
+	name = "SOV_MVLV_tsf_battalion_0_entity"
+}
+entity = {
+	clone = "SOV_Tsf_MiG21_entity"
+	name = "SOV_MVLV_tsf_battalion_1_entity"
+}
+
+#中国MiG21
+entity = {
+	clone = "Gun_Tsf_MiG21_entity"
+	name = "CHI_Tsf_MiG21_entity"
+	pdxmesh = "CHI_Tsf_MiG21"
+	attach = { 	name = "MountRack_R"	Rack_JT_BaseRotate_R =  "MountRack_CHI_entity"}
+	attach = { 	name = "MountRack_L"	Rack_JT_BaseRotate_L =  "MountRack_CHI_entity"}
+	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "BladeType77_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType82_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "GunType82_Hand_entity"}
+	attach = { 	name = "LeftHand_Shield"	Wrist_L =  "Shield_CHI_entity"}
+}
+entity = {
+	clone = "CHI_Tsf_MiG21_entity"
+	name = "CHI_MVLV_tsf_battalion_1_entity"
+}
+entity = {
+	clone = "CHI_Tsf_MiG21_entity"
+	name = "CHI_MVLV_tsf_battalion_2_entity"
+}
+
+#东德MiG21
+entity = {
+	clone = "Blade_Tsf_MiG21_entity"
+	name = "EEA_Tsf_MiG21_entity"
+	pdxmesh = "EEA_Tsf_MiG21"
+	attach = { 	name = "MountRack_R"	Rack_JT_BaseRotate_R =  "MountRack_EEA_entity"}
+	attach = { 	name = "MountRack_L"	Rack_JT_BaseRotate_L =  "MountRack_EEA_entity"}
+	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "GunType82_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType82_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "BladeType77_Hand_entity"}
+	attach = { 	name = "LeftHand_Shield"	Wrist_L =  "Shield_EEA_entity"}
+}
+entity = {
+	clone = "EEA_Tsf_MiG21_entity"
+	name = "EEA_MVLV_tsf_battalion_1_entity"
+}
+entity = {
+	clone = "EEA_Tsf_MiG21_entity"
+	name = "EEA_MVLV_tsf_battalion_2_entity"
+}
+

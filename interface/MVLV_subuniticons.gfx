@@ -1,0 +1,330 @@
+spriteTypes = {	
+	
+	SpriteType = {
+		name = "GFX_unit_MVLV_combined_arms_battalion_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/unit_MVLV_combined_arms_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_combined_arms_battalion_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_MVLV_combined_arms_battalion_icon.dds"
+		noOfFrames = 2
+	}
+	
+	### tsf ###
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_battalion_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/tsf_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_battalion_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_tsf_unit_icon.dds"
+		noOfFrames = 2
+	}
+	### tsf light ###
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_light_battalion_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/tsf_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_light_battalion_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_tsf_unit_icon.dds"
+		noOfFrames = 2
+	}
+	### tsf maneuver ###
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_maneuver_battalion_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/tsf_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_maneuver_battalion_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_tsf_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_support_battalion_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/tsf_sub_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_support_battalion_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_tsf_unit_icon.dds"
+		noOfFrames = 2
+	}
+	
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_specialForces_battalion_icon_medium"
+		#texturefile = "gfx/interface/counters/divisions_large/tsf_sub_unit_icon.dds"
+		textureFile = "gfx/interface/counters/divisions_large/unit_marine_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_specialForces_battalion_icon_medium_white"
+		#texturefile = "gfx/interface/counters/divisions_small/onmap_tsf_unit_icon.dds"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_marine_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_specialForces_battalion_icon_small"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_marine_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_asa_battalion_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/asa_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_asa_battalion_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_asa_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsa_battalion_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/tsa_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsa_battalion_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_tsa_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_support_battalion_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/tsf_sub_unit_icon.dds"
+		noOfFrames = 2
+	}	
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsa_support_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/tsa_sub_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_support_company_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/tsf_sub_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_asa_support_company_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/asa_sub_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_xg_battalion_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/xg_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_support_company_recon_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/tsf_sub_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_xg_battalion_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_xg_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+
+	### BETA ###
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_soldier_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/beta_soldier_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_soldier_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_soldier_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_warrior_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/beta_warrior_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_warrior_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_warrior_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_tank_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/beta_tank_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_tank_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_tank_unit_icon.dds"
+		noOfFrames = 2
+	}
+	
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_grappler_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/beta_grappler_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_grappler_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_grappler_unit_icon.dds"
+		noOfFrames = 2
+	}
+	
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_fort_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/beta_fort_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_fort_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_fort_unit_icon.dds"
+		noOfFrames = 2
+	}
+	
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_destroyer_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/beta_destroyer_unit_icon.dds"
+		noOfFrames = 2
+	}
+	
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_srf_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/beta_srf_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_destroyer_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_destroyer_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_srf_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_srf_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_a_target_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_a_target_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_a_target_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/beta_srf_unit_icon.dds"
+		noOfFrames = 2
+	}
+
+	### auto-added _small variants (map counter) ###
+	SpriteType = {
+		name = "GFX_unit_MVLV_combined_arms_battalion_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_MVLV_combined_arms_battalion_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_battalion_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_tsf_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_support_battalion_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_tsf_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_asa_battalion_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_asa_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsa_battalion_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_tsa_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsa_support_icon_small"
+		texturefile = "gfx/interface/counters/divisions_large/tsa_sub_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_support_company_icon_small"
+		texturefile = "gfx/interface/counters/divisions_large/tsf_sub_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_asa_support_company_icon_small"
+		texturefile = "gfx/interface/counters/divisions_large/asa_sub_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_xg_battalion_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_xg_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_support_company_recon_icon_small"
+		texturefile = "gfx/interface/counters/divisions_large/tsf_sub_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_soldier_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_soldier_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_warrior_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_warrior_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_tank_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_tank_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_grappler_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_grappler_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_fort_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_fort_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_destroyer_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_destroyer_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_srf_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_srf_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_beta_a_target_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_a_target_unit_icon.dds"
+		noOfFrames = 2
+	}
+}

@@ -1,0 +1,323 @@
+equipment_modules = {
+#######MVLV_TSF_right_hand_type
+	MVLV_TSF_basic_assault_cannon = {
+		category = MVLV_TSF_right_hand_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 15
+			hard_attack = 10
+			air_attack = 15
+			ap_attack = 30
+			build_cost_ic = 2.5
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_right_hand_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = -0.01
+		}
+	}
+	MVLV_TSF_assault_cannon_1 = {
+		category = MVLV_TSF_right_hand_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 20
+			hard_attack = 15
+			air_attack = 25
+			ap_attack = 35
+			build_cost_ic = 5
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_right_hand_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+		}
+	}
+	MVLV_TSF_assault_cannon_2 = {
+		category = MVLV_TSF_right_hand_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 25
+			hard_attack = 20
+			air_attack = 35
+			ap_attack = 40
+			build_cost_ic = 7.5
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_right_hand_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+			soft_attack = -0.04
+			hard_attack = -0.04
+		}
+	}
+	MVLV_TSF_assault_cannon_3 = {
+		category = MVLV_TSF_right_hand_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 30
+			hard_attack = 25
+			air_attack = 50
+			ap_attack = 45
+			build_cost_ic = 10
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_right_hand_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = -0.03
+			soft_attack = -0.09
+			hard_attack = -0.09
+		}
+	}
+#######
+
+#######
+	MVLV_TSF_support_gun = {
+		category = MVLV_TSF_right_hand_type
+		sfx = sfx_ui_sd_module_turret
+		#allow_equipment_type = artillery
+		#forbid_equipment_type_exact_match = armor
+		add_stats = {
+			maximum_speed = -1
+			max_organisation = -4
+			default_morale = -0.4
+			reliability = -0.01
+			experience_loss_factor = 0.001
+			soft_attack = 35
+			hard_attack = 35
+			air_attack = 45
+			defense = -5
+			breakthrough = -5
+			ap_attack = 50
+			build_cost_ic = 15
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_right_hand_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = -0.05
+			defense = -0.10
+			breakthrough = -0.10
+			soft_attack = -0.12
+			hard_attack = -0.12
+		}
+		build_cost_resources = {
+			tungsten = 1
+		}
+	}
+	
+	MVLV_TSF_railgun_1 = {
+		category = MVLV_TSF_right_hand_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_organisation = -15
+			default_morale = -1.5
+			reliability = -0.10
+			experience_loss_factor = 0.025
+			soft_attack = 1000
+			hard_attack = 1000
+			air_attack = 1000
+			defense = -20
+			breakthrough = -20
+			ap_attack = 400
+			build_cost_ic = 1000
+		}
+		multiply_stats = {
+			maximum_speed = -0.50
+			defense = -0.70
+			breakthrough = -0.70
+			soft_attack = -0.70
+			hard_attack = -0.70
+		}
+		build_cost_resources = {
+			rubber = 1
+		}
+	}
+	
+	MVLV_TSF_railgun_2 = {
+		category = MVLV_TSF_right_hand_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_organisation = -7
+			default_morale = -0.7
+			reliability = -0.05
+			experience_loss_factor = 0.025
+			soft_attack = 800
+			hard_attack = 800
+			air_attack = 1000
+			defense = -20
+			breakthrough = -20
+			ap_attack = 400
+			build_cost_ic = 800
+		}
+		multiply_stats = {
+			maximum_speed = -0.50
+			defense = -0.70
+			breakthrough = -0.70
+			soft_attack = -0.65
+			hard_attack = -0.65
+		}
+		build_cost_resources = {
+			rubber = 1
+		}
+	}
+	
+	MVLV_TSF_railgun_3 = {
+		category = MVLV_TSF_right_hand_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_organisation = -20
+			default_morale = -1.8
+			reliability = -0.20
+			experience_loss_factor = 0.025
+			soft_attack = 2000
+			hard_attack = 2000
+			air_attack = 2000
+			defense = -40
+			breakthrough = -40
+			ap_attack = 400
+			build_cost_ic = 1800
+		}
+		multiply_stats = {
+			maximum_speed = -0.80
+			defense = -0.90
+			breakthrough = -0.90
+			soft_attack = -0.90
+			hard_attack = -0.90
+		}
+		build_cost_resources = {
+			rubber = 2
+		}
+	}
+
+########
+###MVLV_TSF_add_wepon_type
+	MVLV_TSF_add_basic_assault_cannon = {
+		category = MVLV_TSF_add_wepon_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 6
+			hard_attack = 4
+			air_attack = 15
+			ap_attack = 1
+			build_cost_ic = 3.5
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_add_wepon_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_shield_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_sword_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = -0.01
+		}
+	}
+	MVLV_TSF_add_assault_cannon_1 = {
+		category = MVLV_TSF_add_wepon_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 10
+			hard_attack = 7.5
+			air_attack = 20
+			ap_attack = 1
+			build_cost_ic = 6
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_add_wepon_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_shield_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_sword_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+			soft_attack = -0.05
+			hard_attack = -0.05
+		}
+	}
+	MVLV_TSF_add_assault_cannon_2 = {
+		category = MVLV_TSF_add_wepon_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 15
+			hard_attack = 10
+			air_attack = 25
+			ap_attack = 1
+			build_cost_ic = 8.5
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_add_wepon_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_shield_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_sword_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+			soft_attack = -0.08
+			hard_attack = -0.08
+		}
+	}
+	MVLV_TSF_add_assault_cannon_3 = {
+		category = MVLV_TSF_add_wepon_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 20
+			hard_attack = 15
+			air_attack = 30
+			ap_attack = 1
+			build_cost_ic = 11
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_add_wepon_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_shield_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_sword_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = -0.03
+			soft_attack = -0.11
+			hard_attack = -0.11
+		}
+	}
+	
+}

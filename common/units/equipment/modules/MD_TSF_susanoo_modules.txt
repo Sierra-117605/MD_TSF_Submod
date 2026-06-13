@@ -1,0 +1,198 @@
+# ========================================================
+# 凄ノ皇（スサノオ）専用モジュール
+# F-47 方式：完全独立スロット、戦術機共通モジュールとは互換性なし
+# ========================================================
+
+equipment_modules = {
+
+	# ============= 主武装 =============
+	susanoo_heavy_particle_cannon = {
+		category = susanoo_main_weapon_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 800
+			hard_attack = 1500
+			ap_attack = 600
+			air_attack = 400
+		}
+		multiply_stats = {
+			build_cost_ic = 0.10
+		}
+	}
+
+	susanoo_gravity_cannon = {
+		category = susanoo_main_weapon_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 1200
+			hard_attack = 2000
+			ap_attack = 800
+			breakthrough = 500
+		}
+		multiply_stats = {
+			build_cost_ic = 0.20
+		}
+	}
+
+	# ============= 副武装 =============
+	susanoo_secondary_cannons = {
+		category = susanoo_sub_weapon_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 500
+			air_attack = 400
+			breakthrough = 200
+		}
+		multiply_stats = {
+			build_cost_ic = 0.08
+		}
+	}
+
+	susanoo_secondary_76mm = {
+		category = susanoo_sub_weapon_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 300
+			hard_attack = 200
+			air_attack = 500
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+		}
+	}
+
+	# ============= 特殊装備 =============
+	susanoo_g_bomb_charger = {
+		category = susanoo_sp_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_organisation = 200
+			reliability = 0.15
+		}
+		multiply_stats = {
+			build_cost_ic = 0.15
+		}
+	}
+
+	susanoo_s11_sd_system = {
+		category = susanoo_sp_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			breakthrough = 500
+			defense = 200
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+		}
+	}
+
+	# ============= 装甲 =============
+	susanoo_fortress_armor = {
+		category = susanoo_armor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			armor_value = 500
+			defense = 400
+			hardness = 0.05
+		}
+		multiply_stats = {
+			maximum_speed = -0.05
+			build_cost_ic = 0.25
+		}
+	}
+
+	susanoo_lightweight_armor = {
+		category = susanoo_armor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			armor_value = 200
+			defense = 200
+		}
+		multiply_stats = {
+			maximum_speed = 0.10
+			build_cost_ic = 0.15
+		}
+	}
+
+	# ============= エンジン =============
+	susanoo_main_thruster = {
+		category = susanoo_engine_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			maximum_speed = 8
+			breakthrough = 300
+		}
+		multiply_stats = {
+			build_cost_ic = 0.10
+		}
+	}
+
+	susanoo_main_thruster_high = {
+		category = susanoo_engine_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			maximum_speed = 15
+			breakthrough = 500
+			reliability = -0.05
+		}
+		multiply_stats = {
+			build_cost_ic = 0.20
+		}
+	}
+
+	# ============= OS（スサノオ専用）=============
+	susanoo_os_basic = {
+		category = susanoo_OS_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_organisation = 100
+			reliability = 0.10
+			defense = 100
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+		}
+	}
+
+	susanoo_os_00unit = {
+		category = susanoo_OS_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_organisation = 250
+			reliability = 0.20
+			defense = 200
+			soft_attack = 200
+		}
+		multiply_stats = {
+			build_cost_ic = 0.15
+		}
+	}
+
+	# ============= センサー =============
+	susanoo_sensor_array = {
+		category = susanoo_sensor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 100
+			air_attack = 200
+			defense = 100
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+		}
+	}
+
+	susanoo_sensor_beta_reader = {
+		category = susanoo_sensor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 200
+			breakthrough = 200
+			defense = 150
+		}
+		multiply_stats = {
+			build_cost_ic = 0.10
+		}
+	}
+
+}

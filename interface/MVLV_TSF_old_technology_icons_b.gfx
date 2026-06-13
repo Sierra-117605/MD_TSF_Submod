@@ -1,0 +1,614 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_JAP_JAP_F-5J_medium"
+		texturefile = "gfx/interface/technologies/F-5.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_F-4J_medium"
+		texturefile = "gfx/interface/technologies/F-4J.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_F-5J_medium"
+		texturefile = "gfx/interface/technologies/F-5.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_F-16J_medium"
+		texturefile = "gfx/interface/technologies/F-16.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_F-2_medium"
+		texturefile = "gfx/interface/technologies/F-15SEJ.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_F-4JK_medium"
+		texturefile = "gfx/interface/technologies/TYPE-82.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_F-15J_medium"
+		texturefile = "gfx/interface/technologies/F-15J.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_T94_medium"
+		texturefile = "gfx/interface/technologies/TYPE-94.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_T97_medium"
+		texturefile = "gfx/interface/technologies/Type-97.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_T94H_medium"
+		texturefile = "gfx/interface/technologies/Type-94-1-C.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_T00_medium"
+		texturefile = "gfx/interface/technologies/Type-00r.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_T00R_medium"
+		texturefile = "gfx/interface/technologies/TSF/Type-00r.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_T00F_medium"
+		texturefile = "gfx/interface/technologies/Type-00f.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_T00A_medium"
+		texturefile = "gfx/interface/technologies/Type-00a.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_T00C_medium"
+		texturefile = "gfx/interface/technologies/TYPE-00.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_T942_medium"
+		texturefile = "gfx/interface/technologies/Type-04.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_JAP_T94F_medium"
+		texturefile = "gfx/interface/technologies/Type-10.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_generic_A-6_medium"
+		texturefile = "gfx/interface/technologies/A-6J.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_generic_A-12_medium"
+		texturefile = "gfx/interface/technologies/A-12.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_generic_A-10_medium"
+		texturefile = "gfx/interface/technologies/A-10J.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_basic_concept_research_medium"
+		texturefile = "gfx/interface/technologies/M_TSF_basic.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_generic_F-5_medium"
+		texturefile = "gfx/interface/technologies/F-5.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_generic_F-4_medium"
+		texturefile = "gfx/interface/technologies/F-4.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_Assault_gun_improvement_medium"
+		texturefile = "gfx/interface/technologies/M_Assault_gun.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_USA_F-14_medium"
+		texturefile = "gfx/interface/technologies/F-14.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_USA_F-14Ex_medium"
+		texturefile = "gfx/interface/technologies/f-14ex.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_USA_F-18_medium"
+		texturefile = "gfx/interface/technologies/F-18.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_USA_F-18EF_medium"
+		texturefile = "gfx/interface/technologies/F-18E.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_USA_F-16_medium"
+		texturefile = "gfx/interface/technologies/F-16.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_USA_F-15_medium"
+		texturefile = "gfx/interface/technologies/F-15.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_USA_F-15E_medium"
+		texturefile = "gfx/interface/technologies/F-15E.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_USA_F-15ACVT_medium"
+		texturefile = "gfx/interface/technologies/F-15ACTV.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_Jumping_unit_improvement_medium"
+		texturefile = "gfx/interface/technologies/M_improvement.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_USA_YF-23_medium"
+		texturefile = "gfx/interface/technologies/YF-23.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_USA_F-22_medium"
+		texturefile = "gfx/interface/technologies/F-22.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_USA_F-35_medium"
+		texturefile = "gfx/interface/technologies/f-35.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_generic_A-6_medium"
+		texturefile = "gfx/interface/technologies/A-6.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_Manipulator_improvement_medium"
+		texturefile = "gfx/interface/technologies/M_improvement.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_Carrying_ammunition_increase_medium"
+		texturefile = "gfx/interface/technologies/M_ammo.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_generic_A-12_medium"
+		texturefile = "gfx/interface/technologies/A-12.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_generic_A-10_medium"
+		texturefile = "gfx/interface/technologies/A-10.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_Su-11_medium"
+		texturefile = "gfx/interface/technologies/Su-11.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_MiG-21_medium"
+		texturefile = "gfx/interface/technologies/Mig-21.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_MiG-23_medium"
+		texturefile = "gfx/interface/technologies/Mig-23.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_MiG-27_medium"
+		texturefile = "gfx/interface/technologies/Mig-27.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_MiG-25_medium"
+		texturefile = "gfx/interface/technologies/Mig-25.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_MiG-31_medium"
+		texturefile = "gfx/interface/technologies/Mig-31.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_Su-27_medium"
+		texturefile = "gfx/interface/technologies/Su-27.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_Su-37_medium"
+		texturefile = "gfx/interface/technologies/Su-37UB.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_MiG-29_medium"
+		texturefile = "gfx/interface/technologies/Mig-29.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_MiG-35_medium"
+		texturefile = "gfx/interface/technologies/Mig-35.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_Su-47_medium"
+		texturefile = "gfx/interface/technologies/Su-47.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_Su-57_medium"
+		texturefile = "gfx/interface/technologies/Su-57.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_generic_A-6_medium"
+		texturefile = "gfx/interface/technologies/A-6J.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_generic_A-12_medium"
+		texturefile = "gfx/interface/technologies/A-12.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_generic_A-10_medium"
+		texturefile = "gfx/interface/technologies/A-10J.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_Assault_gun_improvement_medium"
+		texturefile = "gfx/interface/technologies/M_Assault_gun.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_SOV_Jumping_unit_improvement_medium"
+		texturefile = "gfx/interface/technologies/M_improvement.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_F-5_medium"
+		texturefile = "gfx/interface/technologies/F-5.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_F-4_medium"
+		texturefile = "gfx/interface/technologies/F-4.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_J-8_medium"
+		texturefile = "gfx/interface/technologies/J-8.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_F-16_medium"
+		texturefile = "gfx/interface/technologies/F-16.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_F-15_medium"
+		texturefile = "gfx/interface/technologies/F-15.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_F-15E_medium"
+		texturefile = "gfx/interface/technologies/F-15E.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_F-15ACTV_medium"
+		texturefile = "gfx/interface/technologies/F-15ACTV.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_F-15SE_medium"
+		texturefile = "gfx/interface/technologies/F-15SE.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_F-35_medium"
+		texturefile = "gfx/interface/technologies/f-35.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_J-10_medium"
+		texturefile = "gfx/interface/technologies/J-10.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_J-10X_medium"
+		texturefile = "gfx/interface/technologies/J-10X.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_F-18_medium"
+		texturefile = "gfx/interface/technologies/F-18.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_F-CK-1_medium"
+		texturefile = "gfx/interface/technologies/F-18E.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_MiG-23_medium"
+		texturefile = "gfx/interface/technologies/Mig-23.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_Su-27_medium"
+		texturefile = "gfx/interface/technologies/Su-27.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_J-11_medium"
+		texturefile = "gfx/interface/technologies/J-11.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_CHI_J-20_medium"
+		texturefile = "gfx/interface/technologies/J-20.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_generic_F-5_medium"
+		texturefile = "gfx/interface/technologies/F-5.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_generic_F-4_medium"
+		texturefile = "gfx/interface/technologies/F-4.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_F-5GIDS_medium"
+		texturefile = "gfx/interface/technologies/F-5G.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_MIII_medium"
+		texturefile = "gfx/interface/technologies/Mirage.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_F-5EADV_medium"
+		texturefile = "gfx/interface/technologies/F-5ADV.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_M2000_medium"
+		texturefile = "gfx/interface/technologies/M2000.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_F-15_medium"
+		texturefile = "gfx/interface/technologies/F-15.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_F-15E_medium"
+		texturefile = "gfx/interface/technologies/F-15E.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_F-15SE_medium"
+		texturefile = "gfx/interface/technologies/F-15SE.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_F-35_medium"
+		texturefile = "gfx/interface/technologies/f-35.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_EF-2000_medium"
+		texturefile = "gfx/interface/technologies/EF2000Typhoon.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_Tempest_medium"
+		texturefile = "gfx/interface/technologies/Tempest.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_Rafale_medium"
+		texturefile = "gfx/interface/technologies/Rafale.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_SW_medium"
+		texturefile = "gfx/interface/technologies/SW.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_JA-37_medium"
+		texturefile = "gfx/interface/technologies/JA-37.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_EUR_JA-39_medium"
+		texturefile = "gfx/interface/technologies/JAS-39.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_generic_A-6_medium"
+		texturefile = "gfx/interface/technologies/A-6J.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_generic_A-12_medium"
+		texturefile = "gfx/interface/technologies/A-12.dds"
+	}
+	SpriteType = {
+		name = "GFX_EUR_generic_A-10_medium"
+		texturefile = "gfx/interface/technologies/A-10.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_EEA_F-5GIDS_medium"
+		texturefile = "gfx/interface/technologies/F-5G.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_EEA_F-5EADV_medium"
+		texturefile = "gfx/interface/technologies/F-5ADV.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_EEA_EF-2000_medium"
+		texturefile = "gfx/interface/technologies/EF2000Typhoon.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_EEA_JA-39_medium"
+		texturefile = "gfx/interface/technologies/JAS-39.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_EEA_SW_medium"
+		texturefile = "gfx/interface/technologies/SW.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_EEA_MiG-21_medium"
+		texturefile = "gfx/interface/technologies/mig21EEA.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_EEA_MiG-23_medium"
+		texturefile = "gfx/interface/technologies/mig23EEA.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_EEA_MiG-27_medium"
+		texturefile = "gfx/interface/technologies/mig27EEA.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_EEA_MiG-29_medium"
+		texturefile = "gfx/interface/technologies/Mig-29.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_EEA_MiG-25_medium"
+		texturefile = "gfx/interface/technologies/Mig-25.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_EEA_MiG-31_medium"
+		texturefile = "gfx/interface/technologies/MiG31SM.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_EEA_MiG-35_medium"
+		texturefile = "gfx/interface/technologies/Mig-35.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_EEA_Su-57_medium"
+		texturefile = "gfx/interface/technologies/Su-57.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_generic_A-6_medium"
+		texturefile = "gfx/interface/technologies/A-6.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_generic_A-12_medium"
+		texturefile = "gfx/interface/technologies/A-12.dds"
+	}
+	SpriteType = {
+		name = "GFX_EEA_generic_A-10_medium"
+		texturefile = "gfx/interface/technologies/A-10.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_F-5_medium"
+		texturefile = "gfx/interface/technologies/F-5.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_F-4_medium"
+		texturefile = "gfx/interface/technologies/F-4.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_F-16_medium"
+		texturefile = "gfx/interface/technologies/F-16.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_F-18EF_medium"
+		texturefile = "gfx/interface/technologies/F-18S.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_F-15_medium"
+		texturefile = "gfx/interface/technologies/F-15.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_F-15E_medium"
+		texturefile = "gfx/interface/technologies/F-15E.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_F-35_medium"
+		texturefile = "gfx/interface/technologies/F-35.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_Lavi_medium"
+		texturefile = "gfx/interface/technologies/lavi.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_Kfir_medium"
+		texturefile = "gfx/interface/technologies/kfir.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_F-14_medium"
+		texturefile = "gfx/interface/technologies/F-14.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_F-14Ex_medium"
+		texturefile = "gfx/interface/technologies/F-14Ex2.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_M2000_medium"
+		texturefile = "gfx/interface/technologies/M2000.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_M2000K_medium"
+		texturefile = "gfx/interface/technologies/M2000K.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_Rafale_medium"
+		texturefile = "gfx/interface/technologies/Rafale.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_SW_medium"
+		texturefile = "gfx/interface/technologies/SW.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_MiG-21_medium"
+		texturefile = "gfx/interface/technologies/Mig-21.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_MiG-23_medium"
+		texturefile = "gfx/interface/technologies/Mig-23.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_MiG-27_medium"
+		texturefile = "gfx/interface/technologies/Mig-27.dds"
+	}
+	SpriteType = {
+		name = "GFX_AFR_AFR_MiG-29_medium"
+		texturefile = "gfx/interface/technologies/Mig-29.dds"
+	}
+	SpriteType = {
+		name = "GFX_GEU_generic_F-4_medium"
+		texturefile = "gfx/interface/technologies/F-4e.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_basic_concept_research_medium"
+		texturefile = "gfx/interface/technologies/M_TSF_basic.dds"
+	}
+	SpriteType = {
+		name = "GFX_tsf_sub_weapons_medium"
+		texturefile = "gfx/interface/technologies/mk57.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-5_medium"
+		texturefile = "gfx/interface/technologies/F-5.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-4_medium"
+		texturefile = "gfx/interface/technologies/F-4.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_Assault_gun_improvement_medium"
+		texturefile = "gfx/interface/technologies/M_Assault_gun.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-16_medium"
+		texturefile = "gfx/interface/technologies/F-16.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-15_medium"
+		texturefile = "gfx/interface/technologies/F-15.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-15E_medium"
+		texturefile = "gfx/interface/technologies/F-15E.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-14_medium"
+		texturefile = "gfx/interface/technologies/F-14.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-14Ex_medium"
+		texturefile = "gfx/interface/technologies/f-14ex.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-15ACVT_medium"
+		texturefile = "gfx/interface/technologies/F-15ACTV.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-18_medium"
+		texturefile = "gfx/interface/technologies/F-18.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-18EF_medium"
+		texturefile = "gfx/interface/technologies/F-18S.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_Jumping_unit_improvement_medium"
+		texturefile = "gfx/interface/technologies/M_improvement.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-18HMRV_medium"
+		texturefile = "gfx/interface/technologies/F-18SM.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-18AX_medium"
+		texturefile = "gfx/interface/technologies/F-18RX.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-15ACTV_medium"
+		texturefile = "gfx/interface/technologies/F-15ACTV.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-15SE_medium"
+		texturefile = "gfx/interface/technologies/F-15SE.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_F-35_medium"
+		texturefile = "gfx/interface/technologies/f-35.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_A-6_medium"
+		texturefile = "gfx/interface/technologies/A-6.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_A-12_medium"
+		texturefile = "gfx/interface/technologies/A-12.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_A-10_medium"
+		texturefile = "gfx/interface/technologies/A-10.dds"
+	}
+	SpriteType = {
+		name = "GFX_archetype_beta_laser"
+		texturefile = "gfx/interface/technologies/Heavy_Laser_Class_BETA.dds"
+	}
+}

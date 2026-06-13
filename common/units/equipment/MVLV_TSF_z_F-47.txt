@@ -1,0 +1,101 @@
+# ========================================================
+# F-47 イシュクル（人類統合体 第8世代戦術機）
+# Muv-Luv: The Answer / exogularity 01 シリーズ
+# - 2049年運用、人類最高峰の戦術機
+# - MVLV_TSF_chassis 派生のため、通常戦術機大隊で運用可能
+# ========================================================
+
+equipments = {
+
+	# === F-47 イシュクル ===
+	f-47_equipment_ishkur = {
+		picture = f-47_equipment_ishkur
+		abbreviation = "F47ISH"
+		derived_variant_name = f-47_equipment_ishkur
+		visual_level = 0
+		year = 2049
+		archetype = MVLV_TSF_chassis_heavy
+		priority = 100
+		is_convertable = yes
+
+		# === F-47 専用スロット（戦術機共通 inherit + F-47 専用 explicit）===
+		module_slots = {
+			# 戦術機共通スロット（archetype から inherit）
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+
+			# F-47 専用追加スロット（variant 内で explicit 定義）
+			F47_main_weapon_slot = {
+				allowed_module_categories = {
+					F47_charged_particle_cannon_type
+				}
+			}
+			F47_shield_slot = {
+				allowed_module_categories = {
+					F47_lazaford_shield_type
+				}
+			}
+			F47_special_slot_1 = {
+				allowed_module_categories = {
+					F47_g_generator_type
+					F47_warp_drive_type
+				}
+			}
+			F47_special_slot_2 = {
+				allowed_module_categories = {
+					F47_g_generator_type
+					F47_warp_drive_type
+				}
+			}
+		}
+
+		default_modules = {
+			MVLV_TSF_armor_slot = F47_armor_superlight
+			MVLV_TSF_OS_slot = F47_OS_advanced
+			MVLV_TSF_engine_slot = F47_engine_plasma
+			MVLV_TSF_headUnit_slot = F47_head_integrated
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_reactive_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_3
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			F47_main_weapon_slot = F47_charged_particle_cannon_heavy
+			F47_shield_slot = F47_lazaford_shield_advanced
+			F47_special_slot_1 = F47_g_generator_extended
+			F47_special_slot_2 = F47_warp_drive
+		}
+
+		# Misc Abilities - スサノオを上回る性能
+		maximum_speed = 28
+		reliability = 1.0
+
+		# Defensive Abilities
+		defense = 2400
+		breakthrough = 13000
+		hardness = 1.0
+		armor_value = 1750
+
+		# Offensive Abilities
+		soft_attack = 1100
+		hard_attack = 8500
+		ap_attack = 900
+		air_attack = 700
+
+		# Cost (1/30 軽減済み)
+		lend_lease_cost = 30
+		build_cost_ic = 283
+
+		resources = {
+			tungsten = 8
+			steel = 9
+			chromium = 4
+			rubber = 3
+		}
+	}
+
+}

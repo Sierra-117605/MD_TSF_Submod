@@ -1,0 +1,10 @@
+﻿l_japanese:
+ # ============================================================
+ # 戦術機 デザイナーカテゴリタブの表示名
+ # ============================================================
+ tank_designer_category_tsf_chassis: "戦術機"
+ tank_designer_category_tsf_support_chassis: "支援戦術機"
+ tank_designer_category_tsf_specialForces_chassis: "特務戦術機"
+ tank_designer_category_tsf_xg: "凄ノ皇 (XG)"
+ tank_designer_category_tsf_F47: "F-47 イシュクル"
+ tank_designer_category_tsf_UNI: "汎用戦術機"

@@ -1,0 +1,26 @@
+﻿l_japanese:
+ # === Susanoo モジュールカテゴリ ===
+ EQ_MOD_CAT_susanoo_main_weapon_type_TITLE: "凄ノ皇主砲"
+ EQ_MOD_CAT_susanoo_main_weapon_type_DESC: "凄ノ皇の主兵装スロット。重粒子砲・重力砲等。"
+ EQ_MOD_CAT_susanoo_sub_weapon_type_TITLE: "凄ノ皇副砲"
+ EQ_MOD_CAT_susanoo_sub_weapon_type_DESC: "凄ノ皇の副兵装スロット。"
+ EQ_MOD_CAT_susanoo_sp_type_TITLE: "凄ノ皇特殊兵装"
+ EQ_MOD_CAT_susanoo_sp_type_DESC: "G弾・S-11 等の特殊兵装スロット。"
+ EQ_MOD_CAT_susanoo_armor_type_TITLE: "凄ノ皇装甲"
+ EQ_MOD_CAT_susanoo_armor_type_DESC: "凄ノ皇の装甲スロット。"
+ EQ_MOD_CAT_susanoo_engine_type_TITLE: "凄ノ皇推進機関"
+ EQ_MOD_CAT_susanoo_engine_type_DESC: "凄ノ皇のメインスラスタースロット。"
+ EQ_MOD_CAT_susanoo_OS_type_TITLE: "凄ノ皇 OS"
+ EQ_MOD_CAT_susanoo_OS_type_DESC: "凄ノ皇のオペレーティングシステム。"
+ EQ_MOD_CAT_susanoo_sensor_type_TITLE: "凄ノ皇センサー"
+ EQ_MOD_CAT_susanoo_sensor_type_DESC: "凄ノ皇のセンサーアレイ。"
+
+ # === F-47 モジュールカテゴリ ===
+ EQ_MOD_CAT_F47_charged_particle_cannon_type_TITLE: "荷電粒子砲"
+ EQ_MOD_CAT_F47_charged_particle_cannon_type_DESC: "F-47 イシュクル専用の荷電粒子砲スロット。"
+ EQ_MOD_CAT_F47_lazaford_shield_type_TITLE: "ラザフォードシールド"
+ EQ_MOD_CAT_F47_lazaford_shield_type_DESC: "F-47 専用の力場防御装置。"
+ EQ_MOD_CAT_F47_g_generator_type_TITLE: "G 元素ジェネレーター"
+ EQ_MOD_CAT_F47_g_generator_type_DESC: "F-47 専用の長期運用 G 元素ジェネレーター。10 年無補給運用を可能にする。"
+ EQ_MOD_CAT_F47_warp_drive_type_TITLE: "ワープドライブ"
+ EQ_MOD_CAT_F47_warp_drive_type_DESC: "F-47 専用の戦略機動装置。"

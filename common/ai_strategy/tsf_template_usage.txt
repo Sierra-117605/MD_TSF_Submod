@@ -1,0 +1,103 @@
+# ============================================================
+# AI に各カテゴリ師団を使わせる戦略
+# 軽=tsf_quick / 重=tsf_assault / 高機動=tsf_maneuver / 混成=tsf_combined_arms(最多)
+# ============================================================
+
+# === 混成戦術機師団（最多配備）===
+tsf_combined_arms_role_usage = {
+	allowed = { always = yes }
+	enable = { has_tech = MVLV_research_basic_tsf_framework }
+	abort = { always = no }
+
+	ai_strategy = { type = build_army  id = tsf_combined_arms  value = 100 }
+	ai_strategy = { type = role_ratio  id = tsf_combined_arms  value = 40 }
+}
+
+# === 軽戦術機師団（tsf_quick）===
+tsf_quick_role_usage = {
+	allowed = { always = yes }
+	enable = { has_tech = MVLV_research_tsf_1_light_framework }
+	abort = { always = no }
+
+	ai_strategy = { type = build_army  id = tsf_quick  value = 45 }
+	ai_strategy = { type = role_ratio  id = tsf_quick  value = 15 }
+}
+
+# === 重戦術機師団（tsf_assault）===
+tsf_assault_role_usage = {
+	allowed = { always = yes }
+	enable = { has_tech = MVLV_research_tsf_1_heavy_framework }
+	abort = { always = no }
+
+	ai_strategy = { type = build_army  id = tsf_assault  value = 45 }
+	ai_strategy = { type = role_ratio  id = tsf_assault  value = 15 }
+}
+
+# === 高機動戦術機師団（tsf_maneuver）===
+tsf_maneuver_role_usage = {
+	allowed = { always = yes }
+	enable = { has_tech = MVLV_research_tsf_2_maneuver_framework }
+	abort = { always = no }
+
+	ai_strategy = { type = build_army  id = tsf_maneuver  value = 45 }
+	ai_strategy = { type = role_ratio  id = tsf_maneuver  value = 15 }
+}
+
+# === 支援戦術機師団（tsf_support）===
+tsf_support_role_usage = {
+	allowed = { always = yes }
+	enable = {
+		has_tech = MVLV_research_basic_tsf_framework
+		has_tech = MVLV_research_tsf_1_heavy_framework
+	}
+	abort = { always = no }
+
+	ai_strategy = { type = build_army  id = tsf_support  value = 25 }
+	ai_strategy = { type = role_ratio  id = tsf_support  value = 8 }
+}
+
+# === 特務戦術機師団（tsf_specialForces）===
+tsf_specialForces_role_usage = {
+	allowed = { always = yes }
+	enable = { has_tech = MVLV_research_tsf_2_maneuver_framework }
+	abort = { always = no }
+
+	ai_strategy = { type = build_army  id = tsf_specialForces  value = 15 }
+	ai_strategy = { type = role_ratio  id = tsf_specialForces  value = 5 }
+}
+
+# === 特務突撃師団（tsf_specialForces_assault）===
+tsf_specialForces_assault_role_usage = {
+	allowed = { always = yes }
+	enable = { has_tech = MVLV_research_tsf_3_maneuver_framework }
+	abort = { always = no }
+
+	ai_strategy = { type = build_army  id = tsf_specialForces_assault  value = 10 }
+	ai_strategy = { type = role_ratio  id = tsf_specialForces_assault  value = 3 }
+}
+
+# === 凄ノ皇 XG 師団（tsf_xg）===
+tsf_xg_role_usage = {
+	allowed = { always = yes }
+	enable = { has_tech = tsf_susanoo_2 }
+	abort = { always = no }
+
+	ai_strategy = { type = build_army  id = tsf_xg  value = 5 }
+}
+
+# === 戦術機装備の生産優先度（軽・重・高機動を個別に確保）===
+tsf_production_priority = {
+	allowed = { always = yes }
+	enable = { has_tech = MVLV_research_basic_tsf_framework }
+	abort = { always = no }
+
+	# 注: equipment_production_factor はカテゴリ(armor/infantry等)専用。個別装備IDを入れるとmalformedで無効化される。
+	# よって個別の戦術機装備は archetype版「最低工場数」で確保する（本体でも使われる唯一の archetype 指定生産命令）。
+	ai_strategy = { type = equipment_production_min_factories_archetype  id = MVLV_TSF_chassis  value = 10 }
+	ai_strategy = { type = equipment_production_min_factories_archetype  id = MVLV_TSF_chassis_light  value = 10 }
+	ai_strategy = { type = equipment_production_min_factories_archetype  id = MVLV_TSF_chassis_heavy  value = 10 }
+	ai_strategy = { type = equipment_production_min_factories_archetype  id = MVLV_TSF_chassis_maneuver  value = 10 }
+	ai_strategy = { type = equipment_production_min_factories_archetype  id = MVLV_TSF_support_chassis  value = 10 }
+	ai_strategy = { type = equipment_production_min_factories_archetype  id = xg_equipment  value = 10 }
+	ai_strategy = { type = equipment_production_min_factories_archetype  id = MVLV_TSF_specialForces_chassis  value = 10 }
+}

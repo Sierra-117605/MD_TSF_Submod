@@ -1,0 +1,29 @@
+animation = {
+	name = "Tsf_F16_Attack01_animation"
+	file = "Tsf_F16_Attack01.anim"
+}
+
+animation = {
+	name = "Tsf_F16_Attack02_animation"
+	file = "Tsf_F16_Attack02.anim"
+}
+
+animation = {
+	name = "Tsf_F16_Attack03_animation"
+	file = "Tsf_F16_Attack03.anim"
+}
+
+animation = {
+	name = "Tsf_F16_Attack04_animation"
+	file = "Tsf_F16_Attack04.anim"
+}
+
+animation = {
+	name = "Tsf_F16_Idle_animation"
+	file = "Tsf_F16_Idle.anim"
+}
+
+animation = {
+	name = "Tsf_F16_Move_animation"
+	file = "Tsf_F16_Move.anim"
+}

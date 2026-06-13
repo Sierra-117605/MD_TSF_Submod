@@ -1,0 +1,401 @@
+equipment_modules = {
+	MVLV_TSF_no_engine = {
+		category = MVLV_TSF_engine_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_organisation = -5
+			casualty_trickleback = -0.01
+		}
+		multiply_stats = {
+			breakthrough = -0.05
+			defense = -0.05
+		}
+	}
+	MVLV_TSF_basic_engine = {
+		category = MVLV_TSF_engine_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 5
+			max_organisation = -0.1
+			default_morale = -0.1
+			experience_loss_factor = 0.005
+			defense = 5
+			breakthrough = 5
+			initiative = 0.01			
+			build_cost_ic = 5
+		}
+		multiply_stats = {
+			defense = 0.1
+			breakthrough = 0.2
+			soft_attack = 0.05
+			hard_attack = 0.05	
+			ap_attack = 0.1
+			air_attack = 0.1
+		}
+	}
+	#MVLV_TSF_basic_engine_fuel_efficiency = {
+	#MVLV_TSF_basic_engine_mid_speed_cruising = {
+	#MVLV_TSF_basic_engine_high_speed_cruising = {
+	#MVLV_TSF_basic_engine_max_power = {
+	MVLV_TSF_engine_1 = {
+		category = MVLV_TSF_engine_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 7
+			max_organisation = -0.2
+			default_morale = -0.15
+			casualty_trickleback = 0.0025
+			experience_loss_factor = 0.005
+			defense = 10
+			breakthrough = 10
+			initiative = 0.02			
+			build_cost_ic = 10
+		}
+		multiply_stats = {
+			defense = 0.15
+			breakthrough = 0.25
+			soft_attack = 0.10
+			hard_attack = 0.10	
+			ap_attack = 0.15
+			air_attack = 0.15
+		}
+	}
+	MVLV_TSF_engine_2 = {
+		category = MVLV_TSF_engine_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 9
+			max_organisation = -0.3
+			default_morale = -0.2
+			casualty_trickleback = 0.005
+			experience_loss_factor = 0.01
+			defense = 12.5
+			breakthrough = 12.5
+			initiative = 0.02			
+			build_cost_ic = 15
+		}
+		multiply_stats = {
+			maximum_speed = 0.025
+			defense = 0.15
+			breakthrough = 0.25
+			soft_attack = 0.11
+			hard_attack = 0.11	
+			ap_attack = 0.20
+			air_attack = 0.20
+		}
+	}
+	MVLV_TSF_engine_3 = {
+		category = MVLV_TSF_engine_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 11
+			max_organisation = -0.4
+			default_morale = -0.25
+			casualty_trickleback = 0.01
+			experience_loss_factor = 0.015
+			defense = 15
+			breakthrough = 15
+			initiative = 0.02			
+			build_cost_ic = 20
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			defense = 0.15
+			breakthrough = 0.25
+			soft_attack = 0.12
+			hard_attack = 0.12	
+			ap_attack = 0.25
+			air_attack = 0.40
+		}
+	}
+	MVLV_TSF_engine_4 = {
+		category = MVLV_TSF_engine_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 13
+			max_organisation = -0.4
+			default_morale = -0.25
+			casualty_trickleback = 0.01
+			experience_loss_factor = 0.015
+			defense = 20
+			breakthrough = 20
+			initiative = 0.02			
+			build_cost_ic = 25
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			defense = 0.20
+			breakthrough = 0.30
+			soft_attack = 0.30
+			hard_attack = 0.30	
+			ap_attack = 0.40
+			air_attack = 0.40
+		}
+		build_cost_resources = {
+			rubber = 1
+		}
+	}
+
+	MVLV_TSF_engine_maneuver_1 = {
+		category = MVLV_TSF_engine_maneuver_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 7
+			max_organisation = -0.3
+			default_morale = -0.2
+			reliability = -0.1
+			casualty_trickleback = 0.0025
+			experience_loss_factor = 0.01
+			defense = 12
+			breakthrough = 12
+			armor_value = -5
+			hardness = -0.05
+			initiative = 0.01			
+			build_cost_ic = 14
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+			defense = 0.20
+			breakthrough = 0.30
+			soft_attack = 0.13
+			hard_attack = 0.15	
+			ap_attack = 0.20
+			air_attack = 0.20
+		}
+	}
+
+	MVLV_TSF_engine_maneuver_2 = {
+		category = MVLV_TSF_engine_maneuver_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 9
+			max_organisation = -0.3
+			default_morale = -0.2
+			reliability = -0.1
+			casualty_trickleback = 0.0025
+			experience_loss_factor = 0.015
+			defense = 15
+			breakthrough = 15
+			armor_value = -5
+			hardness = -0.05
+			initiative = 0.01			
+			build_cost_ic = 18
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+			defense = 0.20
+			breakthrough = 0.30
+			soft_attack = 0.13
+			hard_attack = 0.15	
+			ap_attack = 0.25
+			air_attack = 0.40
+		}
+	}
+	
+	MVLV_TSF_engine_maneuver_3 = {
+		category = MVLV_TSF_engine_maneuver_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 10
+			max_organisation = -0.4
+			default_morale = -0.25
+			casualty_trickleback = 0.01
+			experience_loss_factor = 0.02
+			defense = 18
+			breakthrough = 18
+			initiative = 0.01			
+			build_cost_ic = 21
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			defense = 0.20
+			breakthrough = 0.30
+			soft_attack = 0.13
+			hard_attack = 0.15	
+			ap_attack = 0.30
+			air_attack = 0.40
+		}
+	}
+	
+	MVLV_TSF_engine_cruise_1 = {
+		category = MVLV_TSF_engine_cruise_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 6
+			casualty_trickleback = 0.0025
+			defense = 8
+			breakthrough = 8
+			initiative = 0.01			
+			build_cost_ic = 9
+		}
+		multiply_stats = {
+			defense = 0.125
+			breakthrough = 0.15
+			soft_attack = 0.08
+			hard_attack = 0.08	
+			ap_attack = 0.15
+			air_attack = 0.15
+			build_cost_ic = -0.01
+		}
+	}
+
+	MVLV_TSF_engine_cruise_2 = {
+		category = MVLV_TSF_engine_cruise_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 7
+			casualty_trickleback = 0.0025
+			experience_loss_factor = 0.005
+			defense = 11
+			breakthrough = 11
+
+			initiative = 0.01			
+			build_cost_ic = 13
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+			defense = 0.15
+			breakthrough = 0.15
+			soft_attack = 0.10
+			hard_attack = 0.10	
+			ap_attack = 0.20
+			air_attack = 0.20
+			build_cost_ic = -0.02
+		}
+	}
+	
+	MVLV_TSF_engine_cruise_3 = {
+		category = MVLV_TSF_engine_cruise_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 9
+			casualty_trickleback = 0.01
+			experience_loss_factor = 0.01
+			defense = 13
+			breakthrough = 13
+			initiative = 0.01			
+			build_cost_ic = 17
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			defense = 0.15
+			breakthrough = 0.15
+			soft_attack = 0.15
+			hard_attack = 0.15	
+			ap_attack = 0.25
+			air_attack = 0.40
+			build_cost_ic = -0.03
+		}
+	}	
+
+	#MVLV_TSF_engine_1_fuel_efficiency = {
+		#category = MVLV_TSF_engine_fuel_efficiency_type
+	#MVLV_TSF_engine_1_mid_speed_cruising = {
+		#category = MVLV_TSF_engine_mid_speed_type
+	#MVLV_TSF_engine_1_high_speed_cruising = {
+		#category = MVLV_TSF_engine_high_speed_type
+	#MVLV_TSF_engine_1_max_power = {
+		#category = MVLV_TSF_engine_max_power_type
+	#MVLV_TSF_engine_2_fuel_efficiency = {
+	#MVLV_TSF_engine_2_mid_speed_cruising = {
+	#MVLV_TSF_engine_2_high_speed_cruising = {
+	#MVLV_TSF_engine_2_max_power = {
+	#MVLV_TSF_engine_3_fuel_efficiency = {
+	#MVLV_TSF_engine_3_mid_speed_cruising = {
+	#MVLV_TSF_engine_3_high_speed_cruising = {
+	#MVLV_TSF_engine_3_max_power = {
+	#MVLV_TSF_engine_4 = {
+	#MVLV_TSF_engine_4_fuel_efficiency = {
+	#MVLV_TSF_engine_4_mid_speed_cruising = {
+	#MVLV_TSF_engine_4_high_speed_cruising = {
+	#MVLV_TSF_engine_4_max_power = {
+	
+	#######
+	#MVLV_TSF_add_thruster_type
+	MVLV_TSF_add_thruster_1 = {
+		category = MVLV_TSF_add_thruster_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 0.5
+			max_organisation = -0.2
+			default_morale = -0.05
+			experience_loss_factor = 0.001
+			defense = 0.5
+			breakthrough = 0.5
+			initiative = 0.01			
+			build_cost_ic = 2.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			defense = 0.025
+			breakthrough = 0.05	
+			air_attack = 0.05
+		}
+	}
+	MVLV_TSF_add_thruster_2 = {
+		category = MVLV_TSF_add_thruster_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 1
+			max_organisation = -0.4
+			default_morale = -0.05
+			casualty_trickleback = 0.0025
+			experience_loss_factor = 0.001
+			defense = 1
+			breakthrough = 1
+			initiative = 0.01			
+			build_cost_ic = 5
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			defense = 0.05
+			breakthrough = 0.05
+			soft_attack = 0.05
+			air_attack = 0.05
+		}
+	}
+	MVLV_TSF_add_thruster_3 = {
+		category = MVLV_TSF_add_thruster_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 2
+			max_organisation = -0.6
+			default_morale = -0.05
+			casualty_trickleback = 0.0025
+			experience_loss_factor = 0.001
+			defense = 2
+			breakthrough = 2
+			initiative = 0.01			
+			build_cost_ic = 7.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.07
+			defense = 0.05
+			breakthrough = 0.05
+			soft_attack = 0.05
+			hard_attack = 0.05
+			air_attack = 0.05
+		}
+	}
+	######
+	#MVLV_TSF_add_back_thruster_type
+	MVLV_TSF_add_back_thruster = {
+		category = MVLV_TSF_add_back_thruster_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {	
+			maximum_speed = 1
+			max_organisation = -0.05
+			default_morale = -0.02
+			experience_loss_factor = 0.0005
+			defense = 0.5
+			breakthrough = 0.5
+			initiative = 0.005			
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+			maximum_speed = 0.01
+			defense = 0.02
+			breakthrough = 0.04	
+		}
+	}
+}

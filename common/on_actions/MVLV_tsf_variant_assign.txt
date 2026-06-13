@@ -1,0 +1,336 @@
+# ============================================================
+# 国別 variant 隠しテックを各国へ配布（全10国）
+# on_startup=新規 / on_weekly=既存セーブ冪等
+# ============================================================
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } }
+				set_technology = {
+					MVLV_research_basic_tsf_framework = 1
+					MVLV_research_tsf_1_light_framework = 1
+					MVLV_research_tsf_1_light_mod_framework = 1
+					MVLV_research_tsf_1_heavy_framework = 1
+					MVLV_research_engine_1 = 1
+					MVLV_research_engine_maneuver_1 = 1
+					MVLV_research_engine_cruise_1 = 1
+					MVLV_research_OS_1 = 1
+					MVLV_research_OS_close_1 = 1
+					MVLV_research_OS_support_1 = 1
+					MVLV_research_head_normal_1 = 1
+					MVLV_research_head_aerial_1 = 1
+					MVLV_research_head_heavy_1 = 1
+					MVLV_research_armor_light = 1
+					MVLV_research_armor_heavy = 1
+					MVLV_research_reinforced_structure_1 = 1
+					MVLV_research_special_structure_1 = 1
+					MVLV_research_add_blade_armor = 1
+					MVLV_research_assault_cannon_1 = 1
+					MVLV_research_support_gun = 1
+					MVLV_research_railgun_1 = 1
+					MVLV_research_combat_sword = 1
+					MVLV_research_shield = 1
+					MVLV_research_reactive_shield = 1
+					MVLV_research_small_missile = 1
+					MVLV_research_large_missile_1 = 1
+					MVLV_research_add_sensor_1 = 1
+					MVLV_research_deta_link_1 = 1
+					MVLV_research_supplies = 1
+					MVLV_research_custom_sights = 1
+					MVLV_research_custom_shells = 1
+					MVLV_research_maintenance_team_1 = 1
+					MVLV_research_capture_team = 1
+					MVLV_research_custom_module_1 = 1
+				}
+			} }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } } add_ideas = MVLV_tsf_research_boost } }
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no NOT = { has_tech = MVLV_research_basic_tsf_framework } } set_technology = { MVLV_research_basic_tsf_framework = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no NOT = { has_idea = MVLV_tsf_research_boost } } add_ideas = MVLV_tsf_research_boost } }
+			# 統合対応: 母国の元領土を持つ国は、その国の戦術機を解放（軸がどこでも継承）
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 any_owned_state = { is_core_of = KOR } NOT = { has_tech = tsf_variant_kor_light } } set_technology = { tsf_variant_kor_light = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun any_owned_state = { is_core_of = KOR } NOT = { has_tech = tsf_variant_kor_heavy } } set_technology = { tsf_variant_kor_heavy = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_heavy_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_armor_heavy has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_heavy_1 any_owned_state = { is_core_of = JAP } NOT = { has_tech = tsf_variant_jap_1h } } set_technology = { tsf_variant_jap_1h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_F-4JK any_owned_state = { is_core_of = JAP } NOT = { has_tech = tsf_variant_jap_zuikaku } } set_technology = { tsf_variant_jap_zuikaku = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun any_owned_state = { is_core_of = JAP } NOT = { has_tech = tsf_variant_jap_2h } } set_technology = { tsf_variant_jap_2h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_maneuver_framework has_tech = MVLV_research_OS_close_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_cruise_2 has_tech = MVLV_research_engine_maneuver_2 has_tech = MVLV_research_head_normal_2 has_tech = MVLV_research_large_missile_2 any_owned_state = { is_core_of = JAP } NOT = { has_tech = tsf_variant_jap_2m } } set_technology = { tsf_variant_jap_2m = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 any_owned_state = { is_core_of = JAP } NOT = { has_tech = tsf_variant_jap_2l } } set_technology = { tsf_variant_jap_2l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_heavy_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_heavy_3 has_tech = MVLV_research_large_missile_2 any_owned_state = { is_core_of = JAP } NOT = { has_tech = tsf_variant_jap_3h } } set_technology = { tsf_variant_jap_3h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_T00 any_owned_state = { is_core_of = JAP } NOT = { has_tech = tsf_variant_jap_takemikazuchi_proto } } set_technology = { tsf_variant_jap_takemikazuchi_proto = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_light_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_normal_3 any_owned_state = { is_core_of = JAP } NOT = { has_tech = tsf_variant_jap_3s } } set_technology = { tsf_variant_jap_3s = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_maneuver_framework has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_maneuver_3 has_tech = MVLV_research_head_normal_3 any_owned_state = { is_core_of = JAP } NOT = { has_tech = tsf_variant_jap_3m } } set_technology = { tsf_variant_jap_3m = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_T00R any_owned_state = { is_core_of = JAP } NOT = { has_tech = tsf_variant_jap_tmkz3 } } set_technology = { tsf_variant_jap_tmkz3 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_4_framework has_tech = MVLV_research_OS_4 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_4 has_tech = MVLV_research_head_aerial_3 any_owned_state = { is_core_of = JAP } NOT = { has_tech = tsf_variant_jap_4 } } set_technology = { tsf_variant_jap_4 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_light_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_add_sensor_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 any_owned_state = { is_core_of = USA } NOT = { has_tech = tsf_variant_usa_1l } } set_technology = { tsf_variant_usa_1l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_maneuver_framework has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_maneuver_3 has_tech = MVLV_research_head_normal_3 any_owned_state = { is_core_of = USA } NOT = { has_tech = tsf_variant_usa_3m } } set_technology = { tsf_variant_usa_3m = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_light_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_add_sensor_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 any_owned_state = { is_core_of = RUS } NOT = { has_tech = tsf_variant_rus_1l } } set_technology = { tsf_variant_rus_1l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_maneuver_framework has_tech = MVLV_research_OS_close_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_cruise_2 has_tech = MVLV_research_engine_maneuver_2 has_tech = MVLV_research_head_normal_2 has_tech = MVLV_research_large_missile_2 any_owned_state = { is_core_of = RUS } NOT = { has_tech = tsf_variant_rus_2m } } set_technology = { tsf_variant_rus_2m = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 any_owned_state = { is_core_of = CHI } NOT = { has_tech = tsf_variant_chi_2l } } set_technology = { tsf_variant_chi_2l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun any_owned_state = { is_core_of = USA } NOT = { has_tech = tsf_variant_usa_2h } } set_technology = { tsf_variant_usa_2h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_maneuver_framework has_tech = MVLV_research_OS_close_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_cruise_2 has_tech = MVLV_research_engine_maneuver_2 has_tech = MVLV_research_head_normal_2 has_tech = MVLV_research_large_missile_2 any_owned_state = { is_core_of = USA } NOT = { has_tech = tsf_variant_usa_2m } } set_technology = { tsf_variant_usa_2m = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_light_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_normal_3 any_owned_state = { is_core_of = USA } NOT = { has_tech = tsf_variant_usa_3l } } set_technology = { tsf_variant_usa_3l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 any_owned_state = { is_core_of = RUS } NOT = { has_tech = tsf_variant_rus_2l } } set_technology = { tsf_variant_rus_2l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun any_owned_state = { is_core_of = RUS } NOT = { has_tech = tsf_variant_rus_2h } } set_technology = { tsf_variant_rus_2h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_maneuver_framework has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_maneuver_3 has_tech = MVLV_research_head_normal_3 any_owned_state = { is_core_of = RUS } NOT = { has_tech = tsf_variant_rus_3m } } set_technology = { tsf_variant_rus_3m = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_4_framework has_tech = MVLV_research_OS_4 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_4 has_tech = MVLV_research_head_aerial_3 any_owned_state = { is_core_of = RUS } NOT = { has_tech = tsf_variant_rus_4 } } set_technology = { tsf_variant_rus_4 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_light_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_add_sensor_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 any_owned_state = { is_core_of = CHI } NOT = { has_tech = tsf_variant_chi_1l } } set_technology = { tsf_variant_chi_1l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun any_owned_state = { is_core_of = CHI } NOT = { has_tech = tsf_variant_chi_2h } } set_technology = { tsf_variant_chi_2h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_maneuver_framework has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_maneuver_3 has_tech = MVLV_research_head_normal_3 any_owned_state = { is_core_of = CHI } NOT = { has_tech = tsf_variant_chi_3m } } set_technology = { tsf_variant_chi_3m = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_heavy_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_heavy_3 has_tech = MVLV_research_large_missile_2 any_owned_state = { is_core_of = GER } NOT = { has_tech = tsf_variant_ger_3h } } set_technology = { tsf_variant_ger_3h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 any_owned_state = { is_core_of = FRA } NOT = { has_tech = tsf_variant_fra_2l } } set_technology = { tsf_variant_fra_2l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_maneuver_framework has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_maneuver_3 has_tech = MVLV_research_head_normal_3 any_owned_state = { is_core_of = FRA } NOT = { has_tech = tsf_variant_fra_3m } } set_technology = { tsf_variant_fra_3m = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_heavy_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_heavy_3 has_tech = MVLV_research_large_missile_2 any_owned_state = { is_core_of = ENG } NOT = { has_tech = tsf_variant_eng_3h } } set_technology = { tsf_variant_eng_3h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_4_framework has_tech = MVLV_research_OS_4 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_4 has_tech = MVLV_research_head_aerial_3 any_owned_state = { is_core_of = ENG } NOT = { has_tech = tsf_variant_eng_4 } } set_technology = { tsf_variant_eng_4 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_light_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_add_sensor_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 any_owned_state = { is_core_of = SWE } NOT = { has_tech = tsf_variant_swe_1l } } set_technology = { tsf_variant_swe_1l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 any_owned_state = { is_core_of = SWE } NOT = { has_tech = tsf_variant_swe_2l } } set_technology = { tsf_variant_swe_2l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_light_mod_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 any_owned_state = { is_core_of = USA } NOT = { has_tech = tsf_variant_usa_1lm } } set_technology = { tsf_variant_usa_1lm = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 any_owned_state = { is_core_of = USA } NOT = { has_tech = tsf_variant_usa_2l } } set_technology = { tsf_variant_usa_2l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_heavy_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_heavy_3 has_tech = MVLV_research_large_missile_2 any_owned_state = { is_core_of = USA } NOT = { has_tech = tsf_variant_usa_3h } } set_technology = { tsf_variant_usa_3h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_light_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_normal_3 any_owned_state = { is_core_of = CHI } NOT = { has_tech = tsf_variant_chi_3l } } set_technology = { tsf_variant_chi_3l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun any_owned_state = { is_core_of = GER } NOT = { has_tech = tsf_variant_ger_2h } } set_technology = { tsf_variant_ger_2h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_maneuver_framework has_tech = MVLV_research_OS_close_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_cruise_2 has_tech = MVLV_research_engine_maneuver_2 has_tech = MVLV_research_head_normal_2 has_tech = MVLV_research_large_missile_2 any_owned_state = { is_core_of = FRA } NOT = { has_tech = tsf_variant_fra_2m } } set_technology = { tsf_variant_fra_2m = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_heavy_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_heavy_3 has_tech = MVLV_research_large_missile_2 any_owned_state = { is_core_of = ITA } NOT = { has_tech = tsf_variant_ita_3h } } set_technology = { tsf_variant_ita_3h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_light_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_add_sensor_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 any_owned_state = { is_core_of = ISR } NOT = { has_tech = tsf_variant_isr_1l } } set_technology = { tsf_variant_isr_1l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 any_owned_state = { is_core_of = ISR } NOT = { has_tech = tsf_variant_isr_2l } } set_technology = { tsf_variant_isr_2l = 1 } } }
+			# 共通完成機: 固有機が多い日米露を除く全国に、素体研究で解放
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_light_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_add_sensor_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 NOT = { has_tech = tsf_common_f5 } NOT = { original_tag = CHI } NOT = { original_tag = ISR } NOT = { original_tag = RUS } NOT = { original_tag = SWE } NOT = { original_tag = USA } } set_technology = { tsf_common_f5 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_heavy_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_armor_heavy has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_heavy_1 NOT = { has_tech = tsf_common_f4 } NOT = { original_tag = JAP } } set_technology = { tsf_common_f4 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 NOT = { has_tech = tsf_common_f16 } NOT = { original_tag = JAP } NOT = { original_tag = CHI } NOT = { original_tag = FRA } NOT = { original_tag = ISR } NOT = { original_tag = KOR } NOT = { original_tag = RUS } NOT = { original_tag = SWE } NOT = { original_tag = USA } } set_technology = { tsf_common_f16 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_maneuver_framework has_tech = MVLV_research_OS_close_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_cruise_2 has_tech = MVLV_research_engine_maneuver_2 has_tech = MVLV_research_head_normal_2 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_common_f18 } NOT = { original_tag = JAP } NOT = { original_tag = FRA } NOT = { original_tag = RUS } NOT = { original_tag = USA } } set_technology = { tsf_common_f18 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun NOT = { has_tech = tsf_common_f15 } NOT = { original_tag = CHI } NOT = { original_tag = GER } NOT = { original_tag = JAP } NOT = { original_tag = KOR } NOT = { original_tag = RUS } NOT = { original_tag = USA } } set_technology = { tsf_common_f15 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_light_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_normal_3 NOT = { has_tech = tsf_common_f35 } NOT = { original_tag = CHI } NOT = { original_tag = USA } } set_technology = { tsf_common_f35 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_heavy_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_heavy_3 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_common_su34 } NOT = { original_tag = ENG } NOT = { original_tag = GER } NOT = { original_tag = ITA } NOT = { original_tag = JAP } NOT = { original_tag = USA } } set_technology = { tsf_common_su34 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_4_framework has_tech = MVLV_research_OS_4 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_4 has_tech = MVLV_research_head_aerial_3 NOT = { has_tech = tsf_common_adf01 } NOT = { original_tag = ENG } NOT = { original_tag = JAP } NOT = { original_tag = RUS } } set_technology = { tsf_common_adf01 = 1 } } }
+		
+			# 日本: 固有機があるカテゴリの汎用機を強制取り消し
+			JAP = { if = { limit = { has_tech = tsf_common_f4 } set_technology = { tsf_common_f4 = 0 } } }
+			JAP = { if = { limit = { has_tech = tsf_common_f15 } set_technology = { tsf_common_f15 = 0 } } }
+			JAP = { if = { limit = { has_tech = tsf_common_f16 } set_technology = { tsf_common_f16 = 0 } } }
+			JAP = { if = { limit = { has_tech = tsf_common_f18 } set_technology = { tsf_common_f18 = 0 } } }
+			JAP = { if = { limit = { has_tech = tsf_common_f15e } set_technology = { tsf_common_f15e = 0 } } }
+			JAP = { if = { limit = { has_tech = tsf_common_su34 } set_technology = { tsf_common_su34 = 0 } } }
+			JAP = { if = { limit = { has_tech = tsf_common_adf01 } set_technology = { tsf_common_adf01 = 0 } } }
+			JAP = { if = { limit = { has_tech = tsf_support_3l } set_technology = { tsf_support_3l = 0 } } }
+		
+			# === 師団テンプレ補完（廃止・改正されていたら毎月再付与）===
+			every_country = { if = { limit = { is_ai = yes NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no has_tech = MVLV_research_tsf_1_light_framework NOT = { has_template = "軽戦術機師団" } } division_template = { name = "軽戦術機師団" regiments = { MVLV_tsf_light_battalion = { x = 0 y = 0 } MVLV_tsf_light_battalion = { x = 0 y = 1 } MVLV_tsf_light_battalion = { x = 0 y = 2 } MVLV_tsf_light_battalion = { x = 0 y = 3 } MVLV_tsf_light_battalion = { x = 0 y = 4 } MVLV_tsf_light_battalion = { x = 1 y = 0 } MVLV_tsf_light_battalion = { x = 1 y = 1 } MVLV_tsf_light_battalion = { x = 1 y = 2 } MVLV_tsf_light_battalion = { x = 1 y = 3 } MVLV_tsf_light_battalion = { x = 1 y = 4 } } } } }
+			every_country = { if = { limit = { is_ai = yes NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no has_tech = MVLV_research_tsf_1_heavy_framework NOT = { has_template = "重戦術機師団" } } division_template = { name = "重戦術機師団" regiments = { MVLV_tsf_battalion = { x = 0 y = 0 } MVLV_tsf_battalion = { x = 0 y = 1 } MVLV_tsf_battalion = { x = 0 y = 2 } MVLV_tsf_battalion = { x = 0 y = 3 } MVLV_tsf_battalion = { x = 0 y = 4 } MVLV_tsf_battalion = { x = 1 y = 0 } MVLV_tsf_battalion = { x = 1 y = 1 } MVLV_tsf_battalion = { x = 1 y = 2 } MVLV_tsf_battalion = { x = 1 y = 3 } MVLV_tsf_battalion = { x = 1 y = 4 } } } } }
+			every_country = { if = { limit = { is_ai = yes NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no has_tech = MVLV_research_tsf_2_maneuver_framework NOT = { has_template = "高機動戦術機師団" } } division_template = { name = "高機動戦術機師団" regiments = { MVLV_tsf_maneuver_battalion = { x = 0 y = 0 } MVLV_tsf_maneuver_battalion = { x = 0 y = 1 } MVLV_tsf_maneuver_battalion = { x = 0 y = 2 } MVLV_tsf_maneuver_battalion = { x = 0 y = 3 } MVLV_tsf_maneuver_battalion = { x = 0 y = 4 } MVLV_tsf_maneuver_battalion = { x = 1 y = 0 } MVLV_tsf_maneuver_battalion = { x = 1 y = 1 } MVLV_tsf_maneuver_battalion = { x = 1 y = 2 } MVLV_tsf_maneuver_battalion = { x = 1 y = 3 } MVLV_tsf_maneuver_battalion = { x = 1 y = 4 } } } } }
+			every_country = { if = { limit = { is_ai = yes NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no has_tech = MVLV_research_tsf_2_maneuver_framework NOT = { has_template = "混成戦術機師団" } } division_template = { name = "混成戦術機師団" regiments = { MVLV_tsf_light_battalion = { x = 0 y = 0 } MVLV_tsf_light_battalion = { x = 0 y = 1 } MVLV_tsf_light_battalion = { x = 0 y = 2 } MVLV_tsf_light_battalion = { x = 0 y = 3 } MVLV_tsf_battalion = { x = 1 y = 0 } MVLV_tsf_battalion = { x = 1 y = 1 } MVLV_tsf_battalion = { x = 1 y = 2 } MVLV_tsf_maneuver_battalion = { x = 2 y = 0 } MVLV_tsf_maneuver_battalion = { x = 2 y = 1 } MVLV_tsf_maneuver_battalion = { x = 2 y = 2 } } } } }
+			every_country = { if = { limit = { is_ai = yes NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no has_tech = MVLV_research_basic_tsf_framework NOT = { has_template = "戦術機支援師団" } } division_template = { name = "戦術機支援師団" regiments = { MVLV_tsf_support_battalion = { x = 0 y = 0 } MVLV_tsf_support_battalion = { x = 0 y = 1 } MVLV_tsf_support_battalion = { x = 0 y = 2 } MVLV_tsf_support_battalion = { x = 0 y = 3 } MVLV_tsf_support_battalion = { x = 0 y = 4 } MVLV_tsf_support_battalion = { x = 1 y = 0 } MVLV_tsf_support_battalion = { x = 1 y = 1 } MVLV_tsf_support_battalion = { x = 1 y = 2 } MVLV_tsf_support_battalion = { x = 1 y = 3 } MVLV_tsf_support_battalion = { x = 1 y = 4 } } } } }
+			every_country = { if = { limit = { is_ai = yes NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no has_tech = MVLV_research_F-4JK NOT = { has_template = "特務戦術機師団" } } division_template = { name = "特務戦術機師団" regiments = { MVLV_tsf_specialForces_battalion = { x = 0 y = 0 } MVLV_tsf_specialForces_battalion = { x = 0 y = 1 } MVLV_tsf_specialForces_battalion = { x = 0 y = 2 } MVLV_tsf_specialForces_battalion = { x = 0 y = 3 } MVLV_tsf_specialForces_battalion = { x = 0 y = 4 } MVLV_tsf_specialForces_battalion = { x = 1 y = 0 } MVLV_tsf_specialForces_battalion = { x = 1 y = 1 } MVLV_tsf_specialForces_battalion = { x = 1 y = 2 } MVLV_tsf_specialForces_battalion = { x = 1 y = 3 } MVLV_tsf_specialForces_battalion = { x = 1 y = 4 } } } } }
+			every_country = { if = { limit = { is_ai = yes NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no has_tech = tsf_susanoo_concept NOT = { has_template = "凄ノ皇師団" } } division_template = { name = "凄ノ皇師団" regiments = { MVLV_xg_battalion = { x = 0 y = 0 } MVLV_tsf_light_battalion = { x = 1 y = 0 } MVLV_tsf_light_battalion = { x = 1 y = 1 } MVLV_tsf_battalion = { x = 2 y = 0 } MVLV_tsf_battalion = { x = 2 y = 1 } } } } }
+			every_country = { if = { limit = { is_ai = yes NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no has_tech = tsf_F-47_systems NOT = { has_template = "F-47師団" } } division_template = { name = "F-47師団" regiments = { MVLV_tsf_battalion = { x = 0 y = 0 } MVLV_tsf_battalion = { x = 0 y = 1 } MVLV_tsf_battalion = { x = 0 y = 2 } MVLV_tsf_battalion = { x = 0 y = 3 } MVLV_tsf_battalion = { x = 0 y = 4 } MVLV_tsf_battalion = { x = 1 y = 0 } MVLV_tsf_battalion = { x = 1 y = 1 } MVLV_tsf_battalion = { x = 1 y = 2 } MVLV_tsf_battalion = { x = 1 y = 3 } MVLV_tsf_battalion = { x = 1 y = 4 } } } } }
+			every_country = { if = { limit = { is_ai = yes NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no has_tech = MVLV_research_tsf_3_maneuver_framework NOT = { has_template = "特務戦術機突撃師団" } } division_template = { name = "特務戦術機突撃師団" regiments = { MVLV_tsf_specialForces_battalion = { x = 0 y = 0 } MVLV_tsf_specialForces_battalion = { x = 0 y = 1 } MVLV_tsf_specialForces_battalion = { x = 0 y = 2 } MVLV_tsf_specialForces_battalion = { x = 0 y = 3 } MVLV_tsf_specialForces_battalion = { x = 0 y = 4 } MVLV_tsf_specialForces_battalion = { x = 1 y = 0 } MVLV_tsf_specialForces_battalion = { x = 1 y = 1 } MVLV_tsf_specialForces_battalion = { x = 1 y = 2 } } } } }
+		}
+	}
+
+	on_daily = {
+		effect = {
+			KOR = { if = { limit = { has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 NOT = { has_tech = tsf_variant_kor_light } } set_technology = { tsf_variant_kor_light = 1 } } }
+			KOR = { if = { limit = { has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun NOT = { has_tech = tsf_variant_kor_heavy } } set_technology = { tsf_variant_kor_heavy = 1 } } }
+			JAP = { if = { limit = { has_tech = MVLV_research_tsf_1_heavy_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_armor_heavy has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_heavy_1 NOT = { has_tech = tsf_variant_jap_1h } } set_technology = { tsf_variant_jap_1h = 1 } } }
+			JAP = { if = { limit = { has_tech = MVLV_research_F-4JK NOT = { has_tech = tsf_variant_jap_zuikaku } } set_technology = { tsf_variant_jap_zuikaku = 1 } } }
+			JAP = { if = { limit = { has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun NOT = { has_tech = tsf_variant_jap_2h } } set_technology = { tsf_variant_jap_2h = 1 } } }
+			JAP = { if = { limit = { has_tech = MVLV_research_tsf_2_maneuver_framework has_tech = MVLV_research_OS_close_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_cruise_2 has_tech = MVLV_research_engine_maneuver_2 has_tech = MVLV_research_head_normal_2 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_variant_jap_2m } } set_technology = { tsf_variant_jap_2m = 1 } } }
+			JAP = { if = { limit = { has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 NOT = { has_tech = tsf_variant_jap_2l } } set_technology = { tsf_variant_jap_2l = 1 } } }
+			JAP = { if = { limit = { has_tech = MVLV_research_tsf_3_heavy_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_heavy_3 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_variant_jap_3h } } set_technology = { tsf_variant_jap_3h = 1 } } }
+			JAP = { if = { limit = { has_tech = MVLV_research_T00 NOT = { has_tech = tsf_variant_jap_takemikazuchi_proto } } set_technology = { tsf_variant_jap_takemikazuchi_proto = 1 } } }
+			JAP = { if = { limit = { has_tech = MVLV_research_tsf_3_light_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_normal_3 NOT = { has_tech = tsf_variant_jap_3s } } set_technology = { tsf_variant_jap_3s = 1 } } }
+			JAP = { if = { limit = { has_tech = MVLV_research_tsf_3_maneuver_framework has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_maneuver_3 has_tech = MVLV_research_head_normal_3 NOT = { has_tech = tsf_variant_jap_3m } } set_technology = { tsf_variant_jap_3m = 1 } } }
+			JAP = { if = { limit = { has_tech = MVLV_research_T00R NOT = { has_tech = tsf_variant_jap_tmkz3 } } set_technology = { tsf_variant_jap_tmkz3 = 1 } } }
+			JAP = { if = { limit = { has_tech = MVLV_research_tsf_4_framework has_tech = MVLV_research_OS_4 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_4 has_tech = MVLV_research_head_aerial_3 NOT = { has_tech = tsf_variant_jap_4 } } set_technology = { tsf_variant_jap_4 = 1 } } }
+			USA = { if = { limit = { has_tech = MVLV_research_tsf_1_light_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_add_sensor_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 NOT = { has_tech = tsf_variant_usa_1l } } set_technology = { tsf_variant_usa_1l = 1 } } }
+			USA = { if = { limit = { has_tech = MVLV_research_tsf_3_maneuver_framework has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_maneuver_3 has_tech = MVLV_research_head_normal_3 NOT = { has_tech = tsf_variant_usa_3m } } set_technology = { tsf_variant_usa_3m = 1 } } }
+			RUS = { if = { limit = { has_tech = MVLV_research_tsf_1_light_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_add_sensor_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 NOT = { has_tech = tsf_variant_rus_1l } } set_technology = { tsf_variant_rus_1l = 1 } } }
+			RUS = { if = { limit = { has_tech = MVLV_research_tsf_2_maneuver_framework has_tech = MVLV_research_OS_close_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_cruise_2 has_tech = MVLV_research_engine_maneuver_2 has_tech = MVLV_research_head_normal_2 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_variant_rus_2m } } set_technology = { tsf_variant_rus_2m = 1 } } }
+			CHI = { if = { limit = { has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 NOT = { has_tech = tsf_variant_chi_2l } } set_technology = { tsf_variant_chi_2l = 1 } } }
+			USA = { if = { limit = { has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun NOT = { has_tech = tsf_variant_usa_2h } } set_technology = { tsf_variant_usa_2h = 1 } } }
+			USA = { if = { limit = { has_tech = MVLV_research_tsf_2_maneuver_framework has_tech = MVLV_research_OS_close_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_cruise_2 has_tech = MVLV_research_engine_maneuver_2 has_tech = MVLV_research_head_normal_2 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_variant_usa_2m } } set_technology = { tsf_variant_usa_2m = 1 } } }
+			USA = { if = { limit = { has_tech = MVLV_research_tsf_3_light_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_normal_3 NOT = { has_tech = tsf_variant_usa_3l } } set_technology = { tsf_variant_usa_3l = 1 } } }
+			RUS = { if = { limit = { has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 NOT = { has_tech = tsf_variant_rus_2l } } set_technology = { tsf_variant_rus_2l = 1 } } }
+			RUS = { if = { limit = { has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun NOT = { has_tech = tsf_variant_rus_2h } } set_technology = { tsf_variant_rus_2h = 1 } } }
+			RUS = { if = { limit = { has_tech = MVLV_research_tsf_3_maneuver_framework has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_maneuver_3 has_tech = MVLV_research_head_normal_3 NOT = { has_tech = tsf_variant_rus_3m } } set_technology = { tsf_variant_rus_3m = 1 } } }
+			RUS = { if = { limit = { has_tech = MVLV_research_tsf_4_framework has_tech = MVLV_research_OS_4 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_4 has_tech = MVLV_research_head_aerial_3 NOT = { has_tech = tsf_variant_rus_4 } } set_technology = { tsf_variant_rus_4 = 1 } } }
+			CHI = { if = { limit = { has_tech = MVLV_research_tsf_1_light_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_add_sensor_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 NOT = { has_tech = tsf_variant_chi_1l } } set_technology = { tsf_variant_chi_1l = 1 } } }
+			CHI = { if = { limit = { has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun NOT = { has_tech = tsf_variant_chi_2h } } set_technology = { tsf_variant_chi_2h = 1 } } }
+			CHI = { if = { limit = { has_tech = MVLV_research_tsf_3_maneuver_framework has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_maneuver_3 has_tech = MVLV_research_head_normal_3 NOT = { has_tech = tsf_variant_chi_3m } } set_technology = { tsf_variant_chi_3m = 1 } } }
+			GER = { if = { limit = { has_tech = MVLV_research_tsf_3_heavy_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_heavy_3 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_variant_ger_3h } } set_technology = { tsf_variant_ger_3h = 1 } } }
+			FRA = { if = { limit = { has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 NOT = { has_tech = tsf_variant_fra_2l } } set_technology = { tsf_variant_fra_2l = 1 } } }
+			FRA = { if = { limit = { has_tech = MVLV_research_tsf_3_maneuver_framework has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_maneuver_3 has_tech = MVLV_research_head_normal_3 NOT = { has_tech = tsf_variant_fra_3m } } set_technology = { tsf_variant_fra_3m = 1 } } }
+			ENG = { if = { limit = { has_tech = MVLV_research_tsf_3_heavy_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_heavy_3 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_variant_eng_3h } } set_technology = { tsf_variant_eng_3h = 1 } } }
+			ENG = { if = { limit = { has_tech = MVLV_research_tsf_4_framework has_tech = MVLV_research_OS_4 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_4 has_tech = MVLV_research_head_aerial_3 NOT = { has_tech = tsf_variant_eng_4 } } set_technology = { tsf_variant_eng_4 = 1 } } }
+			SWE = { if = { limit = { has_tech = MVLV_research_tsf_1_light_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_add_sensor_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 NOT = { has_tech = tsf_variant_swe_1l } } set_technology = { tsf_variant_swe_1l = 1 } } }
+			SWE = { if = { limit = { has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 NOT = { has_tech = tsf_variant_swe_2l } } set_technology = { tsf_variant_swe_2l = 1 } } }
+			USA = { if = { limit = { has_tech = MVLV_research_tsf_1_light_mod_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 NOT = { has_tech = tsf_variant_usa_1lm } } set_technology = { tsf_variant_usa_1lm = 1 } } }
+			USA = { if = { limit = { has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 NOT = { has_tech = tsf_variant_usa_2l } } set_technology = { tsf_variant_usa_2l = 1 } } }
+			USA = { if = { limit = { has_tech = MVLV_research_tsf_3_heavy_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_heavy_3 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_variant_usa_3h } } set_technology = { tsf_variant_usa_3h = 1 } } }
+			CHI = { if = { limit = { has_tech = MVLV_research_tsf_3_light_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_normal_3 NOT = { has_tech = tsf_variant_chi_3l } } set_technology = { tsf_variant_chi_3l = 1 } } }
+			GER = { if = { limit = { has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun NOT = { has_tech = tsf_variant_ger_2h } } set_technology = { tsf_variant_ger_2h = 1 } } }
+			FRA = { if = { limit = { has_tech = MVLV_research_tsf_2_maneuver_framework has_tech = MVLV_research_OS_close_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_cruise_2 has_tech = MVLV_research_engine_maneuver_2 has_tech = MVLV_research_head_normal_2 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_variant_fra_2m } } set_technology = { tsf_variant_fra_2m = 1 } } }
+			ITA = { if = { limit = { has_tech = MVLV_research_tsf_3_heavy_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_heavy_3 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_variant_ita_3h } } set_technology = { tsf_variant_ita_3h = 1 } } }
+			ISR = { if = { limit = { has_tech = MVLV_research_tsf_1_light_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_add_sensor_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 NOT = { has_tech = tsf_variant_isr_1l } } set_technology = { tsf_variant_isr_1l = 1 } } }
+			ISR = { if = { limit = { has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 NOT = { has_tech = tsf_variant_isr_2l } } set_technology = { tsf_variant_isr_2l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_light_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_add_sensor_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 NOT = { has_tech = tsf_support_1l } } set_technology = { tsf_support_1l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_heavy_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_armor_heavy has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_heavy_1 NOT = { has_tech = tsf_support_1h } } set_technology = { tsf_support_1h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_light_mod_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 NOT = { has_tech = tsf_support_1lm } } set_technology = { tsf_support_1lm = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 NOT = { has_tech = tsf_support_2l } } set_technology = { tsf_support_2l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun NOT = { has_tech = tsf_support_2h } } set_technology = { tsf_support_2h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_maneuver_framework has_tech = MVLV_research_OS_close_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_cruise_2 has_tech = MVLV_research_engine_maneuver_2 has_tech = MVLV_research_head_normal_2 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_support_2m } } set_technology = { tsf_support_2m = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_light_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_normal_3 NOT = { has_tech = tsf_support_3l } NOT = { original_tag = JAP } } set_technology = { tsf_support_3l = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_heavy_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_heavy_3 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_support_3h } } set_technology = { tsf_support_3h = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_maneuver_framework has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_maneuver_3 has_tech = MVLV_research_head_normal_3 NOT = { has_tech = tsf_support_3m } } set_technology = { tsf_support_3m = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_4_framework has_tech = MVLV_research_OS_4 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_4 has_tech = MVLV_research_head_aerial_3 NOT = { has_tech = tsf_support_4 } } set_technology = { tsf_support_4 = 1 } } }
+
+
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_light_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_add_sensor_1 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_normal_1 NOT = { has_tech = tsf_common_f5 } NOT = { original_tag = CHI } NOT = { original_tag = ISR } NOT = { original_tag = RUS } NOT = { original_tag = SWE } NOT = { original_tag = USA } } set_technology = { tsf_common_f5 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_1_heavy_framework has_tech = MVLV_research_OS_1 has_tech = MVLV_research_armor_heavy has_tech = MVLV_research_assault_cannon_1 has_tech = MVLV_research_engine_1 has_tech = MVLV_research_head_heavy_1 NOT = { has_tech = tsf_common_f4 } NOT = { original_tag = JAP } } set_technology = { tsf_common_f4 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_light_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_normal_2 NOT = { has_tech = tsf_common_f16 } NOT = { original_tag = JAP } NOT = { original_tag = CHI } NOT = { original_tag = FRA } NOT = { original_tag = ISR } NOT = { original_tag = KOR } NOT = { original_tag = RUS } NOT = { original_tag = SWE } NOT = { original_tag = USA } } set_technology = { tsf_common_f16 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_maneuver_framework has_tech = MVLV_research_OS_close_2 has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_cruise_2 has_tech = MVLV_research_engine_maneuver_2 has_tech = MVLV_research_head_normal_2 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_common_f18 } NOT = { original_tag = JAP } NOT = { original_tag = FRA } NOT = { original_tag = RUS } NOT = { original_tag = USA } } set_technology = { tsf_common_f18 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_2_heavy_framework has_tech = MVLV_research_OS_2 has_tech = MVLV_research_assault_cannon_2 has_tech = MVLV_research_engine_2 has_tech = MVLV_research_head_heavy_2 has_tech = MVLV_research_large_missile_2 has_tech = MVLV_research_support_gun NOT = { has_tech = tsf_common_f15 } NOT = { original_tag = CHI } NOT = { original_tag = GER } NOT = { original_tag = JAP } NOT = { original_tag = KOR } NOT = { original_tag = RUS } NOT = { original_tag = USA } } set_technology = { tsf_common_f15 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_light_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_armor_light has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_normal_3 NOT = { has_tech = tsf_common_f35 } NOT = { original_tag = CHI } NOT = { original_tag = USA } } set_technology = { tsf_common_f35 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_3_heavy_framework has_tech = MVLV_research_OS_3 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_add_blade_armor has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_3 has_tech = MVLV_research_head_heavy_3 has_tech = MVLV_research_large_missile_2 NOT = { has_tech = tsf_common_su34 } NOT = { original_tag = ENG } NOT = { original_tag = GER } NOT = { original_tag = ITA } NOT = { original_tag = JAP } NOT = { original_tag = USA } } set_technology = { tsf_common_su34 = 1 } } }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } has_tech = MVLV_research_tsf_4_framework has_tech = MVLV_research_OS_4 has_tech = MVLV_research_OS_XM3 has_tech = MVLV_research_armor_composite has_tech = MVLV_research_assault_cannon_3 has_tech = MVLV_research_engine_4 has_tech = MVLV_research_head_aerial_3 NOT = { has_tech = tsf_common_adf01 } NOT = { original_tag = ENG } NOT = { original_tag = JAP } NOT = { original_tag = RUS } } set_technology = { tsf_common_adf01 = 1 } } }
+			# プレイヤー含む全国へ戦術機師団テンプレ付与(support無し・basic後・1回)
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no has_tech = MVLV_research_basic_tsf_framework NOT = { has_country_flag = tsf_div_templates } }
+				set_country_flag = tsf_div_templates
+								division_template = {
+					name = "軽戦術機師団"
+					regiments = {
+						MVLV_tsf_light_battalion = { x = 0 y = 0 }
+						MVLV_tsf_light_battalion = { x = 0 y = 1 }
+						MVLV_tsf_light_battalion = { x = 0 y = 2 }
+						MVLV_tsf_light_battalion = { x = 0 y = 3 }
+						MVLV_tsf_light_battalion = { x = 0 y = 4 }
+						MVLV_tsf_light_battalion = { x = 1 y = 0 }
+						MVLV_tsf_light_battalion = { x = 1 y = 1 }
+						MVLV_tsf_light_battalion = { x = 1 y = 2 }
+						MVLV_tsf_light_battalion = { x = 1 y = 3 }
+						MVLV_tsf_light_battalion = { x = 1 y = 4 }
+					}
+				}
+				division_template = {
+					name = "重戦術機師団"
+					regiments = {
+						MVLV_tsf_battalion = { x = 0 y = 0 }
+						MVLV_tsf_battalion = { x = 0 y = 1 }
+						MVLV_tsf_battalion = { x = 0 y = 2 }
+						MVLV_tsf_battalion = { x = 0 y = 3 }
+						MVLV_tsf_battalion = { x = 0 y = 4 }
+						MVLV_tsf_battalion = { x = 1 y = 0 }
+						MVLV_tsf_battalion = { x = 1 y = 1 }
+						MVLV_tsf_battalion = { x = 1 y = 2 }
+						MVLV_tsf_battalion = { x = 1 y = 3 }
+						MVLV_tsf_battalion = { x = 1 y = 4 }
+					}
+				}
+				division_template = {
+					name = "高機動戦術機師団"
+					regiments = {
+						MVLV_tsf_maneuver_battalion = { x = 0 y = 0 }
+						MVLV_tsf_maneuver_battalion = { x = 0 y = 1 }
+						MVLV_tsf_maneuver_battalion = { x = 0 y = 2 }
+						MVLV_tsf_maneuver_battalion = { x = 0 y = 3 }
+						MVLV_tsf_maneuver_battalion = { x = 0 y = 4 }
+						MVLV_tsf_maneuver_battalion = { x = 1 y = 0 }
+						MVLV_tsf_maneuver_battalion = { x = 1 y = 1 }
+						MVLV_tsf_maneuver_battalion = { x = 1 y = 2 }
+						MVLV_tsf_maneuver_battalion = { x = 1 y = 3 }
+						MVLV_tsf_maneuver_battalion = { x = 1 y = 4 }
+					}
+				}
+				division_template = {
+					name = "混成戦術機師団"
+					regiments = {
+						MVLV_tsf_light_battalion = { x = 0 y = 0 }
+						MVLV_tsf_light_battalion = { x = 0 y = 1 }
+						MVLV_tsf_light_battalion = { x = 0 y = 2 }
+						MVLV_tsf_light_battalion = { x = 0 y = 3 }
+						MVLV_tsf_battalion = { x = 0 y = 4 }
+						MVLV_tsf_battalion = { x = 1 y = 0 }
+						MVLV_tsf_battalion = { x = 1 y = 1 }
+						MVLV_tsf_maneuver_battalion = { x = 1 y = 2 }
+						MVLV_tsf_maneuver_battalion = { x = 1 y = 3 }
+						MVLV_tsf_maneuver_battalion = { x = 1 y = 4 }
+					}
+				}
+				division_template = {
+					name = "戦術機支援師団"
+					regiments = {
+						MVLV_tsf_support_battalion = { x = 0 y = 0 }
+						MVLV_tsf_support_battalion = { x = 0 y = 1 }
+						MVLV_tsf_support_battalion = { x = 0 y = 2 }
+						MVLV_tsf_support_battalion = { x = 0 y = 3 }
+						MVLV_tsf_support_battalion = { x = 0 y = 4 }
+						MVLV_tsf_support_battalion = { x = 1 y = 0 }
+						MVLV_tsf_support_battalion = { x = 1 y = 1 }
+						MVLV_tsf_support_battalion = { x = 1 y = 2 }
+						MVLV_tsf_light_battalion = { x = 1 y = 3 }
+						MVLV_tsf_battalion = { x = 1 y = 4 }
+					}
+				}
+				division_template = {
+					name = "特務戦術機師団"
+					regiments = {
+						MVLV_tsf_specialForces_battalion = { x = 0 y = 0 }
+						MVLV_tsf_specialForces_battalion = { x = 0 y = 1 }
+						MVLV_tsf_specialForces_battalion = { x = 0 y = 2 }
+						MVLV_tsf_specialForces_battalion = { x = 0 y = 3 }
+						MVLV_tsf_specialForces_battalion = { x = 0 y = 4 }
+						MVLV_tsf_specialForces_battalion = { x = 1 y = 0 }
+					}
+				}
+				division_template = {
+					name = "特務戦術機突撃師団"
+					regiments = {
+						MVLV_tsf_specialForces_battalion = { x = 0 y = 0 }
+						MVLV_tsf_specialForces_battalion = { x = 0 y = 1 }
+						MVLV_tsf_specialForces_battalion = { x = 0 y = 2 }
+						MVLV_tsf_specialForces_battalion = { x = 0 y = 3 }
+						MVLV_tsf_specialForces_battalion = { x = 0 y = 4 }
+						MVLV_tsf_specialForces_battalion = { x = 1 y = 0 }
+						MVLV_tsf_specialForces_battalion = { x = 1 y = 1 }
+						MVLV_tsf_specialForces_battalion = { x = 1 y = 2 }
+					}
+				}
+			} }
+			# 凄ノ皇師団は凄ノ皇研究後
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no has_tech = tsf_susanoo_concept NOT = { has_country_flag = tsf_xg_template_given } }
+				set_country_flag = tsf_xg_template_given
+				division_template = {
+					name = "凄ノ皇師団"
+					regiments = {
+						MVLV_xg_battalion = { x = 0 y = 0 }
+						MVLV_tsf_battalion = { x = 0 y = 1 }
+						MVLV_tsf_battalion = { x = 0 y = 2 }
+						MVLV_tsf_battalion = { x = 0 y = 3 }
+						MVLV_tsf_battalion = { x = 0 y = 4 }
+					}
+				}
+			} }
+			every_country = { if = { limit = { NOT = { tag = ZOM } NOT = { tag = ALN } is_dynamic_country = no has_tech = tsf_F-47_systems NOT = { has_country_flag = tsf_f47_template_given } }
+				set_country_flag = tsf_f47_template_given
+				division_template = {
+					name = "F-47師団"
+					regiments = {
+						MVLV_tsf_battalion = { x = 0 y = 0 }
+						MVLV_tsf_battalion = { x = 0 y = 1 }
+						MVLV_tsf_battalion = { x = 0 y = 2 }
+						MVLV_tsf_battalion = { x = 0 y = 3 }
+						MVLV_tsf_battalion = { x = 0 y = 4 }
+						MVLV_tsf_battalion = { x = 1 y = 0 }
+						MVLV_tsf_battalion = { x = 1 y = 1 }
+						MVLV_tsf_battalion = { x = 1 y = 2 }
+					}
+				}
+			} }
+
+		}
+	}
+
+}

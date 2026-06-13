@@ -1,0 +1,37 @@
+# ============================================================
+# 戦術機 デザイナーのカテゴリタブ定義
+# 通常 / 支援 / 特務 を独立タブにする
+# ============================================================
+
+search_filters = {
+	name = tsf_chassis
+	values = { MVLV_TSF_chassis }
+}
+
+search_filters = {
+	name = tsf_support_chassis
+	values = { MVLV_TSF_support_chassis }
+}
+
+search_filters = {
+	name = tsf_specialForces_chassis
+	values = { MVLV_TSF_specialForces_chassis }
+}
+
+# 凄ノ皇（XG）系
+search_filters = {
+	name = tsf_xg
+	values = { xg_equipment }
+}
+
+# F-47 イシュクル系
+search_filters = {
+	name = tsf_F47
+	values = { MVLV_TSF_F-47_equipment }
+}
+
+# UNI 汎用戦術機系（元 MOD 由来）
+search_filters = {
+	name = tsf_UNI
+	values = { UNI_MVLV_TSF_chassis }
+}

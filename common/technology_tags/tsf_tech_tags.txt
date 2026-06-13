@@ -1,0 +1,13 @@
+technology_categories = {
+	# 我々の MOD で使う主要カテゴリ
+	MVLV_tsf_tech
+	MVLV_tsf_module_tech
+	MVLV_railgun_tech
+}
+
+technology_folders = {
+	# メインの戦術機ツリー（横向き）
+	MVLV_tsf_folder = {
+		ledger = army
+	}
+}

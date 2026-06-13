@@ -1,0 +1,2757 @@
+equipments = {
+###priority小さいほど上に行く（大きいほど優先的に消費される）
+###visual_level大きいほど上に行く
+#特殊0,最優先0
+#sov Su>1 Mig29>2 Mig31>3
+#usa F15>4 F14>5 F18/16>6
+#eur tor>7 Mir>8 JA>9
+#jap T94>0 F2>6 TF00>0/20
+#chi J>13
+#ose AXetc.>6
+#afr >14
+
+###戦術歩行戦闘機###
+#F-4#
+	tsf_equipment = {
+		year = 1974
+
+		picture = archetype_MVLV_tsf
+		is_archetype = yes
+		is_convertable = yes
+		is_buildable = no
+		type = armor
+		group_by = archetype		
+		interface_category = interface_category_armor
+		
+		reliability = 0.8
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
+		
+		#Misc Abilities
+		maximum_speed = 10
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 50
+		breakthrough = 50
+		hardness = 0.99
+		armor_value = 70
+
+		#Offensive Abilities
+		soft_attack = 50
+		hard_attack = 50
+		ap_attack = 60
+		air_attack = 90
+
+		#Space taken in convoy
+		lend_lease_cost = 20
+		
+		build_cost_ic = 50
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+####################
+	#F-4#	
+	tsf_equipment_F-4 = {
+		year = 1973
+
+		archetype = MVLV_TSF_chassis 
+		priority = 4
+		visual_level = 0
+		is_convertable = yes
+	}
+	#F-15#	
+	tsf_equipment_F-15 = {
+		year = 1983
+
+		archetype = MVLV_TSF_chassis 
+		priority = 4
+		parent = tsf_equipment_F-4
+		visual_level = 1
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 14
+		reliability = 0.85
+
+		#Defensive Abilities
+		defense = 70
+		breakthrough = 70
+		hardness = 0.99
+		armor_value = 75
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 70
+		ap_attack = 120
+		air_attack = 140
+
+		#Space taken in convoy
+		lend_lease_cost = 25
+		
+		build_cost_ic = 80
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#F-15E#	
+	tsf_equipment_F-15E = {
+		year = 1995
+
+		archetype = MVLV_TSF_chassis 
+		parent = tsf_equipment_F-15
+		priority = 4
+		visual_level = 2
+		can_convert_from = { 
+			tsf_equipment_F-15
+		}
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 15
+		reliability = 0.85
+
+		#Defensive Abilities
+		defense = 75
+		breakthrough = 75
+		hardness = 0.99
+		armor_value = 82
+
+		#Offensive Abilities
+		soft_attack = 80
+		hard_attack =75
+		ap_attack = 125
+		air_attack = 180
+
+		#Space taken in convoy
+		lend_lease_cost = 30
+		
+		build_cost_ic = 85
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#F-15ACTV#	
+	tsf_equipment_F-15ACTV = {
+		year = 2001
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_F-15E 
+		priority = 4
+		visual_level = 3
+		can_convert_from = { 
+			tsf_equipment_F-15E 
+		}
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 18
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 95
+		breakthrough = 100
+		hardness = 0.99
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 75
+		hard_attack = 75
+		ap_attack = 155
+		air_attack = 160
+
+		#Space taken in convoy#
+		lend_lease_cost = 40
+		
+		build_cost_ic = 85
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#F-15SE#	
+	tsf_equipment_F-15SE = {
+		year = 2002
+
+		archetype = MVLV_TSF_chassis 
+		priority = 4
+		visual_level = 5
+		parent = tsf_equipment_F-15E
+		can_convert_from = { 
+			tsf_equipment_F-15E
+		}
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 18
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 90
+		breakthrough = 90
+		hardness = 0.99
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 85
+		hard_attack = 85
+		ap_attack = 150
+		air_attack = 200
+
+		#Space taken in convoy
+		lend_lease_cost = 40
+		
+		build_cost_ic = 85
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#F-35#
+	tsf_equipment_F-35 = {
+		year = 2002
+
+		archetype = MVLV_TSF_chassis 
+		priority = 4
+		visual_level = 10
+		parent = tsf_equipment_F-15SE
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 18
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 90
+		breakthrough = 100
+		hardness = 0.99
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 90
+		hard_attack = 90
+		ap_attack = 180
+		air_attack = 230
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 5000
+		
+		build_cost_ic = 90
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#F-14#	
+	tsf_equipment_F-14 = {
+		year = 1982
+
+		archetype = MVLV_TSF_chassis 
+		priority = 5
+		parent = tsf_equipment_F-4
+		visual_level = 1
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 15
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 70
+		breakthrough = 75
+		hardness = 0.99
+		armor_value = 75
+
+		#Offensive Abilities
+		soft_attack = 75
+		hard_attack = 75
+		ap_attack = 130
+		air_attack = 150
+
+		#Space taken in convoy
+		lend_lease_cost = 25
+		
+		build_cost_ic = 90
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#F-14Ex#	
+	tsf_equipment_F-14Ex = {
+		year = 1997
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_F-14 
+		priority = 5
+		visual_level = 2
+		can_convert_from = { 
+			tsf_equipment_F-14 
+		}
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 15
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 70
+		breakthrough = 90
+		hardness = 0.99
+		armor_value = 75
+
+		#Offensive Abilities
+		soft_attack = 80
+		hard_attack =85
+		ap_attack = 155
+		air_attack = 150
+
+		#Space taken in convoy
+		lend_lease_cost = 30
+		
+		build_cost_ic = 90
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+	#F-5#
+	tsf_equipment_F-5 = {
+		year = 1976
+
+		archetype = MVLV_TSF_chassis 
+		priority = 6
+		visual_level = 0
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 11
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 45
+		breakthrough = 45
+		hardness = 0.99
+		armor_value = 65
+
+		#Offensive Abilities
+		soft_attack = 45
+		hard_attack = 45
+		ap_attack = 60
+		air_attack = 90
+
+		#Space taken in convoy
+		lend_lease_cost = 20
+		
+		build_cost_ic = 45
+		resources = {
+			aluminium= 1
+			steel = 1
+		}
+	}
+	
+	#F-16#	
+	tsf_equipment_F-16 = {
+		year = 1986
+
+		archetype = MVLV_TSF_chassis 
+		priority = 6
+		parent = tsf_equipment_F-5
+		visual_level = 1
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 12
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 65
+		breakthrough = 65
+		hardness = 0.99
+		armor_value = 70
+
+		#Offensive Abilities
+		soft_attack = 65
+		hard_attack = 65
+		ap_attack = 110
+		air_attack = 120
+
+		#Space taken in convoy
+		lend_lease_cost = 25
+		
+		build_cost_ic = 60
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+	#F-18#	
+	tsf_equipment_F-18 = {
+		year = 1985
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_F-16
+		priority = 6
+		visual_level = 2
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 14
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 70
+		breakthrough = 70
+		hardness = 0.99
+		armor_value = 72
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 65
+		ap_attack = 110
+		air_attack = 140
+
+		#Space taken in convoy
+		lend_lease_cost = 25
+		
+		build_cost_ic = 70
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#F-18EF#	
+	tsf_equipment_F-18EF = {
+		year = 1994
+
+		archetype = MVLV_TSF_chassis 
+		parent = tsf_equipment_F-18
+		priority = 6
+		visual_level = 3
+		can_convert_from = { 
+			tsf_equipment_F-18 
+		}
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 14
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 75
+		breakthrough = 70
+		hardness = 0.99
+		armor_value = 75
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 70
+		ap_attack = 125
+		air_attack = 150
+
+		#Space taken in convoy
+		lend_lease_cost = 30
+		
+		build_cost_ic = 75
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	
+
+
+	#____________________________________________________________
+	#USA
+	#YF-23#
+	tsf_equipment_YF-23 = {
+		year = 2001
+
+		archetype = MVLV_TSF_chassis 
+		parent = tsf_equipment_F-15E
+		priority = 4
+		visual_level = 9
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 22
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 120
+		breakthrough = 200
+		hardness = 0.99
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 140
+		hard_attack = 130
+		ap_attack = 250
+		air_attack = 260
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 50
+		
+		build_cost_ic = 150
+		resources = {
+			aluminium =1
+			steel = 1
+		}
+	}
+	#F-22#
+	tsf_equipment_F-22 = {
+		year = 2001
+
+		archetype = MVLV_TSF_chassis 
+		parent = tsf_equipment_F-15E
+		priority = 4
+		visual_level = 8
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 22
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 100
+		breakthrough = 120
+		hardness = 0.99
+		armor_value = 100
+
+		#Offensive Abilities
+		soft_attack = 95
+		hard_attack = 95
+		ap_attack = 230
+		air_attack = 220
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 50000
+		
+		build_cost_ic = 125
+		resources = {
+			aluminium =1
+			steel = 1
+		}
+	}
+	
+	#____________________________________________________________
+	
+	#____________________________________________________________
+	#EUR
+	#F-5 TornadeIDS#
+	tsf_equipment_F-5GIDS = {
+		year = 1976
+
+		archetype = MVLV_TSF_chassis
+		priority = 7
+		parent = tsf_equipment_F-5
+		visual_level = 1
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 12
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 50
+		breakthrough = 45
+		hardness = 0.99
+		armor_value = 65
+
+		#Offensive Abilities
+		soft_attack = 45
+		hard_attack = 50
+		ap_attack = 80
+		air_attack = 100
+
+		#Space taken in convoy
+		lend_lease_cost = 20
+		
+		build_cost_ic = 45
+		resources = {
+			aluminium= 1
+			steel = 1
+		}
+	}
+	#ADV
+	tsf_equipment_F-5EADV = {
+		year = 1982
+
+		archetype = MVLV_TSF_chassis 
+		parent = tsf_equipment_F-5GIDS
+		priority = 7
+		visual_level = 2
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 13
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 65
+		breakthrough = 60
+		hardness = 0.99
+		armor_value = 70
+
+		#Offensive Abilities
+		soft_attack = 60
+		hard_attack = 60
+		ap_attack = 115
+		air_attack = 110
+
+		#Space taken in convoy
+		lend_lease_cost = 25
+		
+		build_cost_ic = 55
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#EF-2000#	
+	tsf_equipment_EF-2000 = {
+		year = 2000
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_F-5EADV
+		priority = 7
+		visual_level = 3
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 18
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 80
+		breakthrough = 120
+		hardness = 0.99
+		armor_value = 85
+
+		#Offensive Abilities
+		soft_attack = 85
+		hard_attack =80
+		ap_attack = 165
+		air_attack = 190
+
+		#Space taken in convoy
+		lend_lease_cost = 35
+		
+		build_cost_ic = 95
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#Tempest#	
+	tsf_equipment_Tempest = {
+		year = 2004
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_EF-2000
+		priority = 7
+		visual_level = 4
+
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 19
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 90
+		breakthrough = 160
+		hardness = 0.99
+		armor_value = 100
+
+		#Offensive Abilities
+		soft_attack = 100
+		hard_attack =85
+		ap_attack = 200
+		air_attack = 210
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 5000
+		
+		build_cost_ic = 100
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#Mirage III#
+	tsf_equipment_MIII = {
+		year = 1976
+
+		archetype = MVLV_TSF_chassis 
+		priority = 8
+		parent = tsf_equipment_F-5
+		visual_level = 1
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 11
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 45
+		breakthrough = 50
+		hardness = 0.99
+		armor_value = 60
+
+		#Offensive Abilities
+		soft_attack = 50
+		hard_attack = 45
+		ap_attack = 70
+		air_attack = 100
+
+		#Space taken in convoy
+		lend_lease_cost = 20
+		
+		build_cost_ic = 45
+		resources = {
+			aluminium= 1
+			steel = 1
+		}
+	}
+
+	
+	tsf_equipment_M2000 = {
+		year = 1981
+
+		archetype = MVLV_TSF_chassis 
+		priority = 8
+		parent = tsf_equipment_MIII
+		visual_level = 2
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 14
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 55
+		breakthrough = 65
+		hardness = 0.99
+		armor_value = 70
+
+		#Offensive Abilities
+		soft_attack = 55
+		hard_attack = 55
+		ap_attack = 105
+		air_attack = 120
+
+		#Space taken in convoy
+		lend_lease_cost = 25
+		
+		build_cost_ic = 50
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+	tsf_equipment_Rafale = {
+		year = 1998
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_M2000
+		priority = 8
+		visual_level = 3
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 16
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 75
+		breakthrough = 110
+		hardness = 0.99
+		armor_value = 85
+
+		#Offensive Abilities
+		soft_attack = 80
+		hard_attack = 75
+		ap_attack = 150
+		air_attack = 170
+
+		#Space taken in convoy
+		lend_lease_cost = 35
+		
+		build_cost_ic = 90
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#Starker Wind#	
+	tsf_equipment_SW = {
+		year = 2004
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_Rafale
+		priority = 8
+		visual_level = 4
+
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 20
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 110
+		breakthrough = 135
+		hardness = 0.99
+		armor_value = 95
+
+		#Offensive Abilities
+		soft_attack = 95
+		hard_attack = 115
+		ap_attack = 200
+		air_attack = 240
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 5000
+		
+		build_cost_ic = 105
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	
+	#ja37#	
+	tsf_equipment_JA-37 = {
+		year = 1986
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_F-5GIDS
+		priority = 9
+		visual_level = 1
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 13
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 70
+		breakthrough = 60
+		hardness = 0.99
+		armor_value = 70
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 60
+		ap_attack = 110
+		air_attack = 130
+
+		#Space taken in convoy
+		lend_lease_cost = 25
+		
+		build_cost_ic = 65
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	tsf_equipment_JA-39 = {
+		year = 1996
+
+		archetype = MVLV_TSF_chassis 
+		parent = tsf_equipment_JA-37
+		priority = 9
+		visual_level = 2
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 14
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 70
+		breakthrough = 85
+		hardness = 0.99
+		armor_value = 80
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 70
+		ap_attack = 125
+		air_attack = 140
+
+		#Space taken in convoy
+		lend_lease_cost = 30
+		
+		build_cost_ic = 70
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#____________________________________________________________
+
+	#____________________________________________________________
+	#JAP
+	#F-4J#
+	tsf_equipment_F-4J = {
+		year = 1977
+
+		archetype = MVLV_TSF_chassis
+		priority = 4
+		#parent = tsf_equipment_F-4
+		visual_level = 0
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 11
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 60
+		breakthrough = 55
+		hardness = 0.99
+		armor_value = 70
+
+		#Offensive Abilities
+		soft_attack = 55
+		hard_attack = 80
+		ap_attack = 70
+		air_attack = 100
+
+		#Space taken in convoy
+		lend_lease_cost = 20
+		
+		build_cost_ic = 50
+		resources = {
+			aluminium= 1
+			steel = 1
+		}
+	}
+
+	#F2月虹#	
+	tsf_equipment_F-2 = {
+		year = 2003
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_F-16
+		priority = 6
+		visual_level = 10
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 18
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 85
+		breakthrough = 100
+		hardness = 0.99
+		armor_value = 85
+
+		#Offensive Abilities
+		soft_attack = 90
+		hard_attack = 90
+		ap_attack = 150
+		air_attack = 200
+
+		#Space taken in convoy
+		lend_lease_cost = 40
+		
+		build_cost_ic = 80
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+	
+	#不知火#	
+	tsf_equipment_T94 = {
+		year = 1994
+
+		archetype = MVLV_TSF_chassis 
+		priority = 0
+		visual_level = 2
+		parent = tsf_equipment_F-15
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 16.5
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 70
+		breakthrough = 105
+		hardness = 0.99
+		armor_value = 82
+
+		#Offensive Abilities
+		soft_attack = 75
+		hard_attack =80
+		ap_attack = 140
+		air_attack = 180
+
+		#Space taken in convoy
+		lend_lease_cost = 30
+		
+		build_cost_ic = 88
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	
+	tsf_equipment_T97 = {
+		year = 1997
+
+		archetype = MVLV_TSF_chassis 
+		priority = 0
+		visual_level = 3
+		parent = tsf_equipment_F-15
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 14
+		reliability = 0.95
+
+		#Defensive Abilities
+		defense = 65
+		breakthrough = 80
+		hardness = 0.99
+		armor_value = 50
+
+		#Offensive Abilities
+		soft_attack = 60
+		hard_attack = 60
+		ap_attack = 120
+		air_attack = 120
+
+		#Space taken in convoy
+		lend_lease_cost = 20
+		
+		build_cost_ic = 60
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	
+	#不知火・壱型丙#	
+	tsf_equipment_T94H = {
+		year = 1998
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_F-15
+		priority = 0
+		visual_level = 4
+		can_convert_from = { 
+			tsf_equipment_T94
+		}
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 17
+		reliability = 0.4
+
+		#Defensive Abilities
+		defense = 80
+		breakthrough = 120
+		hardness = 0.99
+		armor_value = 75
+
+		#Offensive Abilities
+		soft_attack = 85
+		hard_attack = 80
+		ap_attack = 155
+		air_attack = 180
+
+		#Space taken in convoy
+		lend_lease_cost = 35
+		
+		build_cost_ic = 95
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
+	}
+	
+
+	#T942#	
+	tsf_equipment_T942 = {
+		year = 2001
+
+		archetype = MVLV_TSF_chassis 
+		priority = 0
+		visual_level = 6
+		parent = tsf_equipment_T94
+		parent = tsf_equipment_T97
+		parent = tsf_equipment_T94H
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 20
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 100
+		breakthrough = 150
+		hardness = 0.99
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 85
+		hard_attack = 95
+		ap_attack = 230
+		air_attack = 220
+
+		#Space taken in convoy
+		lend_lease_cost = 50
+		
+		build_cost_ic = 95
+		resources = {
+			aluminium =1
+			steel = 1
+		}
+	}
+	
+	#T94F#
+	tsf_equipment_T94F = {
+		year = 2003
+
+		archetype = MVLV_TSF_chassis 
+		priority = 0
+		visual_level = 10
+		parent = tsf_equipment_T942
+		can_convert_from = { 
+			tsf_equipment_T942 
+		}
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 22
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 100
+		breakthrough = 180
+		hardness = 0.99
+		armor_value = 95
+
+		#Offensive Abilities
+		soft_attack = 95
+		hard_attack = 115
+		ap_attack = 250
+		air_attack = 240
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 50
+		
+		build_cost_ic = 100
+		resources = {
+			aluminium =1
+			steel = 1
+		}
+	}
+	
+	#____________________________________________________________
+	
+
+	#____________________________________________________________
+	#SOV
+	#priority1-3
+	#Su-11#
+	tsf_equipment_Su-11 = {
+		year = 1976
+
+		archetype = MVLV_TSF_chassis
+		priority = 1
+		visual_level = 0
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 10
+		reliability = 0.4
+
+		#Defensive Abilities
+		defense = 40
+		breakthrough = 45
+		hardness = 0.99
+		armor_value = 65
+
+		#Offensive Abilities
+		soft_attack = 40
+		hard_attack = 0
+		ap_attack = 60
+		air_attack = 90
+
+		#Space taken in convoy
+		lend_lease_cost = 20
+		
+		build_cost_ic = 45
+		resources = {
+			aluminium= 1
+			steel = 1
+		}
+	}
+	tsf_equipment_Su-27 = {
+		year = 1992
+
+		archetype = MVLV_TSF_chassis 
+		priority = 1
+		visual_level = 2
+		parent = tsf_equipment_Su-11
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 15
+		reliability = 0.5
+
+		#Defensive Abilities
+		defense = 80
+		breakthrough = 80
+		hardness = 0.99
+		armor_value = 80
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 70
+		ap_attack = 120
+		air_attack = 140
+
+		#Space taken in convoy
+		lend_lease_cost = 25
+		
+		build_cost_ic = 80
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	
+	tsf_equipment_Su-37 = {
+		year = 1997
+
+		archetype = MVLV_TSF_chassis 
+		parent = tsf_equipment_Su-27
+		priority = 1
+		visual_level = 4
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 16.5
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 80
+		breakthrough = 95
+		hardness = 0.99
+		armor_value = 85
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack =75
+		ap_attack = 130
+		air_attack = 190
+
+		#Space taken in convoy
+		lend_lease_cost = 30
+		
+		build_cost_ic = 85
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#Su-47#	
+	tsf_equipment_Su-47 = {
+		year = 1999
+
+		archetype = MVLV_TSF_chassis 
+		parent = tsf_equipment_Su-37
+		priority = 1
+		visual_level = 4
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 20
+		reliability = 0.6
+
+		#Defensive Abilities
+		defense = 120
+		breakthrough = 200
+		hardness = 0.99
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 90
+		ap_attack = 180
+		air_attack = 220
+
+		#Space taken in convoy
+		lend_lease_cost = 50
+		
+		build_cost_ic = 100
+		resources = {
+			aluminium =1
+			steel = 1
+		}
+	}
+	#MiG-21#
+	tsf_equipment_MiG-21 = {
+		year = 1975
+
+		archetype = MVLV_TSF_chassis 
+		priority = 2
+		visual_level = 0
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 11
+		reliability = 0.6
+
+		#Defensive Abilities
+		defense = 55
+		breakthrough = 50
+		hardness = 0.99
+		armor_value = 70
+
+		#Offensive Abilities
+		soft_attack = 50
+		hard_attack = 40
+		ap_attack = 60
+		air_attack = 100
+
+		#Space taken in convoy
+		lend_lease_cost = 20
+		
+		build_cost_ic = 50
+		resources = {
+			aluminium= 1
+			steel = 1
+		}
+	}
+	#Mig-23#	
+	tsf_equipment_MiG-23 = {
+		year = 1980
+
+		archetype = MVLV_TSF_chassis 
+		priority = 2
+		visual_level = 1
+		parent = tsf_equipment_MiG-21
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 11
+		reliability = 0.4
+
+		#Defensive Abilities
+		defense = 60
+		breakthrough = 55
+		hardness = 0.99
+		armor_value = 68
+
+		#Offensive Abilities
+		soft_attack = 55
+		hard_attack = 50
+		ap_attack = 80
+		air_attack = 100
+
+		#Space taken in convoy
+		lend_lease_cost = 20
+		
+		build_cost_ic = 55
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#Mig-27#	
+	tsf_equipment_MiG-27 = {
+		year = 1983
+
+		archetype = MVLV_TSF_chassis 
+		priority = 2
+		visual_level = 2
+		parent = tsf_equipment_MiG-23
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 13
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 70
+		breakthrough = 70
+		hardness = 0.99
+		armor_value = 72
+
+		#Offensive Abilities
+		soft_attack = 60
+		hard_attack = 60
+		ap_attack = 105
+		air_attack = 120
+
+		#Space taken in convoy
+		lend_lease_cost = 25
+		
+		build_cost_ic = 60
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#Mig-29#	
+	tsf_equipment_MiG-29 = {
+		year = 1994
+
+		archetype = MVLV_TSF_chassis 
+		priority = 2
+		visual_level = 3
+		parent = tsf_equipment_MiG-27
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 14
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 80
+		breakthrough = 80
+		hardness = 0.99
+		armor_value = 75
+
+		#Offensive Abilities
+		soft_attack = 60
+		hard_attack = 50
+		ap_attack = 115
+		air_attack = 140
+
+		#Space taken in convoy
+		lend_lease_cost = 30
+		
+		build_cost_ic = 70
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#Mig-29OVT/35#	
+	tsf_equipment_MiG-35 = {
+		year = 1999
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_MiG-29 
+		priority = 2
+		visual_level = 4
+
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 18
+		reliability = 0.75
+
+		#Defensive Abilities
+		defense = 90
+		breakthrough = 95
+		hardness = 0.99
+		armor_value = 80
+
+		#Offensive Abilities
+		soft_attack = 75
+		hard_attack = 75
+		ap_attack = 155
+		air_attack = 190
+
+		#Space taken in convoy
+		lend_lease_cost = 30
+		
+		build_cost_ic = 80
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#Su-57#	
+	tsf_equipment_Su-57 = {
+		year = 2003
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_Su-47
+		priority = 1
+		visual_level = 5
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 22
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 90
+		breakthrough = 170
+		hardness = 0.99
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 90
+		hard_attack = 95
+		ap_attack = 200
+		air_attack = 220
+
+		#Space taken in convoy
+		lend_lease_cost = 100
+		
+		build_cost_ic = 95
+		resources = {
+			aluminium =1
+			steel = 1
+		}
+	}
+	
+	#Mig-25#	
+	tsf_equipment_MiG-25 = {
+		year = 1987
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_MiG-27
+		priority = 3
+		visual_level = 2
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 18
+		reliability = 0.5
+
+		#Defensive Abilities
+		defense = 30
+		breakthrough = 30
+		hardness = 0.99
+		armor_value = 70
+
+		#Offensive Abilities
+		soft_attack = 90
+		hard_attack = 90
+		ap_attack = 150
+		air_attack = 50
+
+		#Space taken in convoy
+		lend_lease_cost = 25
+		
+		build_cost_ic = 80
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#MiG-31#	
+	tsf_equipment_MiG-31 = {
+		year = 1990
+
+		archetype = MVLV_TSF_chassis 
+		parent = tsf_equipment_MiG-25
+		priority = 3
+		visual_level = 3
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 18
+		reliability = 0.6
+
+		#Defensive Abilities
+		defense = 60
+		breakthrough = 75
+		hardness = 0.99
+		armor_value = 75
+
+		#Offensive Abilities
+		soft_attack = 85
+		hard_attack = 85
+		ap_attack = 130
+		air_attack = 120
+
+		#Space taken in convoy
+		lend_lease_cost = 30
+		
+		build_cost_ic = 85
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#____________________________________________________________
+
+	tsf_equipment_T00UN = {
+		year = 1999
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_T94H
+		priority = 0
+		visual_level = 5
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 20
+		reliability = 0.95
+        acclimatization_cold_climate_gain_factor = 0.25
+
+		#Defensive Abilities
+		defense = 120
+		breakthrough = 190
+		hardness = 0.99
+		armor_value = 95
+
+		#Offensive Abilities
+		soft_attack = 110
+		hard_attack = 120
+		ap_attack = 270
+		air_attack = 270
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 10000
+		
+		build_cost_ic = 180
+		resources = {
+			aluminium =1
+			steel = 1
+		}
+	}
+	#Fenrir#
+	tsf_equipment_Fenrir = {
+		year = 2010
+
+		archetype = MVLV_TSF_chassis 
+		priority = 0
+		visual_level = 10
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 25
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 100
+		breakthrough = 180
+		hardness = 0.99
+		armor_value = 120
+
+		#Offensive Abilities
+		soft_attack = 100
+		hard_attack = 150
+		ap_attack = 250
+		air_attack = 300
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 10000
+		
+		build_cost_ic = 100
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	
+	#Typhon#
+	tsf_equipment_Typhon = {
+		year = 2010
+
+		archetype = MVLV_TSF_chassis 
+		priority = 0
+		visual_level = 11
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 25
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 150
+		breakthrough = 130
+		hardness = 0.99
+		armor_value = 150
+
+		#Offensive Abilities
+		soft_attack = 150
+		hard_attack = 100
+		ap_attack = 250
+		air_attack = 300
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 10000
+		
+		build_cost_ic = 100
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+
+###ソ連機###	
+	sov_equipment = {
+		year = 1970
+
+		picture = archetype_MVLV_tsf
+		is_archetype = yes
+		#is_convertable = yes
+		is_buildable = no
+		type = armor
+		group_by = archetype		
+		interface_category = interface_category_armor
+		
+		reliability = 1
+		
+		upgrades = { }
+		
+		#Misc Abilities
+		maximum_speed = 10
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 55
+		breakthrough = 40
+		hardness = 0.99
+		armor_value = 65
+
+		#Offensive Abilities
+		soft_attack = 50
+		hard_attack = 40
+		ap_attack = 90
+		air_attack = 90
+
+		#Space taken in convoy
+		lend_lease_cost = 50000
+		
+		build_cost_ic = 45
+		module_slots = {
+			MVLV_TSF_armor_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_armor_type
+				}
+			}
+			MVLV_TSF_OS_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_OS_normal_type
+					MVLV_TSF_OS_close_type
+					MVLV_TSF_OS_support_type
+				}
+			}
+			MVLV_TSF_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_engine_normal_type
+					MVLV_TSF_engine_maneuver_type
+					MVLV_TSF_engine_cruise_type
+				}
+			}
+			MVLV_TSF_headUnit_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_headUnit_nomal_type
+					MVLV_TSF_headUnit_heavy_type
+					MVLV_TSF_headUnit_aerial_type
+				}	
+			}
+			MVLV_TSF_right_hand_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_right_hand_type
+				}	
+			}
+			
+			MVLV_TSF_left_hand_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_shield_type
+					MVLV_TSF_sword_type
+					MVLV_TSF_add_wepon_type
+				}
+			}
+			
+			MVLV_TSF_head_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_sensor_type
+					MVLV_TSF_add_armor_type
+				}
+			}
+			#
+			MVLV_TSF_shoulder_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_thruster_type
+					MVLV_TSF_add_sensor_type
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_missile_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			MVLV_TSF_leftBackArm_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_sword_type
+					MVLV_TSF_add_wepon_type
+					MVLV_TSF_add_back_thruster_type
+					MVLV_TSF_add_back_supplies_type
+				}
+			}
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_leftBackArm_slot
+			#
+			MVLV_TSF_arm_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_sub_weapon_type
+					MVLV_TSF_add_sensor_type
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			#
+			MVLV_TSF_waist_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_thruster_type
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			#
+			MVLV_TSF_leg_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			###
+			MVLV_TSF_sp_slot_1 = {
+				allowed_module_categories = {
+					MVLV_TSF_sp_dataLink_type
+					MVLV_TSF_sp_fcs_type
+					MVLV_TSF_sp_structure_type
+					MVLV_TSF_sp_vibration_sensor_type
+					MVLV_TSF_sp_shell_type
+					MVLV_TSF_sp_sight_type
+					MVLV_TSF_sp_maintenance_team_type
+					MVLV_TSF_sp_custom_module_type
+				}
+			}
+			MVLV_TSF_sp_slot_2 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_3 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_4 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_5 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_6 = MVLV_TSF_sp_slot_1
+		}
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+	#Su-47p#	
+	sov_equipment_Su47 = {
+		year = 2002
+
+		archetype = sov_equipment
+		priority = 0
+		visual_level = 0
+		is_convertable = yes
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+		}
+		#Misc Abilities
+		maximum_speed = 25
+		reliability = 1
+
+		#Defensive Abilities
+		defense = 350
+		breakthrough = 350
+		hardness = 0.99
+		armor_value = 13
+
+		#Offensive Abilities
+		soft_attack = 250
+		hard_attack = 260
+		ap_attack = 37
+		air_attack = 200
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 50000
+		
+		build_cost_ic = 35
+		resources = {
+			aluminium = 3
+			steel = 3
+		}
+	}
+	#____________________________________________________________
+
+	#____________________________________________________________
+	#CHI
+	#J-10#
+	tsf_equipment_J-10 = {
+		year = 1994
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_F-16
+		can_convert_from = { 
+			tsf_equipment_F-16 
+		}
+		priority = 7
+		visual_level = 3
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 14
+		reliability = 0.65
+
+		#Defensive Abilities
+		defense = 75
+		breakthrough = 75
+		hardness = 0.99
+		armor_value = 70
+
+		#Offensive Abilities
+		soft_attack = 65
+		hard_attack = 60
+		ap_attack = 115
+		air_attack = 140
+
+		#Space taken in convoy
+		lend_lease_cost = 50
+		
+		build_cost_ic = 65
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+	#J-10X#
+	tsf_equipment_J-10X = {
+		year = 2000
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_J-10
+		priority = 7
+		visual_level = 5
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 22
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 90
+		breakthrough = 150
+		hardness = 0.99
+		armor_value = 85
+
+		#Offensive Abilities
+		soft_attack = 75
+		hard_attack = 80
+		ap_attack = 150
+		air_attack = 180
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 70
+		
+		build_cost_ic = 90
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+	#J-11#
+	tsf_equipment_J-11 = {
+		year = 1996
+
+		archetype = MVLV_TSF_chassis
+		parent = tsf_equipment_Su-27
+		can_convert_from = { 
+			tsf_equipment_Su-27 
+		}
+		priority = 7
+		visual_level = 4
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 15
+		reliability = 0.6
+
+		#Defensive Abilities
+		defense = 80
+		breakthrough = 85
+		hardness = 0.99
+		armor_value = 80
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 70
+		ap_attack = 125
+		air_attack = 160
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 100
+		
+		build_cost_ic = 80
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#____________________________________________________________
+
+
+	
+
+
+	#____________________________________________________________
+	#generic
+	#F-18HMRV#
+	tsf_equipment_F-18HMRV = {
+		year = 2000
+
+		archetype = MVLV_TSF_chassis 
+		priority = 6
+		visual_level = 5
+		parent = tsf_equipment_F-18EF
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 14
+		reliability = 0.6
+
+		#Defensive Abilities
+		defense = 80
+		breakthrough = 85
+		hardness = 0.99
+		armor_value = 80
+
+		#Offensive Abilities
+		soft_attack = 80
+		hard_attack = 80
+		ap_attack = 140
+		air_attack = 180
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 5000
+		
+		build_cost_ic = 75
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#F-18AX#
+	tsf_equipment_F-18AX = {
+		year = 2001
+
+		archetype = MVLV_TSF_chassis 
+		priority = 6
+		visual_level = 4
+		parent = tsf_equipment_F-18EF
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 16.5
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 80
+		breakthrough = 100
+		hardness = 0.99
+		armor_value = 75
+
+		#Offensive Abilities
+		soft_attack = 80
+		hard_attack = 80
+		ap_attack = 150
+		air_attack = 195
+
+
+		#Space taken in convoy
+		lend_lease_cost = 70
+		
+		build_cost_ic = 80
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#Mirage2000mod#
+	tsf_equipment_M2000K = {
+		year = 2000
+
+		archetype = MVLV_TSF_chassis 
+		priority = 14
+		parent = tsf_equipment_M2000
+		visual_level = 0
+		is_convertable = yes
+		#Misc Abilities
+		maximum_speed = 20
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 55
+		breakthrough = 80
+		hardness = 0.99
+		armor_value = 70
+
+		#Offensive Abilities
+		soft_attack = 60
+		hard_attack = 60
+		ap_attack = 120
+		air_attack = 130
+
+		#Space taken in convoy
+		lend_lease_cost = 25
+		
+		build_cost_ic = 70
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#____________________________________________________________
+
+###強襲歩行攻撃機###	
+	asa_equipment = {
+		year = 1977
+
+		picture = archetype_MVLV_asa
+		is_archetype = yes
+		is_convertable = yes
+		is_buildable = no
+		type = armor
+		group_by = archetype		
+		interface_category = interface_category_armor
+		
+		reliability = 0.8
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
+		
+		#Misc Abilities
+		maximum_speed = 8
+		reliability = 0.85
+
+		#Defensive Abilities
+		defense = 40
+		breakthrough = 100
+		hardness = 0.7
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 90
+		hard_attack = 60
+		ap_attack = 130
+		air_attack = 100
+
+		#Space taken in convoy
+		lend_lease_cost = 20
+		
+		build_cost_ic = 65
+		module_slots = {
+			MVLV_TSF_armor_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_armor_type
+				}
+			}
+			MVLV_TSF_OS_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_OS_normal_type
+					MVLV_TSF_OS_close_type
+					MVLV_TSF_OS_support_type
+				}
+			}
+			MVLV_TSF_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_engine_normal_type
+					MVLV_TSF_engine_maneuver_type
+					MVLV_TSF_engine_cruise_type
+				}
+			}
+			MVLV_TSF_headUnit_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_headUnit_nomal_type
+					MVLV_TSF_headUnit_heavy_type
+					MVLV_TSF_headUnit_aerial_type
+				}	
+			}
+			MVLV_TSF_right_hand_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_right_hand_type
+				}	
+			}
+			
+			MVLV_TSF_left_hand_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_shield_type
+					MVLV_TSF_sword_type
+					MVLV_TSF_add_wepon_type
+				}
+			}
+			
+			MVLV_TSF_head_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_sensor_type
+					MVLV_TSF_add_armor_type
+				}
+			}
+			#
+			MVLV_TSF_shoulder_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_thruster_type
+					MVLV_TSF_add_sensor_type
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_missile_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			MVLV_TSF_leftBackArm_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_sword_type
+					MVLV_TSF_add_wepon_type
+					MVLV_TSF_add_back_thruster_type
+					MVLV_TSF_add_back_supplies_type
+				}
+			}
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_leftBackArm_slot
+			#
+			MVLV_TSF_arm_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_sub_weapon_type
+					MVLV_TSF_add_sensor_type
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			#
+			MVLV_TSF_waist_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_thruster_type
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			#
+			MVLV_TSF_leg_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			###
+			MVLV_TSF_sp_slot_1 = {
+				allowed_module_categories = {
+					MVLV_TSF_sp_dataLink_type
+					MVLV_TSF_sp_fcs_type
+					MVLV_TSF_sp_structure_type
+					MVLV_TSF_sp_vibration_sensor_type
+					MVLV_TSF_sp_shell_type
+					MVLV_TSF_sp_sight_type
+					MVLV_TSF_sp_maintenance_team_type
+					MVLV_TSF_sp_custom_module_type
+				}
+			}
+			MVLV_TSF_sp_slot_2 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_3 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_4 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_5 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_6 = MVLV_TSF_sp_slot_1
+		}
+		resources = {
+		
+			tungsten = 1
+			steel = 1
+		}
+	}
+#A-6#
+	asa_equipment_A-6 = {
+		year = 1977
+
+		archetype = asa_equipment 
+		priority = 30
+		visual_level = 0
+		is_convertable = yes
+		
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+		}
+	}
+#A-12	
+	asa_equipment_A-12 = {
+		year = 1997
+
+		archetype = asa_equipment 
+		priority = 30
+		parent = asa_equipment_A-6
+		visual_level = 1
+		is_convertable = yes
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+		}
+		#Misc Abilities
+		maximum_speed = 10
+		reliability = 0.85
+
+		#Defensive Abilities
+		defense = 60
+		breakthrough = 120
+		hardness = 0.8
+		armor_value = 100
+
+		#Offensive Abilities
+		soft_attack = 100
+		hard_attack = 80
+		ap_attack = 180
+		air_attack = 100
+
+		#Space taken in convoy
+		lend_lease_cost = 40
+		
+		build_cost_ic = 90
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	#____________________________________________________________
+
+###斯衛機###	
+	jeg_equipment = {
+		year = 1970
+
+		picture = archetype_MVLV_tsf
+		is_archetype = yes
+		is_convertable = yes
+		is_buildable = no
+		type = armor
+		group_by = archetype		
+		interface_category = interface_category_armor
+		
+		reliability = 0.85
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
+		
+		#Misc Abilities
+		maximum_speed = 10
+		reliability = 0.85
+
+		#Defensive Abilities
+		defense = 55
+		breakthrough = 40
+		hardness = 0.7
+		armor_value = 65
+
+		#Offensive Abilities
+		soft_attack = 50
+		hard_attack = 40
+		ap_attack = 90
+		air_attack = 90
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 50000
+		
+		build_cost_ic = 45
+		module_slots = {
+			MVLV_TSF_armor_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_armor_type
+				}
+			}
+			MVLV_TSF_OS_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_OS_normal_type
+					MVLV_TSF_OS_close_type
+					MVLV_TSF_OS_support_type
+				}
+			}
+			MVLV_TSF_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_engine_normal_type
+					MVLV_TSF_engine_maneuver_type
+					MVLV_TSF_engine_cruise_type
+				}
+			}
+			MVLV_TSF_headUnit_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_headUnit_nomal_type
+					MVLV_TSF_headUnit_heavy_type
+					MVLV_TSF_headUnit_aerial_type
+				}	
+			}
+			MVLV_TSF_right_hand_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_right_hand_type
+				}	
+			}
+			
+			MVLV_TSF_left_hand_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_shield_type
+					MVLV_TSF_sword_type
+					MVLV_TSF_add_wepon_type
+				}
+			}
+			
+			MVLV_TSF_head_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_sensor_type
+					MVLV_TSF_add_armor_type
+				}
+			}
+			#
+			MVLV_TSF_shoulder_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_thruster_type
+					MVLV_TSF_add_sensor_type
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_missile_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			MVLV_TSF_leftBackArm_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_sword_type
+					MVLV_TSF_add_wepon_type
+					MVLV_TSF_add_back_thruster_type
+					MVLV_TSF_add_back_supplies_type
+				}
+			}
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_leftBackArm_slot
+			#
+			MVLV_TSF_arm_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_sub_weapon_type
+					MVLV_TSF_add_sensor_type
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			#
+			MVLV_TSF_waist_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_thruster_type
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			#
+			MVLV_TSF_leg_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			###
+			MVLV_TSF_sp_slot_1 = {
+				allowed_module_categories = {
+					MVLV_TSF_sp_dataLink_type
+					MVLV_TSF_sp_fcs_type
+					MVLV_TSF_sp_structure_type
+					MVLV_TSF_sp_vibration_sensor_type
+					MVLV_TSF_sp_shell_type
+					MVLV_TSF_sp_sight_type
+					MVLV_TSF_sp_maintenance_team_type
+					MVLV_TSF_sp_custom_module_type
+				}
+			}
+			MVLV_TSF_sp_slot_2 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_3 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_4 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_5 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_6 = MVLV_TSF_sp_slot_1
+		}
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+
+	#F-4JK瑞鶴#	
+	jeg_equipment_F-4JK = {
+		year = 1985
+
+		archetype = jeg_equipment
+		priority = 0
+		visual_level = 26
+		is_convertable = yes
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+		}
+				#Misc Abilities
+		maximum_speed = 13
+		reliability = 0.85
+
+		#Defensive Abilities
+		defense = 70
+		breakthrough = 70
+		hardness = 0.7
+		armor_value = 75
+
+		#Offensive Abilities
+		soft_attack = 70
+		hard_attack = 70
+		ap_attack = 110
+		air_attack = 150
+
+		can_license = no
+		#Space taken in convoy
+		lend_lease_cost = 50000
+		
+		build_cost_ic = 63
+		resources = {
+			aluminium = 1
+			steel = 1
+		}
+	}
+	
+
+	
+	
+###戦術歩行攻撃機###
+	tsa_equipment = {
+		year = 1975
+
+		picture = archetype_MVLV_tsa
+		is_archetype = yes
+		is_convertable = yes
+		is_buildable = no
+		type = armor
+		group_by = archetype		
+		interface_category = interface_category_armor
+		
+		reliability = 0.85
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
+		
+		#Misc Abilities
+		maximum_speed = 8
+		reliability = 0.85
+
+		#Defensive Abilities
+		defense = 65
+		breakthrough = 45
+		hardness = 0.8
+		armor_value = 100
+
+		#Offensive Abilities
+		soft_attack = 130
+		hard_attack = 40
+		ap_attack = 60
+		air_attack = 100
+
+		#Space taken in convoy
+		lend_lease_cost = 30
+		
+		build_cost_ic = 65
+		module_slots = {
+			MVLV_TSF_armor_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_armor_type
+				}
+			}
+			MVLV_TSF_OS_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_OS_normal_type
+					MVLV_TSF_OS_close_type
+					MVLV_TSF_OS_support_type
+				}
+			}
+			MVLV_TSF_engine_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_engine_normal_type
+					MVLV_TSF_engine_maneuver_type
+					MVLV_TSF_engine_cruise_type
+				}
+			}
+			MVLV_TSF_headUnit_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_headUnit_nomal_type
+					MVLV_TSF_headUnit_heavy_type
+					MVLV_TSF_headUnit_aerial_type
+				}	
+			}
+			MVLV_TSF_right_hand_slot = {
+				required = yes
+				allowed_module_categories = {
+					MVLV_TSF_right_hand_type
+				}	
+			}
+			
+			MVLV_TSF_left_hand_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_shield_type
+					MVLV_TSF_sword_type
+					MVLV_TSF_add_wepon_type
+				}
+			}
+			
+			MVLV_TSF_head_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_sensor_type
+					MVLV_TSF_add_armor_type
+				}
+			}
+			#
+			MVLV_TSF_shoulder_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_thruster_type
+					MVLV_TSF_add_sensor_type
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_missile_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			MVLV_TSF_leftBackArm_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_sword_type
+					MVLV_TSF_add_wepon_type
+					MVLV_TSF_add_back_thruster_type
+					MVLV_TSF_add_back_supplies_type
+				}
+			}
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_leftBackArm_slot
+			#
+			MVLV_TSF_arm_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_sub_weapon_type
+					MVLV_TSF_add_sensor_type
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			#
+			MVLV_TSF_waist_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_thruster_type
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			#
+			MVLV_TSF_leg_slot = {
+				allowed_module_categories = {
+					MVLV_TSF_add_armor_type
+					MVLV_TSF_add_supplies_type
+				}
+			}
+			###
+			MVLV_TSF_sp_slot_1 = {
+				allowed_module_categories = {
+					MVLV_TSF_sp_dataLink_type
+					MVLV_TSF_sp_fcs_type
+					MVLV_TSF_sp_structure_type
+					MVLV_TSF_sp_vibration_sensor_type
+					MVLV_TSF_sp_shell_type
+					MVLV_TSF_sp_sight_type
+					MVLV_TSF_sp_maintenance_team_type
+					MVLV_TSF_sp_custom_module_type
+				}
+			}
+			MVLV_TSF_sp_slot_2 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_3 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_4 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_5 = MVLV_TSF_sp_slot_1
+			MVLV_TSF_sp_slot_6 = MVLV_TSF_sp_slot_1
+		}
+		resources = {
+			tungsten = 1
+			steel = 1
+		}
+	}
+#A-10#	
+	tsa_equipment_A-10 = {
+		year = 1978
+
+		archetype = tsa_equipment 
+		priority = 25
+		visual_level = 0
+		is_convertable = yes
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+		}
+	}
+	tsa_equipment_A-10C = {
+		year = 1983
+		archetype = tsa_equipment
+		priority = 25
+		visual_level = 0
+		is_convertable = yes
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+		}
+		maximum_speed = 10
+		soft_attack = 160
+		build_cost_ic = 65
+	}
+}

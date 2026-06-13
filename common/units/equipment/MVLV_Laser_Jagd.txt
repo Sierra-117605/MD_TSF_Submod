@@ -1,0 +1,162 @@
+equipments = {
+
+	MVLV_Laser_Jagd_equipment = {
+		year = 1933
+
+		can_be_produced = {
+			always = yes
+		}
+
+		allow_mission_type = {
+			cas
+			air_superiority
+			interception
+		}
+		is_archetype = yes
+		is_buildable = no
+		picture = archetype_fighter_equipment
+		type = fighter 
+		group_by = archetype
+		sprite = light_plane
+		air_map_icon_frame = 1
+		
+		interface_category = interface_category_air
+		
+		interface_overview_category_index = 1
+
+		reliability = 0.7
+		maximum_speed = 800
+		carrier_capable = yes
+		air_range = 1000
+		surface_detection = 1410000
+		lend_lease_cost = 1
+		
+		build_cost_ic = 100#100
+
+		resources = {
+			rubber = 1
+		}
+		
+		manpower = 10
+		fuel_consumption = 0.0
+	}
+	####x2x2x2+50
+	#L1
+	MVLV_Laser_Jagd_L_equipment_1 = {
+		year = 1944
+
+		archetype = MVLV_Laser_Jagd_equipment
+		priority = 10
+
+		air_attack = 210
+		air_defence = 100
+		
+		air_agility = 80
+		air_ground_attack = 10
+		air_superiority = 0.1
+	}
+	#H1
+	MVLV_Laser_Jagd_H_equipment_1 = {
+		year = 1944
+
+		archetype = MVLV_Laser_Jagd_equipment
+		priority = 10
+
+		air_attack = 250
+		air_defence = 100
+		
+		air_agility = 80
+		air_ground_attack = 15
+		air_superiority = 0.1
+	}
+	#L2
+	MVLV_Laser_Jagd_L_equipment_2 = {
+		year = 1944
+
+		archetype = MVLV_Laser_Jagd_equipment
+		parent = MVLV_Laser_Jagd_L_equipment_1
+		priority = 10
+
+		air_attack = 290
+		air_defence = 120
+		
+		air_agility = 100
+		air_ground_attack = 15
+		air_superiority = 0.1
+	}
+	#H2
+	MVLV_Laser_Jagd_H_equipment_2 = {
+		year = 1944
+
+		archetype = MVLV_Laser_Jagd_equipment
+		parent = MVLV_Laser_Jagd_H_equipment_1
+		priority = 10
+
+		air_attack = 330
+		air_defence = 120
+		
+		air_agility = 100
+		air_ground_attack = 20
+		air_superiority = 0.1
+	}
+	#M2
+	MVLV_Laser_Jagd_M_equipment_2 = {
+		year = 1944
+
+		archetype = MVLV_Laser_Jagd_equipment
+		parent = MVLV_Laser_Jagd_H_equipment_1
+		priority = 10
+
+		air_attack = 370
+		air_defence = 140
+		
+		air_agility = 100
+		air_ground_attack = 15
+		air_superiority = 0.1
+	}
+	#L3
+	MVLV_Laser_Jagd_L_equipment_3 = {
+		year = 1944
+
+		archetype = MVLV_Laser_Jagd_equipment
+		parent = MVLV_Laser_Jagd_L_equipment_2
+		priority = 10
+
+		air_attack = 370
+		air_defence = 150
+		
+		air_agility = 150
+		air_ground_attack = 15
+		air_superiority = 0.1
+	}
+	#H3
+	MVLV_Laser_Jagd_H_equipment_3 = {
+		year = 1944
+
+		archetype = MVLV_Laser_Jagd_equipment
+		parent = MVLV_Laser_Jagd_H_equipment_2
+		priority = 10
+
+		air_attack = 410
+		air_defence = 150
+		
+		air_agility = 150
+		air_ground_attack = 20
+		air_superiority = 0.1
+	}
+	#M3
+	MVLV_Laser_Jagd_M_equipment_3 = {
+		year = 1944
+
+		archetype = MVLV_Laser_Jagd_equipment
+		parent = MVLV_Laser_Jagd_M_equipment_2
+		priority = 10
+
+		air_attack = 450
+		air_defence = 160
+		
+		air_agility = 150
+		air_ground_attack = 20
+		air_superiority = 0.1
+	}
+}

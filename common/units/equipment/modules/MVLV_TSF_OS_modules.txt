@@ -1,0 +1,501 @@
+equipment_modules = {
+	MVLV_TSF_basic_OS = {
+		category = MVLV_TSF_OS_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 1
+			experience_loss_factor = -0.005
+			casualty_trickleback = 0.0025
+			initiative = 0.01
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			defense = 0.05
+			breakthrough = 0.05
+
+			soft_attack = 0.10
+			hard_attack = 0.10		
+			ap_attack = 0.05
+		}
+	}
+	MVLV_TSF_OS_1_normal = {
+		category = MVLV_TSF_OS_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.10
+			experience_loss_factor = -0.015
+			casualty_trickleback = 0.005
+			initiative = 0.01
+			build_cost_ic = 5
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+			defense = 0.20
+			breakthrough = 0.10			
+
+			soft_attack = 0.2
+			hard_attack = 0.2
+
+			ap_attack = 0.1
+			air_attack = 0.05
+		}
+	}
+
+	MVLV_TSF_OS_2_normal = {
+		category = MVLV_TSF_OS_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.15
+			casualty_trickleback = 0.0075
+			experience_loss_factor = -0.02
+			initiative = 0.03
+			build_cost_ic = 7.5
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			defense = 0.30
+			breakthrough = 0.15			
+
+			soft_attack = 0.25
+			hard_attack = 0.25
+
+			ap_attack = 0.2
+			air_attack = 0.10
+		}
+	}
+	MVLV_TSF_OS_3_normal = {
+		category = MVLV_TSF_OS_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.20
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.025
+			initiative = 0.05
+			build_cost_ic = 10
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.04
+			defense = 0.40
+			breakthrough = 0.25			
+
+			soft_attack = 0.3
+			hard_attack = 0.3
+
+			ap_attack = 0.3
+			air_attack = 0.20
+		}
+	}
+##
+	MVLV_TSF_OS_4_normal = {
+		category = MVLV_TSF_OS_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.25
+			casualty_trickleback = 0.02
+			experience_loss_factor = -0.04
+			initiative = 0.08
+			build_cost_ic = 15
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			defense = 0.65
+			breakthrough = 0.65			
+
+			soft_attack = 0.6
+			hard_attack = 0.6
+
+			ap_attack = 0.5
+			air_attack = 0.50
+		}
+		build_cost_resources = {
+			rubber = 1
+		}
+	}
+	MVLV_TSF_OS_XM3 = {
+		category = MVLV_TSF_OS_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.30
+			casualty_trickleback = 0.015
+			experience_loss_factor = -0.04
+			initiative = 0.07
+			build_cost_ic = 13
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			defense = 0.60
+			breakthrough = 0.40			
+
+			soft_attack = 0.4
+			hard_attack = 0.4
+
+			ap_attack = 0.4
+			air_attack = 0.40
+		}
+	}
+	
+	#MVLV_TSF_basic_OS_close
+
+	MVLV_TSF_OS_1_close = {
+		category = MVLV_TSF_OS_close_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.10
+			casualty_trickleback = 0.005
+			experience_loss_factor = -0.02
+			initiative = 0.03
+			build_cost_ic = 7
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			defense = 0.10
+			breakthrough = 0.25			
+
+			soft_attack = 0.1
+			hard_attack = 0.25
+
+			ap_attack = 0.2
+			air_attack = 0.1
+		}
+	}
+	MVLV_TSF_OS_2_close = {
+		category = MVLV_TSF_OS_close_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.15
+			casualty_trickleback = 0.0075
+			experience_loss_factor = -0.025
+			initiative = 0.04
+			build_cost_ic = 8.5
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.04
+			defense = 0.20
+			breakthrough = 0.30			
+
+			soft_attack = 0.1
+			hard_attack = 0.35
+
+			ap_attack = 0.3
+			air_attack = 0.2
+		}
+	}
+	MVLV_TSF_OS_3_close = {
+		category = MVLV_TSF_OS_close_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.20
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.03
+			initiative = 0.05
+			build_cost_ic = 11
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.04
+			defense = 0.25
+			breakthrough = 0.40			
+
+			soft_attack = 0.2
+			hard_attack = 0.40
+
+			ap_attack = 0.4
+			air_attack = 0.4
+		}
+	}
+	#MVLV_TSF_OS_4_close
+	MVLV_TSF_OS_XM3_close = {
+		category = MVLV_TSF_OS_close_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.3
+			casualty_trickleback = 0.015
+			experience_loss_factor = -0.04
+			initiative = 0.07
+			build_cost_ic = 13
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			defense = 0.40
+			breakthrough = 0.60			
+
+			soft_attack = 0.3
+			hard_attack = 0.50
+
+			ap_attack = 0.45
+			air_attack = 0.6
+		}
+	}
+	#MVLV_TSF_basic_OS_range = {
+	#MVLV_TSF_OS_1_range
+	MVLV_TSF_OS_1_support = {
+		category = MVLV_TSF_OS_support_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.10
+			casualty_trickleback = 0.0025
+			experience_loss_factor = -0.01
+			initiative = 0.01
+			build_cost_ic = 7
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			defense = 0.10
+			breakthrough = 0.05			
+
+			soft_attack = 0.30
+			hard_attack = 0.30
+
+			ap_attack = 0.20
+			air_attack = 0.05
+		}
+	}
+	#MVLV_TSF_OS_2_range
+	MVLV_TSF_OS_2_support = {
+		category = MVLV_TSF_OS_support_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.15
+			casualty_trickleback = 0.0075
+			experience_loss_factor = -0.015
+			initiative = 0.03
+			build_cost_ic = 8.5
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.02
+			defense = 0.15
+			breakthrough = 0.10			
+
+			soft_attack = 0.35
+			hard_attack = 0.35
+
+			ap_attack = 0.3
+			air_attack = 0.2
+		}
+	}
+	#MVLV_TSF_OS_3_range = {
+	MVLV_TSF_OS_3_support = {
+		category = MVLV_TSF_OS_support_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.20
+			casualty_trickleback = 0.01
+			experience_loss_factor = -0.02
+			initiative = 0.04
+			build_cost_ic = 11
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			defense = 0.20
+			breakthrough = 0.15			
+
+			soft_attack = 0.4
+			hard_attack = 0.4
+
+			ap_attack = 0.4
+			air_attack = 0.3
+		}
+	}
+	#MVLV_TSF_OS_4_range
+	MVLV_TSF_OS_XM3_support = {
+		category = MVLV_TSF_OS_support_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.3
+			casualty_trickleback = 0.015
+			experience_loss_factor = -0.04
+			initiative = 0.07
+			build_cost_ic = 13
+		}
+		dismantle_cost_ic = 0
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_normal_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_close_type
+			convert_cost_ic = 0
+		}
+		can_convert_from = {
+			module_category = MVLV_TSF_OS_support_type
+			convert_cost_ic = 0
+		}
+		multiply_stats = {
+			maximum_speed = 0.05
+			defense = 0.30
+			breakthrough = 0.3			
+
+			soft_attack = 0.50
+			hard_attack = 0.50
+
+			ap_attack = 0.4
+			air_attack = 0.4
+		}
+	}
+}

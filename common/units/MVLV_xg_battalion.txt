@@ -1,0 +1,36 @@
+sub_units = {
+	MVLV_xg_battalion = {
+		sprite = "xg"
+		map_icon_category = armored
+		priority = 5000
+		ai_priority = 5000
+		active = yes
+		can_exfiltrate_from_coast = yes
+		type = {
+			armor
+		}
+		group = xg
+		categories = {
+			category_MVLV_xg
+			category_MVLV_tsf_family
+		}
+		# combat_width = 8
+		combat_width = 40
+		need = {
+			xg_equipment = 1
+			cnc_equipment_1 = 10
+		}
+		manpower = 500
+		max_organisation = 80
+		max_strength = 200
+		default_morale = 1
+		training_time = 400
+		weight = 0
+		supply_consumption = 0
+		#偵察、無線機能、回復力
+		recon = 1.5
+		initiative = 3
+		recovery_rate = 0.1
+		can_be_parachuted = no
+	}
+}

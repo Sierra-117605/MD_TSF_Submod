@@ -1,0 +1,194 @@
+# ============================================================
+# AI 向け師団テンプレート（戦術機系統・カテゴリ分割対応）
+# 軽 = MVLV_tsf_light_battalion / 重 = MVLV_tsf_battalion / 高機動 = MVLV_tsf_maneuver_battalion
+# enable は ai_strategy 側で制御
+# ============================================================
+
+# === 軽戦術機師団（軽大隊のみ）===
+tsf_quick_role = {
+	role = tsf_quick
+	upgrade_prio = { factor = 1 }
+	blocked_for = { BET }
+
+	tsf_quick_wing = {
+		upgrade_prio = { factor = 0.4 }
+		reinforce_prio = 1
+		target_template = {
+			regiments = {
+				MVLV_tsf_light_battalion = 10
+			}
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				recon = 1
+			}
+		}
+	}
+}
+
+# === 重戦術機師団（重大隊のみ）===
+tsf_assault_role = {
+	role = tsf_assault
+	upgrade_prio = { factor = 1 }
+	blocked_for = { BET }
+
+	tsf_assault_wing = {
+		upgrade_prio = { factor = 0.4 }
+		reinforce_prio = 1
+		target_template = {
+			regiments = {
+				MVLV_tsf_battalion = 10
+			}
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				field_hospital = 1
+				logistics_company = 1
+				signal_company = 1
+			}
+		}
+	}
+}
+
+# === 高機動戦術機師団（高機動大隊のみ）===
+tsf_maneuver_role = {
+	role = tsf_maneuver
+	upgrade_prio = { factor = 1 }
+	blocked_for = { BET }
+
+	tsf_maneuver_wing = {
+		upgrade_prio = { factor = 0.4 }
+		reinforce_prio = 1
+		target_template = {
+			regiments = {
+				MVLV_tsf_maneuver_battalion = 10
+			}
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				recon = 1
+				signal_company = 1
+			}
+		}
+	}
+}
+
+# === 混成戦術機師団（軽4+重3+高機動3）= 最多配備 ===
+tsf_combined_arms_role = {
+	role = tsf_combined_arms
+	upgrade_prio = { factor = 1 }
+	blocked_for = { BET }
+
+	tsf_combined_arms_wing = {
+		upgrade_prio = { factor = 0.5 }
+		reinforce_prio = 1
+		target_template = {
+			regiments = {
+				MVLV_tsf_light_battalion = 4
+				MVLV_tsf_battalion = 3
+				MVLV_tsf_maneuver_battalion = 3
+			}
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				field_hospital = 1
+				logistics_company = 1
+			}
+		}
+	}
+}
+
+# === 支援戦術機師団（支援8+軽2）===
+tsf_support_role = {
+	role = tsf_support
+	upgrade_prio = { factor = 1 }
+	blocked_for = { BET }
+
+	tsf_support_wing = {
+		upgrade_prio = { factor = 0.3 }
+		reinforce_prio = 1
+		target_template = {
+			regiments = {
+				MVLV_tsf_support_battalion = 8
+				MVLV_tsf_light_battalion = 2
+			}
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				field_hospital = 1
+				logistics_company = 1
+			}
+		}
+	}
+}
+
+# === 特務戦術機師団（通常版）===
+tsf_specialForces_role = {
+	role = tsf_specialForces
+	upgrade_prio = { factor = 1 }
+	blocked_for = { BET }
+
+	tsf_specialForces_wing = {
+		upgrade_prio = { factor = 0.2 }
+		reinforce_prio = 1
+		target_template = {
+			regiments = {
+				MVLV_tsf_specialForces_battalion = 6
+			}
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				field_hospital = 1
+				recon = 1
+			}
+		}
+	}
+}
+
+# === 特務戦術機師団（突撃版）===
+tsf_specialForces_assault_role = {
+	role = tsf_specialForces_assault
+	upgrade_prio = { factor = 1 }
+	blocked_for = { BET }
+
+	tsf_specialForces_assault_wing = {
+		upgrade_prio = { factor = 0.2 }
+		reinforce_prio = 1
+		target_template = {
+			regiments = {
+				MVLV_tsf_specialForces_battalion = 8
+			}
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				field_hospital = 1
+				recon = 1
+				signal_company = 1
+			}
+		}
+	}
+}
+
+# === 凄ノ皇 XG 専用師団（XG1+護衛 軽2重2）===
+tsf_xg_role = {
+	role = tsf_xg
+	upgrade_prio = { factor = 1 }
+	blocked_for = { BET }
+
+	tsf_xg_wing = {
+		upgrade_prio = { factor = 0.1 }
+		reinforce_prio = 1
+		target_template = {
+			regiments = {
+				MVLV_xg_battalion = 1
+				MVLV_tsf_light_battalion = 2
+				MVLV_tsf_battalion = 2
+			}
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				field_hospital = 1
+			}
+		}
+	}
+}

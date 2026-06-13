@@ -1,0 +1,317 @@
+tsf_role = {
+	role = tsf
+
+	upgrade_prio = {
+		factor = 1
+	}
+	blocked_for = {
+		BET
+		H02
+		H03
+		H04
+		H05
+		H06
+		H07
+		H08
+		H09
+		H10
+		H11
+		H12
+		H13
+		H14
+		H15
+		H16
+		H17
+		H18
+		H19
+		H20
+		H21
+		H22
+		H23
+		H24
+		H25
+		H26
+	}
+
+	tsf_wing = {
+		upgrade_prio = {
+			factor = 0.01
+		}
+
+		# TEMPLATE
+		
+		
+		
+		reinforce_prio = 1
+		target_template = {
+			
+			
+			regiments = {
+				MVLV_tsf_battalion = 10
+			}
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				field_hospital = 1
+			}
+		}
+
+	}
+}
+
+infantry_brigade_artillery = {
+	role = infantry_brigade_artillery
+	upgrade_prio = {
+		factor = 1
+	}
+	blocked_for = {
+		BET
+		H02
+		H03
+		H04
+		H05
+		H06
+		H07
+		H08
+		H09
+		H10
+		H11
+		H12
+		H13
+		H14
+		H15
+		H16
+		H17
+		H18
+		H19
+		H20
+		H21
+		H22
+		H23
+		H24
+		H25
+		H26
+	}
+
+	infantry_brigade_artillery_template = {
+		upgrade_prio = {
+			factor = 0.01
+		}
+
+		# TEMPLATE
+		
+		
+		
+		reinforce_prio = 1
+		target_template = {
+			
+			
+			regiments = {
+				infantry = 7
+				artillery_brigade = 1
+				rocket_artillery_brigade = 1
+			}
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				recon = 1
+				rocket_artillery = 1
+				artillery = 1
+			}
+		}
+
+	}
+}
+
+
+
+
+
+
+armor_brigade_artillery = {
+	role = armor_brigade_artillery
+
+	upgrade_prio = {
+		factor = 1
+	}
+	blocked_for = {
+		BET
+		H02
+		H03
+		H04
+		H05
+		H06
+		H07
+		H08
+		H09
+		H10
+		H11
+		H12
+		H13
+		H14
+		H15
+		H16
+		H17
+		H18
+		H19
+		H20
+		H21
+		H22
+		H23
+		H24
+		H25
+		H26
+	}
+
+	armor_brigade_artillery_template = {
+		upgrade_prio = {
+			factor = 0.01
+		}
+
+		# TEMPLATE
+		
+		
+		
+		reinforce_prio = 1
+		target_template = {
+			
+			
+			regiments = {
+				medium_armor = 6
+				infantry = 1
+				artillery_brigade = 1
+				rocket_artillery_brigade = 1
+			}
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				recon = 1
+				rocket_artillery = 1
+				artillery = 1
+			}
+		}
+
+	}
+}
+
+
+
+gunship = {
+	role = gunship
+
+	upgrade_prio = {
+		factor = 1
+	}
+	blocked_for = {
+		BET
+		H02
+		H03
+		H04
+		H05
+		H06
+		H07
+		H08
+		H09
+		H10
+		H11
+		H12
+		H13
+		H14
+		H15
+		H16
+		H17
+		H18
+		H19
+		H20
+		H21
+		H22
+		H23
+		H24
+		H25
+		H26
+	}
+
+	gunship_template = {
+		upgrade_prio = {
+			factor = 0.01
+		}
+
+		# TEMPLATE
+		
+		
+		
+		reinforce_prio = 1
+		target_template = {
+			
+			
+			regiments = {
+				light_armor = 12
+				infantry = 4
+			}
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				recon = 1
+				rocket_artillery = 1
+				artillery = 1
+			}
+		}
+
+	}
+}
+
+diver = {
+	role = diver
+
+	upgrade_prio = {
+		factor = 1
+	}
+	blocked_for = {
+		BET
+		H02
+		H03
+		H04
+		H05
+		H06
+		H07
+		H08
+		H09
+		H10
+		H11
+		H12
+		H13
+		H14
+		H15
+		H16
+		H17
+		H18
+		H19
+		H20
+		H21
+		H22
+		H23
+		H24
+		H25
+		H26
+	}
+
+	diver_template = {
+		upgrade_prio = {
+			factor = 0.01
+		}
+
+		# TEMPLATE
+		
+		
+		
+		reinforce_prio = 1
+		target_template = {
+			
+			
+			regiments = {
+				paratrooper = 10
+			}
+		}
+
+	}
+}

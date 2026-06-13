@@ -1,0 +1,31 @@
+﻿l_japanese:
+ MVLV_new_line_tt: "\n"
+ NUCLEAR_BOMB: "G弾"
+ NUCLEAR_PRODUCTION_ETA: "次のG弾は生産が $PROGRESS|1G%$ 進んでいます。 およそ $DAYS|G$ 日後に準備が完了します。 "
+ NUCLEAR_PRODUCTION_NONE: "現在我が国はG弾を生産していません。 "
+ CAN_USE_ROCKET_SITES_FOR_NUKES: "G弾のためのロケットを使用することができる。 "
+ NUKE_BUTTON_CLICK: "§Gクリック§!でG弾を投下"
+ NUKE_BUTTON_NUKES: "我々がG弾を保有"
+
+  sabotage_rubber: "G元素資源への妨害工作"
+
+  group_tsf_title: "戦術機部隊"
+  modifier_army_sub_unit_category_MVLV_tsf_family_attack_factor: "戦術機類師団攻撃"
+  modifier_army_sub_unit_category_MVLV_tsf_family_defence_factor: "戦術機類師団防御"
+  modifier_army_sub_unit_category_MVLV_tsf_family_speed_factor: "戦術機類師団速度"
+  
+  modifier_army_sub_unit_light_armor_attack_factor: "戦闘ヘリ師団攻撃"
+  modifier_army_sub_unit_light_armor_defence_factor: "戦闘ヘリ師団防御"
+  
+  modifier_army_sub_unit_medium_armor_attack_factor: "戦車師団攻撃"
+  modifier_army_sub_unit_medium_armor_defence_factor: "戦車師団防御"
+  modifier_army_sub_unit_medium_armor_speed_factor: "戦車師団速度"
+  
+  modifier_army_sub_unit_MVLV_combined_arms_battalion_attack_factor: "諸兵科連合師団攻撃"
+  modifier_army_sub_unit_MVLV_combined_arms_battalion_defence_factor: "諸兵科連合師団防御"
+
+  group_xg_title: "戦略航空機動要塞"
+  modifier_army_sub_unit_category_MVLV_xg_attack_factor: "戦略航空機動要塞攻撃"
+  modifier_army_sub_unit_category_MVLV_xg_defence_factor: "戦略航空機動要塞防御"
+  modifier_army_sub_unit_category_MVLV_xg_speed_factor: "戦略航空機動要塞速度"
+  modifier_army_sub_unit_category_MVLV_xg_max_org_factor: "戦略航空機動要塞編成"

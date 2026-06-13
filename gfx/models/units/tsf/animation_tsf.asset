@@ -1,0 +1,74 @@
+animation = {
+	name = "generic_tsf_attack_animation"
+	file = "generic_tsf_attack.anim"
+}
+
+animation = {
+	name = "generic_tsf_idle_animation"
+	file = "generic_tsf_idle.anim"
+}
+
+animation = {
+	name = "generic_tsf_moving_animation"
+	file = "generic_tsf_moving.anim"
+}
+
+animation = {
+	name = "CHI_Tsf_J10_Idle_animation"
+	file = "CHI_Tsf_J10_Idle.anim"
+}
+
+animation = {
+	name = "CHI_Tsf_J10_Move_animation"
+	file = "CHI_Tsf_J10_Move.anim"
+}
+
+animation = {
+	name = "CHI_Tsf_J10_Attak_animation"
+	file = "CHI_Tsf_J10_Attak.anim"
+}
+
+animation = {
+	name = "SOV_Tsf_Su37M2_Idle_animation"
+	file = "SOV_Tsf_Su37M2_Idle.anim"
+}
+
+animation = {
+	name = "SOV_Tsf_Su37M2_Move_animation"
+	file = "SOV_Tsf_Su37M2_Move.anim"
+}
+
+animation = {
+	name = "SOV_Tsf_Su37M2_Attack_animation"
+	file = "SOV_Tsf_Su37M2_Attack.anim"
+}
+
+animation = {
+	name = "JAP_Tsf_941C_Idle_animation"
+	file = "JAP_Tsf_941C_Idle.anim"
+}
+
+animation = {
+	name = "JAP_Tsf_00R_Idle_animation"
+	file = "JAP_Tsf_00R_Idle.anim"
+}
+
+animation = {
+	name = "JAP_Tsf_941C_Move_animation"
+	file = "JAP_Tsf_941C_Move.anim"
+}
+
+animation = {
+	name = "JAP_Tsf_941C_Attack_animation"
+	file = "JAP_Tsf_941C_Attack.anim"
+}
+
+animation = {
+	name = "JAP_Tsf_941C_Attack2_animation"
+	file = "JAP_Tsf_941C_Attack2.anim"
+}
+
+animation = {
+	name = "UNI_Tsf_941C_Attack_animation"
+	file = "UNI_Tsf_941C_Attack.anim"
+}

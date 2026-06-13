@@ -1,0 +1,25 @@
+﻿l_japanese:
+ # === 凄ノ皇 ===
+ tsf_susanoo_concept: "凄ノ皇計画"
+ tsf_susanoo_concept_desc: "戦略航空機動要塞「凄ノ皇」の基礎研究。超大型・重武装の対BETA決戦兵器の概念を確立する。1個大隊につき1機の超大型要塞を運用可能になる。"
+ tsf_susanoo_2: "凄ノ皇2型"
+ tsf_susanoo_2_desc: "凄ノ皇2型（XG-70b 相当）。戦略航空機動要塞の基本型。圧倒的な装甲・火力・機動力を兼ね備える。"
+ tsf_susanoo_3: "凄ノ皇3型"
+ tsf_susanoo_3_desc: "凄ノ皇3型（XG-70a 改良型 相当）。基本型の改良。各種性能を底上げした第2世代要塞。"
+ tsf_susanoo_4: "凄ノ皇4型"
+ tsf_susanoo_4_desc: "凄ノ皇4型（XG-70c 発展型 相当）。凄ノ皇シリーズの最終発展型。人類兵器の頂点。"
+
+ # === xg equipment（戦略航空機動要塞）===
+ xg_equipment: "戦略航空機動要塞"
+ xg_equipment_desc: "対BETA決戦兵器。単機で一個師団に匹敵する戦闘力を持つ超大型機動要塞。"
+ xg_equipment_0: "凄ノ皇2型"
+ xg_equipment_0_desc: "XG-70b。凄ノ皇シリーズの初期量産型。"
+ xg_equipment_1: "凄ノ皇3型"
+ xg_equipment_1_desc: "XG-70a。改良型凄ノ皇。"
+ xg_equipment_2: "凄ノ皇4型"
+ xg_equipment_2_desc: "XG-70c。凄ノ皇最終発展型。"
+
+ # === 凄ノ皇大隊 ===
+ MVLV_xg_battalion: "凄ノ皇大隊"
+ MVLV_xg_battalion_desc: "1個大隊につき1機の凄ノ皇を運用する超大型部隊。"
+ group_xg_title: "戦略航空機動要塞"

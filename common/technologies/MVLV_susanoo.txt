@@ -1,0 +1,99 @@
+technologies = {
+	tsf_susanoo_concept = {
+		research_cost = 8
+		start_year = 2000
+		enable_subunits = {
+			MVLV_xg_battalion
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 44 y = -2 }
+		}
+		categories = {
+			MVLV_tsf_tech
+		}
+		path = {
+			leads_to_tech = tsf_susanoo_weapons
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tsf_susanoo_g_bomb
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tsf_susanoo_systems
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 1999.1.1 factor = 60 }
+		}
+	}
+	tsf_susanoo_2 = {
+		enable_equipments = { xg_equipment_0 }
+		dependencies = {
+			tsf_susanoo_gravity_cannon = 1
+			tsf_susanoo_g_bomb = 1
+			tsf_susanoo_systems = 1
+		}
+		research_cost = 10
+		start_year = 2010
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 44 y = 0 }
+		}
+		categories = {
+			MVLV_tsf_tech
+		}
+		path = {
+			leads_to_tech = tsf_susanoo_3
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 1999.1.1 factor = 60 }
+		}
+	}
+	tsf_susanoo_3 = {
+		enable_equipments = { xg_equipment_1 }
+		dependencies = {
+			tsf_susanoo_2 = 1
+		}
+		research_cost = 15
+		start_year = 2010
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 47 y = 0 }
+		}
+		categories = {
+			MVLV_tsf_tech
+		}
+		path = {
+			leads_to_tech = tsf_susanoo_4
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 2009.1.1 factor = 60 }
+		}
+	}
+	tsf_susanoo_4 = {
+		enable_equipments = { xg_equipment_2 }
+		dependencies = {
+			tsf_susanoo_3 = 1
+		}
+		research_cost = 20
+		start_year = 2020
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 50 y = 0 }
+		}
+		categories = {
+			MVLV_tsf_tech
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 2019.1.1 factor = 60 }
+		}
+	}
+}

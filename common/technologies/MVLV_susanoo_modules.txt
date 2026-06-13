@@ -1,0 +1,89 @@
+technologies = {
+	tsf_susanoo_weapons = {
+		research_cost = 12
+		start_year = 2000
+		enable_equipment_modules = {
+			susanoo_heavy_particle_cannon
+			susanoo_secondary_cannons
+			susanoo_secondary_76mm
+			susanoo_os_basic
+			susanoo_sensor_array
+		}
+		dependencies = { tsf_susanoo_concept = 1 }
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 44 y = 2 }
+		}
+		categories = { MVLV_tsf_tech }
+		force_use_small_tech_layout = yes
+		path = {
+			leads_to_tech = tsf_susanoo_gravity_cannon
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 1999.1.1 factor = 60 }
+		}
+	}
+	tsf_susanoo_gravity_cannon = {
+		research_cost = 18
+		start_year = 2010
+		enable_equipment_modules = {
+			susanoo_gravity_cannon
+			susanoo_os_00unit
+			susanoo_sensor_beta_reader
+		}
+		dependencies = { tsf_susanoo_weapons = 1 }
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 47 y = 2 }
+		}
+		categories = { MVLV_tsf_tech }
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 2009.1.1 factor = 60 }
+		}
+	}
+	tsf_susanoo_g_bomb = {
+		research_cost = 20
+		start_year = 2005
+		enable_equipment_modules = {
+			susanoo_g_bomb_charger
+			susanoo_s11_sd_system
+		}
+		dependencies = { tsf_susanoo_concept = 1 }
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 50 y = 2 }
+		}
+		categories = { MVLV_tsf_tech }
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 2004.1.1 factor = 60 }
+		}
+	}
+	tsf_susanoo_systems = {
+		research_cost = 10
+		start_year = 2000
+		enable_equipment_modules = {
+			susanoo_fortress_armor
+			susanoo_lightweight_armor
+			susanoo_main_thruster
+			susanoo_main_thruster_high
+		}
+		dependencies = { tsf_susanoo_concept = 1 }
+		path = { leads_to_tech = tsf_susanoo_2  research_cost_coeff = 1 }
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 53 y = 2 }
+		}
+		categories = { MVLV_tsf_tech }
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 1999.1.1 factor = 60 }
+		}
+	}
+}

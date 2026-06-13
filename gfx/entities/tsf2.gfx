@@ -1,0 +1,62 @@
+objectTypes = {
+###############################
+##########二代战术机###########
+###############################
+
+############## F15E #############
+	pdxmesh = {
+		name = "UNI_F15E"
+		file = "gfx/models/units/tsf/Tsf2/F15E/UNI_F15E.mesh"
+	
+		animation = { id = "GunIdle"	type = "F15E_GunIdle_animation"}
+		animation = { id = "GunMove"	type = "F15E_GunMove_animation"}
+		animation = { id = "GunFire"	type = "F15E_GunFire_animation"}
+		animation = { id = "BladeIdle"	type = "F15E_BladeIdle_animation"}
+		animation = { id = "BladeMove"	type = "F15E_BladeMove_animation"}
+		animation = { id = "BladeFire"	type = "F15E_BladeAttack_animation"}
+	}
+	pdxmesh = {
+		name = "USA_F15E"
+		file = "gfx/models/units/tsf/Tsf2/F15E/USA_F15E.mesh"
+	
+		animation = { id = "GunIdle"	type = "F15E_GunIdle_animation"}
+		animation = { id = "GunMove"	type = "F15E_GunMove_animation"}
+		animation = { id = "GunFire"	type = "F15E_GunFire_animation"}
+		animation = { id = "BladeIdle"	type = "F15E_BladeIdle_animation"}
+		animation = { id = "BladeMove"	type = "F15E_BladeMove_animation"}
+		animation = { id = "BladeFire"	type = "F15E_BladeAttack_animation"}
+	}
+	pdxmesh = {
+		name = "EUR_F15E"
+		file = "gfx/models/units/tsf/Tsf2/F15E/EUR_F15E.mesh"
+	
+		animation = { id = "GunIdle"	type = "F15E_GunIdle_animation"}
+		animation = { id = "GunMove"	type = "F15E_GunMove_animation"}
+		animation = { id = "GunFire"	type = "F15E_GunFire_animation"}
+		animation = { id = "BladeIdle"	type = "F15E_BladeIdle_animation"}
+		animation = { id = "BladeMove"	type = "F15E_BladeMove_animation"}
+		animation = { id = "BladeFire"	type = "F15E_BladeAttack_animation"}
+	}	
+	pdxmesh = {
+		name = "AFR_F15E"
+		file = "gfx/models/units/tsf/Tsf2/F15E/AFR_F15E.mesh"
+	
+		animation = { id = "GunIdle"	type = "F15E_GunIdle_animation"}
+		animation = { id = "GunMove"	type = "F15E_GunMove_animation"}
+		animation = { id = "GunFire"	type = "F15E_GunFire_animation"}
+		animation = { id = "BladeIdle"	type = "F15E_BladeIdle_animation"}
+		animation = { id = "BladeMove"	type = "F15E_BladeMove_animation"}
+		animation = { id = "BladeFire"	type = "F15E_BladeAttack_animation"}
+	}	
+	pdxmesh = {
+		name = "JAP_F15E"
+		file = "gfx/models/units/tsf/Tsf2/F15E/JAP_F15E.mesh"
+	
+		animation = { id = "GunIdle"	type = "F15E_GunIdle_animation"}
+		animation = { id = "GunMove"	type = "F15E_GunMove_animation"}
+		animation = { id = "GunFire"	type = "F15E_GunFire_animation"}
+		animation = { id = "BladeIdle"	type = "F15E_BladeIdle_animation"}
+		animation = { id = "BladeMove"	type = "F15E_BladeMove_animation"}
+		animation = { id = "BladeFire"	type = "F15E_BladeAttack_animation"}
+	}	
+}

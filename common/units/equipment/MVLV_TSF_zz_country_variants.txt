@@ -1,0 +1,3668 @@
+# ========================================================
+# 国別命名 戦術機 variant（C 案）
+# 主要 TSF 国に固有名称の戦術機を提供
+# 各国の研究進度に応じて enable される
+# ※ HOI4 は識別子にハイフン(-)が使えないので内部IDは _ に統一
+#   表示名(abbreviation)はハイフン OK
+# ========================================================
+
+equipments = {
+
+	# === USA: F-5 Freedom Fighter（第一世代軽戦術機）===
+	USA_TSF_F_5 = {
+		picture = USA_TSF_F_5
+		abbreviation = "F-5"
+		visual_level = 1
+		year = 1995
+		parent = MVLV_TSF_chassis_1_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 4
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 5
+		hard_attack = 5
+		air_attack = 5
+		defense = 20
+		breakthrough = 20
+		armor_value = 20
+		hardness = 0.30
+		ap_attack = 5
+		build_cost_ic = 7.5
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_1
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_1
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_1
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_1
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_1
+		}
+	}
+
+	# === USA: F-22 Raptor（第三世代高機動戦術機）===
+	USA_TSF_F_22 = {
+		picture = USA_TSF_F_22
+		abbreviation = "F-22"
+		visual_level = 7
+		year = 2015
+		parent = MVLV_TSF_chassis_3_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 30
+		max_strength = 15
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = 0.005
+		soft_attack = 22
+		hard_attack = 26
+		air_attack = 60
+		defense = 40
+		breakthrough = 45
+		armor_value = 40
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 37
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_3_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_armored_sensor
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_3
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+		}
+	}
+
+	# === JAP: 77式 撃震（第一世代重戦術機）===
+	JAP_TSF_77shiki = {
+		picture = JAP_TSF_77shiki
+		abbreviation = "77式"
+		visual_level = 2
+		year = 1995
+		parent = MVLV_TSF_chassis_1_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 8
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 10
+		hard_attack = 10
+		air_attack = 10
+		defense = 25
+		breakthrough = 25
+		armor_value = 30
+		hardness = 0.30
+		ap_attack = 10
+		build_cost_ic = 15
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_1
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_1
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_1
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_1
+			MVLV_TSF_arm_slot = MVLV_TSF_sub_sword
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
+		}
+	}
+
+	# === JAP: 94式 不知火（第三世代重戦術機）===
+	JAP_TSF_shiranui = {
+		picture = JAP_TSF_shiranui
+		abbreviation = "94式"
+		visual_level = 6
+		year = 2005
+		parent = MVLV_TSF_chassis_2_maneuver
+		archetype = MVLV_TSF_chassis_maneuver
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 20.4
+		hard_attack = 20.4
+		air_attack = 51.0
+		defense = 34.0
+		breakthrough = 34.0
+		armor_value = 38.25
+		hardness = 0.35
+		ap_attack = 38.25
+		build_cost_ic = 35
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_3_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_3
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	# === JAP: TYPE-00 武御雷（特務戦術機、第二世代高機動）===
+	JAP_TSF_takemikazuchi = {
+		picture = JAP_TSF_takemikazuchi
+		abbreviation = "TYPE-98X"
+		visual_level = 5
+		year = 2005
+		parent = MVLV_TSF_specialForces_chassis_2_maneuver
+		archetype = MVLV_TSF_specialForces_chassis
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 13.5
+		max_organisation = 45
+		max_strength = 22.5
+		default_morale = 1.5
+		reliability = 0.70
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 28.5
+		hard_attack = 28.5
+		air_attack = 90
+		defense = 54
+		breakthrough = 60
+		armor_value = 60
+		hardness = 0.30
+		ap_attack = 67.5
+		build_cost_ic = 49.5
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	# === RUS: MiG-21 バラライカ（第一世代軽戦術機）===
+	RUS_TSF_MiG_21 = {
+		picture = RUS_TSF_MiG_21
+		abbreviation = "MiG-21"
+		visual_level = 1
+		year = 1995
+		parent = MVLV_TSF_chassis_1_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 4
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 5
+		hard_attack = 5
+		air_attack = 5
+		defense = 20
+		breakthrough = 20
+		armor_value = 20
+		hardness = 0.30
+		ap_attack = 5
+		build_cost_ic = 7.5
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_1
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_1
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_1
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_1
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_1
+		}
+	}
+
+	# === RUS: Su-37 ターミネーター（第二世代高機動戦術機）===
+	RUS_TSF_Su_37 = {
+		picture = RUS_TSF_Su_37
+		abbreviation = "Su-37"
+		visual_level = 5
+		year = 2005
+		parent = MVLV_TSF_chassis_2_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 30
+		max_strength = 15
+		default_morale = 1.5
+		reliability = 0.70
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 19
+		hard_attack = 19
+		air_attack = 60
+		defense = 36
+		breakthrough = 40
+		armor_value = 40
+		hardness = 0.30
+		ap_attack = 45
+		build_cost_ic = 33
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+		}
+	}
+
+	# === CHI: J-10（第二世代軽戦術機）===
+	CHI_TSF_J_10 = {
+		picture = CHI_TSF_J_10
+		abbreviation = "J-10"
+		visual_level = 4
+		year = 2005
+		parent = MVLV_TSF_chassis_2_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 7
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 18
+		hard_attack = 18
+		air_attack = 20
+		defense = 36
+		breakthrough = 36
+		armor_value = 25
+		hardness = 0.30
+		ap_attack = 20
+		build_cost_ic = 23
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_reactive_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+		}
+	}
+
+
+	# === 追加 variant（MOD内テクスチャ活用・見た目は世代別汎用）===
+	USA_TSF_F_15 = {
+		picture = USA_TSF_F_15
+		abbreviation = "F-15"
+		visual_level = 4
+		year = 2005
+		parent = MVLV_TSF_chassis_2_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 22
+		hard_attack = 22
+		air_attack = 40
+		defense = 38
+		breakthrough = 38
+		armor_value = 35
+		hardness = 0.35
+		ap_attack = 30
+		build_cost_ic = 31
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	USA_TSF_F_18 = {
+		picture = USA_TSF_F_18
+		abbreviation = "F-18"
+		visual_level = 5
+		year = 2005
+		parent = MVLV_TSF_chassis_2_maneuver
+		archetype = MVLV_TSF_chassis_maneuver
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 30
+		max_strength = 15
+		default_morale = 1.5
+		reliability = 0.70
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 19
+		hard_attack = 19
+		air_attack = 60
+		defense = 36
+		breakthrough = 40
+		armor_value = 40
+		hardness = 0.30
+		ap_attack = 45
+		build_cost_ic = 33
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+		}
+	}
+
+	USA_TSF_F_35 = {
+		picture = USA_TSF_F_35
+		abbreviation = "F-35"
+		visual_level = 6
+		year = 2015
+		parent = MVLV_TSF_chassis_3_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 10
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 22
+		hard_attack = 22
+		air_attack = 40
+		defense = 38
+		breakthrough = 38
+		armor_value = 35
+		hardness = 0.30
+		ap_attack = 35
+		build_cost_ic = 26
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_XM3
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_3
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	RUS_TSF_MiG_29 = {
+		picture = RUS_TSF_MiG_29
+		abbreviation = "MiG-29"
+		visual_level = 3
+		year = 2005
+		parent = MVLV_TSF_chassis_2_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 7
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 18
+		hard_attack = 18
+		air_attack = 20
+		defense = 36
+		breakthrough = 36
+		armor_value = 25
+		hardness = 0.30
+		ap_attack = 20
+		build_cost_ic = 23
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+		}
+	}
+
+	RUS_TSF_Su_27 = {
+		picture = RUS_TSF_Su_27
+		abbreviation = "Su-27"
+		visual_level = 4
+		year = 2005
+		parent = MVLV_TSF_chassis_2_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 22
+		hard_attack = 22
+		air_attack = 40
+		defense = 38
+		breakthrough = 38
+		armor_value = 35
+		hardness = 0.35
+		ap_attack = 30
+		build_cost_ic = 31
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	RUS_TSF_Su_47 = {
+		picture = RUS_TSF_Su_47
+		abbreviation = "Su-47"
+		visual_level = 8
+		year = 2015
+		parent = MVLV_TSF_chassis_3_maneuver
+		archetype = MVLV_TSF_chassis_maneuver
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 30
+		max_strength = 15
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = 0.005
+		soft_attack = 22
+		hard_attack = 26
+		air_attack = 60
+		defense = 40
+		breakthrough = 45
+		armor_value = 40
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 37
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_XM3
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_head_slot = MVLV_TSF_add_armored_sensor
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+		}
+	}
+
+	RUS_TSF_Su_57 = {
+		picture = RUS_TSF_Su_57
+		abbreviation = "Su-57"
+		visual_level = 15
+		year = 2035
+		parent = MVLV_TSF_chassis_4
+		archetype = MVLV_TSF_chassis_maneuver
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 13
+		max_organisation = 31
+		max_strength = 18
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 30
+		hard_attack = 30
+		air_attack = 60
+		defense = 45
+		breakthrough = 45
+		armor_value = 50
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 50
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_4_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_4
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_aerial_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_reactive_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_armored_sensor
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+		}
+	}
+
+	CHI_TSF_J_8 = {
+		picture = CHI_TSF_J_8
+		abbreviation = "J-8"
+		visual_level = 1
+		year = 1995
+		parent = MVLV_TSF_chassis_1_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 4
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 5
+		hard_attack = 5
+		air_attack = 5
+		defense = 20
+		breakthrough = 20
+		armor_value = 20
+		hardness = 0.30
+		ap_attack = 5
+		build_cost_ic = 7.5
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_1
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_1
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_1
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_1
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_1
+		}
+	}
+
+	CHI_TSF_J_11 = {
+		picture = CHI_TSF_J_11
+		abbreviation = "J-11"
+		visual_level = 4
+		year = 2005
+		parent = MVLV_TSF_chassis_2_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 22
+		hard_attack = 22
+		air_attack = 40
+		defense = 38
+		breakthrough = 38
+		armor_value = 35
+		hardness = 0.35
+		ap_attack = 30
+		build_cost_ic = 31
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	CHI_TSF_J_20 = {
+		picture = CHI_TSF_J_20
+		abbreviation = "J-20"
+		visual_level = 8
+		year = 2015
+		parent = MVLV_TSF_chassis_3_maneuver
+		archetype = MVLV_TSF_chassis_maneuver
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 30
+		max_strength = 15
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = 0.005
+		soft_attack = 22
+		hard_attack = 26
+		air_attack = 60
+		defense = 40
+		breakthrough = 45
+		armor_value = 40
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 37
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_XM3
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_armored_sensor
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_3
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+		}
+	}
+
+	JAP_TSF_fubuki = {
+		picture = JAP_TSF_fubuki
+		abbreviation = "97式"
+		visual_level = 5
+		year = 2005
+		parent = MVLV_TSF_chassis_2_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 30
+		max_strength = 15
+		default_morale = 1.5
+		reliability = 0.70
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 19
+		hard_attack = 19
+		air_attack = 60
+		defense = 36
+		breakthrough = 40
+		armor_value = 40
+		hardness = 0.30
+		ap_attack = 45
+		build_cost_ic = 33
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_arm_slot = MVLV_TSF_sub_sword
+		}
+	}
+
+	GER_TSF_EF2000 = {
+		picture = GER_TSF_EF2000
+		abbreviation = "EF-2000"
+		visual_level = 7
+		year = 2015
+		parent = MVLV_TSF_chassis_3_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 24
+		hard_attack = 24
+		air_attack = 60
+		defense = 40
+		breakthrough = 40
+		armor_value = 45
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 35
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_XM3
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	FRA_TSF_Mirage = {
+		picture = FRA_TSF_Mirage
+		abbreviation = "M2000"
+		visual_level = 3
+		year = 2005
+		parent = MVLV_TSF_chassis_2_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 7
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 18
+		hard_attack = 18
+		air_attack = 20
+		defense = 36
+		breakthrough = 36
+		armor_value = 25
+		hardness = 0.30
+		ap_attack = 20
+		build_cost_ic = 23
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+		}
+	}
+
+	FRA_TSF_Rafale = {
+		picture = FRA_TSF_Rafale
+		abbreviation = "Rafale"
+		visual_level = 8
+		year = 2015
+		parent = MVLV_TSF_chassis_3_maneuver
+		archetype = MVLV_TSF_chassis_maneuver
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 30
+		max_strength = 15
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = 0.005
+		soft_attack = 22
+		hard_attack = 26
+		air_attack = 60
+		defense = 40
+		breakthrough = 45
+		armor_value = 40
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 37
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_XM3
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+		}
+	}
+
+	ENG_TSF_EF2000 = {
+		picture = ENG_TSF_EF2000
+		abbreviation = "EF-2000"
+		visual_level = 7
+		year = 2015
+		parent = MVLV_TSF_chassis_3_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 24
+		hard_attack = 24
+		air_attack = 60
+		defense = 40
+		breakthrough = 40
+		armor_value = 45
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 35
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_XM3
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	ENG_TSF_Tempest = {
+		picture = ENG_TSF_Tempest
+		abbreviation = "Tempest"
+		visual_level = 15
+		year = 2035
+		parent = MVLV_TSF_chassis_4
+		archetype = MVLV_TSF_chassis_maneuver
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 13
+		max_organisation = 31
+		max_strength = 18
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 30
+		hard_attack = 30
+		air_attack = 60
+		defense = 45
+		breakthrough = 45
+		armor_value = 50
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 50
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_4_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_4
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_aerial_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_reactive_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_armored_sensor
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+		}
+	}
+
+	SWE_TSF_JA37 = {
+		picture = SWE_TSF_JA37
+		abbreviation = "JA-37"
+		visual_level = 1
+		year = 1995
+		parent = MVLV_TSF_chassis_1_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 4
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 5
+		hard_attack = 5
+		air_attack = 5
+		defense = 20
+		breakthrough = 20
+		armor_value = 20
+		hardness = 0.30
+		ap_attack = 5
+		build_cost_ic = 7.5
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_1
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_1
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_1
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_1
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_1
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_1
+		}
+	}
+
+	SWE_TSF_JAS39 = {
+		picture = SWE_TSF_JAS39
+		abbreviation = "JAS-39"
+		visual_level = 3
+		year = 2005
+		parent = MVLV_TSF_chassis_2_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 7
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 18
+		hard_attack = 18
+		air_attack = 20
+		defense = 36
+		breakthrough = 36
+		armor_value = 25
+		hardness = 0.30
+		ap_attack = 20
+		build_cost_ic = 23
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_2
+		}
+	}
+
+
+	# === 全面追加 variant（派生含む・国別厳密）===
+	USA_TSF_F_5G = {
+		picture = USA_TSF_F_5G
+		abbreviation = "F-5G"
+		visual_level = 1
+		year = 1995
+		parent = MVLV_TSF_chassis_1_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 4
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 5
+		hard_attack = 5
+		air_attack = 5
+		defense = 20
+		breakthrough = 20
+		armor_value = 20
+		hardness = 0.30
+		ap_attack = 5
+		build_cost_ic = 10
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_1
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_1
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_1
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_1
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_1
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_1
+		}
+	}
+
+	USA_TSF_F_14 = {
+		picture = USA_TSF_F_14
+		abbreviation = "F-14"
+		visual_level = 5
+		year = 2005
+		parent = MVLV_TSF_chassis_2_maneuver
+		archetype = MVLV_TSF_chassis_maneuver
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 30
+		max_strength = 15
+		default_morale = 1.5
+		reliability = 0.70
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 19
+		hard_attack = 19
+		air_attack = 60
+		defense = 36
+		breakthrough = 40
+		armor_value = 40
+		hardness = 0.30
+		ap_attack = 45
+		build_cost_ic = 33
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_cruise_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_arm_slot = MVLV_TSF_sub_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+		}
+	}
+
+	USA_TSF_F_16 = {
+		picture = USA_TSF_F_16
+		abbreviation = "F-16"
+		visual_level = 3
+		year = 2005
+		parent = MVLV_TSF_chassis_2_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 7
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 18
+		hard_attack = 18
+		air_attack = 20
+		defense = 36
+		breakthrough = 36
+		armor_value = 25
+		hardness = 0.30
+		ap_attack = 20
+		build_cost_ic = 23
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_arm_slot = MVLV_TSF_sub_sword
+		}
+	}
+
+	USA_TSF_F_15E = {
+		picture = USA_TSF_F_15E
+		abbreviation = "F-15E"
+		visual_level = 4
+		year = 2010
+		parent = MVLV_TSF_chassis_2_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 22
+		hard_attack = 22
+		air_attack = 40
+		defense = 38
+		breakthrough = 38
+		armor_value = 35
+		hardness = 0.35
+		ap_attack = 30
+		build_cost_ic = 31
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	USA_TSF_F_18EF = {
+		picture = USA_TSF_F_18EF
+		abbreviation = "F-18EF"
+		visual_level = 5
+		year = 2010
+		parent = MVLV_TSF_chassis_2_maneuver
+		archetype = MVLV_TSF_chassis_maneuver
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 30
+		max_strength = 15
+		default_morale = 1.5
+		reliability = 0.70
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 19
+		hard_attack = 19
+		air_attack = 60
+		defense = 36
+		breakthrough = 40
+		armor_value = 40
+		hardness = 0.30
+		ap_attack = 45
+		build_cost_ic = 33
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+		}
+	}
+
+	JAP_TSF_gekkou = {
+		picture = JAP_TSF_gekkou
+		abbreviation = "F-15SEJ"
+		visual_level = 7
+		year = 2015
+		parent = MVLV_TSF_chassis_3_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 25
+		hard_attack = 25
+		air_attack = 62
+		defense = 42
+		breakthrough = 42
+		armor_value = 46
+		hardness = 0.35
+		ap_attack = 47
+		build_cost_ic = 36
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_XM3
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_armored_sensor
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_3
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+	USA_TSF_F_15SE = {
+		picture = USA_TSF_F_15SE
+		abbreviation = "F-15SE"
+		visual_level = 7
+		year = 2015
+		parent = MVLV_TSF_chassis_3_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 24
+		hard_attack = 24
+		air_attack = 60
+		defense = 40
+		breakthrough = 40
+		armor_value = 45
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 35
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_XM3
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_head_slot = MVLV_TSF_add_armored_sensor
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	USA_TSF_YF_23 = {
+		picture = USA_TSF_YF_23
+		abbreviation = "YF-23"
+		visual_level = 8
+		year = 2015
+		parent = MVLV_TSF_chassis_3_maneuver
+		archetype = MVLV_TSF_chassis_maneuver
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 30
+		max_strength = 15
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = 0.005
+		soft_attack = 22
+		hard_attack = 26
+		air_attack = 60
+		defense = 40
+		breakthrough = 45
+		armor_value = 40
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 37
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_XM3
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_armored_sensor
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_3
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+		}
+	}
+
+
+	JAP_TSF_kagerou = {
+		picture = JAP_TSF_kagerou
+		abbreviation = "F-15J"
+		visual_level = 4
+		year = 2005
+		parent = MVLV_TSF_chassis_2_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 22
+		hard_attack = 22
+		air_attack = 40
+		defense = 38
+		breakthrough = 38
+		armor_value = 35
+		hardness = 0.35
+		ap_attack = 30
+		build_cost_ic = 31
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	JAP_TSF_shiranui_1c = {
+		picture = JAP_TSF_shiranui_1c
+		abbreviation = "Type-94-1-C"
+		visual_level = 7
+		year = 2015
+		parent = MVLV_TSF_support_chassis_3
+		archetype = MVLV_TSF_support_chassis
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 24
+		hard_attack = 24
+		air_attack = 60
+		defense = 40
+		breakthrough = 40
+		armor_value = 45
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 35
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_3_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_3
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	JAP_TSF_shiranui_2 = {
+		picture = JAP_TSF_shiranui_2
+		abbreviation = "Type-942"
+		visual_level = 8
+		year = 2018
+		parent = MVLV_TSF_chassis_3_maneuver
+		archetype = MVLV_TSF_chassis_maneuver
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 30
+		max_strength = 15
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = 0.005
+		soft_attack = 22
+		hard_attack = 26
+		air_attack = 60
+		defense = 40
+		breakthrough = 45
+		armor_value = 40
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 37
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_XM3
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_3
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+			MVLV_TSF_arm_slot = MVLV_TSF_sub_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+		}
+	}
+
+	JAP_TSF_takemikazuchi_r = {
+		picture = JAP_TSF_takemikazuchi_r
+		abbreviation = "Type-00r"
+		visual_level = 8
+		year = 2015
+		parent = MVLV_TSF_specialForces_chassis_3_maneuver
+		archetype = MVLV_TSF_specialForces_chassis
+		is_buildable = yes
+		priority = 25
+
+		maximum_speed = 18.5
+		max_organisation = 45
+		max_strength = 22.5
+		default_morale = 1.5
+		reliability = 0.72
+		casualty_trickleback = 0.005
+		experience_loss_factor = 0.005
+		soft_attack = 46
+		hard_attack = 55
+		air_attack = 126
+		defense = 63
+		breakthrough = 94
+		armor_value = 63
+		hardness = 0.35
+		ap_attack = 94
+		build_cost_ic = 83.3
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_3_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	JAP_TSF_type04 = {
+		picture = JAP_TSF_type04
+		abbreviation = "Type-04"
+		visual_level = 15
+		year = 2035
+		parent = MVLV_TSF_chassis_4
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 31
+		max_strength = 18
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 30
+		hard_attack = 30
+		air_attack = 60
+		defense = 50
+		breakthrough = 45
+		armor_value = 55
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 50
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_4_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_4
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_aerial_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_reactive_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_armored_sensor
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	JAP_TSF_type10 = {
+		picture = JAP_TSF_type10
+		abbreviation = "Type-10"
+		visual_level = 15
+		year = 2035
+		parent = MVLV_TSF_chassis_4
+		archetype = MVLV_TSF_chassis_maneuver
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 13
+		max_organisation = 31
+		max_strength = 18
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 30
+		hard_attack = 30
+		air_attack = 60
+		defense = 45
+		breakthrough = 45
+		armor_value = 50
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 50
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_4_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_4
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_aerial_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_reactive_shield
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_head_slot = MVLV_TSF_add_armored_sensor
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	RUS_TSF_Su_11 = {
+		picture = RUS_TSF_Su_11
+		abbreviation = "Su-11"
+		visual_level = 1
+		year = 1995
+		parent = MVLV_TSF_chassis_1_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 4
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 5
+		hard_attack = 5
+		air_attack = 5
+		defense = 20
+		breakthrough = 20
+		armor_value = 20
+		hardness = 0.30
+		ap_attack = 5
+		build_cost_ic = 7.5
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_1
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_1
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_1
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_1
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_1
+		}
+	}
+
+	RUS_TSF_MiG_23 = {
+		picture = RUS_TSF_MiG_23
+		abbreviation = "MiG-23"
+		visual_level = 3
+		year = 2005
+		parent = MVLV_TSF_chassis_2_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 7
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 18
+		hard_attack = 18
+		air_attack = 20
+		defense = 36
+		breakthrough = 36
+		armor_value = 25
+		hardness = 0.30
+		ap_attack = 20
+		build_cost_ic = 23
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_arm_slot = MVLV_TSF_sub_sword
+		}
+	}
+
+	RUS_TSF_MiG_25 = {
+		picture = RUS_TSF_MiG_25
+		abbreviation = "MiG-25"
+		visual_level = 4
+		year = 2005
+		parent = MVLV_TSF_chassis_2_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 22
+		hard_attack = 22
+		air_attack = 40
+		defense = 38
+		breakthrough = 38
+		armor_value = 35
+		hardness = 0.35
+		ap_attack = 30
+		build_cost_ic = 31
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	RUS_TSF_MiG_27 = {
+		picture = RUS_TSF_MiG_27
+		abbreviation = "MiG-27"
+		visual_level = 3
+		year = 2005
+		parent = MVLV_TSF_chassis_2_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 7
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 18
+		hard_attack = 18
+		air_attack = 20
+		defense = 36
+		breakthrough = 36
+		armor_value = 25
+		hardness = 0.30
+		ap_attack = 20
+		build_cost_ic = 23
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+		}
+	}
+
+	RUS_TSF_MiG_31 = {
+		picture = RUS_TSF_MiG_31
+		abbreviation = "MiG-31"
+		visual_level = 4
+		year = 2010
+		parent = MVLV_TSF_chassis_2_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 22
+		hard_attack = 22
+		air_attack = 40
+		defense = 38
+		breakthrough = 38
+		armor_value = 35
+		hardness = 0.35
+		ap_attack = 30
+		build_cost_ic = 31
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	RUS_TSF_MiG_35 = {
+		picture = RUS_TSF_MiG_35
+		abbreviation = "MiG-35"
+		visual_level = 5
+		year = 2010
+		parent = MVLV_TSF_chassis_2_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 30
+		max_strength = 15
+		default_morale = 1.5
+		reliability = 0.70
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 19
+		hard_attack = 19
+		air_attack = 60
+		defense = 36
+		breakthrough = 40
+		armor_value = 40
+		hardness = 0.30
+		ap_attack = 45
+		build_cost_ic = 33
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+		}
+	}
+
+	CHI_TSF_J_10X = {
+		picture = CHI_TSF_J_10X
+		abbreviation = "J-10X"
+		visual_level = 6
+		year = 2015
+		parent = MVLV_TSF_chassis_3_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 10
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 22
+		hard_attack = 22
+		air_attack = 40
+		defense = 38
+		breakthrough = 38
+		armor_value = 35
+		hardness = 0.30
+		ap_attack = 35
+		build_cost_ic = 26
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_XM3
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_3
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_3
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+		}
+	}
+
+	GER_TSF_Me101P = {
+		picture = GER_TSF_Me101P
+		abbreviation = "Me-101P"
+		visual_level = 4
+		year = 2005
+		parent = MVLV_TSF_chassis_2_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 22
+		hard_attack = 22
+		air_attack = 40
+		defense = 38
+		breakthrough = 38
+		armor_value = 35
+		hardness = 0.35
+		ap_attack = 30
+		build_cost_ic = 31
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	FRA_TSF_M2000K = {
+		picture = FRA_TSF_M2000K
+		abbreviation = "M2000K"
+		visual_level = 5
+		year = 2010
+		parent = MVLV_TSF_chassis_2_maneuver
+		archetype = MVLV_TSF_chassis_maneuver
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 30
+		max_strength = 15
+		default_morale = 1.5
+		reliability = 0.70
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 19
+		hard_attack = 19
+		air_attack = 60
+		defense = 36
+		breakthrough = 40
+		armor_value = 40
+		hardness = 0.30
+		ap_attack = 45
+		build_cost_ic = 33
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_cruise_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+		}
+	}
+
+	ITA_TSF_EF2000 = {
+		picture = ITA_TSF_EF2000
+		abbreviation = "EF-2000"
+		visual_level = 7
+		year = 2015
+		parent = MVLV_TSF_chassis_3_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 11
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 24
+		hard_attack = 24
+		air_attack = 60
+		defense = 40
+		breakthrough = 40
+		armor_value = 45
+		hardness = 0.35
+		ap_attack = 45
+		build_cost_ic = 35
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_XM3
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	ISR_TSF_kfir = {
+		picture = ISR_TSF_kfir
+		abbreviation = "Kfir"
+		visual_level = 1
+		year = 1995
+		parent = MVLV_TSF_chassis_1_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 4
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.005
+		soft_attack = 5
+		hard_attack = 5
+		air_attack = 5
+		defense = 20
+		breakthrough = 20
+		armor_value = 20
+		hardness = 0.30
+		ap_attack = 5
+		build_cost_ic = 7.5
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_1
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_1
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_1
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_1
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_1
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_1
+		}
+	}
+
+	ISR_TSF_lavi = {
+		picture = ISR_TSF_lavi
+		abbreviation = "Lavi"
+		visual_level = 3
+		year = 2005
+		parent = MVLV_TSF_chassis_2_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 7
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 18
+		hard_attack = 18
+		air_attack = 20
+		defense = 36
+		breakthrough = 36
+		armor_value = 25
+		hardness = 0.30
+		ap_attack = 20
+		build_cost_ic = 23
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_reactive_shield
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_2
+		}
+	}
+
+
+	# === 日本特務 瑞鶴・武御雷 型展開 ===
+	JAP_TSF_zuikaku_c = {
+		picture = JAP_TSF_zuikaku_c
+		abbreviation = "82式"
+		visual_level = 5
+		year = 1995
+		parent = MVLV_TSF_specialForces_chassis_1_maneuver
+		archetype = MVLV_TSF_specialForces_chassis
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 12
+		max_organisation = 46.5
+		max_strength = 25.5
+		default_morale = 1.5
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 15
+		hard_attack = 15
+		air_attack = 15
+		defense = 37.5
+		breakthrough = 37.5
+		armor_value = 45
+		hardness = 0.30
+		ap_attack = 15
+		build_cost_ic = 22.5
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_1
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_1
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_1
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
+		}
+	}
+
+	JAP_TSF_zuikaku_a = {
+		picture = JAP_TSF_zuikaku_a
+		abbreviation = "82式"
+		visual_level = 5
+		year = 1995
+		parent = MVLV_TSF_specialForces_chassis_1_maneuver
+		archetype = MVLV_TSF_specialForces_chassis
+		is_buildable = yes
+		priority = 75
+
+		maximum_speed = 12
+		max_organisation = 46.5
+		max_strength = 25.5
+		default_morale = 1.5
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 15
+		hard_attack = 15
+		air_attack = 15
+		defense = 37.5
+		breakthrough = 37.5
+		armor_value = 45
+		hardness = 0.30
+		ap_attack = 15
+		build_cost_ic = 22.5
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_1
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_1
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_1
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_arm_slot = MVLV_TSF_sub_sword
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
+		}
+	}
+
+	JAP_TSF_zuikaku_f = {
+		picture = JAP_TSF_zuikaku_f
+		abbreviation = "82式"
+		visual_level = 5
+		year = 1995
+		parent = MVLV_TSF_specialForces_chassis_1_maneuver
+		archetype = MVLV_TSF_specialForces_chassis
+		is_buildable = yes
+		priority = 50
+
+		maximum_speed = 12
+		max_organisation = 46.5
+		max_strength = 25.5
+		default_morale = 1.5
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 15
+		hard_attack = 15
+		air_attack = 15
+		defense = 37.5
+		breakthrough = 37.5
+		armor_value = 45
+		hardness = 0.30
+		ap_attack = 15
+		build_cost_ic = 22.5
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_1
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_1
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_1
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_1
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
+		}
+	}
+
+	JAP_TSF_zuikaku_r = {
+		picture = JAP_TSF_zuikaku_r
+		abbreviation = "82式"
+		visual_level = 5
+		year = 1995
+		parent = MVLV_TSF_specialForces_chassis_1_maneuver
+		archetype = MVLV_TSF_specialForces_chassis
+		is_buildable = yes
+		priority = 25
+
+		maximum_speed = 12
+		max_organisation = 46.5
+		max_strength = 25.5
+		default_morale = 1.5
+		reliability = 0.8
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 15
+		hard_attack = 15
+		air_attack = 15
+		defense = 37.5
+		breakthrough = 37.5
+		armor_value = 45
+		hardness = 0.30
+		ap_attack = 15
+		build_cost_ic = 22.5
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_1
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_1
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_1
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_1
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	JAP_TSF_takemikazuchi_c = {
+		picture = JAP_TSF_takemikazuchi_c
+		abbreviation = "TYPE-00"
+		visual_level = 5
+		year = 2015
+		parent = MVLV_TSF_specialForces_chassis_3_maneuver
+		archetype = MVLV_TSF_specialForces_chassis
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 16.5
+		max_organisation = 45
+		max_strength = 22.5
+		default_morale = 1.5
+		reliability = 0.78
+		casualty_trickleback = 0.005
+		experience_loss_factor = 0.005
+		soft_attack = 33
+		hard_attack = 39
+		air_attack = 90
+		defense = 60
+		breakthrough = 67.5
+		armor_value = 60
+		hardness = 0.35
+		ap_attack = 67.5
+		build_cost_ic = 50
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_3_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	JAP_TSF_takemikazuchi_a = {
+		picture = JAP_TSF_takemikazuchi_a
+		abbreviation = "TYPE-00"
+		visual_level = 5
+		year = 2015
+		parent = MVLV_TSF_specialForces_chassis_3_maneuver
+		archetype = MVLV_TSF_specialForces_chassis
+		is_buildable = yes
+		priority = 75
+
+		maximum_speed = 17
+		max_organisation = 45
+		max_strength = 22.5
+		default_morale = 1.5
+		reliability = 0.76
+		casualty_trickleback = 0.005
+		experience_loss_factor = 0.005
+		soft_attack = 36
+		hard_attack = 43
+		air_attack = 99
+		defense = 60
+		breakthrough = 74
+		armor_value = 60
+		hardness = 0.35
+		ap_attack = 74
+		build_cost_ic = 55.5
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_3_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	JAP_TSF_takemikazuchi_f = {
+		picture = JAP_TSF_takemikazuchi_f
+		abbreviation = "TYPE-00"
+		visual_level = 5
+		year = 2015
+		parent = MVLV_TSF_specialForces_chassis_3_maneuver
+		archetype = MVLV_TSF_specialForces_chassis
+		is_buildable = yes
+		priority = 50
+
+		maximum_speed = 18
+		max_organisation = 45
+		max_strength = 22.5
+		default_morale = 1.5
+		reliability = 0.75
+		casualty_trickleback = 0.005
+		experience_loss_factor = 0.005
+		soft_attack = 43
+		hard_attack = 51
+		air_attack = 117
+		defense = 60
+		breakthrough = 88
+		armor_value = 60
+		hardness = 0.35
+		ap_attack = 88
+		build_cost_ic = 66.6
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_3_close
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_3
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_3
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
+			MVLV_TSF_head_slot = MVLV_TSF_add_blade_armor
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+	# === KOR: 韓国機（マブラヴ本編外・ユーザー要望／テクスチャは米機流用）===
+	KOR_TSF_KF_16 = {
+		picture = KOR_TSF_KF_16
+		abbreviation = "KF-16"
+		visual_level = 3
+		year = 2005
+		parent = MVLV_TSF_chassis_2_light
+		archetype = MVLV_TSF_chassis_light
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 8
+		max_organisation = 30
+		max_strength = 13
+		default_morale = 1.7
+		reliability = 0.85
+		casualty_trickleback = 0.0025
+		experience_loss_factor = 0.00
+		soft_attack = 18
+		hard_attack = 18
+		air_attack = 20
+		defense = 36
+		breakthrough = 36
+		armor_value = 25
+		hardness = 0.30
+		ap_attack = 20
+		build_cost_ic = 23
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+		}
+	}
+
+	KOR_TSF_F_15K = {
+		picture = KOR_TSF_F_15K
+		abbreviation = "F-15K"
+		visual_level = 4
+		year = 2010
+		parent = MVLV_TSF_chassis_2_heavy
+		archetype = MVLV_TSF_chassis_heavy
+		is_buildable = yes
+		priority = 100
+
+		maximum_speed = 9
+		max_organisation = 31
+		max_strength = 17
+		default_morale = 1.5
+		reliability = 0.78
+		casualty_trickleback = 0.005
+		experience_loss_factor = -0.005
+		soft_attack = 22
+		hard_attack = 22
+		air_attack = 40
+		defense = 38
+		breakthrough = 38
+		armor_value = 35
+		hardness = 0.35
+		ap_attack = 30
+		build_cost_ic = 31
+
+		module_slots = {
+			MVLV_TSF_armor_slot = inherit
+			MVLV_TSF_OS_slot = inherit
+			MVLV_TSF_engine_slot = inherit
+			MVLV_TSF_headUnit_slot = inherit
+			MVLV_TSF_right_hand_slot = inherit
+			MVLV_TSF_left_hand_slot = inherit
+			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+		}
+
+		default_modules = {
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
+			MVLV_TSF_left_hand_slot = MVLV_TSF_shield
+			MVLV_TSF_shoulder_slot = MVLV_TSF_large_missile_2
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
+		}
+	}
+
+}

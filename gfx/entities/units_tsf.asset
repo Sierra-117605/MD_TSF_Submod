@@ -1,0 +1,360 @@
+#######突击炮
+entity = {
+	name = "Knife_entity"
+	pdxmesh = "Knife" 
+	scale = 1.2
+}
+
+entity = {
+	name = "Gun_Type82_RightHand_entity"
+	pdxmesh = "Gun_Type82_RightHand" 
+	scale = 1.2
+}
+
+entity = {
+	name = "Gun_Type82_RightHand30_entity"
+	pdxmesh = "Gun_Type82_RightHand30" 
+	scale = 1.2
+}
+
+entity = {
+	name = "Gun_Type82_LeftHand_entity"
+	pdxmesh = "Gun_Type82_LeftHand" 
+	scale = 1.2
+}
+
+entity = {
+	name = "Gun_Type82_RightWeapon_entity"
+	pdxmesh = "Gun_Type82_RightWeapon" 
+	scale = 1.2
+}
+
+entity = {
+	name = "Gun_Type82_LeftWeapon_entity"
+	pdxmesh = "Gun_Type82_LeftWeapon" 
+	scale = 1.2
+}
+
+entity = {
+	name = "Sword_RightHand_entity"
+	pdxmesh = "Sword_RightHand" 
+	scale = 1.2
+}
+
+entity = {
+	name = "Sword_LeftHand_entity"
+	pdxmesh = "Sword_LeftHand" 
+	scale = 1.2
+}
+
+entity = {
+	name = "Sword_LeftWeapon_entity"
+	pdxmesh = "Sword_LeftWeapon" 
+	scale = 1.2
+}
+
+entity = {
+	name = "Gun_Type87_RightHand_entity"
+	pdxmesh = "Gun_Type87_RightHand" 
+	scale = 1.2
+}
+#######战术机
+entity = {
+	name = "tsf_entity"
+	pdxmesh = "generic_tsf_mesh"
+	
+#	state = { name = "idle"				animation = "idle"   animation_blend_time = 0.3 }
+#	state = { name = "move"				animation = "move"   animation_blend_time = 0.3 
+#		event = { time = 0 node="right_exhaust" particle = "tank_exhaust_particle"  keep_particle = no trigger_once = yes } 
+#		event = { time = 0 node="left_exhaust" particle = "tank_exhaust_particle"  keep_particle = no trigger_once = yes } 
+#		event = { time = 0 node="left_tracks" particle = "tank_moving_tracks_particle"  keep_particle = no trigger_once = yes}
+#		event = { time = 0 node="right_tracks" particle = "tank_moving_tracks_particle"  keep_particle = no trigger_once = yes}
+#		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+#	}
+#	state = { name = "retreat"				animation = "move"   animation_blend_time = 0.3 
+#		event = { time = 0 node="right_exhaust" particle = "tank_exhaust_particle"  keep_particle = no trigger_once = yes } 
+#		event = { time = 0 node="left_exhaust" particle = "tank_exhaust_particle"  keep_particle = no trigger_once = yes } 
+#		event = { time = 0 node="left_tracks" particle = "tank_moving_tracks_particle"  keep_particle = no trigger_once = yes}
+#		event = { time = 0 node="right_tracks" particle = "tank_moving_tracks_particle"  keep_particle = no trigger_once = yes}
+#		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+#	}
+#	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3 
+#		event = { time = 0 node="barrel" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = mechanized_units_mg_fire } } 
+#		event = { time = 0 node="barrel" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes sound = { soundeffect = mechanized_units_mg_fire } } 
+#	}
+#	state = { name = "defend"			animation = "attack" animation_blend_time = 0.3 
+#		event = { time = 0 node="barrel" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = mechanized_units_mg_fire } } 
+#		event = { time = 0 node="barrel" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes sound = { soundeffect = mechanized_units_mg_fire } } 
+#	}
+#	state = { name = "support_attack"	animation = "attack" animation_blend_time = 0.3  
+#		event = { time = 0 node="barrel" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = mechanized_units_mg_fire } } 
+#		event = { time = 0 node="barrel" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes sound = { soundeffect = mechanized_units_mg_fire } } 
+#	}
+#	state = { name = "training"				animation = "idle" 			animation_blend_time = 0.3 animation_speed = 1.0
+#		event = { time = 0 node="right_exhaust" particle = "tank_exhaust_particle"  keep_particle = no trigger_once = yes }
+#		event = { time = 0 node="left_exhaust" particle = "tank_exhaust_particle"  keep_particle = no trigger_once = yes }
+#	}
+	
+	scale = 1.8
+
+#	game_data = {
+#		texture_anim_speed = 0.5
+#	}
+}
+
+entity = {
+	name = "JAP_tsf_entity"
+	pdxmesh = "JAP_Tsf_941C"
+	
+	state = { name = "idle"				animation = "idle"   animation_blend_time = 0.3 }
+	state = { name = "move"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "retreat"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "attack"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "defend"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "support_attack"   animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 1.0
+	}
+	
+	attach = { 	name = "rifleR"	RightHand = "Gun_Type82_RightHand30_entity"}
+#	attach = { 	name = "rifleL"	LeftHand = "Gun_Type82_LeftHand_entity"}
+	attach = { 	name = "rifleRWeapon"	RightWeapon =  "Gun_Type82_RightWeapon_entity"}
+	attach = { 	name = "rifleLWeapon"	LeftWeapon =  "Sword_LeftWeapon_entity"}
+	scale = 1.2
+
+#	game_data = {
+#		texture_anim_speed = 0.5
+#	}
+}
+
+entity = {
+	name = "JAP_tsfmou_entity"
+	pdxmesh = "JAP_Tsf_00R"
+	
+	state = { name = "idle"				animation = "idle"   animation_blend_time = 0.3 }
+	state = { name = "move"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "retreat"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "attack"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack" chance = 5
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "attack"  animation = "attack2"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack" chance = 1
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "defend"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "support_attack"   animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 1.0
+	}
+	
+	attach = { 	name = "rifleR"	RightHand = "Sword_RightHand_entity"}
+	attach = { 	name = "rifleL"	LeftHand = "Sword_LeftHand_entity"}
+	attach = { 	name = "rifleRWeapon"	RightWeapon =  "Gun_Type82_RightWeapon_entity"}
+	attach = { 	name = "rifleLWeapon"	LeftWeapon =  "Sword_LeftWeapon_entity"}
+	scale = 1.2
+
+#	game_data = {
+#		texture_anim_speed = 0.5
+#	}
+}
+
+entity = {
+	name = "UNI_tsf_entity"
+	pdxmesh = "UNI_Tsf_941C"
+	
+state = { name = "idle"				animation = "idle"   animation_blend_time = 0.3 }
+	state = { name = "move"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "retreat"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+
+	state = { name = "attack"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack" 
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+
+	state = { name = "defend"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "support_attack"   animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 1.0
+	}
+	
+	attach = { 	name = "rifleR"	RightHand = "Sword_RightHand_entity"}
+	attach = { 	name = "rifleL"	LeftHand = "Sword_RightHand_entity"}
+	attach = { 	name = "rifleRWeapon"	RightWeapon =  "Gun_Type82_RightWeapon_entity"}
+	attach = { 	name = "rifleLWeapon"	LeftWeapon =  "Gun_Type82_LeftWeapon_entity"}
+	scale = 1.2
+
+#	game_data = {
+#		texture_anim_speed = 0.5
+#	}
+}
+
+entity = {
+	name = "SOV_tsf_entity"
+	pdxmesh = "SOV_Tsf_Su37M2"
+	
+	state = { name = "idle"				animation = "idle"   animation_blend_time = 0.3 }
+	state = { name = "move"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "retreat"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "attack"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "defend"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "support_attack"   animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 1.0
+	}
+
+	attach = { 	name = "rifleR"	RightHand = "Knife_entity"}
+	attach = { 	name = "rifleL"	LeftHand = "Knife_entity"}
+	attach = { 	name = "rifleRWeapon"	RightWeapon =  "Gun_Type82_RightWeapon_entity"}
+	attach = { 	name = "rifleLWeapon"	LeftWeapon =  "Gun_Type82_LeftWeapon_entity"}
+
+	scale = 1.2
+
+#	game_data = {
+#		texture_anim_speed = 0.5
+#	}
+}
+
+entity = {
+	name = "SOV_tsfmar_entity"
+	pdxmesh = "SOV_Tsf_Su37UB"
+	
+	state = { name = "idle"				animation = "idle"   animation_blend_time = 0.3 }
+	state = { name = "move"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "retreat"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "attack"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "defend"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "support_attack"   animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 1.0
+	}
+
+	attach = { 	name = "rifleR"	RightHand = "Knife_entity"}
+	attach = { 	name = "rifleL"	LeftHand = "Knife_entity"}
+	attach = { 	name = "rifleRWeapon"	RightWeapon =  "Gun_Type82_RightWeapon_entity"}
+	attach = { 	name = "rifleLWeapon"	LeftWeapon =  "Gun_Type82_LeftWeapon_entity"}
+
+	scale = 1.2
+
+#	game_data = {
+#		texture_anim_speed = 0.5
+#	}
+}
+
+entity = {
+	name = "USA_tsf_entity"
+	pdxmesh = "USA_Tsf_F22A"
+	
+	state = { name = "idle"				animation = "idle"   animation_blend_time = 0.3 }
+	state = { name = "move"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "retreat"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "attack"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "defend"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "support_attack"   animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 1.0
+	}
+	
+	attach = { 	name = "rifleR"	RightHand = "Gun_Type82_RightHand_entity"}
+#	attach = { 	name = "rifleL"	LeftHand = "Gun_Type82_LeftHand_entity"}
+	attach = { 	name = "rifleRWeapon"	RightWeapon =  "Gun_Type82_RightWeapon_entity"}
+	attach = { 	name = "rifleLWeapon"	LeftWeapon =  "Gun_Type82_LeftWeapon_entity"}
+	scale = 1.2
+
+#	game_data = {
+#		texture_anim_speed = 0.5
+#	}
+}
+
+entity = {
+	name = "CHI_tsf_entity"
+	pdxmesh = "CHI_Tsf_J10"
+	
+	state = { name = "idle"				animation = "idle"   animation_blend_time = 0.3 }
+	state = { name = "move"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "retreat"  animation = "move"   animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "move"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "attack"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "defend"  animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "support_attack"   animation = "attack"  animation_blend_time = 0.3  animation_speed = 1.0 looping = no next_state = "attack"
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } 
+	}
+	state = { name = "training"				animation = "idle" 			 animation_speed = 1.0
+	}
+	
+	attach = { 	name = "rifleR"	RightHand = "Sword_RightHand_entity"}
+	attach = { 	name = "rifleL"	LeftHand = "Gun_Type82_LeftHand_entity"}
+	attach = { 	name = "rifleRWeapon"	RightWeapon =  "Gun_Type82_RightWeapon_entity"}
+	attach = { 	name = "rifleLWeapon"	LeftWeapon =  "Sword_LeftWeapon_entity"}
+	scale = 1.2
+
+#	game_data = {
+#		texture_anim_speed = 0.5
+#	}
+}
+
+# entity = {
+# 	name = "GEU_tsf_entity"
+# 	pdxmesh = "GEU_Tsf_F4"
+# 	scale = 1.2
+# }
+
+# entity = {
+# 	name = "AFR_tsf_entity"
+# 	pdxmesh = "AFR_Tsf_F4"
+# 	scale = 1.2
+# }

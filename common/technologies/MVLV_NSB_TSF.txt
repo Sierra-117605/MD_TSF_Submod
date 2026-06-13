@@ -1,0 +1,2685 @@
+technologies = {
+	MVLV_research_debug_pack = {
+		research_cost = 10
+		start_year = 1995
+
+		allow = {
+			always = no
+		}
+	}
+
+	MVLV_research_basic_tsf_framework = {
+		research_cost = 1.5
+
+		start_year = 1995
+		enable_equipments = {
+			MVLV_TSF_chassis_0
+			MVLV_TSF_support_chassis_0
+			MVLV_TSF_specialForces_chassis_0
+			MVLV_TSF_chassis_light
+			MVLV_TSF_chassis_heavy
+			MVLV_TSF_chassis_maneuver
+			MVLV_TSF_support_chassis
+			MVLV_TSF_specialForces_chassis		}
+		enable_equipment_modules = { MVLV_TSF_support_gun
+			MVLV_TSF_armor_nomal
+			MVLV_TSF_no_armor
+			MVLV_TSF_basic_OS
+			#MVLV_TSF_no_engine
+			MVLV_TSF_basic_engine
+			MVLV_TSF_basic_head
+			MVLV_TSF_basic_assault_cannon
+			MVLV_TSF_add_basic_assault_cannon
+			MVLV_TSF_basic_sensor_system
+			MVLV_TSF_convert_module
+			MVLV_TSF_vibration_sensor_1
+			MVLV_TSF_add_thruster_1
+			MVLV_TSF_add_thruster_2
+			MVLV_TSF_add_thruster_3		}
+		enable_subunits = {
+			MVLV_tsf_battalion
+			MVLV_tsf_light_battalion
+			MVLV_tsf_maneuver_battalion
+			MVLV_tsf_support_battalion
+			MVLV_tsf_support_company
+			MVLV_tsf_support_company_recon
+			MVLV_tsf_specialForces_battalion
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = -6
+				y = 0
+			}
+		}
+		categories = {
+			MVLV_tsf_tech
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_1_light_framework
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_1_heavy_framework
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1994.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_tsf_1_light_framework = {
+		dependencies = {}
+		research_cost = 2
+
+		start_year = 1995
+		enable_equipments = {
+			MVLV_TSF_chassis_1_light
+			MVLV_TSF_support_chassis_1		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 4
+				y = -1
+			}		}
+		categories = {
+			MVLV_tsf_tech
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_2_light_framework
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_2_heavy_framework
+			research_cost_coeff = 1.5
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1994.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_tsf_1_light_mod_framework = {
+		dependencies = {}
+		research_cost = 1
+
+		start_year = 1995
+		enable_equipments = {
+			MVLV_TSF_chassis_1_light_mod		}
+
+		categories = {
+			MVLV_tsf_tech		}
+
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1994.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_tsf_1_heavy_framework = {
+		dependencies = {}
+		research_cost = 2
+		start_year = 1995
+		enable_equipments = {
+			MVLV_TSF_chassis_1_heavy
+			MVLV_TSF_specialForces_chassis_1_maneuver		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 4
+				y = 1
+			}		}
+		categories = {
+			MVLV_tsf_tech
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_2_light_framework
+			research_cost_coeff = 1.5
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_2_heavy_framework
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_A6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_F-4JK
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1994.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_A6 = {
+		research_cost = 1.5
+		start_year = 1995
+		enable_equipments = {
+			asa_equipment_A-6		}
+		enable_subunits = {
+			MVLV_asa_battalion
+			MVLV_asa_support_company		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 4
+				y = 4
+			}
+		}
+		categories = {
+			MVLV_tsf_tech
+		}
+		
+		path = {
+			leads_to_tech = MVLV_research_A10
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_A12
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_A10 = {
+		research_cost = 1.5
+		start_year = 1995
+		enable_equipments = {
+			tsa_equipment_A-10		}
+		enable_subunits = {
+			MVLV_tsa_battalion
+			MVLV_tsa_support		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 8
+				y = 5
+			}
+		}
+		categories = {
+			MVLV_tsf_tech
+		}
+
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_A10C = {
+		research_cost = 1.5
+		start_year = 1995
+		enable_equipments = {
+			tsa_equipment_A-10C		}
+
+		categories = {
+			MVLV_tsf_tech		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 12
+				y = 5
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_A12 = {
+		research_cost = 2
+		start_year = 1995
+		enable_equipments = {
+			asa_equipment_A-12		}
+		categories = {
+			MVLV_tsf_tech		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 17
+				y = 4
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_F-4JK = {
+		enable_equipments = { MVLV_TSF_specialForces_chassis_1_maneuver }
+		dependencies = { MVLV_research_tsf_1_heavy_framework = 1 }
+		research_cost = 2
+		start_year = 1995
+		allow_branch = {
+			tag = JAP		}
+
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 4
+				y = 6
+			}		}
+		categories = { MVLV_tsf_tech }
+		show_effect_as_desc = no
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		} 
+	}
+	MVLV_research_T00 = {
+		dependencies = { MVLV_research_tsf_2_maneuver_framework = 1 }
+		enable_equipments = {
+			MVLV_TSF_specialForces_chassis_2_maneuver		}
+		enable_subunits = {		}
+
+		research_cost = 2
+		start_year = 2005
+
+		path = { leads_to_tech = MVLV_research_T00R research_cost_coeff = 1 }
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 11
+				y = 7
+			}
+		}
+		categories = { MVLV_tsf_tech }
+		show_effect_as_desc = no
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2004.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+
+	MVLV_research_T00R = {
+		dependencies = { MVLV_research_tsf_3_maneuver_framework = 1 }
+		enable_equipments = {
+			MVLV_TSF_specialForces_chassis_3_maneuver		}
+
+		research_cost = 2
+		start_year = 2015
+
+		path = { leads_to_tech = MVLV_research_T00F research_cost_coeff = 1 }
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 16
+				y = 7
+			}		}
+		categories = { MVLV_tsf_tech }
+		show_effect_as_desc = no
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2014.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+
+
+
+	MVLV_research_T00F = {
+		dependencies = { MVLV_research_tsf_3_light_framework = 1 }
+		enable_equipments = {
+			MVLV_TSF_specialForces_chassis_3_maneuver		}
+
+		research_cost = 2
+		start_year = 2015
+
+		path = { leads_to_tech = MVLV_research_T00A research_cost_coeff = 1 }
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 21
+				y = 7
+			}		}
+		categories = { MVLV_tsf_tech }
+		show_effect_as_desc = no
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2014.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+
+	MVLV_research_T00A = {
+		dependencies = { MVLV_research_tsf_3_heavy_framework = 1 }
+		enable_equipments = {
+			MVLV_TSF_specialForces_chassis_3_maneuver		}
+
+		research_cost = 2
+		start_year = 2015
+
+		path = { leads_to_tech = MVLV_research_T00C research_cost_coeff = 1 }
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 26
+				y = 7
+			}		}
+		categories = { MVLV_tsf_tech }
+		show_effect_as_desc = no
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2014.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+
+	MVLV_research_T00C = {
+		dependencies = { MVLV_research_tsf_4_framework = 1 }
+		enable_equipments = {
+			MVLV_TSF_specialForces_chassis_4		}
+
+		research_cost = 2
+		start_year = 2035
+
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 31
+				y = 7
+			}		}
+		categories = { MVLV_tsf_tech }
+		show_effect_as_desc = no
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2014.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+
+	
+	MVLV_research_tsf_2_light_framework = {
+		dependencies = {}
+		research_cost = 2
+		start_year = 2005
+		enable_equipments = {
+			MVLV_TSF_chassis_2_light
+			MVLV_TSF_support_chassis_2		}
+		categories = {
+			MVLV_tsf_tech		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 12
+				y = -2
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_3_light_framework
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_3_heavy_framework
+			research_cost_coeff = 1.5
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_2_maneuver_framework
+			research_cost_coeff = 2
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2004.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+
+	MVLV_research_tsf_2_heavy_framework = {
+		dependencies = {}
+		research_cost = 2
+		start_year = 2005
+		enable_equipments = {
+			MVLV_TSF_chassis_2_heavy		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 12
+				y = 2
+			}		}
+		categories = {
+			MVLV_tsf_tech
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_3_light_framework
+			research_cost_coeff = 1.5
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_3_heavy_framework
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_2_maneuver_framework
+			research_cost_coeff = 2
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2004.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_tsf_2_maneuver_framework = {
+		dependencies = {}
+		research_cost = 3
+		start_year = 2005
+		enable_equipments = {
+			MVLV_TSF_chassis_2_maneuver
+			MVLV_TSF_specialForces_chassis_2_maneuver		}
+		categories = {
+			MVLV_tsf_tech		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 17
+				y = 0
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_3_light_framework
+			research_cost_coeff = 1.5
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_3_heavy_framework
+			research_cost_coeff = 1.5
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_3_maneuver_framework
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_T00
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2004.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_tsf_3_light_framework = {
+		dependencies = {}
+		research_cost = 4
+		enable_equipments = {
+			MVLV_TSF_chassis_3_light
+			MVLV_TSF_support_chassis_3
+			MVLV_TSF_specialForces_chassis_3_maneuver		}
+		start_year = 2015
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 22
+				y = -2
+			}		}
+		categories = {
+			MVLV_tsf_tech
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_3_maneuver_framework
+			research_cost_coeff = 1.5
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_4_framework
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2014.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+
+	MVLV_research_tsf_3_heavy_framework = {
+		dependencies = {}
+		research_cost = 4
+		start_year = 2015
+		enable_equipments = {
+			MVLV_TSF_chassis_3_heavy
+			MVLV_TSF_specialForces_chassis_3_maneuver		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 22
+				y = 2
+			}		}
+		categories = {
+			MVLV_tsf_tech
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_3_maneuver_framework
+			research_cost_coeff = 1.5
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_4_framework
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2014.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_tsf_3_maneuver_framework = {
+		dependencies = {}
+		research_cost = 4
+		start_year = 2015
+		enable_equipments = {
+			MVLV_TSF_chassis_3_maneuver
+			MVLV_TSF_specialForces_chassis_3_maneuver		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 26
+				y = 0
+			}		}
+		categories = {
+			MVLV_tsf_tech
+		}
+		path = {
+			leads_to_tech = MVLV_research_tsf_4_framework
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2014.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+
+	MVLV_research_tsf_4_framework = {
+		dependencies = {}
+		research_cost = 5
+		start_year = 2035
+		enable_equipments = {
+			MVLV_TSF_chassis_4
+			MVLV_TSF_support_chassis_4
+			MVLV_TSF_specialForces_chassis_4		}
+		categories = {
+			MVLV_tsf_tech		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 35
+				y = 0
+			}
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2034.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2034.1.1 factor = 1.5 }
+		}
+	}
+
+
+	#########
+	#エンジン
+	MVLV_research_engine_1 = {
+		research_cost = 0.8
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_engine_1
+			MVLV_TSF_add_thruster_1
+			MVLV_TSF_add_back_thruster
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = -4
+				y = 11
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_maneuver_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_cruise_1
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1994.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	
+	MVLV_research_engine_2 = {
+		research_cost = 1.5
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_engine_2
+			MVLV_TSF_add_thruster_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 5
+				y = 11
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_maneuver_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_cruise_2
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2004.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_engine_3 = {
+		research_cost = 1.5
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_engine_3
+			MVLV_TSF_add_thruster_3
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 11
+				y = 11
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_maneuver_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_cruise_3
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2014.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_engine_4 = {
+		research_cost = 1.5
+		start_year = 2035
+		enable_equipment_modules = {
+			MVLV_TSF_engine_4
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 17
+				y = 11
+			}
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2034.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2034.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_engine_maneuver_1 = {
+		research_cost = 1
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_engine_maneuver_1
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 0
+				y = 9
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_maneuver_2
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_engine_maneuver_2 = {
+		research_cost = 1.5
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_engine_maneuver_2
+			MVLV_TSF_add_thruster_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 6
+				y = 9
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_maneuver_3
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2004.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_engine_maneuver_3 = {
+		research_cost = 1.5
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_engine_maneuver_3
+			MVLV_TSF_add_thruster_3
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 12
+				y = 9
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_4
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2014.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_engine_cruise_1 = {
+		research_cost = 1
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_engine_cruise_1
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 0
+				y = 13
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_cruise_2
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_engine_cruise_2 = {
+		research_cost = 1.5
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_engine_cruise_2
+			MVLV_TSF_add_thruster_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 6
+				y = 13
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_cruise_3
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2004.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_engine_cruise_3 = {
+		research_cost = 1.5
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_engine_cruise_3
+			MVLV_TSF_add_thruster_3
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 12
+				y = 13
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_engine_4
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2014.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+
+	#######
+	#OS
+	MVLV_research_OS_1 = {
+		research_cost = 0.8
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_OS_1_normal
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 20
+				y = 11
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_close_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_support_1
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1994.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+
+	MVLV_research_OS_2 = {
+		research_cost = 1.5
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_OS_2_normal
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 29
+				y = 11
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_close_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_support_2
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2004.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_OS_3 = {
+		research_cost = 1.5
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_OS_3_normal
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 35
+				y = 11
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_XM3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_close_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_support_3
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2014.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_OS_4 = {
+		research_cost = 1.5
+		start_year = 2035
+		enable_equipment_modules = {
+			MVLV_TSF_OS_4_normal
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 41
+				y = 11
+			}
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2034.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2034.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_OS_close_1 = {
+		research_cost = 1
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_OS_1_close
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 24
+				y = 9
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_close_2
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_OS_close_2 = {
+		research_cost = 1.5
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_OS_2_close
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 30
+				y = 9
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_close_3
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2004.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_OS_close_3 = {
+		research_cost = 1.5
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_OS_3_close
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 36
+				y = 9
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_4
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2014.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_OS_support_1 = {
+		research_cost = 1
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_OS_1_support
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 24
+				y = 13
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_support_2
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_OS_support_2 = {
+		research_cost = 1.5
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_OS_2_support
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 30
+				y = 13
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_support_3
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2004.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_OS_support_3 = {
+		research_cost = 1.5
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_OS_3_support
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 36
+				y = 13
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_OS_4
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2014.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_OS_XM3 = {
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2010.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2010.1.1 factor = 1.5 }
+		}
+		dependencies = { MVLV_research_OS_3 = 1 }
+		research_cost = 10
+		start_year = 2011
+		enable_equipment_modules = {
+			MVLV_TSF_OS_XM3
+			MVLV_TSF_OS_XM3_close
+			MVLV_TSF_OS_XM3_support
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 38
+				y = 13
+			}
+		}
+		categories = { MVLV_tsf_tech }
+	}
+
+	#############
+	#headUnit
+	MVLV_research_head_normal_1 = {
+		research_cost = 0.8
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_head_normal_1
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = -4
+				y = 17
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_normal_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_aerial_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_heavy_1
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1994.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+
+	MVLV_research_head_normal_2 = {
+		research_cost = 1.5
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_head_normal_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 5
+				y = 17
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_normal_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_aerial_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_heavy_2
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2004.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_head_normal_3 = {
+		research_cost = 1.5
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_head_normal_3
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 11
+				y = 17
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_aerial_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_heavy_3
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2014.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+
+	MVLV_research_head_aerial_1 = {
+		research_cost = 1
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_head_aerial_1
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 0
+				y = 15
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_normal_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_aerial_2
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_head_aerial_2 = {
+		research_cost = 1.5
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_head_aerial_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 6
+				y = 15
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_normal_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_aerial_3
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2004.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_head_aerial_3 = {
+		research_cost = 1.5
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_head_aerial_3
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 12
+				y = 15
+			}
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2014.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_head_heavy_1 = {
+		research_cost = 0.8
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_head_heavy_1
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 0
+				y = 19
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_normal_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_heavy_2
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1994.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_head_heavy_2 = {
+		research_cost = 1.5
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_head_heavy_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 6
+				y = 19
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_normal_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_head_heavy_3
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2004.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_head_heavy_3 = {
+		research_cost = 1.5
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_head_heavy_3
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 12
+				y = 19
+			}
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2014.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+##############
+	#armor
+	MVLV_research_armor_light = {
+		research_cost = 0.8
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_armor_light
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 17
+				y = 17
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_armor_composite
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1994.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_armor_heavy = {
+		research_cost = 1
+		start_year = 1990
+		enable_equipment_modules = {
+			MVLV_TSF_armor_heavy
+			MVLV_TSF_add_armor
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 17
+				y = 15
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_armor_composite
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_add_blade_armor
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1989.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_armor_composite = {
+		research_cost = 2
+		start_year = 2010
+		enable_equipment_modules = {
+			MVLV_TSF_armor_composite
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 20
+				y = 16
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_special_structure_2
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2009.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2009.1.1 factor = 1.5 }
+		}
+	}
+	##
+	MVLV_research_reinforced_structure_1 = {
+		research_cost = 1
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_reinforced_structure_1
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 17
+				y = 19
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_special_structure_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_reinforced_structure_2
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_reinforced_structure_2 = {
+		research_cost = 1.5
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_reinforced_structure_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 23
+				y = 19
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_reinforced_structure_3
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2004.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_reinforced_structure_3 = {
+		research_cost = 1.5
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_reinforced_structure_3
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 26
+				y = 19
+			}
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2014.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+	##
+	MVLV_research_special_structure_1 = {
+		research_cost = 2
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_special_structure_1
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 20
+				y = 18
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_special_structure_2
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_special_structure_2 = {
+		research_cost = 2
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_special_structure_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 23
+				y = 17
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_special_structure_3
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2004.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_special_structure_3 = {
+		research_cost = 2
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_special_structure_3
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 26
+				y = 17
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_special_structure_4
+			research_cost_coeff = 1
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2014.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_special_structure_4 = {
+		research_cost = 2
+		start_year = 2035
+		enable_equipment_modules = {
+			MVLV_TSF_special_structure_4
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 29
+				y = 17
+			}
+		}
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2034.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2034.1.1 factor = 1.5 }
+		}
+	}
+	##
+	#blade_armor
+	MVLV_research_add_blade_armor = {
+		research_cost = 1
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_add_blade_armor
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 23
+				y = 15
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_add_aerial_blade_armor
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1994.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_add_aerial_blade_armor = {
+		research_cost = 1.5
+		start_year = 2003
+		enable_equipment_modules = {
+			MVLV_TSF_add_aerial_blade_armor
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 26
+				y = 15
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2002.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2002.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_special_blade_armor = {
+		research_cost = 3
+		start_year = 2003
+		enable_equipment_modules = {
+			MVLV_TSF_add_special_blade_armor
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		allow = {
+			always = no
+		}
+
+	}
+	
+	##########
+	#assault_cannon
+	MVLV_research_assault_cannon_1 = {
+		research_cost = 0.8
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_assault_cannon_1
+			MVLV_TSF_add_assault_cannon_1
+			MVLV_TSF_fcs_1
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = -4
+				y = 21
+			}
+		}
+		# path = {
+			# research_cost_coeff = 1
+		# }
+		path = {
+			leads_to_tech = MVLV_research_assault_cannon_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_support_gun
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1994.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}				
+	MVLV_research_assault_cannon_2 = {
+		research_cost = 1
+		start_year = 2005
+
+		enable_equipment_modules = {
+			MVLV_TSF_assault_cannon_2
+			MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_fcs_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 2
+				y = 21
+			}
+		}
+		# path = {
+			# research_cost_coeff = 1
+		# }
+		path = {
+			leads_to_tech = MVLV_research_assault_cannon_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_railgun_1
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2004.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_assault_cannon_3 = {
+		research_cost = 1.5
+		start_year = 2015
+
+		enable_equipment_modules = {
+			MVLV_TSF_assault_cannon_3
+			MVLV_TSF_add_assault_cannon_3
+			MVLV_TSF_fcs_3
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 8
+				y = 21
+			}
+		}
+		# path = {
+			# research_cost_coeff = 1
+		# }
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2014.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+####暫定封印処置
+
+	MVLV_research_support_gun = {
+		research_cost = 1.2
+		start_year = 1995
+
+		enable_equipment_modules = {
+			MVLV_TSF_support_gun
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = -1
+				y = 22
+			}
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1994.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_railgun_1 = {
+		research_cost = 2.5
+		start_year = 1995
+
+		enable_equipment_modules = {
+			MVLV_TSF_railgun_1
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 5
+				y = 22
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_railgun_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_railgun_3
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_railgun_2 = {
+		research_cost = 1.5
+		start_year = 2005
+
+		enable_equipment_modules = {
+			MVLV_TSF_railgun_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 12
+				y = 22
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2004.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_railgun_3 = {
+		research_cost = 1.5
+		start_year = 2015
+
+		enable_equipment_modules = {
+			MVLV_TSF_railgun_3
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 12
+				y = 24
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2014.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+	########
+	#sword
+	MVLV_research_combat_sword = {
+		research_cost = 1
+		start_year = 1990
+		enable_equipment_modules = {
+			MVLV_TSF_long_sword
+			MVLV_TSF_heavy_sword
+			MVLV_TSF_sub_sword
+			MVLV_TSF_chain_sword
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = -4
+				y = 24
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1989.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_shield = {
+		research_cost = 1
+		start_year = 1990
+		enable_equipment_modules = {
+			MVLV_TSF_shield
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 2
+				y = 24
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_reactive_shield
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1989.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_reactive_shield = {
+		research_cost = 1
+		start_year = 1990
+		enable_equipment_modules = {
+			MVLV_TSF_reactive_shield
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 8
+				y = 24
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1989.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+		}
+	}
+	######
+	#missile
+	MVLV_research_small_missile = {
+		research_cost = 0.8
+		start_year = 1990
+		enable_equipment_modules = {
+			MVLV_TSF_small_missile
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 17
+				y = 21
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_large_missile_1
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1989.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_large_missile_1 = {
+		research_cost = 1.5
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_large_missile_1
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 23
+				y = 21
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_large_missile_2
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_large_missile_2 = {
+		research_cost = 1.5
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_large_missile_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 29
+				y = 21
+			}
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 2004.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	######
+	#sensor
+	MVLV_research_add_sensor_1 = {
+		research_cost = 0.8
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_add_sensor_1
+			MVLV_TSF_vibration_sensor_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 17
+				y = 24
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_add_sensor_2
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 90
+			modifier = { date > 1994.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_add_sensor_2 = {
+		research_cost = 1
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_add_sensor_2
+			MVLV_TSF_vibration_sensor_3
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 23
+				y = 24
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_add_sensor_3
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2004.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_add_sensor_3 = {
+		research_cost = 1
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_add_sensor_3
+			MVLV_TSF_add_armored_sensor
+			MVLV_TSF_vibration_sensor_4
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 29
+				y = 24
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2014.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+	##########
+	#deta_link
+	MVLV_research_deta_link_1 = {
+		research_cost = 0.8
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_deta_link_1
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 17
+				y = 26
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_deta_link_2
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_deta_link_2 = {
+		research_cost = 1
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_deta_link_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 23
+				y = 26
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_deta_link_3
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2004.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_deta_link_3 = {
+		research_cost = 1
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_deta_link_3
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 29
+				y = 26
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2014.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+		}
+	}
+	##exModule
+	MVLV_research_supplies = {
+		research_cost = 0.8
+		start_year = 1990
+		enable_equipment_modules = {
+			MVLV_TSF_supplie_armor
+			MVLV_TSF_drop_tank
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 2
+				y = 26
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1989.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_custom_sights = {
+		research_cost = 1
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_combat_sight
+			MVLV_TSF_sniper_sight
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 8
+				y = 26
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+
+	MVLV_research_custom_shells = {
+		research_cost = 1
+		start_year = 1990
+		enable_equipment_modules = {
+			MVLV_TSF_explosive_shell
+			MVLV_TSF_piercing_shell
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 12
+				y = 26
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1989.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+		}
+	}		
+
+	MVLV_research_maintenance_team_1 = {
+		research_cost = 0.8
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_maintenance_team_1
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = -4
+				y = 28
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_maintenance_team_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = MVLV_research_capture_team
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_maintenance_team_2 = {
+		research_cost = 0.8
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_maintenance_team_2
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 2
+				y = 28
+			}
+		}
+
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2004.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_maintenance_team_3 = {
+		research_cost = 1
+		start_year = 2015
+		enable_equipment_modules = {
+			MVLV_TSF_maintenance_team_3
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		allow = {
+			always = no
+		}
+
+	}
+	MVLV_research_capture_team = {
+		research_cost = 1
+		start_year = 1990
+		enable_equipment_modules = {
+			MVLV_TSF_capture_team
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = -4
+				y = 26
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1989.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_custom_module_1 = {
+		research_cost = 0.8
+		start_year = 1995
+		enable_equipment_modules = {
+			MVLV_TSF_limit_custom
+			MVLV_TSF_cruise_custom
+			MVLV_TSF_combat_custom
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 8
+				y = 28
+			}
+		}
+		path = {
+			leads_to_tech = MVLV_research_custom_module_2
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 1994.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+		}
+	}
+	MVLV_research_custom_module_2 = {
+		research_cost = 0.8
+		start_year = 2005
+		enable_equipment_modules = {
+			MVLV_TSF_hight_limit_custom
+			MVLV_TSF_super_cruise_custom
+		}
+		categories = {
+			MVLV_tsf_tech
+			MVLV_tsf_module_tech
+		}
+		folder = {
+			name = MVLV_tsf_folder
+			position = {
+				x = 12
+				y = 28
+			}
+		}
+		ai_will_do = {
+			factor = 40
+			modifier = { date > 2004.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+		}
+	}
+}

@@ -1,0 +1,30 @@
+animation = {
+	name = "F15E_GunIdle_animation"
+	file = "F15E_GunIdle.anim"
+}
+
+animation = {
+	name = "F15E_GunMove_animation"
+	file = "F15E_GunMove.anim"
+}
+
+animation = {
+	name = "F15E_GunFire_animation"
+	file = "F15E_GunFire.anim"
+}
+
+animation = {
+	name = "F15E_BladeIdle_animation"
+	file = "F15E_BladeIdle.anim"
+}
+
+animation = {
+	name = "F15E_BladeMove_animation"
+	file = "F15E_BladeMove.anim"
+}
+
+animation = {
+	name = "F15E_BladeAttack_animation"
+	file = "F15E_BladeAttack.anim"
+}
+

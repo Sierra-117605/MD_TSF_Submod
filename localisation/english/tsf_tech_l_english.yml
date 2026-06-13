@@ -1,0 +1,9 @@
+﻿l_english:
+ tsf_gen1: "1st Gen TSF Program"
+ tsf_gen1_desc: "Development and deployment of first-generation Tactical Surface Fighters. Equivalent to the F-4 Phantom TSF and early designs."
+ tsf_gen2: "2nd Gen TSF Program"
+ tsf_gen2_desc: "Deployment of second-generation TSFs with advanced OS and composite armor. Equivalent to the F-15 Eagle TSF and Type-89."
+ tsf_gen3: "3rd Gen TSF Program"
+ tsf_gen3_desc: "Cutting-edge third-generation TSFs featuring XM3 OS and next-generation engines. Equivalent to the F-22A Raptor TSF and Type-94 Shiranui."
+ tsf_gen3_5: "3.5 Gen TSF - Special Grade"
+ tsf_gen3_5_desc: "Ultra-high performance TSFs produced in limited numbers for special units. Equivalent to the Type-00 Takemikazuchi."

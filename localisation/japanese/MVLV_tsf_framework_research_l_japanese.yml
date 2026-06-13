@@ -1,0 +1,57 @@
+﻿l_japanese:
+ # === 世代別 framework テック ===
+ MVLV_research_tsf_1_light_framework: "第一世代軽戦術機"
+ MVLV_research_tsf_1_light_framework_desc: "第一世代軽戦術機のフレーム研究。汎用性と整備性を重視した軽量機体。"
+ MVLV_research_tsf_1_light_mod_framework: "第一世代軽戦術機 改修型"
+ MVLV_research_tsf_1_light_mod_framework_desc: "第一世代軽戦術機の改修型。装甲・武装を強化した派生型。"
+ MVLV_research_tsf_1_heavy_framework: "第一世代重戦術機"
+ MVLV_research_tsf_1_heavy_framework_desc: "第一世代重戦術機のフレーム研究。装甲と火力を重視した重量級。"
+
+ MVLV_research_tsf_2_light_framework: "第二世代軽戦術機"
+ MVLV_research_tsf_2_light_framework_desc: "第二世代軽戦術機のフレーム研究。OS と推進機関の刷新で機動性が向上。"
+ MVLV_research_tsf_2_heavy_framework: "第二世代重戦術機"
+ MVLV_research_tsf_2_heavy_framework_desc: "第二世代重戦術機のフレーム研究。装甲材質の改良で生存性が大幅向上。"
+ MVLV_research_tsf_2_maneuver_framework: "第二世代高機動戦術機"
+ MVLV_research_tsf_2_maneuver_framework_desc: "第二世代高機動戦術機のフレーム研究。一撃離脱戦闘に特化。"
+
+ MVLV_research_tsf_3_light_framework: "第三世代軽戦術機"
+ MVLV_research_tsf_3_light_framework_desc: "第三世代軽戦術機のフレーム研究。電子戦能力と低被発見性を統合。"
+ MVLV_research_tsf_3_heavy_framework: "第三世代重戦術機"
+ MVLV_research_tsf_3_heavy_framework_desc: "第三世代重戦術機のフレーム研究。複合装甲と推力増強の融合。"
+ MVLV_research_tsf_3_maneuver_framework: "第三世代高機動戦術機"
+ MVLV_research_tsf_3_maneuver_framework_desc: "第三世代高機動戦術機のフレーム研究。三次元機動性の極致。"
+
+ MVLV_research_tsf_4_framework: "第四世代戦術機"
+ MVLV_research_tsf_4_framework_desc: "第四世代戦術機のフレーム研究。全領域対応の次世代規格。"
+
+ # === 名前付き戦術機テック ===
+ MVLV_research_A6: "A-6J 海神"
+ MVLV_research_A6_desc: "強襲歩行攻撃機 海神。沿岸・水陸両用作戦に特化した派生型。"
+ MVLV_research_A10: "A-10J 凌鉄"
+ MVLV_research_A10_desc: "戦術歩行攻撃機 凌鉄。火力支援に最適化された対地攻撃機。"
+ MVLV_research_A10C: "A-10C"
+ MVLV_research_A10C_desc: "A-10 の改良型。電子機器の刷新と武装拡張。"
+ MVLV_research_A12: "A-12"
+ MVLV_research_A12_desc: "全領域攻撃機。多用途に対応した重火力支援機。"
+ MVLV_research_F-4JK: "第一世代特務戦術機 瑞鶴"
+ MVLV_research_F-4JK_desc: "撃震(F-4J)をベースに斯衛軍向けへ高機動化した第一世代の特務戦術機。日本では瑞鶴（82式）を生産可能。"
+
+ # === 特務戦術機ツリー（全国共通・汎用名／武御雷は日本の装備として生産可）===
+ MVLV_research_T00: "第二世代特務高機動戦術機"
+ MVLV_research_T00_desc: "一撃離脱戦闘に特化した特務仕様の高機動戦術機。各国の精鋭部隊向け。日本では武御雷を生産可能。"
+ MVLV_research_T00R: "第三世代特務高機動戦術機"
+ MVLV_research_T00R_desc: "三次元機動性を極めた第三世代の特務高機動戦術機。"
+ MVLV_research_T00F: "第三世代特務軽戦術機"
+ MVLV_research_T00F_desc: "電子戦能力と低被発見性を統合した第三世代の特務軽戦術機。"
+ MVLV_research_T00A: "第三世代特務重戦術機"
+ MVLV_research_T00A_desc: "複合装甲と火力を強化した第三世代の特務重戦術機。"
+ MVLV_research_T00C: "第四世代特務戦術機"
+ MVLV_research_T00C_desc: "全領域対応の次世代規格による特務戦術機。"
+
+ # === 支援突撃砲 ===
+ MVLV_research_support_assault_cannon_1: "基本型支援突撃砲"
+ MVLV_research_support_assault_cannon_1_desc: "支援戦術機向けの基本型突撃砲。火力支援用。"
+ MVLV_research_support_assault_cannon_2: "改良型支援突撃砲"
+ MVLV_research_support_assault_cannon_2_desc: "支援戦術機向けの改良型突撃砲。命中精度と発射速度を向上。"
+ MVLV_research_support_assault_cannon_3: "発展型支援突撃砲"
+ MVLV_research_support_assault_cannon_3_desc: "支援戦術機向けの発展型突撃砲。長距離精密射撃に対応。"

@@ -1,0 +1,34 @@
+animation = {
+	name = "Tsf_F4_GunAttack1_animation"
+	file = "Tsf_F4_GunAttack1.anim"
+}
+
+animation = {
+	name = "Tsf_F4_GunAttack2_animation"
+	file = "Tsf_F4_GunAttack2.anim"
+}
+
+animation = {
+	name = "Tsf_F4_GunAttack3_animation"
+	file = "Tsf_F4_GunAttack3.anim"
+}
+
+animation = {
+	name = "Tsf_F4_BladeAttack_animation"
+	file = "Tsf_F4_BladeAttack.anim"
+}
+
+animation = {
+	name = "Tsf_F4_Idle_animation"
+	file = "Tsf_F4_Idle.anim"
+}
+
+animation = {
+	name = "Tsf_F4_BladeIdle_animation"
+	file = "Tsf_F4_BladeIdle.anim"
+}
+
+animation = {
+	name = "Tsf_F4_Move_animation"
+	file = "Tsf_F4_Move.anim"
+}

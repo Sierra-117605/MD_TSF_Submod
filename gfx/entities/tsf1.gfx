@@ -1,0 +1,123 @@
+objectTypes = {
+###############################
+##########一代战术机###########
+###############################
+############## F4 #############
+	pdxmesh = {
+		name = "USA_Tsf_F4"
+		file = "gfx/models/units/tsf/Tsf1/F4/USA_Tsf_F4.mesh"
+
+		animation = { id = "idle"	type = "Tsf_F4_Idle_animation"}
+		animation = { id = "BladeIdle"	type = "Tsf_F4_BladeIdle_animation"}
+		animation = { id = "move"	type = "Tsf_F4_Move_animation"}
+		animation = { id = "GunAttack1"	type = "Tsf_F4_GunAttack1_animation"}
+		animation = { id = "GunAttack2"	type = "Tsf_F4_GunAttack2_animation"}
+		animation = { id = "GunAttack3"	type = "Tsf_F4_GunAttack3_animation"}
+		animation = { id = "BladeAttack"	type = "Tsf_F4_BladeAttack_animation"}
+	}
+
+	pdxmesh = {
+		name = "UNI_Tsf_F4"
+		file = "gfx/models/units/tsf/Tsf1/F4/UNI_Tsf_F4.mesh"
+
+		animation = { id = "idle"	type = "Tsf_F4_Idle_animation"}
+		animation = { id = "BladeIdle"	type = "Tsf_F4_BladeIdle_animation"}
+		animation = { id = "move"	type = "Tsf_F4_Move_animation"}
+		animation = { id = "GunAttack1"	type = "Tsf_F4_GunAttack1_animation"}
+		animation = { id = "GunAttack2"	type = "Tsf_F4_GunAttack2_animation"}
+		animation = { id = "GunAttack3"	type = "Tsf_F4_GunAttack3_animation"}
+		animation = { id = "BladeAttack"	type = "Tsf_F4_BladeAttack_animation"}
+	}
+
+	pdxmesh = {
+		name = "GEU_Tsf_F4"
+		file = "gfx/models/units/tsf/Tsf1/F4/GEU_Tsf_F4.mesh"
+
+		animation = { id = "idle"	type = "Tsf_F4_Idle_animation"}
+		animation = { id = "BladeIdle"	type = "Tsf_F4_BladeIdle_animation"}
+		animation = { id = "move"	type = "Tsf_F4_Move_animation"}
+		animation = { id = "GunAttack1"	type = "Tsf_F4_GunAttack1_animation"}
+		animation = { id = "GunAttack2"	type = "Tsf_F4_GunAttack2_animation"}
+		animation = { id = "GunAttack3"	type = "Tsf_F4_GunAttack3_animation"}
+		animation = { id = "BladeAttack"	type = "Tsf_F4_BladeAttack_animation"}
+	}
+
+	pdxmesh = {
+		name = "AFR_Tsf_F4"
+		file = "gfx/models/units/tsf/Tsf1/F4/AFR_Tsf_F4.mesh"
+
+		animation = { id = "idle"	type = "Tsf_F4_Idle_animation"}
+		animation = { id = "BladeIdle"	type = "Tsf_F4_BladeIdle_animation"}
+		animation = { id = "move"	type = "Tsf_F4_Move_animation"}
+		animation = { id = "GunAttack1"	type = "Tsf_F4_GunAttack1_animation"}
+		animation = { id = "GunAttack2"	type = "Tsf_F4_GunAttack2_animation"}
+		animation = { id = "GunAttack3"	type = "Tsf_F4_GunAttack3_animation"}
+		animation = { id = "BladeAttack"	type = "Tsf_F4_BladeAttack_animation"}
+	}
+
+	pdxmesh = {
+		name = "JAP_Tsf_F4"
+		file = "gfx/models/units/tsf/Tsf1/F4/JAP_Tsf_F4.mesh"
+
+		animation = { id = "idle"	type = "Tsf_F4_Idle_animation"}
+		animation = { id = "BladeIdle"	type = "Tsf_F4_BladeIdle_animation"}
+		animation = { id = "move"	type = "Tsf_F4_Move_animation"}
+		animation = { id = "GunAttack1"	type = "Tsf_F4_GunAttack1_animation"}
+		animation = { id = "GunAttack2"	type = "Tsf_F4_GunAttack2_animation"}
+		animation = { id = "GunAttack3"	type = "Tsf_F4_GunAttack3_animation"}
+		animation = { id = "BladeAttack"	type = "Tsf_F4_BladeAttack_animation"}
+	}
+	
+	pdxmesh = {
+		name = "EUR_Tsf_F4"
+		file = "gfx/models/units/tsf/Tsf1/F4/EUR_Tsf_F4.mesh"
+
+		animation = { id = "idle"	type = "Tsf_F4_Idle_animation"}
+		animation = { id = "BladeIdle"	type = "Tsf_F4_BladeIdle_animation"}
+		animation = { id = "move"	type = "Tsf_F4_Move_animation"}
+		animation = { id = "GunAttack1"	type = "Tsf_F4_GunAttack1_animation"}
+		animation = { id = "GunAttack2"	type = "Tsf_F4_GunAttack2_animation"}
+		animation = { id = "GunAttack3"	type = "Tsf_F4_GunAttack3_animation"}
+		animation = { id = "BladeAttack"	type = "Tsf_F4_BladeAttack_animation"}
+	}
+
+	############## MiG21 #############
+	pdxmesh = {
+		name = "EEA_Tsf_MiG21"
+		file = "gfx/models/units/tsf/Tsf1/MiG21/EEA_Tsf_MiG21.mesh"
+
+		animation = { id = "idle"	type = "Tsf_MiG21_Idle_animation"}
+		animation = { id = "BladeIdle"	type = "Tsf_MiG21_BladeIdle_animation"}
+		animation = { id = "move"	type = "Tsf_MiG21_Move_animation"}
+		animation = { id = "GunAttack1"	type = "Tsf_MiG21_GunAttack1_animation"}
+		animation = { id = "GunAttack2"	type = "Tsf_MiG21_GunAttack2_animation"}
+		animation = { id = "GunAttack3"	type = "Tsf_MiG21_GunAttack3_animation"}
+		animation = { id = "BladeAttack"	type = "Tsf_MiG21_BladeAttack_animation"}
+	}
+
+	pdxmesh = {
+		name = "SOV_Tsf_MiG21"
+		file = "gfx/models/units/tsf/Tsf1/MiG21/SOV_Tsf_MiG21.mesh"
+
+		animation = { id = "idle"	type = "Tsf_MiG21_Idle_animation"}
+		animation = { id = "BladeIdle"	type = "Tsf_MiG21_BladeIdle_animation"}
+		animation = { id = "move"	type = "Tsf_MiG21_Move_animation"}
+		animation = { id = "GunAttack1"	type = "Tsf_MiG21_GunAttack1_animation"}
+		animation = { id = "GunAttack2"	type = "Tsf_MiG21_GunAttack2_animation"}
+		animation = { id = "GunAttack3"	type = "Tsf_MiG21_GunAttack3_animation"}
+		animation = { id = "BladeAttack"	type = "Tsf_MiG21_BladeAttack_animation"}
+	}
+
+	pdxmesh = {
+		name = "CHI_Tsf_MiG21"
+		file = "gfx/models/units/tsf/Tsf1/MiG21/CHI_Tsf_MiG21.mesh"
+
+		animation = { id = "idle"	type = "Tsf_MiG21_Idle_animation"}
+		animation = { id = "BladeIdle"	type = "Tsf_MiG21_BladeIdle_animation"}
+		animation = { id = "move"	type = "Tsf_MiG21_Move_animation"}
+		animation = { id = "GunAttack1"	type = "Tsf_MiG21_GunAttack1_animation"}
+		animation = { id = "GunAttack2"	type = "Tsf_MiG21_GunAttack2_animation"}
+		animation = { id = "GunAttack3"	type = "Tsf_MiG21_GunAttack3_animation"}
+		animation = { id = "BladeAttack"	type = "Tsf_MiG21_BladeAttack_animation"}
+	}
+}

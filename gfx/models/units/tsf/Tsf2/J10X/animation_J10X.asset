@@ -1,0 +1,24 @@
+animation = {
+	name = "Tsf_J10X_Attack01_animation"
+	file = "Tsf_J10X_Attack01.anim"
+}
+
+animation = {
+	name = "Tsf_J10X_Attack03_animation"
+	file = "Tsf_J10X_Attack03.anim"
+}
+
+animation = {
+	name = "Tsf_J10X_Attack04_animation"
+	file = "Tsf_J10X_Attack04.anim"
+}
+
+animation = {
+	name = "Tsf_J10X_Idle_animation"
+	file = "Tsf_J10X_Idle.anim"
+}
+
+animation = {
+	name = "Tsf_J10X_Move_animation"
+	file = "Tsf_J10X_Move.anim"
+}

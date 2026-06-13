@@ -1,0 +1,23 @@
+# バックアップフォルダ
+_backup_*/
+*.bak
+*.bak_*
+
+# Python キャッシュ
+__pycache__/
+*.pyc
+
+# OS生成物
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# 一時ファイル
+*.tmp
+*.log
+*.orig
+*.disabled

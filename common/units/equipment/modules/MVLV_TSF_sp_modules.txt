@@ -1,0 +1,431 @@
+equipment_modules = {
+##MVLV_TSF_sp_dataLink_type
+#MVLV_TSF_sp_fcs_type
+#MVLV_TSF_sp_material_type
+#MVLV_TSF_sp_shell_type
+#MVLV_TSF_sp_sight_type
+#MVLV_TSF_sp_maintenance_team_type
+#MVLV_TSF_sp_custom_module_type
+####
+
+
+	MVLV_TSF_fcs_1 = {
+		category = MVLV_TSF_sp_fcs_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 4
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			soft_attack = 0.04
+			hard_attack = 0.04
+		}
+	}
+	MVLV_TSF_fcs_2 = {
+		category = MVLV_TSF_sp_fcs_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 8
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			soft_attack = 0.08
+			hard_attack = 0.08
+			ap_attack = 0.02
+		}
+	}
+	MVLV_TSF_fcs_3 = {
+		category = MVLV_TSF_sp_fcs_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 12
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			soft_attack = 0.12
+			hard_attack = 0.12
+			ap_attack = 0.05
+		}
+	}
+	#################
+	#MVLV_TSF_sp_dataLink_type
+	MVLV_TSF_deta_link_1 = {
+		category = MVLV_TSF_sp_dataLink_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			initiative = 0.2
+			build_cost_ic = 3
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			defense = 0.02
+			soft_attack = 0.02
+			hard_attack = 0.02
+		}
+	}
+	MVLV_TSF_deta_link_2 = {
+		category = MVLV_TSF_sp_dataLink_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			initiative = 0.3
+			build_cost_ic = 6
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			defense = 0.04
+			soft_attack = 0.04
+			hard_attack = 0.04
+		}
+	}
+	MVLV_TSF_deta_link_3 = {
+		category = MVLV_TSF_sp_dataLink_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			initiative = 0.4
+			build_cost_ic = 9
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			defense = 0.08
+			soft_attack = 0.08
+			hard_attack = 0.08
+		}
+	}
+###############
+#MVLV_TSF_sp_structure_type
+#
+	MVLV_TSF_reinforced_structure_1 = {
+		category = MVLV_TSF_sp_structure_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = 5
+			reliability = -0.05
+		}
+		multiply_stats = {
+			armor_value = 0.05
+			build_cost_ic = 0.05
+		}
+		build_cost_resources = {
+			chromium = 1
+		}
+	}
+	MVLV_TSF_reinforced_structure_2 = {
+		category = MVLV_TSF_sp_structure_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = 7.5
+			hardness = 0.05
+		}
+		multiply_stats = {
+			armor_value = 0.10
+			build_cost_ic = 0.075
+		}
+		build_cost_resources = {
+			chromium = 1
+		}
+	}
+	MVLV_TSF_reinforced_structure_3 = {
+		category = MVLV_TSF_sp_structure_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = 10
+			hardness = 0.10
+		}
+		multiply_stats = {
+			armor_value = 0.20
+			build_cost_ic = 0.10
+		}
+		build_cost_resources = {
+			chromium = 1
+		}
+	}
+###########
+#
+#
+	MVLV_TSF_special_structure_1 = {
+		category = MVLV_TSF_sp_structure_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = -3
+			reliability = -0.10
+		}
+		multiply_stats = {
+			build_cost_ic = -0.05
+		}
+		build_cost_resources = {
+			aluminium = 1
+			chromium = 1
+		}
+	}
+	MVLV_TSF_special_structure_2 = {
+		category = MVLV_TSF_sp_structure_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = -3
+			reliability = -0.05
+		}
+		multiply_stats = {
+			build_cost_ic = -0.075
+		}
+		build_cost_resources = {
+			aluminium = 1
+			chromium = 1
+		}
+	}
+	MVLV_TSF_special_structure_3 = {
+		category = MVLV_TSF_sp_structure_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = -3
+			reliability = -0.05
+		}
+		multiply_stats = {
+			build_cost_ic = -0.10
+		}
+		build_cost_resources = {
+			aluminium = 1
+			chromium = 1
+		}
+	}
+	MVLV_TSF_special_structure_4 = {
+		category = MVLV_TSF_sp_structure_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = -3
+			reliability = -0.05
+		}
+		multiply_stats = {
+			build_cost_ic = -0.15
+		}
+		build_cost_resources = {
+			rubber = 1
+			chromium = 1
+		}
+	}
+#########
+#MVLV_TSF_sp_shell_type
+	MVLV_TSF_explosive_shell = {
+		category = MVLV_TSF_sp_shell_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			default_morale = -0.1
+			reliability = -0.05
+			build_cost_ic = 5
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			soft_attack = 0.20
+			hard_attack = 0.10
+			ap_attack = -0.6
+		}
+
+	}
+	MVLV_TSF_piercing_shell = {
+		category = MVLV_TSF_sp_shell_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			default_morale = -0.1
+			reliability = -0.05
+			build_cost_ic = 5
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			soft_attack = -0.30
+			hard_attack = 0.10
+			ap_attack = 0.3
+		}
+
+	}
+
+#######
+#MVLV_TSF_sp_sight_type
+	MVLV_TSF_sniper_sight = {
+		category = MVLV_TSF_sp_sight_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			recon = 0.2
+			build_cost_ic = 1
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			defense = -0.05
+			breakthrough = -0.05
+			soft_attack = 0.05
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+	}
+	MVLV_TSF_combat_sight = {
+		category = MVLV_TSF_sp_sight_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 1
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			defense = 0.05
+			breakthrough = 0.05
+			soft_attack = -0.05
+			hard_attack = -0.05
+		}
+	}
+	
+	###整備班
+	MVLV_TSF_maintenance_team_1 = {
+		category = MVLV_TSF_sp_maintenance_team_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.10
+			build_cost_ic = 2
+		}
+		dismantle_cost_ic = 0
+
+		multiply_stats = {
+
+		}
+	}
+	MVLV_TSF_maintenance_team_2 = {
+		category = MVLV_TSF_sp_maintenance_team_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.20
+			build_cost_ic = 3
+		}
+		dismantle_cost_ic = 0
+
+		multiply_stats = {
+
+		}
+	}
+	MVLV_TSF_maintenance_team_3 = {
+		category = MVLV_TSF_sp_maintenance_team_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = -0.5
+			armor_value = -2.5
+			reliability = 0.15
+			build_cost_ic = 1
+		}
+		dismantle_cost_ic = 0
+
+		multiply_stats = {
+
+		}
+	}
+	MVLV_TSF_capture_team = {
+		category = MVLV_TSF_sp_maintenance_team_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			equipment_capture_factor = 0.01
+			build_cost_ic = 5
+		}
+		dismantle_cost_ic = 0
+
+		multiply_stats = {
+			soft_attack = -0.1
+			hard_attack = -0.1
+			breakthrough = -0.1
+			defense = -0.1
+		}
+	}
+#####################
+	MVLV_TSF_cruise_custom = {
+		category = MVLV_TSF_sp_custom_module_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_organisation = -1
+			experience_loss_factor = 0.001
+			reliability = -0.1
+			build_cost_ic = 5
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			maximum_speed = 0.4
+			soft_attack = -0.05
+			hard_attack = -0.05
+			air_attack = -0.05
+			breakthrough = -0.05
+			defense = -0.05
+		}
+	}
+	MVLV_TSF_super_cruise_custom = {
+		category = MVLV_TSF_sp_custom_module_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_organisation = -1.5
+			experience_loss_factor = 0.002
+			reliability = -0.20
+			build_cost_ic = 5
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			maximum_speed = 1
+			soft_attack = -0.1
+			hard_attack = -0.1
+			air_attack = -0.1
+			breakthrough = -0.2
+			defense = -0.2
+		}
+	}
+	##
+	MVLV_TSF_limit_custom = {
+		category = MVLV_TSF_sp_custom_module_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = 1
+			max_organisation = 1
+			default_morale = 0.1
+			reliability = 0.10
+			build_cost_ic = 1
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			maximum_speed = -0.05
+			soft_attack = -0.05
+			hard_attack = -0.05
+			air_attack = -0.05
+			breakthrough = -0.05
+			defense = -0.05
+		}
+	}
+	MVLV_TSF_hight_limit_custom = {
+		category = MVLV_TSF_sp_custom_module_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = 2
+			max_organisation = 1.5
+			default_morale = 0.4
+			reliability = 0.15
+			build_cost_ic = 1
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			maximum_speed = -0.1
+			soft_attack = -0.1
+			hard_attack = -0.1
+			air_attack = -0.1
+			breakthrough = -0.1
+			defense = -0.1
+		}
+	}
+	##
+	MVLV_TSF_combat_custom = {
+		category = MVLV_TSF_sp_custom_module_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_organisation = -0.5
+			reliability = -0.05
+			build_cost_ic = 5
+		}
+		dismantle_cost_ic = 0
+		multiply_stats = {
+			maximum_speed = -0.10
+			soft_attack = -0.1
+			hard_attack = -0.1
+			air_attack = 0.1
+			ap_attack = 0.1
+			breakthrough = 0.2
+			defense = 0.2
+		}
+	}
+}

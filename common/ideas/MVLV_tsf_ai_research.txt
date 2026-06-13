@@ -1,0 +1,10 @@
+# 全国の戦術機研究を底上げする隠しidea（on_actionsで全国へ付与）
+ideas = {
+	hidden_ideas = {
+		MVLV_tsf_research_boost = {
+			research_bonus = {
+				MVLV_tsf_tech = 0.15
+			}
+		}
+	}
+}

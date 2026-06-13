@@ -1,0 +1,48 @@
+﻿l_japanese:
+ # === F-47 イシュクル基幹 ===
+ tsf_F-47_framework: "F-47 イシュクル開発計画"
+ tsf_F-47_framework_desc: "人類統合体が開発した第8世代戦術機「F-47 イシュクル」。武御雷似のスリークデザイン、極超長距離荷電粒子砲、ラザフォード場発生装置、G元素ジェネレーターを搭載した人類最高峰の戦術機。凄ノ皇を超える性能を誇る。"
+
+ # === 専用モジュールテク ===
+ tsf_F-47_charged_particle_cannon: "F-47 荷電粒子砲"
+ tsf_F-47_charged_particle_cannon_desc: "F-47 イシュクルの主武装である極超長距離荷電粒子砲。圧倒的な火力で BETA 大型種を一撃で粉砕する。"
+ tsf_F-47_lazaford_shield: "F-47 ラザフォード場発生装置"
+ tsf_F-47_lazaford_shield_desc: "超重光級兵器の最大出力放電を15分以上無効化する次世代シールド。"
+ tsf_F-47_g_generator: "F-47 G元素ジェネレーター"
+ tsf_F-47_g_generator_desc: "10年間無補給単独運用を可能にする超高効率動力源。"
+ tsf_F-47_warp_drive: "F-47 重力跳躍機関"
+ tsf_F-47_warp_drive_desc: "F-47 独立ワープ能力。戦略機動性を飛躍的に向上させる。"
+ tsf_F-47_systems: "F-47 統合システム"
+ tsf_F-47_systems_desc: "F-47 イシュクル専用の超軽量装甲、次世代OS、プラズマ駆動エンジン、統合センサー頭部。"
+
+ # === F-47 装備 ===
+ f-47_equipment: "F-47 イシュクル"
+ f-47_equipment_desc: "人類統合体の第8世代戦術機。人類最高峰の対BETA決戦兵器。"
+ f-47_equipment_ishkur: "F-47 イシュクル"
+ f-47_equipment_ishkur_desc: "イシュクル本体。武御雷似のスリークデザイン、極超長距離荷電粒子砲、ラザフォード場発生装置、G元素ジェネレーター搭載。"
+
+ # === F-47 専用モジュール ===
+ F47_charged_particle_cannon: "荷電粒子砲(外部式)"
+ F47_charged_particle_cannon_desc: "極超長距離荷電粒子砲。圧倒的火力。"
+ F47_charged_particle_cannon_heavy: "重荷電粒子砲(最大出力型)"
+ F47_charged_particle_cannon_heavy_desc: "強化型荷電粒子砲。最大出力強化。"
+ F47_lazaford_shield: "ラザフォード場発生装置"
+ F47_lazaford_shield_desc: "次世代防御シールド。超重光級兵器を15分以上防御。"
+ F47_lazaford_shield_advanced: "ラザフォード場発生装置 拡張型"
+ F47_lazaford_shield_advanced_desc: "改良型ラザフォード場発生装置。防御力向上。"
+ F47_g_generator: "G元素ジェネレーター"
+ F47_g_generator_desc: "10年間無補給単独運用可能な超高効率動力源。"
+ F47_g_generator_extended: "G元素ジェネレーター 拡張型"
+ F47_g_generator_extended_desc: "拡張型G元素ジェネレーター。耐久性と出力向上。"
+ F47_warp_drive: "重力跳躍機関"
+ F47_warp_drive_desc: "戦略機動用ワープ装置。短距離転移可能。"
+ F47_armor_superlight: "超軽量G合金装甲"
+ F47_armor_superlight_desc: "F-47専用 超軽量超合金装甲。"
+ F47_OS_advanced: "F-47 統合OS (XM3 後継)"
+ F47_OS_advanced_desc: "F-47専用 XM3後継OS。"
+ F47_engine_plasma: "プラズマ駆動跳躍ユニット"
+ F47_engine_plasma_desc: "F-47専用 プラズマジェット推進。"
+ F47_head_integrated: "統合管制センサー頭部"
+ F47_head_integrated_desc: "F-47専用 全自動統合センサー頭部ユニット。"
+ MD_F47_battalion: "F-47 人類統合体大隊"
+ MD_F47_battalion_desc: "F-47 イシュクル12機編成の人類統合体精鋭部隊。"

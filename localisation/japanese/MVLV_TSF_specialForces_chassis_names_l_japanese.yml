@@ -1,0 +1,99 @@
+﻿l_japanese:
+ # ============================================================
+ # 特務戦術機（specialForces_chassis）の名称
+ # 基本名（フォールバック）+ 国別 canon 名
+ # ============================================================
+
+ # === 基本名（どの国でも共通フォールバック）===
+ MVLV_TSF_specialForces_equipment_1_light: "第一世代特務軽戦術機"
+ MVLV_TSF_specialForces_equipment_1_light_mod: "第一世代特務軽戦術機 改修型"
+ MVLV_TSF_specialForces_equipment_1_heavy: "第一世代特務重戦術機"
+ MVLV_TSF_specialForces_equipment_2_light: "第二世代特務軽戦術機"
+ MVLV_TSF_specialForces_equipment_2_heavy: "第二世代特務重戦術機"
+ MVLV_TSF_specialForces_equipment_2_maneuver: "第二世代特務高機動戦術機"
+ MVLV_TSF_specialForces_equipment_3_light: "第三世代特務軽戦術機"
+ MVLV_TSF_specialForces_equipment_3_heavy: "第三世代特務重戦術機"
+ MVLV_TSF_specialForces_equipment_3_maneuver: "第三世代特務高機動戦術機"
+ MVLV_TSF_specialForces_equipment_4: "第四世代特務戦術機"
+
+ # =================================================================
+ # JAP (帝国日本・斯衛軍 Imperial Royal Guard)
+ # canon: F-4J改 瑞鶴 → TYPE-00 武御雷 が主系統
+ # ※ TYPE-00 武御雷 は独立 variant (JAP_TSF_takemikazuchi) で別途存在
+ # =================================================================
+ JAP_MVLV_TSF_specialForces_equipment_1_light_mod: "F-4J改 瑞鶴"
+ JAP_MVLV_TSF_specialForces_equipment_1_heavy: "77式 撃震・斯衛仕様"
+ JAP_MVLV_TSF_specialForces_equipment_2_heavy: "89式 陽炎・改"
+ JAP_MVLV_TSF_specialForces_equipment_2_maneuver: "TYPE-94 試製武御雷"
+ JAP_MVLV_TSF_specialForces_equipment_3_heavy: "94式 不知火・斯衛仕様"
+ JAP_MVLV_TSF_specialForces_equipment_4: "TYPE-XX 試作特務機"
+
+ # =================================================================
+ # USA (米軍特殊作戦軍 SOCOM / 試作機系統)
+ # canon: F-15 ACTV → F-15 SE → YF-23 の試験機路線
+ # =================================================================
+ USA_MVLV_TSF_specialForces_equipment_1_light: "F-5G タイガーシャーク 特殊作戦型"
+ USA_MVLV_TSF_specialForces_equipment_1_heavy: "F-4SP スーパーファントム"
+ USA_MVLV_TSF_specialForces_equipment_2_maneuver: "F-14Ex スーパートムキャット"
+ USA_MVLV_TSF_specialForces_equipment_2_heavy: "F-15 ACTV"
+ USA_MVLV_TSF_specialForces_equipment_3_heavy: "F-15 SE サイレントイーグル"
+ USA_MVLV_TSF_specialForces_equipment_3_maneuver: "F-22A ラプター 特殊作戦仕様"
+ USA_MVLV_TSF_specialForces_equipment_4: "YF-23 ブラックウィドウ II"
+
+ # =================================================================
+ # RUS (ロシア連邦 / 旧ソ連特殊作戦)
+ # canon: MiG-23改 チボラシュカ・ツヴァイ, F-14 AN3 (国連特殊)
+ # =================================================================
+ RUS_MVLV_TSF_specialForces_equipment_1_heavy: "MiG-23改 チボラシュカ・ツヴァイ"
+ RUS_MVLV_TSF_specialForces_equipment_2_heavy: "MiG-27 アリゲートル"
+ RUS_MVLV_TSF_specialForces_equipment_2_maneuver: "MiG-29OVT ファルクラム"
+ RUS_MVLV_TSF_specialForces_equipment_3_heavy: "MiG-31M フォックスハウンド 改"
+ RUS_MVLV_TSF_specialForces_equipment_3_maneuver: "Su-47 ベルクート 特殊作戦型"
+ RUS_MVLV_TSF_specialForces_equipment_4: "Su-57 試作特務機"
+
+ # =================================================================
+ # CHI (統一中華戦線・特殊部隊)
+ # canon: J-10X 近接強化試験機, J-11
+ # =================================================================
+ CHI_MVLV_TSF_specialForces_equipment_2_light: "殲撃十X (J-10X) 近接強化試験機"
+ CHI_MVLV_TSF_specialForces_equipment_2_heavy: "経国 (F-CK-1)"
+ CHI_MVLV_TSF_specialForces_equipment_3_maneuver: "殲撃二十改"
+
+ # =================================================================
+ # GER (ドイツ・KSK)
+ # =================================================================
+ GER_MVLV_TSF_specialForces_equipment_2_heavy: "トーネード ECR"
+ GER_MVLV_TSF_specialForces_equipment_3_light: "EF-2000 タイフーン 特殊作戦仕様"
+
+ # =================================================================
+ # FRA (フランス・COS)
+ # =================================================================
+ FRA_MVLV_TSF_specialForces_equipment_3_light: "ラファール F4"
+
+ # =================================================================
+ # ENG (イギリス SAS/SBS)
+ # =================================================================
+ ENG_MVLV_TSF_specialForces_equipment_2_heavy: "F-5E ADV トーネード 特殊作戦型"
+ ENG_MVLV_TSF_specialForces_equipment_3_light: "EF-2000 タイフーン FGR4"
+
+ # =================================================================
+ # 国連 (UN) — 国連特殊任務専用機
+ # canon: F-14 AN3 マインドシーカー / ロークサヴァー
+ # ※ TAG が UN や UNI 等の場合に適用
+ # =================================================================
+ # UN_MVLV_TSF_specialForces_equipment_2_maneuver: "F-14 AN3 マインドシーカー"
+
+ # =================================================================
+ # 中東連合 — 帝政イラン系
+ # =================================================================
+ # 中東TAG_MVLV_TSF_specialForces_equipment_2_maneuver: "F-14Ex スーパートムキャット"
+
+ # =================================================================
+ # オーストラリア — TAG: AST
+ # =================================================================
+ AST_MVLV_TSF_specialForces_equipment_2_maneuver: "F-18HMRV スマッシュホーネット"
+
+ # =================================================================
+ # ISR (イスラエル・サイェレット)
+ # =================================================================
+ ISR_MVLV_TSF_specialForces_equipment_2_light: "ラビ 改修型"

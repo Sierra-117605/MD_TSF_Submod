@@ -1,0 +1,11 @@
+ideas = {
+	# 継続フォーカス「戦術機開発の促進」用の隠しidea
+	# 技術カテゴリの研究速度は modifier では無効なため research_bonus を持つ idea 経由で付与する
+	hidden_ideas = {
+		MVLV_tsf_research_idea = {
+			research_bonus = {
+				MVLV_tsf_tech = 0.10
+			}
+		}
+	}
+}

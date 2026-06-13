@@ -1,0 +1,200 @@
+objectTypes = {
+
+
+#####突击炮
+	pdxmesh = {
+		name = "Knife"
+		file = "gfx/models/units/tsf/Knife.mesh"
+	}
+
+	pdxmesh = {
+		name = "Gun_Type82_RightHand"
+		file = "gfx/models/units/tsf/Gun_Type82_RightHand.mesh"
+	}
+
+	pdxmesh = {
+		name = "Gun_Type82_RightHand30"
+		file = "gfx/models/units/tsf/Gun_Type82_RightHand30.mesh"
+	}
+
+	pdxmesh = {
+		name = "Gun_Type82_LeftHand"
+		file = "gfx/models/units/tsf/Gun_Type82_LeftHand.mesh"
+	}
+
+	pdxmesh = {
+		name = "Gun_Type82_RightWeapon"
+		file = "gfx/models/units/tsf/Gun_Type82_RightWeapon.mesh"
+	}
+
+	pdxmesh = {
+		name = "Gun_Type82_LeftWeapon"
+		file = "gfx/models/units/tsf/Gun_Type82_LeftWeapon.mesh"
+	}
+
+	pdxmesh = {
+		name = "Sword_RightHand"
+		file = "gfx/models/units/tsf/Sword_RightHand.mesh"
+	}
+
+	pdxmesh = {
+		name = "Sword_LeftHand"
+		file = "gfx/models/units/tsf/Sword_LeftHand.mesh"
+	}
+
+	pdxmesh = {
+		name = "Sword_LeftWeapon"
+		file = "gfx/models/units/tsf/Sword_LeftWeapon.mesh"
+	}
+
+	pdxmesh = {
+		name = "Gun_Type87_RightHand"
+		file = "gfx/models/units/tsf/Gun_Type87_RightHand.mesh"
+	}
+
+#####战术机
+	pdxmesh = {
+		name = "generic_tsf_mesh"
+		file = "gfx/models/units/tsf/generic_tsf.mesh"
+
+#		animation = { id = "attack"			type = "generic_tsf_attack_animation" }
+#		animation = { id = "idle"			type = "generic_tsf_idle_animation" }
+#		animation = { id = "move"			type = "generic_tsf_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "JAP_Tsf_941C"
+		file = "gfx/models/units/tsf/JAP_Tsf_941C.mesh"
+
+		animation = { id = "attack"			type = "JAP_Tsf_941C_Attack_animation" }
+		animation = { id = "idle"			type = "JAP_Tsf_941C_Idle_animation" }
+		animation = { id = "move"			type = "JAP_Tsf_941C_Move_animation" }
+
+#		meshsettings={
+#			name = "TYPE94_1C"
+#			index = 0
+#			texture_diffuse = "JAP_Tsf_941C_color.png"
+#			texture_normal = "JAP_Tsf_941C_normal.png"
+#			shader = PdxMeshStandard
+#		}
+	}
+
+	pdxmesh = {
+		name = "JAP_Tsf_00R"
+		file = "gfx/models/units/tsf/JAP_Tsf_00R.mesh"
+
+		animation = { id = "attack"			type = "UNI_Tsf_941C_Attack_animation" }
+		animation = { id = "attack2"			type = "JAP_Tsf_941C_Attack2_animation" }
+		animation = { id = "idle"			type = "JAP_Tsf_00R_Idle_animation" }
+		animation = { id = "move"			type = "JAP_Tsf_941C_Move_animation" }
+	}
+
+		pdxmesh = {
+		name = "UNI_Tsf_941C"
+		file = "gfx/models/units/tsf/JAP_Tsf_941C.mesh"
+
+		animation = { id = "attack"			type = "UNI_Tsf_941C_Attack_animation" }
+		animation = { id = "idle"			type = "JAP_Tsf_941C_Idle_animation" }
+		animation = { id = "move"			type = "JAP_Tsf_941C_Move_animation" }
+
+		meshsettings={
+			name = "TYPE94_1C"
+			index = 0
+			texture_diffuse = "UNI_Tsf_941C_color.png"
+			texture_normal = "UNI_Tsf_941C_normal.png"
+			shader = PdxMeshStandard
+		}
+	}
+
+	pdxmesh = {
+		name = "SOV_Tsf_Su37M2"
+		file = "gfx/models/units/tsf/SOV_Tsf_Su37M2.mesh"
+
+		animation = { id = "attack"			type = "SOV_Tsf_Su37M2_Attack_animation"}
+		animation = { id = "idle"			type = "SOV_Tsf_Su37M2_Idle_animation"}
+		animation = { id = "move"			type = "SOV_Tsf_Su37M2_Move_animation"}
+	}
+
+	pdxmesh = {
+		name = "SOV_Tsf_Su37UB"
+		file = "gfx/models/units/tsf/SOV_Tsf_Su37M2.mesh"
+
+		animation = { id = "attack"			type = "SOV_Tsf_Su37M2_Attack_animation"}
+		animation = { id = "idle"			type = "SOV_Tsf_Su37M2_Idle_animation"}
+		animation = { id = "move"			type = "SOV_Tsf_Su37M2_Move_animation"}
+
+		meshsettings={
+			name = "su37"
+			index = 0
+			texture_diffuse = "SOV_Tsf_Su37UB_color.png"
+			texture_normal = "SOV_Tsf_Su37UB_normal.png"
+			shader = PdxMeshStandard
+		}
+	}
+
+	pdxmesh = {
+		name = "USA_Tsf_F22A"
+		file = "gfx/models/units/tsf/USA_Tsf_F22A.mesh"
+
+		animation = { id = "attack"			type = "JAP_Tsf_941C_Attack_animation" }
+		animation = { id = "idle"			type = "JAP_Tsf_941C_Idle_animation" }
+		animation = { id = "move"			type = "JAP_Tsf_941C_Move_animation" }
+	}
+
+	pdxmesh = {
+		name = "CHI_Tsf_J10"
+		file = "gfx/models/units/tsf/CHI_Tsf_J10.mesh"
+
+		animation = { id = "attack"			type = "CHI_Tsf_J10_Attak_animation"}
+		animation = { id = "idle"			type = "CHI_Tsf_J10_Idle_animation"}
+		animation = { id = "move"			type = "CHI_Tsf_J10_Move_animation"}
+	}
+
+	pdxmesh = {
+		name = "GEU_Tsf_F4"
+		file = "gfx/models/units/tsf/General_Tsf_F4.mesh"
+
+#		animation = { id = "attack"			type = "SOV_Tsf_Su37M2_Attack_animation"}
+#		animation = { id = "idle"			type = "SOV_Tsf_Su37M2_Idle_animation"}
+#		animation = { id = "move"			type = "SOV_Tsf_Su37M2_Move_animation"}
+		
+		meshsettings={
+			name = "F4"
+			index = 0
+			texture_diffuse = "Gun_Type82_color.png"
+			texture_normal = "Gun_Type82_normal.png"
+			shader = PdxMeshStandard
+		}
+		meshsettings={
+			name = "F4"
+			index = 1
+			texture_diffuse = "GEU_Tsf_F4_color.png"
+			texture_normal = "GEU_Tsf_F4_normal.png"
+			shader = PdxMeshStandard
+		}
+	}
+
+	pdxmesh = {
+		name = "AFR_Tsf_F4"
+		file = "gfx/models/units/tsf/General_Tsf_F4.mesh"
+
+#		animation = { id = "attack"			type = "SOV_Tsf_Su37M2_Attack_animation"}
+#		animation = { id = "idle"			type = "SOV_Tsf_Su37M2_Idle_animation"}
+#		animation = { id = "move"			type = "SOV_Tsf_Su37M2_Move_animation"}
+		
+		meshsettings={
+			name = "F4"
+			index = 0
+			texture_diffuse = "Gun_Type82_color.png"
+			texture_normal = "Gun_Type82_normal.png"
+			shader = PdxMeshStandard
+		}
+		meshsettings={
+			name = "F4"
+			index = 1
+			texture_diffuse = "AFR_Tsf_F4_color.png"
+			texture_normal = "AFR_Tsf_F4_normal.png"
+			shader = PdxMeshStandard
+		}
+	}
+}

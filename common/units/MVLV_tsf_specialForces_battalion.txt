@@ -1,0 +1,68 @@
+sub_units = {
+	MVLV_tsf_specialForces_battalion = {
+		abbreviation = "SF_TSF"
+		sprite = "tsf"
+		map_icon_category = armored
+		priority = 3300
+		ai_priority = 0
+		active = no
+		# special_forces = yes  ← 一時的に無効化（autosave クラッシュ調査中）
+		can_exfiltrate_from_coast = yes
+		can_be_parachuted = yes
+
+		type = {
+			armor
+		}
+		group = tsf
+		categories = {
+			category_line_tsf_family
+			category_MVLV_tsf_except_family
+			category_MVLV_tsf_family
+			category_MVLV_tsf
+		}
+		combat_width = 1
+		need = {
+			MVLV_TSF_specialForces_chassis = 12
+			cnc_equipment_1 = 10
+		}
+		manpower = 100
+		max_organisation = 0
+		max_strength = -0.30
+		default_morale = 0
+		training_time = 240
+		weight = 0
+		supply_consumption = 0.01
+		ap_attack = 0.01
+
+		forest = {
+			attack = 0.15
+			movement = 0.1
+		}
+		hills = {
+			attack = 0.15
+			movement = 0.05
+		}
+		mountain = {
+			attack = 0.3
+			movement = 0.1
+		}
+		jungle = {
+			attack = 0.3
+			movement = 0.1
+		}
+		marsh = {
+			attack = 0.25
+			movement = 0.05
+		}
+		fort = {
+			attack = 0.10
+		}
+		river = {
+			attack = 0.3
+			movement = 0.3
+		}
+		amphibious = {
+			attack = 0.45
+		}
+	}
+}

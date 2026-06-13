@@ -1,0 +1,9 @@
+﻿l_japanese:
+ # === 戦術機 共通継続フォーカス ===
+ MVLV_tsf_research_focus: "戦術機開発の促進"
+ MVLV_tsf_research_focus_desc: "国家の研究機関を戦術機開発に集中させる。\n\n戦術機関連技術の研究速度 +10%"
+ MVLV_tsf_research_idea: "戦術機技術 研究促進"
+ MVLV_tsf_doctrine_focus: "戦術機運用ドクトリン"
+ MVLV_tsf_doctrine_focus_desc: "戦術機（装甲）部隊の運用教義を洗練させる。\n\n装甲部隊の攻撃 +5%、防御 +5%"
+ MVLV_tsf_pilot_focus: "衛士養成課程"
+ MVLV_tsf_pilot_focus_desc: "衛士（戦術機搭乗員）の練度向上に注力する。\n\n陸軍経験値の獲得 +5%"

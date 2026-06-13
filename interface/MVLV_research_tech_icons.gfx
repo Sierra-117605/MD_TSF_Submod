@@ -1,0 +1,394 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_MVLV_research_special_blade_armor_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/blade_armor_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_debug_pack_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/TSF_basic_tec.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_basic_tsf_framework_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/TSF_basic_tec.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_tsf_1_light_framework_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_F-5.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_tsf_1_light_mod_framework_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_F-5.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_tsf_1_heavy_framework_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_F-4.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_A6_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_A-6.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_A10_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_A-10.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_A10C_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_A-10C.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_A12_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_A-12.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_F-4JK_medium"
+		texturefile = "gfx/interface/technologies/TYPE-82.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_T00_medium"
+		texturefile = "gfx/interface/technologies/Type-00r.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_T00R_medium"
+		texturefile = "gfx/interface/technologies/Type-00r.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_T00F_medium"
+		texturefile = "gfx/interface/technologies/Type-00f.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_T00A_medium"
+		texturefile = "gfx/interface/technologies/Type-00a.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_T00C_medium"
+		texturefile = "gfx/interface/technologies/TYPE-00.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_tsf_2_light_framework_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_Mig-29.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_tsf_2_heavy_framework_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_F-15.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_tsf_2_maneuver_framework_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_Type-94.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_tsf_3_light_framework_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_F-35.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_tsf_3_heavy_framework_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_F-22.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_tsf_3_maneuver_framework_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_Su-47.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_tsf_4_framework_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_XF-2000a.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_engine_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/engine_normal_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_engine_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/engine_normal_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_engine_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/engine_normal_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_engine_4_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/engine_normal_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_engine_maneuver_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/engine_maneuver_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_engine_maneuver_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/engine_maneuver_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_engine_maneuver_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/engine_maneuver_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_engine_cruise_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/engine_cruise_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_engine_cruise_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/engine_cruise_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_engine_cruise_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/engine_cruise_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_OS_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/OS_normal_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_OS_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/OS_normal_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_OS_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/OS_normal_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_OS_4_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/OS_normal_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_OS_close_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/OS_close_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_OS_close_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/OS_close_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_OS_close_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/OS_close_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_OS_support_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/OS_support_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_OS_support_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/OS_support_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_OS_support_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/OS_support_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_OS_XM3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/OS_normal_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_OS_close_XM3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/OS_close_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_OS_support_XM3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/OS_support_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_head_normal_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_normal_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_head_normal_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_normal_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_head_normal_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_normal_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_head_aerial_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_aerial_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_head_aerial_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_aerial_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_head_aerial_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_aerial_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_head_heavy_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_heavy_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_head_heavy_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_heavy_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_head_heavy_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/headUnit_heavy_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_armor_light_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/light_armor_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_armor_heavy_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/heavy_armor_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_armor_composite_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/composite_armor_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_reinforced_structure_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/reinforced_structure_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_reinforced_structure_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/reinforced_structure_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_reinforced_structure_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/reinforced_structure_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_special_structure_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/special_structure_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_special_structure_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/special_structure_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_special_structure_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/special_structure_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_special_structure_4_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/special_structure_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_add_blade_armor_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/blade_armor_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_add_aerial_blade_armor_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/aerial_blade_armor_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_assault_cannon_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_1_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_assault_cannon_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_2_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_assault_cannon_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_3_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_support_assault_cannon_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_1_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_support_assault_cannon_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_2_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_support_assault_cannon_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_3_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_support_gun_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/support_gun_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_railgun_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/railgun_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_railgun_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/railgun2_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_railgun_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/railgun3_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_combat_sword_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/sword_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_shield_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/shield_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_reactive_shield_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/reactive_shield_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_small_missile_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/small_missile_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_large_missile_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/large_missile_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_large_missile_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/large_missile_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_add_sensor_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/sensor_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_add_sensor_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/sensor_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_add_sensor_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/sensor_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_deta_link_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/dataLink_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_deta_link_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/dataLink_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_deta_link_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/dataLink_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_supplies_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/supplie_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_custom_sights_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/Combat_sight_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_custom_shells_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/shell_type_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_maintenance_team_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/maintenance_team_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_maintenance_team_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/maintenance_team_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_maintenance_team_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/maintenance_team_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_capture_team_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/maintenance_team_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_custom_module_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/cruise_custom.dds"
+	}
+	SpriteType = {
+		name = "GFX_MVLV_research_custom_module_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/super_cruise_custom.dds"
+	}
+}

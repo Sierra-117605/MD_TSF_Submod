@@ -1,0 +1,617 @@
+# 国別variant有効化用の隠しテック（on_actionsで自動付与）
+technologies = {
+
+
+	tsf_variant_jap_1h = {
+		enable_equipments = { JAP_TSF_77shiki }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_jap_zuikaku = {
+		enable_equipments = { JAP_TSF_zuikaku_c JAP_TSF_zuikaku_a JAP_TSF_zuikaku_f JAP_TSF_zuikaku_r }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_jap_2h = {
+		enable_equipments = {
+			JAP_TSF_kagerou
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_jap_2l = {
+		enable_equipments = {
+			JAP_TSF_fubuki
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_jap_2m = {
+		enable_equipments = {
+			JAP_TSF_shiranui
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_jap_3h = {
+		enable_equipments = {
+			JAP_TSF_gekkou
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_jap_3s = {
+		enable_equipments = {
+			JAP_TSF_shiranui_1c
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_jap_takemikazuchi_proto = {
+		enable_equipments = {
+			JAP_TSF_takemikazuchi
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_jap_3m = {
+		enable_equipments = {
+			JAP_TSF_shiranui_2
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_jap_tmkz3 = {
+		enable_equipments = {
+			JAP_TSF_takemikazuchi_r
+			JAP_TSF_takemikazuchi_c
+			JAP_TSF_takemikazuchi_a
+			JAP_TSF_takemikazuchi_f
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_jap_4 = {
+		enable_equipments = {
+			JAP_TSF_type04
+			JAP_TSF_type10
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+
+
+
+
+
+
+
+
+
+
+	tsf_variant_usa_1l = {
+		enable_equipments = {
+			USA_TSF_F_5
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_usa_3m = {
+		enable_equipments = {
+			USA_TSF_F_22
+			USA_TSF_YF_23
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_rus_1l = {
+		enable_equipments = {
+			RUS_TSF_MiG_21
+			RUS_TSF_Su_11
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_rus_2m = {
+		enable_equipments = {
+			RUS_TSF_Su_37
+			RUS_TSF_MiG_35
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_chi_2l = {
+		enable_equipments = {
+			CHI_TSF_J_10
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_usa_2h = {
+		enable_equipments = {
+			USA_TSF_F_15
+			USA_TSF_F_15E
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_usa_2m = {
+		enable_equipments = {
+			USA_TSF_F_18
+			USA_TSF_F_14
+			USA_TSF_F_18EF
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_usa_3l = {
+		enable_equipments = {
+			USA_TSF_F_35
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_rus_2l = {
+		enable_equipments = {
+			RUS_TSF_MiG_29
+			RUS_TSF_MiG_23
+			RUS_TSF_MiG_27
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_rus_2h = {
+		enable_equipments = {
+			RUS_TSF_Su_27
+			RUS_TSF_MiG_25
+			RUS_TSF_MiG_31
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_rus_3m = {
+		enable_equipments = {
+			RUS_TSF_Su_47
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_rus_4 = {
+		enable_equipments = {
+			RUS_TSF_Su_57
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_chi_1l = {
+		enable_equipments = {
+			CHI_TSF_J_8
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_chi_2h = {
+		enable_equipments = {
+			CHI_TSF_J_11
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_chi_3m = {
+		enable_equipments = {
+			CHI_TSF_J_20
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_ger_3h = {
+		enable_equipments = {
+			GER_TSF_EF2000
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_fra_2l = {
+		enable_equipments = {
+			FRA_TSF_Mirage
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_fra_3m = {
+		enable_equipments = {
+			FRA_TSF_Rafale
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_eng_3h = {
+		enable_equipments = {
+			ENG_TSF_EF2000
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_eng_4 = {
+		enable_equipments = {
+			ENG_TSF_Tempest
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_swe_1l = {
+		enable_equipments = {
+			SWE_TSF_JA37
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_swe_2l = {
+		enable_equipments = {
+			SWE_TSF_JAS39
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_usa_1lm = {
+		enable_equipments = {
+			USA_TSF_F_5G
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_usa_2l = {
+		enable_equipments = {
+			USA_TSF_F_16
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_usa_3h = {
+		enable_equipments = {
+			USA_TSF_F_15SE
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_chi_3l = {
+		enable_equipments = {
+			CHI_TSF_J_10X
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_ger_2h = {
+		enable_equipments = {
+			GER_TSF_Me101P
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_fra_2m = {
+		enable_equipments = {
+			FRA_TSF_M2000K
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_ita_3h = {
+		enable_equipments = {
+			ITA_TSF_EF2000
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_isr_1l = {
+		enable_equipments = {
+			ISR_TSF_kfir
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_isr_2l = {
+		enable_equipments = {
+			ISR_TSF_lavi
+		}
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+	tsf_variant_kor_light = {
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_variant_kor_heavy = {
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+
+	tsf_common_f5 = {
+		enable_equipments = { MVLV_TSF_common_f5 }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_common_f4 = {
+		enable_equipments = { MVLV_TSF_common_f4 }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_common_f15 = {
+		enable_equipments = { MVLV_TSF_common_f15 }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_common_f16 = {
+		enable_equipments = { MVLV_TSF_common_f16 }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_common_f18 = {
+		enable_equipments = { MVLV_TSF_common_f18 }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_common_f35 = {
+		enable_equipments = { MVLV_TSF_common_f35 }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_common_f15e = {
+		enable_equipments = { MVLV_TSF_common_f15e }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_common_su34 = {
+		enable_equipments = { MVLV_TSF_common_su34 }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_common_adf01 = {
+		enable_equipments = { MVLV_TSF_common_adf01 }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+
+
+
+
+
+
+	tsf_support_1l = {
+		enable_equipments = { MVLV_TSF_support_1l }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_support_1h = {
+		enable_equipments = { MVLV_TSF_support_1h }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_support_1lm = {
+		enable_equipments = { MVLV_TSF_support_1lm }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_support_2l = {
+		enable_equipments = { MVLV_TSF_support_2l }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_support_2h = {
+		enable_equipments = { MVLV_TSF_support_2h }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_support_2m = {
+		enable_equipments = { MVLV_TSF_support_2m }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_support_3l = {
+		enable_equipments = { MVLV_TSF_support_3l }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_support_3h = {
+		enable_equipments = { MVLV_TSF_support_3h }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_support_3m = {
+		enable_equipments = { MVLV_TSF_support_3m }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+	tsf_support_4 = {
+		enable_equipments = { MVLV_TSF_support_4 }
+		start_year = 1936
+		allow = { always = no }
+		show_effect_as_desc = no
+		categories = { MVLV_tsf_tech }
+	}
+
+}

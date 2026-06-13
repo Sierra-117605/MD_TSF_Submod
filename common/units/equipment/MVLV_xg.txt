@@ -1,0 +1,218 @@
+equipments = {
+	###戦略機動要塞###
+	xg_equipment = {
+		year = 2001
+		picture = archetype_MVLV_xg
+		is_archetype = yes
+		#is_convertable = yes
+		is_buildable = no
+		type = armor
+		group_by = archetype
+		interface_category = interface_category_armor
+		upgrades = {
+		}
+		module_slots = {
+			susanoo_armor_slot = {
+				required = yes
+				allowed_module_categories = { susanoo_armor_type }
+			}
+			susanoo_OS_slot = {
+				required = yes
+				allowed_module_categories = { susanoo_OS_type }
+			}
+			susanoo_engine_slot = {
+				required = yes
+				allowed_module_categories = { susanoo_engine_type }
+			}
+			susanoo_main_weapon_slot = {
+				required = yes
+				allowed_module_categories = { susanoo_main_weapon_type }
+			}
+			susanoo_sub_weapon_slot = {
+				allowed_module_categories = { susanoo_sub_weapon_type }
+			}
+			susanoo_special_slot_1 = {
+				allowed_module_categories = { susanoo_sp_type }
+			}
+			susanoo_special_slot_2 = {
+				allowed_module_categories = { susanoo_sp_type }
+			}
+			susanoo_sensor_slot = {
+				allowed_module_categories = { susanoo_sensor_type }
+			}
+		}
+
+		#Misc Abilities
+		maximum_speed = 20
+		reliability = 1
+		#Defensive Abilities
+		defense = 1040
+		breakthrough = 5320
+		hardness = 0.99
+		armor_value = 830
+		#Offensive Abilities
+		soft_attack = 8105
+		hard_attack = 8328
+		ap_attack = 129.5
+		air_attack = 115
+		#Space taken in convoy
+		lend_lease_cost = 1950
+		build_cost_ic = 12500
+                                #build_cost_ic = 12000
+		resources = {
+			tungsten = 6
+			steel = 7
+			rubber = 2
+		}
+	}
+	#XG-70b#
+	xg_equipment_0 = {
+		year = 2001
+		archetype = xg_equipment
+		priority = 20
+		visual_level = 0
+		is_convertable = yes
+		module_slots = {
+			susanoo_armor_slot = inherit
+			susanoo_OS_slot = inherit
+			susanoo_engine_slot = inherit
+			susanoo_main_weapon_slot = inherit
+			susanoo_sub_weapon_slot = inherit
+			susanoo_special_slot_1 = inherit
+			susanoo_special_slot_2 = inherit
+			susanoo_sensor_slot = inherit
+		}
+		default_modules = {
+			susanoo_armor_slot = susanoo_fortress_armor
+			susanoo_OS_slot = susanoo_os_00unit
+			susanoo_engine_slot = susanoo_main_thruster_high
+			susanoo_main_weapon_slot = susanoo_gravity_cannon
+			susanoo_sub_weapon_slot = susanoo_secondary_cannons
+			susanoo_special_slot_1 = susanoo_g_bomb_charger
+			susanoo_special_slot_2 = susanoo_s11_sd_system
+			susanoo_sensor_slot = susanoo_sensor_array
+		}
+
+		#Misc Abilities
+		maximum_speed = 20
+		reliability = 1
+		#Defensive Abilities
+		defense = 2050
+		breakthrough = 11380
+		hardness = 0.99
+		armor_value = 1550
+		#Offensive Abilities
+		soft_attack = 5000.3
+		hard_attack = 5513
+		ap_attack = 110.9
+		air_attack = 111.5
+		#Space taken in convoy
+		lend_lease_cost = 1700
+		build_cost_ic = 10000
+                                #build_cost_ic = 9400
+		resources = {
+			tungsten = 40
+			steel = 60
+			rubber = 4
+		}
+	}
+	#XG-70d#	
+	xg_equipment_1 = {
+		year = 2002
+		archetype = xg_equipment
+		priority = 20
+		visual_level = 0
+		is_convertable = yes
+		module_slots = {
+			susanoo_armor_slot = inherit
+			susanoo_OS_slot = inherit
+			susanoo_engine_slot = inherit
+			susanoo_main_weapon_slot = inherit
+			susanoo_sub_weapon_slot = inherit
+			susanoo_special_slot_1 = inherit
+			susanoo_special_slot_2 = inherit
+			susanoo_sensor_slot = inherit
+		}
+		default_modules = {
+			susanoo_armor_slot = susanoo_fortress_armor
+			susanoo_OS_slot = susanoo_os_00unit
+			susanoo_engine_slot = susanoo_main_thruster_high
+			susanoo_main_weapon_slot = susanoo_gravity_cannon
+			susanoo_sub_weapon_slot = susanoo_secondary_cannons
+			susanoo_special_slot_1 = susanoo_g_bomb_charger
+			susanoo_special_slot_2 = susanoo_s11_sd_system
+			susanoo_sensor_slot = susanoo_sensor_array
+		}
+
+		#Misc Abilities
+		maximum_speed = 20
+		reliability = 1
+		#Defensive Abilities
+		defense = 2050
+		breakthrough = 11380
+		hardness = 1
+		armor_value = 1550
+		#Offensive Abilities
+		soft_attack = 750
+		hard_attack = 5000
+		ap_attack = 500
+		air_attack = 500
+		lend_lease_cost = 500
+		build_cost_ic = 7500
+		resources = {
+			tungsten = 40
+			steel = 60
+			rubber = 20
+		}
+	}
+	#XG#
+	xg_equipment_2 = {
+		year = 2002
+		archetype = xg_equipment
+		priority = 20
+		visual_level = 0
+		is_convertable = yes
+		module_slots = {
+			susanoo_armor_slot = inherit
+			susanoo_OS_slot = inherit
+			susanoo_engine_slot = inherit
+			susanoo_main_weapon_slot = inherit
+			susanoo_sub_weapon_slot = inherit
+			susanoo_special_slot_1 = inherit
+			susanoo_special_slot_2 = inherit
+			susanoo_sensor_slot = inherit
+		}
+		default_modules = {
+			susanoo_armor_slot = susanoo_fortress_armor
+			susanoo_OS_slot = susanoo_os_00unit
+			susanoo_engine_slot = susanoo_main_thruster_high
+			susanoo_main_weapon_slot = susanoo_gravity_cannon
+			susanoo_sub_weapon_slot = susanoo_secondary_cannons
+			susanoo_special_slot_1 = susanoo_g_bomb_charger
+			susanoo_special_slot_2 = susanoo_s11_sd_system
+			susanoo_sensor_slot = susanoo_sensor_array
+		}
+
+		#Misc Abilities
+		maximum_speed = 20
+		reliability = 1
+		#Defensive Abilities
+		defense = 2050
+		breakthrough = 11380
+		hardness = 1
+		armor_value = 1550
+		#Offensive Abilities
+		soft_attack = 10003
+		hard_attack = 15130
+		ap_attack = 1109.5
+		air_attack = 1115
+		#Space taken in convoy
+		lend_lease_cost = 9970
+		build_cost_ic = 15000
+		resources = {
+			tungsten = 40
+			steel = 60
+			rubber = 40
+		}
+	}
+}

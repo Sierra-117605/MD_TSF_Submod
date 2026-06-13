@@ -1,0 +1,65 @@
+spriteTypes = {
+	# === Susanoo backbone (regular size, 198x74〜) ===
+	SpriteType = {
+		name = "GFX_tsf_susanoo_concept_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_XG.dds"
+	}
+	SpriteType = {
+		name = "GFX_tsf_susanoo_2_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_XG-70b 01.dds"
+	}
+	SpriteType = {
+		name = "GFX_tsf_susanoo_3_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_XG.dds"
+	}
+	SpriteType = {
+		name = "GFX_tsf_susanoo_4_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_70d.dds"
+	}
+
+	# === Susanoo modules (small_layout 72x72 用 76x46) ===
+	SpriteType = {
+		name = "GFX_tsf_susanoo_weapons_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/railgun3_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_tsf_susanoo_gravity_cannon_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/railgun2_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_tsf_susanoo_g_bomb_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/explosive_shell_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_tsf_susanoo_systems_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/special_structure_pic.dds"
+	}
+
+	# === F-47 framework (regular size, 武御雷 UN仕様) ===
+	SpriteType = {
+		name = "GFX_tsf_F-47_framework_medium"
+		texturefile = "gfx/interface/technologies/TSF/TSF_Type-00UN.dds"
+	}
+
+	# === F-47 modules (small_layout 72x72 用 76x46) ===
+	SpriteType = {
+		name = "GFX_tsf_F-47_charged_particle_cannon_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/railgun3_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_tsf_F-47_lazaford_shield_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/reactive_shield_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_tsf_F-47_g_generator_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/special_structure_pic.dds"
+	}
+	SpriteType = {
+		name = "GFX_tsf_F-47_warp_drive_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/super_cruise_custom.dds"
+	}
+	SpriteType = {
+		name = "GFX_tsf_F-47_systems_medium"
+		texturefile = "gfx/interface/equipmentdesigner/TSF/modules/Tactical_Surface_module.dds"
+	}
+}

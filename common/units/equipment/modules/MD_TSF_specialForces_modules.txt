@@ -1,0 +1,74 @@
+# ========================================================
+# 特務機化モジュール（武御雷のような特務機を割り当てるためのモジュール）
+# 戦術機 chassis に装着で特務機仕様に
+# ========================================================
+
+equipment_modules = {
+
+	# === 武御雷型 特務機化（近接格闘特化）===
+	tsf_specialForces_takemikazuchi = {
+		category = MVLV_TSF_sp_custom_module_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 60
+			hard_attack = 15
+			defense = 80
+			breakthrough = 100
+			max_organisation = 50
+			experience_loss_factor = -0.10
+		}
+		multiply_stats = {
+			maximum_speed = 0.20
+			build_cost_ic = 0.25
+		}
+	}
+
+	# === 高機動特務機化 ===
+	tsf_specialForces_maneuver = {
+		category = MVLV_TSF_sp_custom_module_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 40
+			breakthrough = 120
+			defense = 50
+			recon = 1.0
+		}
+		multiply_stats = {
+			maximum_speed = 0.30
+			build_cost_ic = 0.20
+		}
+	}
+
+	# === ステルス特務機化（XM3 OS + 偵察）===
+	tsf_specialForces_stealth = {
+		category = MVLV_TSF_sp_custom_module_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 30
+			hard_attack = 20
+			breakthrough = 80
+			recon = 1.5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.30
+		}
+	}
+
+	# === 重装特務機化（重装甲＋火力）===
+	tsf_specialForces_heavy = {
+		category = MVLV_TSF_sp_custom_module_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 50
+			hard_attack = 30
+			defense = 120
+			armor_value = 50
+			breakthrough = 50
+		}
+		multiply_stats = {
+			maximum_speed = -0.05
+			build_cost_ic = 0.30
+		}
+	}
+
+}

@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = { name = "GFX_MVLV_TSF_support_1l_medium" textureFile = "gfx/interface/technologies/TSF/TSF_F-5.dds" legacy_lazy_load = no }
+	spriteType = { name = "GFX_MVLV_TSF_support_1h_medium" textureFile = "gfx/interface/technologies/TSF/TSF_F-4.dds" legacy_lazy_load = no }
+	spriteType = { name = "GFX_MVLV_TSF_support_1lm_medium" textureFile = "gfx/interface/technologies/TSF/TSF_F-5.dds" legacy_lazy_load = no }
+	spriteType = { name = "GFX_MVLV_TSF_support_2l_medium" textureFile = "gfx/interface/technologies/TSF/TSF_F-15.dds" legacy_lazy_load = no }
+	spriteType = { name = "GFX_MVLV_TSF_support_2h_medium" textureFile = "gfx/interface/technologies/TSF/TSF_F-18.dds" legacy_lazy_load = no }
+	spriteType = { name = "GFX_MVLV_TSF_support_2m_medium" textureFile = "gfx/interface/technologies/TSF/TSF_F-16.dds" legacy_lazy_load = no }
+	spriteType = { name = "GFX_MVLV_TSF_support_3l_medium" textureFile = "gfx/interface/technologies/TSF/TSF_f-35.dds" legacy_lazy_load = no }
+	spriteType = { name = "GFX_MVLV_TSF_support_3h_medium" textureFile = "gfx/interface/technologies/TSF/TSF_Su-27.dds" legacy_lazy_load = no }
+	spriteType = { name = "GFX_MVLV_TSF_support_3m_medium" textureFile = "gfx/interface/technologies/TSF/TSF_F-15E.dds" legacy_lazy_load = no }
+	spriteType = { name = "GFX_MVLV_TSF_support_4_medium" textureFile = "gfx/interface/technologies/TSF/TSF_XF-2000a.dds" legacy_lazy_load = no }
+}

@@ -1,0 +1,124 @@
+technologies = {
+	tsf_F-47_framework = {
+		research_cost = 30
+		start_year = 2040
+		
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 44 y = 4 }
+		}
+		categories = { MVLV_tsf_tech }
+		path = { leads_to_tech = tsf_F-47_charged_particle_cannon  research_cost_coeff = 1 }
+		path = { leads_to_tech = tsf_F-47_lazaford_shield  research_cost_coeff = 1 }
+		path = { leads_to_tech = tsf_F-47_g_generator  research_cost_coeff = 1 }
+		path = { leads_to_tech = tsf_F-47_warp_drive  research_cost_coeff = 1 }
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 2039.1.1 factor = 100 }
+					modifier = { num_research_slots > 5 date > 2039.1.1 factor = 1.5 }
+		}
+	}
+	tsf_F-47_charged_particle_cannon = {
+		research_cost = 15
+		start_year = 2040
+		enable_equipment_modules = {
+			F47_charged_particle_cannon
+			F47_charged_particle_cannon_heavy
+		}
+		dependencies = { tsf_F-47_framework = 1 }
+		path = { leads_to_tech = tsf_F-47_systems  research_cost_coeff = 1 }
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 46 y = 6 }
+		}
+		categories = { MVLV_tsf_tech }
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 2039.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2039.1.1 factor = 1.5 }
+		}
+	}
+	tsf_F-47_lazaford_shield = {
+		research_cost = 12
+		start_year = 2040
+		enable_equipment_modules = {
+			F47_lazaford_shield
+			F47_lazaford_shield_advanced
+		}
+		dependencies = { tsf_F-47_framework = 1 }
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 48 y = 6 }
+		}
+		categories = { MVLV_tsf_tech }
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 2039.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2039.1.1 factor = 1.5 }
+		}
+	}
+	tsf_F-47_g_generator = {
+		research_cost = 15
+		start_year = 2040
+		enable_equipment_modules = {
+			F47_g_generator
+			F47_g_generator_extended
+		}
+		dependencies = { tsf_F-47_framework = 1 }
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 50 y = 6 }
+		}
+		categories = { MVLV_tsf_tech }
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 2039.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2039.1.1 factor = 1.5 }
+		}
+	}
+	tsf_F-47_warp_drive = {
+		research_cost = 20
+		start_year = 2045
+		enable_equipment_modules = {
+			F47_warp_drive
+		}
+		dependencies = { tsf_F-47_framework = 1 }
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 52 y = 6 }
+		}
+		categories = { MVLV_tsf_tech }
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 2044.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2044.1.1 factor = 1.5 }
+		}
+	}
+	tsf_F-47_systems = {
+		enable_equipments = { f-47_equipment_ishkur }
+		research_cost = 10
+		start_year = 2040
+		enable_equipment_modules = {
+			F47_armor_superlight
+			F47_OS_advanced
+			F47_engine_plasma
+			F47_head_integrated
+		}
+		dependencies = { tsf_F-47_charged_particle_cannon = 1 }
+		folder = {
+			name = MVLV_tsf_folder
+			position = { x = 46 y = 8 }
+		}
+		categories = { MVLV_tsf_tech }
+		force_use_small_tech_layout = yes
+		ai_will_do = {
+			factor = 1
+			modifier = { date > 2039.1.1 factor = 60 }
+					modifier = { num_research_slots > 5 date > 2039.1.1 factor = 1.5 }
+		}
+	}
+}

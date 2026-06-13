@@ -1,0 +1,185 @@
+equipment_modules = {
+	MVLV_TSF_basic_head = {
+		category = MVLV_TSF_headUnit_nomal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			recon = 0.5
+			initiative = 0.01
+			build_cost_ic = 4
+		}
+		multiply_stats = {
+			defense = 0.05
+			breakthrough = 0.05
+			
+		}
+	}
+	MVLV_TSF_head_normal_1 = {
+		category = MVLV_TSF_headUnit_nomal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			recon = 1
+			initiative = 0.03
+			build_cost_ic = 6
+		}
+		multiply_stats = {
+			defense = 0.1
+			breakthrough = 0.1
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+	}
+	MVLV_TSF_head_normal_2 = {
+		category = MVLV_TSF_headUnit_nomal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			recon = 1.5
+			initiative = 0.04
+			build_cost_ic = 9
+		}
+		multiply_stats = {
+			defense = 0.15
+			breakthrough = 0.15
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+	}
+	MVLV_TSF_head_normal_3 = {
+		category = MVLV_TSF_headUnit_nomal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			recon = 2
+			initiative = 0.05
+			build_cost_ic = 12
+		}
+		multiply_stats = {
+			defense = 0.2
+			breakthrough = 0.2
+			soft_attack = 0.10
+			hard_attack = 0.10
+		}
+	}
+	
+	#MVLV_TSF_headUnit_heavy_type
+	MVLV_TSF_head_heavy_1 = {
+		category = MVLV_TSF_headUnit_heavy_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			maximum_speed = -1
+			max_strength = 1
+			recon = 0.5
+			defense = -1
+			breakthrough = -1
+			armor_value = 5
+			initiative = 0.02
+			build_cost_ic = 7
+		}
+		multiply_stats = {
+			defense = 0.05
+			breakthrough = 0.05
+			soft_attack = 0.03
+			hard_attack = 0.03
+		}
+	}
+	MVLV_TSF_head_heavy_2 = {
+		category = MVLV_TSF_headUnit_heavy_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			maximum_speed = -1
+			max_strength = 1
+			recon = 1
+			defense = -1
+			breakthrough = -1
+			armor_value = 5
+			initiative = 0.03
+			build_cost_ic = 10
+		}
+		multiply_stats = {
+			defense = 0.10
+			breakthrough = 0.10
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+	}
+	MVLV_TSF_head_heavy_3 = {
+		category = MVLV_TSF_headUnit_heavy_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			maximum_speed = -1
+			max_strength = 1
+			recon = 1.5
+			defense = -1
+			breakthrough = -1
+			armor_value = 5
+			initiative = 0.04
+			build_cost_ic = 13
+		}
+		multiply_stats = {
+			defense = 0.15
+			breakthrough = 0.15
+			soft_attack = 0.10
+			hard_attack = 0.10
+		}
+	}
+	
+	#MVLV_TSF_headUnit_aerial_type
+	MVLV_TSF_head_aerial_1 = {
+		category = MVLV_TSF_headUnit_aerial_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = -1
+			recon = 0.5
+			defense = 1
+			breakthrough = 1
+			armor_value = -5
+			initiative = 0.02
+			build_cost_ic = 7
+		}
+		multiply_stats = {
+			maximum_speed = 0.01
+			defense = 0.10
+			breakthrough = 0.10
+			soft_attack = 0.025
+			hard_attack = 0.025
+		}
+	}
+	MVLV_TSF_head_aerial_2 = {
+		category = MVLV_TSF_headUnit_aerial_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = -1
+			recon = 1
+			defense = 1
+			breakthrough = 1
+			armor_value = -5
+			initiative = 0.03
+			build_cost_ic = 10
+		}
+		multiply_stats = {
+			maximum_speed = 0.01
+			defense = 0.15
+			breakthrough = 0.15
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+	}
+	MVLV_TSF_head_aerial_3 = {
+		category = MVLV_TSF_headUnit_aerial_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_strength = -1
+			recon = 1.5
+			defense = 1
+			breakthrough = 1
+			armor_value = -5
+			initiative = 0.04
+			build_cost_ic = 13
+		}
+		multiply_stats = {
+			maximum_speed = 0.01
+			defense = 0.20
+			breakthrough = 0.20
+			soft_attack = 0.10
+			hard_attack = 0.10
+		}
+	}
+}

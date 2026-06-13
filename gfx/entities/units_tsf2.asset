@@ -1,0 +1,228 @@
+###############################
+##########二代战术机###########
+###############################
+
+##########F15E模板（二代重）##########
+#单持F15E
+entity = {
+	name = "Gun_F15E_entity"
+	pdxmesh = "UNI_F15E"
+		
+	state = { name = "idle"  animation = "GunIdle"   animation_blend_time = 0.1  animation_speed = 0.5 }
+
+	state = { name = "move"  animation = "GunMove"   animation_blend_time = 0.1  animation_speed = 0.5 looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }}
+
+	state = { name = "retreat"  animation = "GunMove"   animation_blend_time = 0.1  animation_speed = 0.5  looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }}
+
+	state = { name = "training"				animation = "GunIdle" 			 animation_speed = 0.5	}
+
+	state = { name = "attack"  animation = "GunFire"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack" 
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } }
+
+	state = { name = "defend"  animation = "GunFire"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } }
+
+	state = { name = "support_attack"   animation = "GunFire"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack" 
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } }
+
+	scale = 0.5
+}
+
+#近战F15E
+entity = {
+	name = "Blade_F15E_entity"
+	pdxmesh = "UNI_F15E"
+		
+	state = { name = "idle"  animation = "BladeIdle"   animation_blend_time = 0.1  animation_speed = 0.5 }
+
+	state = { name = "move"  animation = "BladeMove"   animation_blend_time = 0.1  animation_speed = 0.5 looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }}
+
+	state = { name = "retreat"  animation = "BladeMove"   animation_blend_time = 0.1  animation_speed = 0.5  looping = no  next_state = "move"
+		event = { time = 0  sound = { soundeffect = "airplane_jet_idle" } }}
+
+	state = { name = "training"				animation = "BladeIdle" 			 animation_speed = 0.5	}
+
+	state = { name = "attack"  animation = "BladeFire"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "attack" 
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } }
+
+	state = { name = "defend"  animation = "BladeFire"   animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "defend"  
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } }
+
+	state = { name = "support_attack"   animation = "BladeFire"  animation_blend_time = 0.1  animation_speed = 0.7  looping = no  next_state = "support_attack" 
+		event = { time = 0  sound = { soundeffect = mechanized_units_mg_fire } } }
+
+	scale = 0.5
+}
+
+#国联F15E
+entity = {
+	clone = "Blade_F15E_entity"
+	name = "UNI_F15E_entity"
+	pdxmesh = "UNI_F15E"
+	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "GunType82_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType82_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "BladeType77_Hand_entity"}
+	attach = { 	name = "LeftHand_Shield"	Wrist_L =  "Shield_UNI_entity"}
+}
+entity = {#二代轻
+	clone = "UNI_F15E_entity"
+	name = "UNI_MVLV_tsf_battalion_3_entity"
+}
+entity = {#二代重
+	clone = "UNI_F15E_entity"
+	name = "UNI_MVLV_tsf_battalion_4_entity"
+}
+entity = {#二代轻机
+	clone = "UNI_F15E_entity"
+	name = "UNI_MVLV_tsf_battalion_5_entity"
+}
+entity = {#二代重机，使用原版国联不知火
+	clone = "UNI_tsf_entity"
+	name = "UNI_MVLV_tsf_battalion_6_entity"
+}
+#其他国家二代都用国联F15E
+entity = {
+	clone = "UNI_F15E_entity"
+	name = "MVLV_tsf_battalion_3_entity"
+}
+entity = {
+	clone = "UNI_F15E_entity"
+	name = "MVLV_tsf_battalion_4_entity"
+}
+entity = {
+	clone = "UNI_F15E_entity"
+	name = "MVLV_tsf_battalion_5_entity"
+}
+entity = {
+	clone = "UNI_F15E_entity"
+	name = "MVLV_tsf_battalion_6_entity"
+}
+entity = {#设定通用师模型
+	clone = "UNI_F15E_entity"
+	name = "tsf_entity"
+}
+entity = {#覆盖原版大东亚通用师模型
+	clone = "UNI_F15E_entity"
+	name = "GEU_tsf_entity"
+}
+
+#美国F15E
+entity = {
+	clone = "Blade_F15E_entity"
+	name = "USA_F15E_entity"
+	pdxmesh = "USA_F15E"
+	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "GunType82_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType82_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "BladeType77_Hand_entity"}
+}
+entity = {#二代轻
+	clone = "USA_F15E_entity"
+	name = "USA_MVLV_tsf_battalion_3_entity"
+}
+entity = {#二代重
+	clone = "USA_F15E_entity"
+	name = "USA_MVLV_tsf_battalion_4_entity"
+}
+entity = {#二代轻机
+	clone = "USA_F15E_entity"
+	name = "USA_MVLV_tsf_battalion_5_entity"
+}
+entity = {#二代重机
+	clone = "USA_F15E_entity"
+	name = "USA_MVLV_tsf_battalion_6_entity"
+}
+
+#欧盟F15E
+entity = {
+	clone = "Gun_F15E_entity"
+	name = "EUR_F15E_entity"
+	pdxmesh = "EUR_F15E"
+	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "GunType82_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType82_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "GunType82_Hand_entity"}
+	attach = { 	name = "LeftHand_Shield"	Wrist_L =  "Shield_EUR_entity"}
+}
+entity = {#二代轻
+	clone = "EUR_F15E_entity"
+	name = "EUR_MVLV_tsf_battalion_3_entity"
+}
+entity = {#二代重
+	clone = "EUR_F15E_entity"
+	name = "EUR_MVLV_tsf_battalion_4_entity"
+}
+entity = {#二代轻机
+	clone = "EUR_F15E_entity"
+	name = "EUR_MVLV_tsf_battalion_5_entity"
+}
+entity = {#二代重机
+	clone = "EUR_F15E_entity"
+	name = "EUR_MVLV_tsf_battalion_6_entity"
+}
+entity = {#营模型
+	clone = "EUR_F15E_entity"
+	name = "EUR_tsf_entity"
+}
+
+#非盟F15E
+entity = {
+	clone = "Blade_F15E_entity"
+	name = "AFR_F15E_entity"
+	pdxmesh = "AFR_F15E"
+	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "GunType82_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType82_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "BladeType77_Hand_entity"}
+	attach = { 	name = "LeftHand_Shield"	Wrist_L =  "Shield_AFR_entity"}
+}
+entity = {#二代轻
+	clone = "AFR_F15E_entity"
+	name = "AFR_MVLV_tsf_battalion_3_entity"
+}
+entity = {#二代重
+	clone = "AFR_F15E_entity"
+	name = "AFR_MVLV_tsf_battalion_4_entity"
+}
+entity = {#二代轻机
+	clone = "AFR_F15E_entity"
+	name = "AFR_MVLV_tsf_battalion_5_entity"
+}
+entity = {#二代重机
+	clone = "AFR_F15E_entity"
+	name = "AFR_MVLV_tsf_battalion_6_entity"
+}
+entity = {#营模型
+	clone = "AFR_F15E_entity"
+	name = "AFR_tsf_entity"
+}
+
+#日本F15E
+entity = {
+	clone = "Gun_F15E_entity"
+	name = "JAP_F15E_entity"
+	pdxmesh = "JAP_F15E"
+	attach = { 	name = "MountRack_R_Weapon"	Rack_JT_BaseRotate_R =  "BladeType77_MR_entity"}
+	attach = { 	name = "MountRack_L_Weapon"	Rack_JT_BaseRotate_L =  "GunType82_MR_entity"}
+	attach = { 	name = "RightHand_Weapon"	Wrist_R =  "GunType82_Hand_entity"}
+}
+entity = {#二代轻
+	clone = "JAP_F15E_entity"
+	name = "JAP_MVLV_tsf_battalion_3_entity"
+}
+entity = {#二代重
+	clone = "JAP_F15E_entity"
+	name = "JAP_MVLV_tsf_battalion_4_entity"
+}
+entity = {#二代轻机
+	clone = "JAP_F15E_entity"
+	name = "JAP_MVLV_tsf_battalion_5_entity"
+}
+entity = {#二代重机，使用不知火
+	clone = "JAP_tsf_entity"
+	name = "JAP_MVLV_tsf_battalion_6_entity"
+}
+entity = {#营模型
+	clone = "JAP_F15E_entity"
+	name = "JAP_tsf_entity"
+}

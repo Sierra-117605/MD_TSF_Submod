@@ -1,0 +1,163 @@
+# ========================================================
+# F-47 イシュクル 専用モジュール
+# 原作設定の超兵器を再現
+# ========================================================
+
+equipment_modules = {
+
+	# === 荷電粒子砲（外部式）===
+	F47_charged_particle_cannon = {
+		category = F47_charged_particle_cannon_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 800
+			hard_attack = 120
+			ap_attack = 400
+			air_attack = 300
+			breakthrough = 200
+		}
+		multiply_stats = {
+			build_cost_ic = 0.10
+		}
+	}
+
+	F47_charged_particle_cannon_heavy = {
+		category = F47_charged_particle_cannon_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 1500
+			hard_attack = 200
+			ap_attack = 800
+			air_attack = 500
+			breakthrough = 400
+		}
+		multiply_stats = {
+			build_cost_ic = 0.17
+			maximum_speed = -0.10
+		}
+	}
+
+	# === Lazaford シールド ===
+	F47_lazaford_shield = {
+		category = F47_lazaford_shield_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			defense = 500
+			armor_value = 200
+			hardness = 0.05
+		}
+		multiply_stats = {
+			build_cost_ic = 0.08
+		}
+	}
+
+	F47_lazaford_shield_advanced = {
+		category = F47_lazaford_shield_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			defense = 800
+			armor_value = 350
+			hardness = 0.08
+		}
+		multiply_stats = {
+			build_cost_ic = 0.13
+		}
+	}
+
+	# === G-ジェネレーター（10年無補給運用） ===
+	F47_g_generator = {
+		category = F47_g_generator_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.10
+			max_organisation = 100
+			max_strength = 100
+		}
+		multiply_stats = {
+			supply_consumption = -0.80
+			build_cost_ic = 0.07
+		}
+	}
+
+	F47_g_generator_extended = {
+		category = F47_g_generator_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.15
+			max_organisation = 200
+			max_strength = 200
+		}
+		multiply_stats = {
+			supply_consumption = -0.95
+			build_cost_ic = 0.12
+		}
+	}
+
+	# === ワープドライブ（戦略機動）===
+	F47_warp_drive = {
+		category = F47_warp_drive_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			maximum_speed = 30
+			breakthrough = 300
+		}
+		multiply_stats = {
+			build_cost_ic = 0.10
+		}
+	}
+
+	# === F-47 専用 装甲（軽量超合金） ===
+	F47_armor_superlight = {
+		category = MVLV_TSF_armor_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			armor_value = 100
+			hardness = 0.10
+			defense = 100
+		}
+		multiply_stats = {
+			maximum_speed = 0.10
+			build_cost_ic = 0.05
+		}
+	}
+
+	# === F-47 専用 OS（XM3 後継）===
+	F47_OS_advanced = {
+		category = MVLV_TSF_OS_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 200
+			hard_attack = 20
+			defense = 150
+			breakthrough = 200
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+		}
+	}
+
+	# === F-47 専用 エンジン（プラズマ駆動）===
+	F47_engine_plasma = {
+		category = MVLV_TSF_engine_normal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			maximum_speed = 5
+			reliability = 0.05
+		}
+		multiply_stats = {
+			build_cost_ic = 0.03
+		}
+	}
+
+	# === F-47 専用 頭部（センサー統合）===
+	F47_head_integrated = {
+		category = MVLV_TSF_headUnit_nomal_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 100
+			air_attack = 200
+			defense = 50
+		}
+	}
+
+}

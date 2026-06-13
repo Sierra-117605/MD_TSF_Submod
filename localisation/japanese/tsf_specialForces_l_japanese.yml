@@ -1,0 +1,11 @@
+﻿l_japanese:
+ tsf_specialForces_conversion: "特務用モジュール研究"
+ tsf_specialForces_conversion_desc: "戦術機を特務機として運用するための特務用モジュールを研究する。高機動近接型・突破型・隠密型・重装型の4種類が利用可能になる。"
+ tsf_specialForces_takemikazuchi: "特務用モジュール (高機動近接型)"
+ tsf_specialForces_takemikazuchi_desc: "近接格闘特化型の特務用モジュール。近接格闘特化、高機動。"
+ tsf_specialForces_maneuver: "特務用モジュール (突破型)"
+ tsf_specialForces_maneuver_desc: "高機動戦闘特化。突破力・偵察能力向上。"
+ tsf_specialForces_stealth: "特務用モジュール (隠密型)"
+ tsf_specialForces_stealth_desc: "XM3 OS + ステルス装備による隠密運用。偵察と一撃離脱に優れる。"
+ tsf_specialForces_heavy: "特務用モジュール (重装型)"
+ tsf_specialForces_heavy_desc: "重装甲＋火力強化。突破型の特務用モジュール。"

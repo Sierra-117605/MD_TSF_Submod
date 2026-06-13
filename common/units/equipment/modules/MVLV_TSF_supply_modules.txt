@@ -1,0 +1,23 @@
+equipment_modules = {
+	MVLV_TSF_supplie_armor = {
+		category = MVLV_TSF_add_supplies_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_organisation = 0.2
+			default_morale = 0.01
+			armor_value = 0.5
+			build_cost_ic = 1
+		}
+	}
+	MVLV_TSF_drop_tank = {
+		category = MVLV_TSF_add_back_supplies_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_organisation = 0.5
+			default_morale = 0.025
+			build_cost_ic = 1
+		}
+	}
+	
+
+}
