@@ -18,17 +18,19 @@
 - [x] **MD本体と衝突する loc 18件を削除**（MDの現代機関車名などが旧名で上書きされていた）
 - [x] **MD本体と衝突するスプライト4件を削除**（列車・浮体式港湾のアイコン）
 
-### 未実施（削除操作が保留中・本人の許可待ち）
-- [ ] `common/units/MVLV_xg_battalion.txt.tmp.<乱数>` の削除
-      ← 編集ツールの残骸。**スサノオ大隊が二重定義**されている
-- [ ] `common/scripted_guis/01_research_scripted_gui.txt` の削除（MD 2.0と完全一致・不要）
-- [ ] `gfx/interface/techtree/techtree_special_tab.dds` の削除（同上）
+- [x] **不要ファイル3件を削除**
+  - `common/units/MVLV_xg_battalion.txt.tmp.<乱数>`（**スサノオ大隊の二重定義**の原因）
+  - `common/scripted_guis/01_research_scripted_gui.txt` / `gfx/interface/techtree/techtree_special_tab.dds`（MD 2.0と完全一致・不要）
+- [x] **OneDrive側（HOI4が読む本体）へ反映**：868ファイルを上書きコピー。dev側と完全一致・クラウド専用ファイル0件
+- [x] **登録ファイル `mod/MD_TSF_Submod.mod` も 1.19 + MD正式版依存に書き換え**
+- [x] **GitHubへpush**（ブランチ `feat/1.19-compat`。mainへのマージは未実施）
 
 ### 要確認
-- [ ] **OneDrive側MOD本体の実体化**：875ファイル中633ファイルがクラウドのみの状態。
-      「このデバイス上で常に保持する」に変更してから dev側の修正を反映する
 - [ ] **`recovery_rate` の有効性**（`common/units/MVLV_xg_battalion.txt:33`）
       バニラ1.19にもMD 2.0にも同名キーが見当たらない。error.log で確認する
+- [ ] **プレイセットの中身**：現在は MD **Beta**（ugc_3374271790）が有効。本MODの依存先は
+      **正式版**（ugc_2777392649）に変えたので、ランチャーで正式版に切り替える
+      （Betaのまま使うなら descriptor.mod の dependencies を Beta名に戻す必要がある）
 - [ ] **実機起動テスト**：MD正式版 + 本サブMODで新規ゲーム → error.log に MVLV 関連エラーが出ないか
 - [ ] **研究画面の戦術機タブ**：位置（x=1300）がMD 2.0のレイアウトで正しく出るか
 
