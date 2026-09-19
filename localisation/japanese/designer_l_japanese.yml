@@ -101,7 +101,6 @@
  DESIGNER_EMPTY_REGIMENT: "§R新しい師団編制を作成するには、戦闘大隊の追加が必要§!"
  DESIGNER_EMPTY_NAME: "§R師団編制には名前が必要§!"
  DESIGNER_TEMPLATE_NAME_EXISTS: "§R既に他の師団がこの師団名を使用している§!"
- DESIGNER_SUPPORT_COLUMN_TITLE: "支援中隊は前線部隊の後方で彼らを助ける支援部隊である。\n\n各タイプから一つだけ選ぶことができ、支援中隊は、師団の§Y最高速度§!に影響せず（地形ボーナスは除く）、§Y戦闘正面幅§!を広げることもない。"
  DESIGNER_MAIN_COLUMN_TITLE: "戦列大隊は前線部隊である。\n\n各縦列は§Y機甲§!・§Y歩兵§!・§Y自動車化§!のような特定の種類の連隊に分かれる。最上段の大隊の種類で、その連隊縦列に何とを配置できるかが決定する。戦列大隊が多いほど§Y戦闘正面幅§!も広くなり、同じ戦闘に参加できる師団は少なくなる。"
  REINFORCE_WITH_RESEARCHED_EQUIPMENT: "新たに到着した装備を補充に使用"
  REINFORCE_WITH_RESEARCHED_EQUIPMENT_FORBIDDEN: "現在、新しい装備は禁止されている。"

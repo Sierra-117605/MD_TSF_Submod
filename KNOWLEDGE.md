@@ -636,3 +636,61 @@ chassis_4         → MVLV_research_tsf_4_framework
 - my パーサ（`\n\t<name> = {` で中の素体を拾う正規表現）は囲みが何であろうと中身を拾えてしまうので、囲みの異常を見逃す。**先頭バイト/先頭行を直接見ること**
 - スタックに同じ2アドレスが交互に並ぶ＝**無限再帰/深い再帰**。文法エラーやアセット欠落(.mesh)とは別系統。「素体の親子/複製の定義」を疑う
 - 比較対象を選ぶ時は「**実際に enable_equipments で生産解放されているか**」を必ず確認する。enable 0回の機体（武御雷）は frame 生成されず、落ちないからといって無実とは限らない（＝比較対象として無効）
+
+
+---
+
+## 🔴 MD本体と同名のファイル／キーを置くと、MDの更新が丸ごと巻き戻る（2026-09-19）
+
+### 症状
+サブMOD側に MD本体と同じパス・同じ名前のファイルを置くと、後から読まれるサブMOD側が勝つ。
+MDの古いバージョンからコピーしたファイルを持ち続けると、**MDが更新した内容が全部古いものに戻る**。
+エラーログには何も出ないため気づけない。
+
+### 実際に起きていたもの（MD 2.0 時点）
+| ファイル | 状態 |
+|---|---|
+| `interface/countrytechtreeview.gui` | MD旧版のコピー。MD 2.0のレイアウト変更（背景スプライト・タブ座標）を巻き戻していた |
+| `common/continuous_focus/generic.txt` | MD旧版のコピー。`factor` 記法や `has_at_least_eight_interest` など旧トリガを復活させていた |
+| `common/scripted_guis/01_research_scripted_gui.txt` | MD 2.0と完全一致（今は無害だが、MDが更新したら巻き戻す爆弾） |
+| `gfx/interface/techtree/techtree_special_tab.dds` | 同上 |
+
+### 同じことが loc とスプライトでも起きる
+- loc キー18件（`JAP_train_equipment_1` 等）がMD本体と衝突し、MDの現代機関車名が
+  バニラ時代の蒸気機関車名で上書きされていた
+- `GFX_train_equipment_1_medium` 等のスプライト4件も同様にMDのアイコンを差し替えていた
+
+### 対策（2026-09-19 実施）
+MD本体の最新ファイルを土台にして、TSF用のブロックだけを移植し直す。
+`countrytechtreeview.gui` は `MVLV_tsf_folder_tab` / `MVLV_tsf_folder` /
+`techtree_MVLV_tsf_folder_small_item` / `techtree_MVLV_tsf_folder_item` の4ブロックだけ抜き出して
+MD 2.0のファイルへ差し込む（波括弧の収支が0になることを必ず確認する）。
+
+### 予防
+新しくファイルを追加する時は **MD本体に同名ファイルが無いか必ず確認**する。
+loc キーとスプライト名も同様。確認コマンドの考え方：
+サブMOD側のファイル一覧・キー一覧を作り、MD本体側と共通部分（comm -12）を取る。共通が0件なら安全。
+
+---
+
+## 🟢 MD正式版 2.0.0 と MD Beta 2.0.0 は中身がほぼ同一（2026-09-19 確認）
+
+- 正式版: workshop `2777392649` "Millennium Dawn: A Modern Day Mod" 2.0.0 / `supported_version="1.19.*"`
+- Beta:   workshop `3374271790` "Millennium Dawn: A Beta Test Mod" 2.0.0 / `supported_version="1.19.*"`
+- 全79,000ファイルを比較して差分は **descriptor.mod と、Beta側の余分なフォルダ、ファイル名の大文字小文字2件のみ**
+- `replace_path` の一覧も完全一致
+- つまり正式版対応で必要なのは、**descriptor.mod の `dependencies` の名前を正式版の名前に変えること**だけ。
+  中身の作り直しは不要
+
+---
+
+## 🔴 OneDrive の「オンデマンド」でMOD本体がクラウドのみになる（2026-09-19 判明）
+
+HOI4が読むMODフォルダは OneDrive 配下にある。OneDriveアプリが起動していない状態では、
+実体がダウンロードされていないファイルは**一切読めない**（"cloud file provider is not running"）。
+
+2026-09-19時点で、MODフォルダ875ファイル中 **633ファイルがクラウドのみ**の状態だった。
+この状態でHOI4を起動すると、読めないファイルは読み込まれず、原因不明の不具合になる。
+
+対策：エクスプローラでMODフォルダを右クリック →「このデバイス上で常に保持する」を選ぶ。
+作業前には OneDrive が起動していることを確認する。

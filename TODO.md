@@ -1,6 +1,36 @@
 # TODO.md — MD_TSF_Submod 作業状況
 
-最終更新: 2026-06-14（高機動戦術機のsp_slot継承修正・3個に削減 → 実機OK / 引き継ぎは [HANDOFF.md](HANDOFF.md)）
+最終更新: 2026-09-19（MD 2.0 正式版 + HOI4 1.19 対応の修正を実施 → 実機確認待ち / 引き継ぎは [HANDOFF.md](HANDOFF.md)）
+
+---
+
+## 🆕 MD 2.0 正式版・HOI4 1.19 対応（2026-09-19 / 実機確認待ち）
+
+### 実施済み
+- [x] **descriptor.mod を正式版向けに変更**
+  - `supported_version` 1.18.* → **1.19.***
+  - `dependencies` を "Millennium Dawn: A Beta Test Mod" → **"Millennium Dawn: A Modern Day Mod"**
+- [x] **`interface/countrytechtreeview.gui` をMD 2.0ベースで作り直し**
+  - 旧版はMDの古いコピーで、MD 2.0のレイアウト変更を巻き戻していた
+  - 戦術機タブ・戦術機フォルダ・トップレベル要素2件（計342行）だけを移植
+- [x] **`common/continuous_focus/generic.txt` をMD 2.0ベースで作り直し**
+  - 戦術機の継続フォーカス3件（研究/ドクトリン/搭乗員）のみ追記
+- [x] **MD本体と衝突する loc 18件を削除**（MDの現代機関車名などが旧名で上書きされていた）
+- [x] **MD本体と衝突するスプライト4件を削除**（列車・浮体式港湾のアイコン）
+
+### 未実施（削除操作が保留中・本人の許可待ち）
+- [ ] `common/units/MVLV_xg_battalion.txt.tmp.<乱数>` の削除
+      ← 編集ツールの残骸。**スサノオ大隊が二重定義**されている
+- [ ] `common/scripted_guis/01_research_scripted_gui.txt` の削除（MD 2.0と完全一致・不要）
+- [ ] `gfx/interface/techtree/techtree_special_tab.dds` の削除（同上）
+
+### 要確認
+- [ ] **OneDrive側MOD本体の実体化**：875ファイル中633ファイルがクラウドのみの状態。
+      「このデバイス上で常に保持する」に変更してから dev側の修正を反映する
+- [ ] **`recovery_rate` の有効性**（`common/units/MVLV_xg_battalion.txt:33`）
+      バニラ1.19にもMD 2.0にも同名キーが見当たらない。error.log で確認する
+- [ ] **実機起動テスト**：MD正式版 + 本サブMODで新規ゲーム → error.log に MVLV 関連エラーが出ないか
+- [ ] **研究画面の戦術機タブ**：位置（x=1300）がMD 2.0のレイアウトで正しく出るか
 
 ---
 

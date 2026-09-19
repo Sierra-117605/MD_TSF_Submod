@@ -4,7 +4,7 @@ tags={
 	"Gameplay"
 	"Military"
 }
-supported_version="1.18.*"
+supported_version="1.19.*"
 dependencies={
-	"Millennium Dawn: A Beta Test Mod"
+	"Millennium Dawn: A Modern Day Mod"
 }
