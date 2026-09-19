@@ -139,3 +139,9 @@
  tsf_common_su34:0 "Su-34 フルバック 解放"
  MVLV_TSF_common_adf01:0 "XF-2000a テュホーン"
  tsf_common_adf01:0 "XF-2000a テュホーン 解放"
+ # --- 2026-09-19 追加: 表示名が英語(ID)のまま出ていたもの ---
+ tsf_variant_jap_2l:0 "日 吹雪 解放"
+ tsf_variant_jap_3s:0 "日 不知火・壱型丙（支援型） 解放"
+ tsf_variant_jap_takemikazuchi_proto:0 "日 試製武御雷 TYPE-98X 解放"
+ tsf_variant_jap_tmkz3:0 "日 武御雷 解放"
+ tsf_variant_jap_zuikaku:0 "日 瑞鶴 解放"

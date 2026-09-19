@@ -66,7 +66,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1994.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_tsf_1_light_framework = {
@@ -97,7 +97,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1994.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_tsf_1_light_mod_framework = {
@@ -114,7 +114,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1994.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_tsf_1_heavy_framework = {
@@ -152,7 +152,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1994.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_A6 = {
@@ -185,7 +185,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_A10 = {
@@ -210,7 +210,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_A10C = {
@@ -231,7 +231,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_A12 = {
@@ -251,7 +251,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_F-4JK = {
@@ -273,7 +273,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		} 
 	}
 	MVLV_research_T00 = {
@@ -298,7 +298,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2004.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 
@@ -322,7 +322,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2014.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 
@@ -348,7 +348,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2014.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 
@@ -372,7 +372,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2014.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 
@@ -395,7 +395,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2014.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 
@@ -431,7 +431,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2004.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 
@@ -465,7 +465,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2004.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_tsf_2_maneuver_framework = {
@@ -503,7 +503,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2004.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_tsf_3_light_framework = {
@@ -534,7 +534,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2014.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 
@@ -565,7 +565,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2014.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_tsf_3_maneuver_framework = {
@@ -591,7 +591,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2014.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 
@@ -615,7 +615,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2034.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2034.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2034.1.1 factor = 1.5 }
 		}
 	}
 
@@ -657,7 +657,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1994.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	
@@ -695,7 +695,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2004.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_engine_3 = {
@@ -732,7 +732,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2014.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_engine_4 = {
@@ -756,7 +756,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2034.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2034.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2034.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_engine_maneuver_1 = {
@@ -788,7 +788,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_engine_maneuver_2 = {
@@ -821,7 +821,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2004.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_engine_maneuver_3 = {
@@ -850,7 +850,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2014.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_engine_cruise_1 = {
@@ -882,7 +882,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_engine_cruise_2 = {
@@ -915,7 +915,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2004.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_engine_cruise_3 = {
@@ -944,7 +944,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2014.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 
@@ -983,7 +983,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1994.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 
@@ -1020,7 +1020,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2004.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_OS_3 = {
@@ -1060,7 +1060,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2014.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_OS_4 = {
@@ -1084,7 +1084,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2034.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2034.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2034.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_OS_close_1 = {
@@ -1116,7 +1116,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_OS_close_2 = {
@@ -1148,7 +1148,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2004.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_OS_close_3 = {
@@ -1176,7 +1176,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2014.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_OS_support_1 = {
@@ -1208,7 +1208,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_OS_support_2 = {
@@ -1240,7 +1240,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2004.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_OS_support_3 = {
@@ -1268,14 +1268,14 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2014.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_OS_XM3 = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2010.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2010.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2010.1.1 factor = 1.5 }
 		}
 		dependencies = { MVLV_research_OS_3 = 1 }
 		research_cost = 10
@@ -1330,7 +1330,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1994.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 
@@ -1367,7 +1367,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2004.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_head_normal_3 = {
@@ -1399,7 +1399,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2014.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 
@@ -1432,7 +1432,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_head_aerial_2 = {
@@ -1464,7 +1464,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2004.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_head_aerial_3 = {
@@ -1488,7 +1488,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2014.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_head_heavy_1 = {
@@ -1520,7 +1520,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1994.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_head_heavy_2 = {
@@ -1552,7 +1552,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2004.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_head_heavy_3 = {
@@ -1576,7 +1576,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2014.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 ##############
@@ -1606,7 +1606,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1994.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_armor_heavy = {
@@ -1639,7 +1639,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1989.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1989.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_armor_composite = {
@@ -1667,7 +1667,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2009.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2009.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2009.1.1 factor = 1.5 }
 		}
 	}
 	##
@@ -1700,7 +1700,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_reinforced_structure_2 = {
@@ -1728,7 +1728,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2004.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_reinforced_structure_3 = {
@@ -1752,7 +1752,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2014.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 	##
@@ -1781,7 +1781,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_special_structure_2 = {
@@ -1809,7 +1809,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2004.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_special_structure_3 = {
@@ -1837,7 +1837,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2014.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_special_structure_4 = {
@@ -1861,7 +1861,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2034.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2034.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2034.1.1 factor = 1.5 }
 		}
 	}
 	##
@@ -1890,7 +1890,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1994.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_add_aerial_blade_armor = {
@@ -1913,7 +1913,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2002.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2002.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2002.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_special_blade_armor = {
@@ -1967,7 +1967,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1994.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}				
 	MVLV_research_assault_cannon_2 = {
@@ -2004,7 +2004,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2004.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_assault_cannon_3 = {
@@ -2033,7 +2033,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2014.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 ####暫定封印処置
@@ -2059,7 +2059,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1994.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_railgun_1 = {
@@ -2091,7 +2091,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_railgun_2 = {
@@ -2115,7 +2115,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2004.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_railgun_3 = {
@@ -2139,7 +2139,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2014.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 	########
@@ -2167,7 +2167,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1989.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1989.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_shield = {
@@ -2194,7 +2194,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1989.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1989.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_reactive_shield = {
@@ -2217,7 +2217,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1989.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1989.1.1 factor = 1.5 }
 		}
 	}
 	######
@@ -2246,7 +2246,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1989.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1989.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_large_missile_1 = {
@@ -2273,7 +2273,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_large_missile_2 = {
@@ -2296,7 +2296,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2004.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	######
@@ -2326,7 +2326,7 @@ technologies = {
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 1994.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_add_sensor_2 = {
@@ -2354,7 +2354,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2004.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_add_sensor_3 = {
@@ -2379,7 +2379,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2014.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 	##########
@@ -2408,7 +2408,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_deta_link_2 = {
@@ -2435,7 +2435,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2004.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_deta_link_3 = {
@@ -2458,7 +2458,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2014.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2014.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2014.1.1 factor = 1.5 }
 		}
 	}
 	##exModule
@@ -2483,7 +2483,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1989.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1989.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_custom_sights = {
@@ -2507,7 +2507,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 
@@ -2532,7 +2532,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1989.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1989.1.1 factor = 1.5 }
 		}
 	}		
 
@@ -2564,7 +2564,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_maintenance_team_2 = {
@@ -2588,7 +2588,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2004.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_maintenance_team_3 = {
@@ -2626,7 +2626,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1989.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1989.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1989.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_custom_module_1 = {
@@ -2655,7 +2655,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 1994.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 1994.1.1 factor = 1.5 }
 		}
 	}
 	MVLV_research_custom_module_2 = {
@@ -2679,7 +2679,7 @@ technologies = {
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 2004.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2004.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2004.1.1 factor = 1.5 }
 		}
 	}
 }

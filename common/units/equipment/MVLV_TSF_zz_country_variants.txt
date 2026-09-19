@@ -5,9 +5,7 @@
 # ※ HOI4 は識別子にハイフン(-)が使えないので内部IDは _ に統一
 #   表示名(abbreviation)はハイフン OK
 # ========================================================
-
 equipments = {
-
 	# === USA: F-5 Freedom Fighter（第一世代軽戦術機）===
 	USA_TSF_F_5 = {
 		picture = USA_TSF_F_5
@@ -18,7 +16,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 4
 		max_organisation = 30
 		max_strength = 13
@@ -35,7 +32,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 5
 		build_cost_ic = 7.5
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -50,8 +46,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
@@ -68,7 +66,6 @@ equipments = {
 			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_1
 		}
 	}
-
 	# === USA: F-22 Raptor（第三世代高機動戦術機）===
 	USA_TSF_F_22 = {
 		picture = USA_TSF_F_22
@@ -79,7 +76,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 30
 		max_strength = 15
@@ -96,7 +92,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 37
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -111,8 +106,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
@@ -129,7 +126,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
 		}
 	}
-
 	# === JAP: 77式 撃震（第一世代重戦術機）===
 	JAP_TSF_77shiki = {
 		picture = JAP_TSF_77shiki
@@ -140,7 +136,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 8
 		max_organisation = 31
 		max_strength = 17
@@ -157,7 +152,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 10
 		build_cost_ic = 15
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -171,8 +165,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
@@ -188,7 +184,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
 		}
 	}
-
 	# === JAP: 94式 不知火（第三世代重戦術機）===
 	JAP_TSF_shiranui = {
 		picture = JAP_TSF_shiranui
@@ -199,7 +194,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_maneuver
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 31
 		max_strength = 17
@@ -216,7 +210,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 38.25
 		build_cost_ic = 35
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -231,25 +224,26 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
-			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
-			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
-			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
-			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
-			MVLV_TSF_OS_slot = MVLV_TSF_OS_3_normal
-			MVLV_TSF_engine_slot = MVLV_TSF_engine_3
-			MVLV_TSF_headUnit_slot = MVLV_TSF_head_heavy_3
-			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_3
+			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
+			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
+			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
+			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_normal
+			MVLV_TSF_engine_slot = MVLV_TSF_engine_maneuver_2
+			MVLV_TSF_headUnit_slot = MVLV_TSF_head_normal_2
+			MVLV_TSF_right_hand_slot = MVLV_TSF_assault_cannon_2
 			MVLV_TSF_left_hand_slot = MVLV_TSF_long_sword
-			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_3
-			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_3
+			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
+			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
 			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	# === JAP: TYPE-00 武御雷（特務戦術機、第二世代高機動）===
 	JAP_TSF_takemikazuchi = {
 		picture = JAP_TSF_takemikazuchi
@@ -260,7 +254,6 @@ equipments = {
 		archetype = MVLV_TSF_specialForces_chassis
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 13.5
 		max_organisation = 45
 		max_strength = 22.5
@@ -277,7 +270,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 67.5
 		build_cost_ic = 49.5
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -292,8 +284,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
 			MVLV_TSF_OS_slot = MVLV_TSF_OS_2_close
@@ -310,7 +304,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	# === RUS: MiG-21 バラライカ（第一世代軽戦術機）===
 	RUS_TSF_MiG_21 = {
 		picture = RUS_TSF_MiG_21
@@ -321,7 +314,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 4
 		max_organisation = 30
 		max_strength = 13
@@ -338,7 +330,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 5
 		build_cost_ic = 7.5
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -353,8 +344,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_1
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
@@ -371,7 +364,6 @@ equipments = {
 			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_1
 		}
 	}
-
 	# === RUS: Su-37 ターミネーター（第二世代高機動戦術機）===
 	RUS_TSF_Su_37 = {
 		picture = RUS_TSF_Su_37
@@ -382,7 +374,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 30
 		max_strength = 15
@@ -399,7 +390,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 45
 		build_cost_ic = 33
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -414,8 +404,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
@@ -432,7 +424,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
 		}
 	}
-
 	# === CHI: J-10（第二世代軽戦術機）===
 	CHI_TSF_J_10 = {
 		picture = CHI_TSF_J_10
@@ -443,7 +434,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 7
 		max_organisation = 30
 		max_strength = 13
@@ -460,7 +450,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 20
 		build_cost_ic = 23
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -475,8 +464,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -493,8 +484,6 @@ equipments = {
 			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
 		}
 	}
-
-
 	# === 追加 variant（MOD内テクスチャ活用・見た目は世代別汎用）===
 	USA_TSF_F_15 = {
 		picture = USA_TSF_F_15
@@ -505,7 +494,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 31
 		max_strength = 17
@@ -522,7 +510,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 30
 		build_cost_ic = 31
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -537,8 +524,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
@@ -555,7 +544,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	USA_TSF_F_18 = {
 		picture = USA_TSF_F_18
 		abbreviation = "F-18"
@@ -565,7 +553,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_maneuver
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 30
 		max_strength = 15
@@ -582,7 +569,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 45
 		build_cost_ic = 33
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -597,8 +583,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -615,7 +603,6 @@ equipments = {
 			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
 		}
 	}
-
 	USA_TSF_F_35 = {
 		picture = USA_TSF_F_35
 		abbreviation = "F-35"
@@ -625,7 +612,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 10
 		max_organisation = 30
 		max_strength = 13
@@ -642,7 +628,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 35
 		build_cost_ic = 26
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -657,8 +642,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
@@ -675,7 +662,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	RUS_TSF_MiG_29 = {
 		picture = RUS_TSF_MiG_29
 		abbreviation = "MiG-29"
@@ -685,7 +671,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 7
 		max_organisation = 30
 		max_strength = 13
@@ -702,7 +687,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 20
 		build_cost_ic = 23
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -717,8 +701,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
@@ -735,7 +721,6 @@ equipments = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_long_sword
 		}
 	}
-
 	RUS_TSF_Su_27 = {
 		picture = RUS_TSF_Su_27
 		abbreviation = "Su-27"
@@ -745,7 +730,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 31
 		max_strength = 17
@@ -762,7 +746,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 30
 		build_cost_ic = 31
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -777,8 +760,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
@@ -795,7 +780,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	RUS_TSF_Su_47 = {
 		picture = RUS_TSF_Su_47
 		abbreviation = "Su-47"
@@ -805,7 +789,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_maneuver
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 30
 		max_strength = 15
@@ -822,7 +805,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 37
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -837,8 +819,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
@@ -855,7 +839,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
 		}
 	}
-
 	RUS_TSF_Su_57 = {
 		picture = RUS_TSF_Su_57
 		abbreviation = "Su-57"
@@ -865,7 +848,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_maneuver
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 13
 		max_organisation = 31
 		max_strength = 18
@@ -882,7 +864,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 50
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -897,8 +878,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
@@ -915,7 +898,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
 		}
 	}
-
 	CHI_TSF_J_8 = {
 		picture = CHI_TSF_J_8
 		abbreviation = "J-8"
@@ -925,7 +907,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 4
 		max_organisation = 30
 		max_strength = 13
@@ -942,7 +923,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 5
 		build_cost_ic = 7.5
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -957,8 +937,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_1
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
@@ -975,7 +957,6 @@ equipments = {
 			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_1
 		}
 	}
-
 	CHI_TSF_J_11 = {
 		picture = CHI_TSF_J_11
 		abbreviation = "J-11"
@@ -985,7 +966,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 31
 		max_strength = 17
@@ -1002,7 +982,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 30
 		build_cost_ic = 31
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1017,8 +996,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -1035,7 +1016,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	CHI_TSF_J_20 = {
 		picture = CHI_TSF_J_20
 		abbreviation = "J-20"
@@ -1045,7 +1025,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_maneuver
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 30
 		max_strength = 15
@@ -1062,7 +1041,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 37
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1077,8 +1055,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
@@ -1095,7 +1075,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
 		}
 	}
-
 	JAP_TSF_fubuki = {
 		picture = JAP_TSF_fubuki
 		abbreviation = "97式"
@@ -1105,7 +1084,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 30
 		max_strength = 15
@@ -1122,7 +1100,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 45
 		build_cost_ic = 33
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1137,8 +1114,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -1155,7 +1134,6 @@ equipments = {
 			MVLV_TSF_arm_slot = MVLV_TSF_sub_sword
 		}
 	}
-
 	GER_TSF_EF2000 = {
 		picture = GER_TSF_EF2000
 		abbreviation = "EF-2000"
@@ -1165,7 +1143,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 31
 		max_strength = 17
@@ -1182,7 +1159,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 35
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1197,8 +1173,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
@@ -1215,7 +1193,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	FRA_TSF_Mirage = {
 		picture = FRA_TSF_Mirage
 		abbreviation = "M2000"
@@ -1225,7 +1202,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 7
 		max_organisation = 30
 		max_strength = 13
@@ -1242,7 +1218,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 20
 		build_cost_ic = 23
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1257,8 +1232,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -1275,7 +1252,6 @@ equipments = {
 			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_2
 		}
 	}
-
 	FRA_TSF_Rafale = {
 		picture = FRA_TSF_Rafale
 		abbreviation = "Rafale"
@@ -1285,7 +1261,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_maneuver
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 30
 		max_strength = 15
@@ -1302,7 +1277,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 37
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1317,8 +1291,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
@@ -1335,7 +1311,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
 		}
 	}
-
 	ENG_TSF_EF2000 = {
 		picture = ENG_TSF_EF2000
 		abbreviation = "EF-2000"
@@ -1345,7 +1320,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 31
 		max_strength = 17
@@ -1362,7 +1336,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 35
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1377,8 +1350,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
@@ -1395,7 +1370,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	ENG_TSF_Tempest = {
 		picture = ENG_TSF_Tempest
 		abbreviation = "Tempest"
@@ -1405,7 +1379,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_maneuver
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 13
 		max_organisation = 31
 		max_strength = 18
@@ -1422,7 +1395,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 50
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1437,8 +1409,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
@@ -1455,7 +1429,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
 		}
 	}
-
 	SWE_TSF_JA37 = {
 		picture = SWE_TSF_JA37
 		abbreviation = "JA-37"
@@ -1465,7 +1438,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 4
 		max_organisation = 30
 		max_strength = 13
@@ -1482,7 +1454,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 5
 		build_cost_ic = 7.5
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1497,8 +1468,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
@@ -1515,7 +1488,6 @@ equipments = {
 			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_1
 		}
 	}
-
 	SWE_TSF_JAS39 = {
 		picture = SWE_TSF_JAS39
 		abbreviation = "JAS-39"
@@ -1525,7 +1497,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 7
 		max_organisation = 30
 		max_strength = 13
@@ -1542,7 +1513,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 20
 		build_cost_ic = 23
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1557,8 +1527,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -1575,8 +1547,6 @@ equipments = {
 			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_2
 		}
 	}
-
-
 	# === 全面追加 variant（派生含む・国別厳密）===
 	USA_TSF_F_5G = {
 		picture = USA_TSF_F_5G
@@ -1587,7 +1557,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 4
 		max_organisation = 30
 		max_strength = 13
@@ -1604,7 +1573,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 5
 		build_cost_ic = 10
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1619,8 +1587,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
@@ -1637,7 +1607,6 @@ equipments = {
 			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_1
 		}
 	}
-
 	USA_TSF_F_14 = {
 		picture = USA_TSF_F_14
 		abbreviation = "F-14"
@@ -1647,7 +1616,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_maneuver
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 30
 		max_strength = 15
@@ -1664,7 +1632,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 45
 		build_cost_ic = 33
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1679,8 +1646,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -1697,7 +1666,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
 		}
 	}
-
 	USA_TSF_F_16 = {
 		picture = USA_TSF_F_16
 		abbreviation = "F-16"
@@ -1707,7 +1675,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 7
 		max_organisation = 30
 		max_strength = 13
@@ -1724,7 +1691,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 20
 		build_cost_ic = 23
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1739,8 +1705,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -1757,7 +1725,6 @@ equipments = {
 			MVLV_TSF_arm_slot = MVLV_TSF_sub_sword
 		}
 	}
-
 	USA_TSF_F_15E = {
 		picture = USA_TSF_F_15E
 		abbreviation = "F-15E"
@@ -1767,7 +1734,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 31
 		max_strength = 17
@@ -1784,7 +1750,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 30
 		build_cost_ic = 31
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1799,8 +1764,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
@@ -1817,7 +1784,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	USA_TSF_F_18EF = {
 		picture = USA_TSF_F_18EF
 		abbreviation = "F-18EF"
@@ -1827,7 +1793,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_maneuver
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 30
 		max_strength = 15
@@ -1844,7 +1809,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 45
 		build_cost_ic = 33
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1859,8 +1823,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
@@ -1877,7 +1843,6 @@ equipments = {
 			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
 		}
 	}
-
 	JAP_TSF_gekkou = {
 		picture = JAP_TSF_gekkou
 		abbreviation = "F-15SEJ"
@@ -1887,7 +1852,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 31
 		max_strength = 17
@@ -1904,7 +1868,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 47
 		build_cost_ic = 36
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1919,8 +1882,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
 			MVLV_TSF_OS_slot = MVLV_TSF_OS_XM3
@@ -1946,7 +1911,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 31
 		max_strength = 17
@@ -1963,7 +1927,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 35
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -1978,8 +1941,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
@@ -1996,7 +1961,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	USA_TSF_YF_23 = {
 		picture = USA_TSF_YF_23
 		abbreviation = "YF-23"
@@ -2006,7 +1970,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_maneuver
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 30
 		max_strength = 15
@@ -2023,7 +1986,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 37
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2038,8 +2000,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
@@ -2056,8 +2020,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
 		}
 	}
-
-
 	JAP_TSF_kagerou = {
 		picture = JAP_TSF_kagerou
 		abbreviation = "F-15J"
@@ -2067,7 +2029,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 31
 		max_strength = 17
@@ -2084,7 +2045,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 30
 		build_cost_ic = 31
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2099,8 +2059,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -2117,7 +2079,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	JAP_TSF_shiranui_1c = {
 		picture = JAP_TSF_shiranui_1c
 		abbreviation = "Type-94-1-C"
@@ -2127,7 +2088,6 @@ equipments = {
 		archetype = MVLV_TSF_support_chassis
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 31
 		max_strength = 17
@@ -2144,7 +2104,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 35
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2159,8 +2118,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
@@ -2177,7 +2138,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	JAP_TSF_shiranui_2 = {
 		picture = JAP_TSF_shiranui_2
 		abbreviation = "Type-942"
@@ -2187,7 +2147,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_maneuver
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 30
 		max_strength = 15
@@ -2204,7 +2163,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 37
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2219,8 +2177,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
@@ -2237,7 +2197,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
 		}
 	}
-
 	JAP_TSF_takemikazuchi_r = {
 		picture = JAP_TSF_takemikazuchi_r
 		abbreviation = "Type-00r"
@@ -2247,7 +2206,6 @@ equipments = {
 		archetype = MVLV_TSF_specialForces_chassis
 		is_buildable = yes
 		priority = 25
-
 		maximum_speed = 18.5
 		max_organisation = 45
 		max_strength = 22.5
@@ -2264,7 +2222,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 94
 		build_cost_ic = 83.3
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2279,8 +2236,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
 			MVLV_TSF_OS_slot = MVLV_TSF_OS_3_close
@@ -2297,7 +2256,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	JAP_TSF_type04 = {
 		picture = JAP_TSF_type04
 		abbreviation = "Type-04"
@@ -2307,7 +2265,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 31
 		max_strength = 18
@@ -2324,7 +2281,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 50
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2339,8 +2295,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
@@ -2357,7 +2315,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	JAP_TSF_type10 = {
 		picture = JAP_TSF_type10
 		abbreviation = "Type-10"
@@ -2367,7 +2324,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_maneuver
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 13
 		max_organisation = 31
 		max_strength = 18
@@ -2384,7 +2340,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 50
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2399,8 +2354,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_armor_slot = MVLV_TSF_armor_composite
@@ -2417,7 +2374,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	RUS_TSF_Su_11 = {
 		picture = RUS_TSF_Su_11
 		abbreviation = "Su-11"
@@ -2427,7 +2383,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 4
 		max_organisation = 30
 		max_strength = 13
@@ -2444,7 +2399,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 5
 		build_cost_ic = 7.5
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2459,8 +2413,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
@@ -2477,7 +2433,6 @@ equipments = {
 			MVLV_TSF_shoulder_slot = MVLV_TSF_add_thruster_1
 		}
 	}
-
 	RUS_TSF_MiG_23 = {
 		picture = RUS_TSF_MiG_23
 		abbreviation = "MiG-23"
@@ -2487,7 +2442,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 7
 		max_organisation = 30
 		max_strength = 13
@@ -2504,7 +2458,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 20
 		build_cost_ic = 23
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2519,8 +2472,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_head_slot = MVLV_TSF_add_sensor_2
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -2537,7 +2492,6 @@ equipments = {
 			MVLV_TSF_arm_slot = MVLV_TSF_sub_sword
 		}
 	}
-
 	RUS_TSF_MiG_25 = {
 		picture = RUS_TSF_MiG_25
 		abbreviation = "MiG-25"
@@ -2547,7 +2501,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 31
 		max_strength = 17
@@ -2564,7 +2517,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 30
 		build_cost_ic = 31
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2579,8 +2531,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -2597,7 +2551,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	RUS_TSF_MiG_27 = {
 		picture = RUS_TSF_MiG_27
 		abbreviation = "MiG-27"
@@ -2607,7 +2560,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 7
 		max_organisation = 30
 		max_strength = 13
@@ -2624,7 +2576,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 20
 		build_cost_ic = 23
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2639,8 +2590,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
@@ -2657,7 +2610,6 @@ equipments = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 		}
 	}
-
 	RUS_TSF_MiG_31 = {
 		picture = RUS_TSF_MiG_31
 		abbreviation = "MiG-31"
@@ -2667,7 +2619,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 31
 		max_strength = 17
@@ -2684,7 +2635,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 30
 		build_cost_ic = 31
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2699,8 +2649,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
@@ -2717,7 +2669,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	RUS_TSF_MiG_35 = {
 		picture = RUS_TSF_MiG_35
 		abbreviation = "MiG-35"
@@ -2727,7 +2678,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 30
 		max_strength = 15
@@ -2744,7 +2694,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 45
 		build_cost_ic = 33
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2759,8 +2708,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
@@ -2777,7 +2728,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
 		}
 	}
-
 	CHI_TSF_J_10X = {
 		picture = CHI_TSF_J_10X
 		abbreviation = "J-10X"
@@ -2787,7 +2737,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 10
 		max_organisation = 30
 		max_strength = 13
@@ -2804,7 +2753,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 35
 		build_cost_ic = 26
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2819,8 +2767,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
@@ -2837,7 +2787,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_3
 		}
 	}
-
 	GER_TSF_Me101P = {
 		picture = GER_TSF_Me101P
 		abbreviation = "Me-101P"
@@ -2847,7 +2796,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 31
 		max_strength = 17
@@ -2864,7 +2812,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 30
 		build_cost_ic = 31
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2879,8 +2826,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
@@ -2897,7 +2846,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	FRA_TSF_M2000K = {
 		picture = FRA_TSF_M2000K
 		abbreviation = "M2000K"
@@ -2907,7 +2855,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_maneuver
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 30
 		max_strength = 15
@@ -2924,7 +2871,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 45
 		build_cost_ic = 33
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2939,8 +2885,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -2957,7 +2905,6 @@ equipments = {
 			MVLV_TSF_arm_slot = MVLV_TSF_chain_sword
 		}
 	}
-
 	ITA_TSF_EF2000 = {
 		picture = ITA_TSF_EF2000
 		abbreviation = "EF-2000"
@@ -2967,7 +2914,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 11
 		max_organisation = 31
 		max_strength = 17
@@ -2984,7 +2930,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 45
 		build_cost_ic = 35
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -2999,8 +2944,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_3
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_3
@@ -3017,7 +2964,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	ISR_TSF_kfir = {
 		picture = ISR_TSF_kfir
 		abbreviation = "Kfir"
@@ -3027,7 +2973,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 4
 		max_organisation = 30
 		max_strength = 13
@@ -3044,7 +2989,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 5
 		build_cost_ic = 7.5
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -3059,8 +3003,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_1
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_1
@@ -3077,7 +3023,6 @@ equipments = {
 			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_1
 		}
 	}
-
 	ISR_TSF_lavi = {
 		picture = ISR_TSF_lavi
 		abbreviation = "Lavi"
@@ -3087,7 +3032,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 7
 		max_organisation = 30
 		max_strength = 13
@@ -3104,7 +3048,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 20
 		build_cost_ic = 23
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -3119,8 +3062,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -3137,8 +3082,6 @@ equipments = {
 			MVLV_TSF_arm_slot = MVLV_TSF_add_sensor_2
 		}
 	}
-
-
 	# === 日本特務 瑞鶴・武御雷 型展開 ===
 	JAP_TSF_zuikaku_c = {
 		picture = JAP_TSF_zuikaku_c
@@ -3149,7 +3092,6 @@ equipments = {
 		archetype = MVLV_TSF_specialForces_chassis
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 12
 		max_organisation = 46.5
 		max_strength = 25.5
@@ -3166,7 +3108,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 15
 		build_cost_ic = 22.5
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -3180,8 +3121,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
 			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_close
@@ -3195,7 +3138,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
 		}
 	}
-
 	JAP_TSF_zuikaku_a = {
 		picture = JAP_TSF_zuikaku_a
 		abbreviation = "82式"
@@ -3205,7 +3147,6 @@ equipments = {
 		archetype = MVLV_TSF_specialForces_chassis
 		is_buildable = yes
 		priority = 75
-
 		maximum_speed = 12
 		max_organisation = 46.5
 		max_strength = 25.5
@@ -3222,7 +3163,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 15
 		build_cost_ic = 22.5
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -3236,8 +3176,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
 			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_close
@@ -3251,7 +3193,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
 		}
 	}
-
 	JAP_TSF_zuikaku_f = {
 		picture = JAP_TSF_zuikaku_f
 		abbreviation = "82式"
@@ -3261,7 +3202,6 @@ equipments = {
 		archetype = MVLV_TSF_specialForces_chassis
 		is_buildable = yes
 		priority = 50
-
 		maximum_speed = 12
 		max_organisation = 46.5
 		max_strength = 25.5
@@ -3278,7 +3218,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 15
 		build_cost_ic = 22.5
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -3292,8 +3231,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
 			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_close
@@ -3307,7 +3248,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_1
 		}
 	}
-
 	JAP_TSF_zuikaku_r = {
 		picture = JAP_TSF_zuikaku_r
 		abbreviation = "82式"
@@ -3317,7 +3257,6 @@ equipments = {
 		archetype = MVLV_TSF_specialForces_chassis
 		is_buildable = yes
 		priority = 25
-
 		maximum_speed = 12
 		max_organisation = 46.5
 		max_strength = 25.5
@@ -3334,7 +3273,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 15
 		build_cost_ic = 22.5
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -3348,8 +3286,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_armor_slot = MVLV_TSF_armor_heavy
 			MVLV_TSF_OS_slot = MVLV_TSF_OS_1_close
@@ -3363,7 +3303,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	JAP_TSF_takemikazuchi_c = {
 		picture = JAP_TSF_takemikazuchi_c
 		abbreviation = "TYPE-00"
@@ -3373,7 +3312,6 @@ equipments = {
 		archetype = MVLV_TSF_specialForces_chassis
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 16.5
 		max_organisation = 45
 		max_strength = 22.5
@@ -3390,7 +3328,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 67.5
 		build_cost_ic = 50
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -3405,8 +3342,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
 			MVLV_TSF_OS_slot = MVLV_TSF_OS_3_close
@@ -3423,7 +3362,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	JAP_TSF_takemikazuchi_a = {
 		picture = JAP_TSF_takemikazuchi_a
 		abbreviation = "TYPE-00"
@@ -3433,7 +3371,6 @@ equipments = {
 		archetype = MVLV_TSF_specialForces_chassis
 		is_buildable = yes
 		priority = 75
-
 		maximum_speed = 17
 		max_organisation = 45
 		max_strength = 22.5
@@ -3450,7 +3387,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 74
 		build_cost_ic = 55.5
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -3465,8 +3401,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
 			MVLV_TSF_OS_slot = MVLV_TSF_OS_3_close
@@ -3483,7 +3421,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	JAP_TSF_takemikazuchi_f = {
 		picture = JAP_TSF_takemikazuchi_f
 		abbreviation = "TYPE-00"
@@ -3493,7 +3430,6 @@ equipments = {
 		archetype = MVLV_TSF_specialForces_chassis
 		is_buildable = yes
 		priority = 50
-
 		maximum_speed = 18
 		max_organisation = 45
 		max_strength = 22.5
@@ -3510,7 +3446,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 88
 		build_cost_ic = 66.6
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -3525,8 +3460,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_armor_slot = MVLV_TSF_armor_light
 			MVLV_TSF_OS_slot = MVLV_TSF_OS_3_close
@@ -3543,7 +3480,6 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 	# === KOR: 韓国機（マブラヴ本編外・ユーザー要望／テクスチャは米機流用）===
 	KOR_TSF_KF_16 = {
 		picture = KOR_TSF_KF_16
@@ -3554,7 +3490,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 8
 		max_organisation = 30
 		max_strength = 13
@@ -3571,7 +3506,6 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 20
 		build_cost_ic = 23
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -3586,8 +3520,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_leftBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
@@ -3604,7 +3540,6 @@ equipments = {
 			MVLV_TSF_waist_slot = MVLV_TSF_add_thruster_2
 		}
 	}
-
 	KOR_TSF_F_15K = {
 		picture = KOR_TSF_F_15K
 		abbreviation = "F-15K"
@@ -3614,7 +3549,6 @@ equipments = {
 		archetype = MVLV_TSF_chassis_heavy
 		is_buildable = yes
 		priority = 100
-
 		maximum_speed = 9
 		max_organisation = 31
 		max_strength = 17
@@ -3631,7 +3565,6 @@ equipments = {
 		hardness = 0.35
 		ap_attack = 30
 		build_cost_ic = 31
-
 		module_slots = {
 			MVLV_TSF_armor_slot = inherit
 			MVLV_TSF_OS_slot = inherit
@@ -3646,8 +3579,10 @@ equipments = {
 			MVLV_TSF_arm_slot = inherit
 			MVLV_TSF_waist_slot = inherit
 			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_sp_slot_1 = inherit
+			MVLV_TSF_sp_slot_2 = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
-
 		default_modules = {
 			MVLV_TSF_rigtBackArm_slot = MVLV_TSF_add_assault_cannon_2
 			MVLV_TSF_arm_slot = MVLV_TSF_add_armor
@@ -3664,5 +3599,4 @@ equipments = {
 			MVLV_TSF_leg_slot = MVLV_TSF_add_armor
 		}
 	}
-
 }

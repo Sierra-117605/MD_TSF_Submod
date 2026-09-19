@@ -216,3 +216,18 @@
  USA_MVLV_TSF_chassis_3_heavy: "F-22"
  USA_MVLV_TSF_chassis_3_maneuver: "YF-23"
  USA_MVLV_TSF_chassis_4: "XF-2000" #元F-41 -> XF-2000
+ # --- 2026-09-19 追加: 表示名が英語(ID)のまま出ていたもの ---
+ MVLV_TSF_chassis_light_0: "NCAF-X 軽量型"
+ MVLV_TSF_chassis_light_0_desc: "NCAF-X を軽量・即応方向に発展させた試作フレーム。軽戦術機系統の原型にあたる。"
+ MVLV_TSF_chassis_heavy_0: "NCAF-X 重装型"
+ MVLV_TSF_chassis_heavy_0_desc: "NCAF-X を重装甲・大火力方向に発展させた試作フレーム。重戦術機系統の原型にあたる。"
+ MVLV_TSF_chassis_maneuver_0: "NCAF-X 高機動型"
+ MVLV_TSF_chassis_maneuver_0_desc: "NCAF-X の跳躍ユニットを強化した試作フレーム。高機動戦術機系統の原型にあたる。"
+ MVLV_TSF_specialForces_chassis_1_maneuver: "第一世代特務高機動戦術機"
+ MVLV_TSF_specialForces_chassis_1_maneuver_desc: "第一世代機をベースに、少数精鋭運用を前提として機動性を高めた特務戦術機。"
+ MVLV_TSF_support_chassis_1: "第一世代支援戦術機"
+ MVLV_TSF_support_chassis_1_desc: "第一世代機をベースとした支援戦術機。長距離砲撃支援に対応。"
+ MVLV_TSF_support_chassis_2: "第二世代支援戦術機"
+ MVLV_TSF_support_chassis_2_desc: "第二世代機をベースとした支援戦術機。機動性と支援火力を両立。"
+ MVLV_TSF_support_chassis_3: "第三世代支援戦術機"
+ MVLV_TSF_support_chassis_3_desc: "第三世代機をベースとした支援戦術機。最新の支援装備に対応。"

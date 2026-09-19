@@ -15,7 +15,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = { date > 2039.1.1 factor = 100 }
-					modifier = { num_research_slots > 5 date > 2039.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2039.1.1 factor = 1.5 }
 		}
 	}
 	tsf_F-47_charged_particle_cannon = {
@@ -36,7 +36,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = { date > 2039.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2039.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2039.1.1 factor = 1.5 }
 		}
 	}
 	tsf_F-47_lazaford_shield = {
@@ -56,7 +56,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = { date > 2039.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2039.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2039.1.1 factor = 1.5 }
 		}
 	}
 	tsf_F-47_g_generator = {
@@ -76,7 +76,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = { date > 2039.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2039.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2039.1.1 factor = 1.5 }
 		}
 	}
 	tsf_F-47_warp_drive = {
@@ -95,7 +95,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = { date > 2044.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2044.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2044.1.1 factor = 1.5 }
 		}
 	}
 	tsf_F-47_systems = {
@@ -118,7 +118,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = { date > 2039.1.1 factor = 60 }
-					modifier = { num_research_slots > 5 date > 2039.1.1 factor = 1.5 }
+					modifier = { amount_research_slots > 5 date > 2039.1.1 factor = 1.5 }
 		}
 	}
 }

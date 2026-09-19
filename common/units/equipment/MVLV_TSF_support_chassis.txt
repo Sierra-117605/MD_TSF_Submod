@@ -118,9 +118,6 @@ equipments = {
 			}
 			MVLV_TSF_sp_slot_2 = MVLV_TSF_sp_slot_1
 			MVLV_TSF_sp_slot_3 = MVLV_TSF_sp_slot_1
-			MVLV_TSF_sp_slot_4 = MVLV_TSF_sp_slot_1
-			MVLV_TSF_sp_slot_5 = MVLV_TSF_sp_slot_1
-			MVLV_TSF_sp_slot_6 = MVLV_TSF_sp_slot_1
 		}
 		module_count_limit = {
 			category = MVLV_TSF_sword_type
@@ -166,7 +163,6 @@ equipments = {
 		maximum_speed = 4
 		reliability = 0.5
 		experience_loss_factor = 0.005
-
 		soft_attack = 5
 		hard_attack = 5
 		air_attack = 1
@@ -176,17 +172,13 @@ equipments = {
 		hardness = 0.30
 		ap_attack = 1
 		build_cost_ic = 5
-
 		fuel_consumption = 0
 		lend_lease_cost = 10
-
 		resources = {
 			aluminium = 1
 		}
-
 	}
 }
-
 equipments = {
 	MVLV_TSF_support_chassis_0 = {
 		is_buildable = yes
@@ -206,7 +198,6 @@ equipments = {
 		}
 	
 	}
-
 	MVLV_TSF_support_chassis_1 = {
 		is_buildable = yes
 		abbreviation = "MVLV_TSF1_H"
@@ -224,7 +215,6 @@ equipments = {
 		reliability = 0.9
 		casualty_trickleback = 0.0025
 		experience_loss_factor = 0.00
-
 		soft_attack = 7
 		hard_attack = 7
 		air_attack = 15
@@ -243,7 +233,6 @@ equipments = {
 			MVLV_TSF_right_hand_slot = inherit
 			MVLV_TSF_left_hand_slot = inherit
 			MVLV_TSF_head_slot = inherit
-
 			MVLV_TSF_leftBackArm_slot = {
 				allowed_module_categories = {
 					MVLV_TSF_sword_type
@@ -292,14 +281,13 @@ equipments = {
 			#MVLV_TSF_shoulder_slot
 			
 			#MVLV_TSF_sp_slot_3 = inherit
-			#MVLV_TSF_sp_slot_4 = inherit
-			#MVLV_TSF_sp_slot_5 = inherit
+			#
+			#
 		}
 	
 	
 		default_modules = {}
 	}
-
 	MVLV_TSF_support_chassis_2 = {
 		is_buildable = yes
 		abbreviation = "MVLV_TSF2_H"
@@ -317,7 +305,6 @@ equipments = {
 		reliability = 0.8
 		casualty_trickleback = 0.005
 		experience_loss_factor = -0.005
-
 		soft_attack = 15.4
 		hard_attack = 15.4
 		air_attack = 60
@@ -336,7 +323,6 @@ equipments = {
 			MVLV_TSF_right_hand_slot = inherit
 			MVLV_TSF_left_hand_slot = inherit
 			MVLV_TSF_head_slot = inherit
-
 			MVLV_TSF_leftBackArm_slot = inherit
 			MVLV_TSF_rigtBackArm_slot = inherit
 			MVLV_TSF_leg_slot = inherit
@@ -355,14 +341,12 @@ equipments = {
 				}
 			}
 			MVLV_TSF_sp_slot_3 = MVLV_TSF_sp_slot_2
-			MVLV_TSF_sp_slot_4 = MVLV_TSF_sp_slot_2
-			#MVLV_TSF_sp_slot_5 = inherit
+			#
 		}
 	
 	
 		default_modules = {}
 	}
-
 	MVLV_TSF_support_chassis_3 = {
 		is_buildable = yes
 		abbreviation = "MVLV_TSF3_H"
@@ -380,7 +364,6 @@ equipments = {
 		reliability = 0.8
 		casualty_trickleback = 0.005
 		experience_loss_factor = -0.005
-
 		soft_attack = 16.8
 		hard_attack = 16.8
 		air_attack = 90
@@ -399,7 +382,6 @@ equipments = {
 			MVLV_TSF_right_hand_slot = inherit
 			MVLV_TSF_left_hand_slot = inherit
 			MVLV_TSF_head_slot = inherit
-
 			MVLV_TSF_leftBackArm_slot = inherit
 			MVLV_TSF_rigtBackArm_slot = inherit
 			MVLV_TSF_leg_slot = inherit
@@ -410,15 +392,11 @@ equipments = {
 			MVLV_TSF_sp_slot_2 = inherit
 			MVLV_TSF_shoulder_slot = inherit
 			MVLV_TSF_sp_slot_3 = inherit
-			MVLV_TSF_sp_slot_4 = inherit
-			MVLV_TSF_sp_slot_5 = MVLV_TSF_sp_slot_4
-			MVLV_TSF_sp_slot_6 = MVLV_TSF_sp_slot_4
 		}
 	
 	
 		default_modules = {}
 	}
-
 	MVLV_TSF_support_chassis_4 = {
 		is_buildable = yes
 		abbreviation = "MVLV_TSF4"
@@ -437,7 +415,6 @@ equipments = {
 		reliability = 0.8
 		casualty_trickleback = 0.005
 		experience_loss_factor = -0.005
-
 		soft_attack = 21
 		hard_attack = 21
 		air_attack = 90
@@ -451,5 +428,4 @@ equipments = {
 	
 		default_modules = {}
 	}
-
 }
