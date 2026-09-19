@@ -694,3 +694,58 @@ HOI4が読むMODフォルダは OneDrive 配下にある。OneDriveアプリが�
 
 対策：エクスプローラでMODフォルダを右クリック →「このデバイス上で常に保持する」を選ぶ。
 作業前には OneDrive が起動していることを確認する。
+
+
+---
+
+## 🔴🔴 dev（Git）側と OneDrive 側がズレたまま片方を上書きすると修正が消える（2026-09-19 事故）
+
+### 何が起きたか
+- MOD本体の編集は OneDrive 側（HOI4が読む方）で行い、dev側（Git）へ同期していなかった
+- 2026-06-14 の修正（sp_slotの継承・特務/支援素体の整理、計8ファイル）は
+  **OneDrive側にしか存在せず、Gitには未コミット**だった
+- dev側を正として OneDrive を上書きしたため、**6/13 の状態に巻き戻り**、
+  実機で「親にスロットが無い」エラーが大量発生した
+
+### 復旧方法
+`mod/MD_TSF_Submod_1.18_backup`（MODフォルダ丸ごとのバックアップ）から
+差分のあった8ファイルを dev 側へ戻した。バックアップを残しておいたことが救いになった。
+
+### 今後の鉄則
+1. **同期の前に必ず両側を比較する**。読めないファイルがあると `diff -rq` は
+   黙ってスキップするので、`2>&1` を付けてエラーも見ること
+2. OneDrive の「クラウドのみ」ファイルは読めない＝比較できない。
+   比較前に実体化（このデバイス上で常に保持する）を確認する
+3. **MOD本体を編集したら、その日のうちに dev へ同期して commit する**。
+   「ドキュメントだけコミットして本体は後で」をやると、今回と同じ事故になる
+
+---
+
+## 🟡 MD 2.0 で名前が変わった／無くなった定義（2026-09-19 実機ログより）
+
+| 自MODの記述 | 問題 | 正しい記述 |
+|---|---|---|
+| `num_research_slots` | そんなトリガは存在しない（96箇所） | `amount_research_slots` |
+| 支援中隊 `engineer` / `maintenance_company` / `field_hospital` | MD 2.0 に同名の大隊が無い | `H_Engi_Comp` / `combat_maintenance_company` / `combat_service_support_company` |
+| `common/ai_templates/generic.txt` のバニラ時代ロール4件 | 参照先の大隊がMD 2.0に無く、AIテンプレエラーの山 | 削除（MDは `MD_generic.txt` で独自に定義済み） |
+
+確認方法：ゲームを起動して `logs/error.log` を見る。
+`Invalid trigger` / `Invalid subunit scripted in AI template` / `Unknown trigger-type` が
+自MODのファイル名と一緒に出ていたら、その行が原因。
+
+---
+
+## 🟡 残っている既知の不具合（2026-09-19 時点・未対応）
+
+1. **3Dモデルのテクスチャが読めない**（error.log に `Failed to find texture 'XXX_color.png'` 24種）
+   - `gfx/models/units/tsf/` に .png として存在するが、HOI4の3Dモデルは .dds しか読めない
+   - `JAP_Tsf_00R_color .png` のようにファイル名に**空白が混入**しているものも2件ある
+   - 影響：戦術機の3Dモデルがテクスチャ無しで表示される可能性。ゲーム進行には影響しない
+2. **テックツリーのグリッド重複**（`Found multiple potential grid boxes` 14件）
+   - `MVLV_research_armor_composite` など数件が、軽装甲ツリーと重装甲ツリーの
+     両方に属していてHOI4が置き場所を決められない
+   - 影響：研究画面での表示位置が不定
+3. **`recovery_rate`**（`common/units/MVLV_xg_battalion.txt`）
+   - バニラ1.19にもMD 2.0にも存在しないキー。スサノオ大隊の回復率が効いていない可能性
+4. **`sov_equipment_Su47`**
+   - 装備定義はあるが、どの技術からも解放されていない（死んだ定義）。表示名も無い
