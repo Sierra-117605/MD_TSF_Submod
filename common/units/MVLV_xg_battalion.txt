@@ -27,10 +27,9 @@ sub_units = {
 		training_time = 400
 		weight = 0
 		supply_consumption = 0
-		#偵察、無線機能、回復力
+		#偵察、無線機能
 		recon = 1.5
 		initiative = 3
-		recovery_rate = 0.1
 		can_be_parachuted = no
 	}
 }
