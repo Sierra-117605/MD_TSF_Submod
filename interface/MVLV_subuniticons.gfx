@@ -327,4 +327,17 @@ spriteTypes = {
 		texturefile = "gfx/interface/counters/divisions_small/onmap_beta_a_target_unit_icon.dds"
 		noOfFrames = 2
 	}
+
+	### 小サイズ(マップ上表示)アイコン: これが無いと
+	### 「Couldnt find texticon: unit_..._icon_small」がログに大量に出る
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_light_battalion_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_tsf_unit_icon.dds"
+		noOfFrames = 2
+	}
+	SpriteType = {
+		name = "GFX_unit_MVLV_tsf_maneuver_battalion_icon_small"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_tsf_unit_icon.dds"
+		noOfFrames = 2
+	}
 }

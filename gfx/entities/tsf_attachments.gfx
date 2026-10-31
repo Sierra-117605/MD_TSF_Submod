@@ -1,0 +1,125 @@
+###############################
+# 戦術機の武器・盾・マウントラックの 3Dモデル(pdxmesh)宣言
+#
+# tsf_attachments.asset が entity として参照する pdxmesh の実体。
+# .mesh ファイルは置いてあっても、この宣言が無いと
+# 「Couldn't find mesh "..."」になり、取り付け部位が空のまま描画される。
+###############################
+
+objectTypes = {
+
+############## 手持ち武器 #############
+	pdxmesh = {
+		name = "GunType82_Hand"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/GunType82_Hand.mesh"
+	}
+
+	pdxmesh = {
+		name = "GunType87_Hand"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/GunType87_Hand.mesh"
+	}
+
+	pdxmesh = {
+		name = "BladeType74_Hand"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/BladeType74_Hand.mesh"
+	}
+
+	pdxmesh = {
+		name = "BladeType77_Hand"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/BladeType77_Hand.mesh"
+	}
+
+############## マウントラック搭載型の武器 #############
+	pdxmesh = {
+		name = "GunType82_MR"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/GunType82_MR.mesh"
+	}
+
+	pdxmesh = {
+		name = "GunType87_MR"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/GunType87_MR.mesh"
+	}
+
+	pdxmesh = {
+		name = "BladeType74_MR"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/BladeType74_MR.mesh"
+	}
+
+	pdxmesh = {
+		name = "BladeType77_MR"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/BladeType77_MR.mesh"
+	}
+
+############## マウントラック(国別塗装) #############
+	pdxmesh = {
+		name = "AFR_MountRack"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/AFR_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "CHI_MountRack"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/CHI_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "EEA_MountRack"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/EEA_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "EUR_MountRack"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/EUR_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "GEU_MountRack"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/GEU_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "JAP_MountRack"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/JAP_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "SOV_MountRack"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/SOV_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "UNI_MountRack"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/UNI_MountRack.mesh"
+	}
+
+	pdxmesh = {
+		name = "USA_MountRack"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/USA_MountRack.mesh"
+	}
+
+############## 盾(国別塗装) #############
+	pdxmesh = {
+		name = "AFR_Shield"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/AFR_Shield.mesh"
+	}
+
+	pdxmesh = {
+		name = "CHI_Shield"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/CHI_Shield.mesh"
+	}
+
+	pdxmesh = {
+		name = "EEA_Shield"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/EEA_Shield.mesh"
+	}
+
+	pdxmesh = {
+		name = "EUR_Shield"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/EUR_Shield.mesh"
+	}
+
+	pdxmesh = {
+		name = "UNI_Shield"
+		file = "gfx/models/units/tsf/Tsf1/AddWeapon/UNI_Shield.mesh"
+	}
+
+}

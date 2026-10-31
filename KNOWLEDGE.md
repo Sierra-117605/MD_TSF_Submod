@@ -769,3 +769,38 @@ HOI4の3Dモデルは **.dds しか読めない**。`gfx/models/` のテクス�
    - 使うなら技術側に `enable_equipments` を足す必要がある
 
 （`recovery_rate` は 1.19 で無効なキーと確定したため 2026-09-21 に削除済み）
+
+---
+
+## 2026-11-01 `.mesh` を置くだけでは使えない（pdxmesh 宣言が必須）
+
+9年プレイ後の `EXCEPTION_ACCESS_VIOLATION`（`PHYSFS_swapULE64` スタック）調査で判明。
+
+- `gfx/entities/*.asset` の `entity = { pdxmesh = "X" }` は、
+  **`X` という名前の `pdxmesh` が `.gfx` 側で宣言されていないと解決できない**
+- `.mesh` ファイルが実在するかどうかは無関係。宣言が無ければ
+  `Couldn't find mesh "X"` になり、取り付け部位が実体なしで描画される
+- 宣言は `.gfx` の `objectTypes = { ... }` の中に書く：
+  ```
+  pdxmesh = { name = "GunType82_MR" file = "gfx/models/.../GunType82_MR.mesh" }
+  ```
+- 本件では武器・盾・マウントラックの22件が未宣言だった
+  → `gfx/entities/tsf_attachments.gfx` を追加して解消
+- **教訓**: 「entity が無い」エラーを entity 追加で消すと、
+  次は「mesh が無い」に化けるだけ。entity と pdxmesh は必ず対で用意する
+
+## 2026-11-01 サブユニットは `_icon_small` も必要
+
+`Couldnt find texticon: unit_X_icon_small` がゲーム内時間1時間ごとに大量に出る。
+
+- `interface/*.gfx` に `GFX_unit_<subunit>_icon_medium` だけでなく
+  `GFX_unit_<subunit>_icon_small` も定義する（小サイズは `divisions_small/onmap_*.dds` を使う）
+- 本件では `MVLV_tsf_light_battalion` と `MVLV_tsf_maneuver_battalion` が未定義だった
+
+## 2026-11-01 OneDrive 配下の Documents でセーブが壊れる（MOD外の問題）
+
+- `Documents` が OneDrive 同期対象のため、HOI4 の
+  `autosave_temp.hoi4` → `autosave.hoi4` の **リネームが errno 42 で失敗**する
+- 結果、オートセーブが `*_temp.hoi4` のまま溜まり続ける（9年プレイで110回失敗）
+- 中身は壊れていないので `*_temp.hoi4` をリネームすれば読める
+- 恒久対策は OneDrive 設定で `Paradox Interactive` を同期対象から外すこと（要ユーザー判断）
