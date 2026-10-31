@@ -1,0 +1,114 @@
+###############################
+# 戦術機の武器・盾・マウントラックの取り付け用エンティティ
+# 本体側(units_tsf1/2.asset)が attach で参照しているのに実体が無かったものを定義
+###############################
+
+entity = {
+	name = "GunType82_Hand_entity"
+	pdxmesh = "GunType82_Hand"
+}
+
+entity = {
+	name = "GunType82_MR_entity"
+	pdxmesh = "GunType82_MR"
+}
+
+entity = {
+	name = "GunType87_Hand_entity"
+	pdxmesh = "GunType87_Hand"
+}
+
+entity = {
+	name = "GunType87_MR_entity"
+	pdxmesh = "GunType87_MR"
+}
+
+entity = {
+	name = "BladeType74_Hand_entity"
+	pdxmesh = "BladeType74_Hand"
+}
+
+entity = {
+	name = "BladeType74_MR_entity"
+	pdxmesh = "BladeType74_MR"
+}
+
+entity = {
+	name = "BladeType77_Hand_entity"
+	pdxmesh = "BladeType77_Hand"
+}
+
+entity = {
+	name = "BladeType77_MR_entity"
+	pdxmesh = "BladeType77_MR"
+}
+
+entity = {
+	name = "MountRack_AFR_entity"
+	pdxmesh = "AFR_MountRack"
+}
+
+entity = {
+	name = "MountRack_CHI_entity"
+	pdxmesh = "CHI_MountRack"
+}
+
+entity = {
+	name = "MountRack_EEA_entity"
+	pdxmesh = "EEA_MountRack"
+}
+
+entity = {
+	name = "MountRack_EUR_entity"
+	pdxmesh = "EUR_MountRack"
+}
+
+entity = {
+	name = "MountRack_GEU_entity"
+	pdxmesh = "GEU_MountRack"
+}
+
+entity = {
+	name = "MountRack_JAP_entity"
+	pdxmesh = "JAP_MountRack"
+}
+
+entity = {
+	name = "MountRack_SOV_entity"
+	pdxmesh = "SOV_MountRack"
+}
+
+entity = {
+	name = "MountRack_UNI_entity"
+	pdxmesh = "UNI_MountRack"
+}
+
+entity = {
+	name = "MountRack_USA_entity"
+	pdxmesh = "USA_MountRack"
+}
+
+entity = {
+	name = "Shield_AFR_entity"
+	pdxmesh = "AFR_Shield"
+}
+
+entity = {
+	name = "Shield_CHI_entity"
+	pdxmesh = "CHI_Shield"
+}
+
+entity = {
+	name = "Shield_EEA_entity"
+	pdxmesh = "EEA_Shield"
+}
+
+entity = {
+	name = "Shield_EUR_entity"
+	pdxmesh = "EUR_Shield"
+}
+
+entity = {
+	name = "Shield_UNI_entity"
+	pdxmesh = "UNI_Shield"
+}

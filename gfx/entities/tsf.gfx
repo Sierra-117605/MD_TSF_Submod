@@ -73,8 +73,8 @@ objectTypes = {
 #		meshsettings={
 #			name = "TYPE94_1C"
 #			index = 0
-#			texture_diffuse = "JAP_Tsf_941C_color.png"
-#			texture_normal = "JAP_Tsf_941C_normal.png"
+#			texture_diffuse = "JAP_Tsf_941C_color.dds"
+#			texture_normal = "JAP_Tsf_941C_normal.dds"
 #			shader = PdxMeshStandard
 #		}
 	}
@@ -100,8 +100,8 @@ objectTypes = {
 		meshsettings={
 			name = "TYPE94_1C"
 			index = 0
-			texture_diffuse = "UNI_Tsf_941C_color.png"
-			texture_normal = "UNI_Tsf_941C_normal.png"
+			texture_diffuse = "UNI_Tsf_941C_color.dds"
+			texture_normal = "UNI_Tsf_941C_normal.dds"
 			shader = PdxMeshStandard
 		}
 	}
@@ -126,8 +126,8 @@ objectTypes = {
 		meshsettings={
 			name = "su37"
 			index = 0
-			texture_diffuse = "SOV_Tsf_Su37UB_color.png"
-			texture_normal = "SOV_Tsf_Su37UB_normal.png"
+			texture_diffuse = "SOV_Tsf_Su37UB_color.dds"
+			texture_normal = "SOV_Tsf_Su37UB_normal.dds"
 			shader = PdxMeshStandard
 		}
 	}
@@ -161,15 +161,15 @@ objectTypes = {
 		meshsettings={
 			name = "F4"
 			index = 0
-			texture_diffuse = "Gun_Type82_color.png"
-			texture_normal = "Gun_Type82_normal.png"
+			texture_diffuse = "Gun_Type82_color.dds"
+			texture_normal = "Gun_Type82_normal.dds"
 			shader = PdxMeshStandard
 		}
 		meshsettings={
 			name = "F4"
 			index = 1
-			texture_diffuse = "GEU_Tsf_F4_color.png"
-			texture_normal = "GEU_Tsf_F4_normal.png"
+			texture_diffuse = "GEU_Tsf_F4_color.dds"
+			texture_normal = "GEU_Tsf_F4_normal.dds"
 			shader = PdxMeshStandard
 		}
 	}
@@ -185,15 +185,15 @@ objectTypes = {
 		meshsettings={
 			name = "F4"
 			index = 0
-			texture_diffuse = "Gun_Type82_color.png"
-			texture_normal = "Gun_Type82_normal.png"
+			texture_diffuse = "Gun_Type82_color.dds"
+			texture_normal = "Gun_Type82_normal.dds"
 			shader = PdxMeshStandard
 		}
 		meshsettings={
 			name = "F4"
 			index = 1
-			texture_diffuse = "AFR_Tsf_F4_color.png"
-			texture_normal = "AFR_Tsf_F4_normal.png"
+			texture_diffuse = "AFR_Tsf_F4_color.dds"
+			texture_normal = "AFR_Tsf_F4_normal.dds"
 			shader = PdxMeshStandard
 		}
 	}

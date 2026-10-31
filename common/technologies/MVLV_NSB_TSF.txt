@@ -42,7 +42,6 @@ technologies = {
 			MVLV_tsf_maneuver_battalion
 			MVLV_tsf_support_battalion
 			MVLV_tsf_support_company
-			MVLV_tsf_support_company_recon
 			MVLV_tsf_specialForces_battalion
 		}
 		folder = {

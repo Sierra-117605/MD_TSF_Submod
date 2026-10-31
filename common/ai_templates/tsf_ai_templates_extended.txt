@@ -18,9 +18,9 @@ tsf_quick_role = {
 				MVLV_tsf_light_battalion = 10
 			}
 			support = {
-				engineer = 1
-				maintenance_company = 1
-				recon = 1
+				H_Engi_Comp = 1
+				combat_maintenance_company = 1
+				Mech_Recce_Comp = 1
 			}
 		}
 	}
@@ -40,11 +40,10 @@ tsf_assault_role = {
 				MVLV_tsf_battalion = 10
 			}
 			support = {
-				engineer = 1
-				maintenance_company = 1
-				field_hospital = 1
-				logistics_company = 1
-				signal_company = 1
+				H_Engi_Comp = 1
+				combat_maintenance_company = 1
+				combat_service_support_company = 1
+				communications_company = 1
 			}
 		}
 	}
@@ -64,10 +63,10 @@ tsf_maneuver_role = {
 				MVLV_tsf_maneuver_battalion = 10
 			}
 			support = {
-				engineer = 1
-				maintenance_company = 1
-				recon = 1
-				signal_company = 1
+				H_Engi_Comp = 1
+				combat_maintenance_company = 1
+				Mech_Recce_Comp = 1
+				communications_company = 1
 			}
 		}
 	}
@@ -89,10 +88,9 @@ tsf_combined_arms_role = {
 				MVLV_tsf_maneuver_battalion = 3
 			}
 			support = {
-				engineer = 1
-				maintenance_company = 1
-				field_hospital = 1
-				logistics_company = 1
+				H_Engi_Comp = 1
+				combat_maintenance_company = 1
+				combat_service_support_company = 1
 			}
 		}
 	}
@@ -113,10 +111,9 @@ tsf_support_role = {
 				MVLV_tsf_light_battalion = 2
 			}
 			support = {
-				engineer = 1
-				maintenance_company = 1
-				field_hospital = 1
-				logistics_company = 1
+				H_Engi_Comp = 1
+				combat_maintenance_company = 1
+				combat_service_support_company = 1
 			}
 		}
 	}
@@ -136,10 +133,10 @@ tsf_specialForces_role = {
 				MVLV_tsf_specialForces_battalion = 6
 			}
 			support = {
-				engineer = 1
-				maintenance_company = 1
-				field_hospital = 1
-				recon = 1
+				H_Engi_Comp = 1
+				combat_maintenance_company = 1
+				combat_service_support_company = 1
+				Mech_Recce_Comp = 1
 			}
 		}
 	}
@@ -159,11 +156,11 @@ tsf_specialForces_assault_role = {
 				MVLV_tsf_specialForces_battalion = 8
 			}
 			support = {
-				engineer = 1
-				maintenance_company = 1
-				field_hospital = 1
-				recon = 1
-				signal_company = 1
+				H_Engi_Comp = 1
+				combat_maintenance_company = 1
+				combat_service_support_company = 1
+				Mech_Recce_Comp = 1
+				communications_company = 1
 			}
 		}
 	}
@@ -185,9 +182,9 @@ tsf_xg_role = {
 				MVLV_tsf_battalion = 2
 			}
 			support = {
-				engineer = 1
-				maintenance_company = 1
-				field_hospital = 1
+				H_Engi_Comp = 1
+				combat_maintenance_company = 1
+				combat_service_support_company = 1
 			}
 		}
 	}
