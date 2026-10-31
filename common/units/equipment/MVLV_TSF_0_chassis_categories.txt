@@ -197,6 +197,9 @@ equipments = {
 			MVLV_TSF_sp_slot_1 = inherit
 			MVLV_TSF_sp_slot_2 = inherit
 			MVLV_TSF_sp_slot_3 = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_shoulder_slot = inherit
+			MVLV_TSF_waist_slot = inherit
 		}
 	
 	}
@@ -597,6 +600,11 @@ equipments = {
 			MVLV_TSF_sp_slot_1 = inherit
 			MVLV_TSF_sp_slot_2 = inherit
 			MVLV_TSF_sp_slot_3 = inherit
+			MVLV_TSF_arm_slot = inherit
+			MVLV_TSF_leftBackArm_slot = inherit
+			MVLV_TSF_leg_slot = inherit
+			MVLV_TSF_rigtBackArm_slot = inherit
+			MVLV_TSF_waist_slot = inherit
 		}
 	
 	}

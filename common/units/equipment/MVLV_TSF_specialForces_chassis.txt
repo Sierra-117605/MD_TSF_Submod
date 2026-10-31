@@ -195,6 +195,7 @@ equipments = {
 			MVLV_TSF_right_hand_slot = inherit
 			MVLV_TSF_left_hand_slot = inherit
 			MVLV_TSF_head_slot = inherit
+			MVLV_TSF_sp_slot_3 = inherit
 		}
 	
 	}
@@ -283,6 +284,7 @@ equipments = {
 			#MVLV_TSF_sp_slot_3 = inherit
 			#
 			#
+			MVLV_TSF_sp_slot_3 = inherit
 		}
 	
 	
