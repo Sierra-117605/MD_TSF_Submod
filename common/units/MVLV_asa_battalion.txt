@@ -19,7 +19,7 @@ sub_units = {
 		combat_width = 2
 		need = {
 			asa_equipment = 12
-			cnc_equipment_1 = 10
+			cnc_equipment_type = 10
 		}
 		manpower = 240
 		max_organisation = 60
@@ -97,7 +97,7 @@ sub_units = {
 		combat_width = 0
 		need = {
 			asa_equipment = 12
-			cnc_equipment_1 = 10
+			cnc_equipment_type = 10
 		}
 		manpower = 120
 		max_organisation = 30

@@ -18,7 +18,7 @@ sub_units = {
 		combat_width = 40
 		need = {
 			xg_equipment = 1
-			cnc_equipment_1 = 10
+			cnc_equipment_type = 10
 		}
 		manpower = 500
 		max_organisation = 80

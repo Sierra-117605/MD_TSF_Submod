@@ -23,7 +23,7 @@ sub_units = {
 		combat_width = 1
 		need = {
 			MVLV_TSF_specialForces_chassis = 12
-			cnc_equipment_1 = 10
+			cnc_equipment_type = 10
 		}
 		manpower = 100
 		max_organisation = 0

@@ -804,3 +804,38 @@ HOI4の3Dモデルは **.dds しか読めない**。`gfx/models/` のテクス�
 - 結果、オートセーブが `*_temp.hoi4` のまま溜まり続ける（9年プレイで110回失敗）
 - 中身は壊れていないので `*_temp.hoi4` をリネームすれば読める
 - 恒久対策は OneDrive 設定で `Paradox Interactive` を同期対象から外すこと（要ユーザー判断）
+
+---
+
+## 2026-11-01 `need` には原型を書く。派生型だと装備が永久に埋まらない
+
+**症状**: 戦略航空機動要塞（凄乃皇）など戦術機系の師団が「動かない」「指揮統制率が低いまま」。
+error.log には何も出ない。
+
+**原因**: sub_unit の `need` が生産できない派生型を要求していた。
+
+```
+need = { cnc_equipment_1 = 10 }      # 誤り
+need = { cnc_equipment_type = 10 }   # 正しい（原型）
+```
+
+MDの装備定義を見ると構造はこうなっている。
+
+| 名前 | 定義 | 性質 |
+|---|---|---|
+| `cnc_equipment_type` | `is_archetype = yes` | 原型。`need` に書くのはこちら |
+| `cnc_equipment_1` | `archetype = cnc_equipment_type` / `active = no` | 派生型。しかも無効 |
+
+`active = no` の派生型を要求すると、その装備は生産も補給もされないため
+**装備枠が永久に埋まらず、師団の戦力と指揮統制率が上がらないまま固まる**。
+HOI4 はこれをエラーとして報告しない。
+
+MD本体の sub_unit はすべて `cnc_equipment_type` を要求している（数量は 6〜30）。
+こちらは 6ファイル12箇所で `cnc_equipment_1 = 10` と書いていた。
+数量10はMDの範囲内なので、名前だけ直した。
+
+**検査方法**: `python tools/check_subunit_needs.py`
+
+`common/units/*.txt` の `need` を読み、要求先が `is_archetype = yes` かどうかを
+自MOD・MD・バニラの装備定義から照合する。原型でなければ `active` の値つきで報告する。
+装備を追加・変更したら必ず実行すること。
