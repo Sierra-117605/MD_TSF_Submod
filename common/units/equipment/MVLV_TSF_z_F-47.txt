@@ -15,6 +15,10 @@ equipments = {
 		visual_level = 0
 		year = 2049
 		archetype = MVLV_TSF_chassis_heavy
+		# parent が無いと世代の連鎖に乗らず、生産画面の「更新」に出てこない。
+		# archetype が同じなので「重戦術機」とは表示されるが、後継として扱われない。
+		# 重戦術機の最後の世代である第3世代重に繋ぐ。
+		parent = MVLV_TSF_chassis_3_heavy
 		priority = 100
 		is_convertable = yes
 

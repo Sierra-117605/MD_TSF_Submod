@@ -181,6 +181,13 @@ technologies = {
 			leads_to_tech = MVLV_research_A12
 			research_cost_coeff = 1
 		}
+		# A10C を繋ぐ。兄弟の A10 / A12 はどちらも A6 から繋がっているが、
+		# A10C だけ流入が無く、専用のグリッドボックスも無いため
+		# error.log に Found no grid box が出ていた。
+		path = {
+			leads_to_tech = MVLV_research_A10C
+			research_cost_coeff = 1
+		}
 		ai_will_do = {
 			factor = 40
 			modifier = { date > 1994.1.1 factor = 60 }
@@ -561,6 +568,14 @@ technologies = {
 			leads_to_tech = MVLV_research_tsf_4_framework
 			research_cost_coeff = 1
 		}
+		# F-47 へ繋ぐ。F-47 は archetype も parent も重戦術機なので、
+		# 技術も重の系譜から繋げる。
+		# 元々は専用グリッドボックスを持つ独立した根だったが、
+		# 生産画面の「更新」に出てこないため系譜に乗せる方針に変えた。
+		path = {
+			leads_to_tech = tsf_F-47_framework
+			research_cost_coeff = 1
+		}
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2014.1.1 factor = 100 }
@@ -610,12 +625,6 @@ technologies = {
 				x = 35
 				y = 0
 			}
-		}
-		# F-47 へ繋ぐ。これが無いと F-47 はツリー上で孤立し、
-		# 2040年になれば第1世代すら研究せずに取得できてしまう。
-		path = {
-			leads_to_tech = tsf_F-47_framework
-			research_cost_coeff = 1
 		}
 		ai_will_do = {
 			factor = 90

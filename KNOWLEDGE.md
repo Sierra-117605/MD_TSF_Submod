@@ -941,3 +941,69 @@ grep -rho "leads_to_tech = <技術名>\b" common/technologies/ | wc -l
 第3世代を解禁した時点で第2世代の重に存在価値が無くなる。
 
 F-47 は桁が違う（突破13000）。第4世代までとは別枠の決戦兵器という位置づけ。
+
+---
+
+## 2026-11-08 F-47 を重戦術機の系譜に接続（技術・装備の両方）
+
+### 症状
+
+F-47 が生産画面の「更新」に出てこない。既存の重戦術機から後継として扱われない。
+
+### 原因は装備側の `parent` 欠落
+
+```
+JAP_TSF_77shiki        archetype = MVLV_TSF_chassis_heavy   parent = MVLV_TSF_chassis_1_heavy
+f-47_equipment_ishkur  archetype = MVLV_TSF_chassis_heavy   parent = なし
+```
+
+`archetype` が同じなので「重戦術機」とは表示されるが、**世代の連鎖は `parent` で作る**。
+`parent` が無いと連鎖に乗らず、生産画面の更新の対象にならない。
+
+重戦術機の連鎖は `chassis_heavy_0 -> 1_heavy -> 2_heavy -> 3_heavy` で終わっていたので、
+`parent = MVLV_TSF_chassis_3_heavy` を追加した。
+
+### 技術側は「元は意図的な独立根」だった
+
+`tsf_F-47_framework` には流入する `path` が無かったが、これは書き忘れではなく、
+**GUI に `tsf_F-47_framework_tree` という専用のグリッドボックスがあった**。
+凄乃皇（`tsf_susanoo_concept_tree`）と同じ、年代で解禁される独立した根という設計。
+
+今回は本人の判断で**系譜に乗せる方針に変更**したため、
+
+- `MVLV_research_tsf_3_heavy_framework` から F-47 へ `path` を追加
+- `countrytechtreeview.gui` の `tsf_F-47_framework_tree` を**削除**
+
+グリッドボックスを残したままだと、親の部分木と専用の根の両方に属して
+「Found multiple potential grid boxes」が新たに出る。**セットで直すこと。**
+
+### 調査で3回踏んだ「パターンが狭すぎる」失敗
+
+| 調べたもの | 使った条件 | 漏れた実体 |
+|---|---|---|
+| モジュールのアイコン | `GFX_<名前>` / `GFX_<名前>_medium` | `GFX_EMI_<名前>` |
+| ツリーの根 | `MVLV_*_tree` | `tsf_susanoo_concept_tree` / `tsf_F-47_framework_tree` |
+| 装備の変種名 | `JAP_` 接頭辞のローカライズ | `create_equipment_variant` の `name` |
+
+1件目は「アイコン欠落106件」と報告したが、実際は**25件**だった。
+2件目は「孤立した技術2件」が実際は**1件**だった。
+**命名の揺れを先に調べてから数えること。**
+
+## 2026-11-08 ツリーのグリッド重複15件の正体
+
+`Found multiple potential grid boxes` は、**根が別系統の複数のグリッドボックスから
+到達できる技術**に出る。自MODでは29件の技術が複数の親を持つが、警告が出るのは
+根をまたぐ4件だけ。
+
+```
+MVLV_research_armor_composite      親: armor_light と armor_heavy  <- 根が2つ
+MVLV_research_special_structure_2  親: armor_composite と special_structure_1
+MVLV_research_special_structure_3/4  上から連鎖
+```
+
+**直すには前提条件を削る必要があり、遊びに影響する。** 表示上の割り当ての問題で
+ゲーム進行には影響しないため、現状は**意図的に放置**している。
+
+`Found no grid box for tech MVLV_research_A10C` は別件で、純粋なバグだった。
+兄弟の A10 / A12 はどちらも `MVLV_research_A6` から繋がっているのに A10C だけ
+流入が無かった。A6 から path を追加して解消。

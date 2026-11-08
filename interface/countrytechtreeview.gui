@@ -5950,13 +5950,9 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
-			gridboxtype = {
-				name = "tsf_F-47_framework_tree"
-				position = { x = 10% y = 172 }
-				size = { width = 90% height = 90% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
+			# tsf_F-47_framework_tree は削除した。
+			# F-47 を第3世代重から path で繋いだため親の部分木に属するようになり、
+			# 専用のグリッドボックスを残すと「複数のグリッドボックス候補」警告が出る。
 			#############
 
 		}
