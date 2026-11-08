@@ -1,0 +1,150 @@
+# アイコンが未定義だったモジュール25件に、系統の近い既存画像を割り当てる。
+#
+# 設計画面で「？」（ピンクの疑問符）が出ていたのは、モジュールに対応する
+# GFX_EMI_<モジュール名> が無いため。専用の画像素材が無いので、
+# gfx/interface/equipmentdesigner/TSF/modules/ にある既存画像を系統別に流用する。
+#
+# 本物の素材が用意できたら、textureFile を差し替えるだけでよい。
+# 命名が GFX_EMI_ 接頭辞である点に注意（GFX_<名前>_medium ではない）。
+
+spriteTypes = {
+
+	# === 凄乃皇（XG-70）===============================================
+	# 装甲
+	spriteType = {
+		name = "GFX_EMI_susanoo_fortress_armor"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/heavy_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_susanoo_lightweight_armor"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/light_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	# 主兵装（荷電粒子砲・重力制御兵器）
+	spriteType = {
+		name = "GFX_EMI_susanoo_heavy_particle_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/railgun3_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_susanoo_gravity_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/railgun2_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_susanoo_g_bomb_charger"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/large_missile_pic.dds"
+		legacy_lazy_load = no
+	}
+	# 副兵装
+	spriteType = {
+		name = "GFX_EMI_susanoo_secondary_cannons"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/support_gun_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_susanoo_secondary_76mm"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_2_pic.dds"
+		legacy_lazy_load = no
+	}
+	# 機関
+	spriteType = {
+		name = "GFX_EMI_susanoo_main_thruster"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/back_thruster_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_susanoo_main_thruster_high"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/add_thruster_pic.dds"
+		legacy_lazy_load = no
+	}
+	# OS
+	spriteType = {
+		name = "GFX_EMI_susanoo_os_basic"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_normal_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_susanoo_os_00unit"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_close_pic.dds"
+		legacy_lazy_load = no
+	}
+	# センサー・特殊システム
+	spriteType = {
+		name = "GFX_EMI_susanoo_sensor_array"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/sensor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_susanoo_sensor_beta_reader"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/vibration_sensor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_susanoo_s11_sd_system"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/special_structure_pic.dds"
+		legacy_lazy_load = no
+	}
+
+	# === 攻撃機型（attacker）==========================================
+	spriteType = {
+		name = "GFX_EMI_tsf_attacker_heavy_firepower"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/assault_cannon_3_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tsf_attacker_bombardment"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/small_missile_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tsf_attacker_stealth"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/combat_custom.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tsf_attacker_amphibious"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/supplie_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+
+	# === 特務型（specialForces）=======================================
+	spriteType = {
+		name = "GFX_EMI_tsf_specialForces_heavy"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/normal_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tsf_specialForces_maneuver"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_maneuver_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tsf_specialForces_stealth"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/cruise_custom.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tsf_specialForces_takemikazuchi"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/special_blade_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+
+	# === その他 =======================================================
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_armor_heavy_alloy"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/composite_armor_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_basic_OS_range"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/OS_support_pic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_MVLV_TSF_basic_engine_fuel_efficiency"
+		textureFile = "gfx/interface/equipmentdesigner/TSF/modules/engine_cruise_pic.dds"
+		legacy_lazy_load = no
+	}
+}
