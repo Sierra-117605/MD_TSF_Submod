@@ -290,24 +290,28 @@ equipments = {
 		archetype = MVLV_TSF_chassis_light
 		parent = MVLV_TSF_chassis_1_light
 		#family = MVLV_TSF_chassis_1_light
-		can_convert_from = { 
+		can_convert_from = {
 			MVLV_TSF_chassis_1_light
 			MVLV_TSF_support_chassis_1
 		}
 		priority = 5
-		
+
+		# 近代化改修型。親の MVLV_TSF_chassis_1_light と全項目が同一のまま
+		# コストだけ 7.5 -> 10 になっており、選ぶ理由が無い状態だった。
+		# コスト差 +33% に見合うよう性能を +15% 程度引き上げる。
+		# 第2世代軽量（防御36・対人18・装甲25・コスト23）には届かない中間の位置づけ。
 		maximum_speed = 4
 		max_organisation = 30
 		max_strength = 13
 		default_morale = 1.7
-		reliability = 0.8
+		reliability = 0.85
 		casualty_trickleback = 0.0025
 		experience_loss_factor = 0.005
-		soft_attack = 5
-		hard_attack = 5
-		air_attack = 5
-		defense = 20
-		breakthrough = 20
+		soft_attack = 7
+		hard_attack = 7
+		air_attack = 7
+		defense = 23
+		breakthrough = 23
 		armor_value = 20		
 		hardness = 0.30
 		ap_attack = 5
