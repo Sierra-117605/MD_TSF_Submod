@@ -839,3 +839,45 @@ MD本体の sub_unit はすべて `cnc_equipment_type` を要求している（�
 `common/units/*.txt` の `need` を読み、要求先が `is_archetype = yes` かどうかを
 自MOD・MD・バニラの装備定義から照合する。原型でなければ `active` の値つきで報告する。
 装備を追加・変更したら必ず実行すること。
+
+---
+
+## 2026-11-08 バニラと同名の localisation ファイルは中身を丸ごと差し替える
+
+**症状**: 師団設計画面で、戦闘正面幅の数値が出ず `DESIGNER_CO...` という
+キー名がそのまま表示される。文字があふれて数値が見えない。
+
+**原因**: 本MODの `localisation/japanese/designer_l_japanese.yml` が
+**バニラと同じファイル名**だった。HOI4 は同じ相対パスのファイルを
+**丸ごと差し替える**（キー単位でマージしない）。
+
+```
+バニラ designer_l_japanese.yml : 516 キー
+本MOD designer_l_japanese.yml : 329 キー
+                  消えたキー : 187
+```
+
+消えたキーに `DESIGNER_COMBATWIDTH_VALUE`（正面幅の数値を描画するキー）が
+含まれていた。キーが存在しないと HOI4 は**キー名をそのまま画面に出す**ので、
+数値の代わりに `DESIGNER_COMBATWIDTH_VALUE` が表示され、枠からあふれていた。
+
+**対策**: ファイルを削除した。中身はバニラの部分集合で、本MOD固有のキーは
+**0件**だった（調べた上で削除）。バニラと違う値を持っていたのは5件だけで、
+いずれも句点やスペースの有無程度の差。その5件は `MD_JP_Loc` 側へ退避した。
+
+### 検査方法
+
+バニラと同名のファイルを持っていないか、追加・改名のたびに確認する。
+
+```python
+# localisation/ 以下の相対パスが、バニラの localisation/ にも存在したら危険
+for p in glob.glob("localisation/**/*.yml", recursive=True):
+    if os.path.exists(os.path.join(VANILLA, "localisation", os.path.relpath(p, "localisation"))):
+        print("★同名:", p)
+```
+
+2026-11-08 時点で 0 件。
+
+**MODのファイル名には必ず接頭辞を付けること**（本MODなら `MVLV_`）。
+2026-09 に非TSFのキー101件を削除した件と同じ性質の問題で、
+あの時はキー単位で見ていたためファイル名の衝突を見落としていた。
