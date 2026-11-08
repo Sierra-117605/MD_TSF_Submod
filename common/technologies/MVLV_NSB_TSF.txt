@@ -611,6 +611,12 @@ technologies = {
 				y = 0
 			}
 		}
+		# F-47 へ繋ぐ。これが無いと F-47 はツリー上で孤立し、
+		# 2040年になれば第1世代すら研究せずに取得できてしまう。
+		path = {
+			leads_to_tech = tsf_F-47_framework
+			research_cost_coeff = 1
+		}
 		ai_will_do = {
 			factor = 90
 			modifier = { date > 2034.1.1 factor = 100 }

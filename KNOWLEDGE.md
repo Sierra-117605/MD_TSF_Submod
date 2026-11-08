@@ -881,3 +881,63 @@ for p in glob.glob("localisation/**/*.yml", recursive=True):
 **MODのファイル名には必ず接頭辞を付けること**（本MODなら `MVLV_`）。
 2026-09 に非TSFのキー101件を削除した件と同じ性質の問題で、
 あの時はキー単位で見ていたためファイル名の衝突を見落としていた。
+
+---
+
+## 2026-11-08 F-47 がツリー上で孤立していた（path の書き忘れ）
+
+**症状**: 2040年になれば、第1世代すら研究せずに F-47 を取得できてしまう。
+
+**原因**: `tsf_F-47_framework` へ繋がる `path` がどこにも無かった。
+
+```
+MVLV_research_tsf_2_heavy_framework   入ってくる path: 2
+MVLV_research_tsf_3_heavy_framework   入ってくる path: 3
+MVLV_research_tsf_4_framework         入ってくる path: 3
+tsf_F-47_framework                    入ってくる path: 0   <- これだけ孤立
+```
+
+**対策**: `MVLV_research_tsf_4_framework`（第4世代・2035年）から path を引いた。
+ツリー上の位置も x=35 -> x=44 で左から右に並ぶので見た目も自然。
+
+### 注意: 研究の前提を決めているのは `dependencies` ではなく `path`
+
+本MODの framework はすべて `dependencies = {}`（空）だが、これは異常ではない。
+**バニラも `dependencies` を書かず `path` の連鎖だけで繋いでいる。**
+
+```
+infantry_weapons   dependencies 記述なし -> leads_to infantry_weapons1
+infantry_weapons1  dependencies 記述なし -> leads_to infantry_weapons2
+```
+
+技術が孤立していないかを調べるときは、`dependencies` ではなく
+**その技術名への `leads_to_tech` が存在するか**を数えること。
+
+```
+grep -rho "leads_to_tech = <技術名>\b" common/technologies/ | wc -l
+```
+
+## 2026-11-08 戦術機の世代と性能（調査結果）
+
+| 装備 | 耐久 | 防御 | 突破 | 対人 | 対戦車 | 装甲 | コスト |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| chassis_1_light | 13 | 20 | 20 | 5 | 5 | 20 | 7.5 |
+| chassis_1_heavy | 17 | 25 | 25 | 10 | 10 | 30 | 15 |
+| chassis_2_light | 13 | 36 | 36 | 18 | 18 | 25 | 23 |
+| chassis_2_heavy | 17 | 38 | 38 | 22 | 22 | 35 | 31 |
+| chassis_2_maneuver | 15 | 36 | 40 | 19 | 19 | 40 | 33 |
+| chassis_3_light | 13 | 38 | 38 | 22 | 22 | 35 | 26 |
+| chassis_3_heavy | 17 | 40 | 40 | 24 | 24 | 45 | 35 |
+| chassis_3_maneuver | 15 | 40 | 45 | 22 | 26 | 40 | 37 |
+| chassis_4（統合） | 18 | 45 | 45 | 30 | 30 | 50 | 50 |
+| f-47_equipment_ishkur | - | 2400 | 13000 | 1100 | 8500 | 1750 | 283 |
+
+**同世代の3系統（軽量・重・機動）の差が小さい。** 第3世代では防御38〜40、
+対人22〜24、装甲35〜45 の範囲に収まっており、コスト差26〜37のほうが目立つ。
+
+**世代をまたぐと上位互換になっている組み合わせがある。**
+`chassis_3_light`（防御38・対人22・装甲35・コスト26）は
+`chassis_2_heavy`（防御38・対人22・装甲35・コスト31）と**性能が完全に同じでコストだけ安い**。
+第3世代を解禁した時点で第2世代の重に存在価値が無くなる。
+
+F-47 は桁が違う（突破13000）。第4世代までとは別枠の決戦兵器という位置づけ。
